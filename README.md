@@ -1,7 +1,8 @@
-:construction: Projeto em construção :construction:
-
 # prof-alcemy.github.io
+
 Local para compartilhar informações, materiais, dicas e muitos mais.
+
+:construction: Projeto em construção :construction:
 
 ## Índice
 
