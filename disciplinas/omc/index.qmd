@@ -1,0 +1,60 @@
+---
+title: "🛠️ Organização e Manutenção de Computadores"
+description: "Material de apoio, slides e listas de exercícios."
+---
+
+## Ementa
+* **Estudo da organização de computadores:** organização de computadores e seus conceitos, unidade central de processamento e suas características, diversos tipos de sistemas encontrados em sistemas computacionais: sistemas de memória, sistema de interconexão e sistemas de entrada e saída.
+* **Noções de montagem de computadores:** identificação do hardware dos sistemas computacionais (diversos tipos de componentes tangíveis), montagem de computadores e instalação dos componentes, configuração do sistema operacional (formatação, instalação e configurações dos softwares), sistemas de backup e especificação de equipamentos para sistemas computacionais.
+
+## Objetivos
+* Apreender os conceitos básicos relacionados à estrutura e funcionamento dos computadores digitais.
+* Compreender o funcionamento dos microcomputadores e periféricos.
+* Identificar os componentes físicos dos microcomputadores e compreender suas funcionalidades. Executar montagem, instalação e configuração de equipamentos de informática.
+* Instalar e configurar sistemas operacionais e aplicativos em equipamentos computacionais.
+
+## Slides
+
+| Aula | Tópico | Material |
+| :---: | :--- | :---: |
+| 01 | Apresentação | [Slides](aula_00.qmd) |
+| -- | **Organização de Computadores** | -- |
+| -- | *Introdução à organização de computadores* | -- |
+| 02 | Conceitos básicos e terminologias usadas nos sistemas de informática | [Slides](aula_01.qmd) |
+<!--| 03 | Evolução histórica dos componentes internos e externos do computador | [Slides](aula_01.qmd) |
+| 04 | Diferenças entre o hardware para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
+| -- | *Unidade central de processamento*  | -- |
+| 05 | Tipos de processadores | [Slides](aula_01.qmd) |
+| 06 | Processadores para servidores, desktops, notebooks e dispositivos móveis | [Slides](aula_01.qmd) |
+| 07 | Termal Design Power (TDP) e sistemas de refrigeração | [Slides](aula_01.qmd) |
+| -- | *Sistema de memória* | -- |
+| 08 | Tecnologias de memória principal para servidores, desktops e notebooks | [Slides](aula_01.qmd) |
+| 09 | Tecnologias de armazenamento secundário para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
+| 10 | Introdução às tecnologias de transmissão de dados PCIe e SATA | [Slides](aula_01.qmd) |
+| 11 | Protocolo de transferência de dados NVMe | [Slides](aula_01.qmd) |
+| -- | *Sistema de interconexão* | [Slides](aula_01.qmd) |
+| 12 | Sistema de entrada, saída e periféricos | [Slides](aula_01.qmd) |
+| -- | **Montagem de computadores** | -- |
+| -- | *Introdução* | -- |
+| 13 | Equipamentos e ferramentas usados na manutenção de computadores | [Slides](aula_01.qmd) |
+| 14 | Manuseio adequado de componentes eletrônicos sensíveis à ESD | [Slides](aula_01.qmd) |
+| 15 | Visão geral do hardware para computador | [Slides](aula_01.qmd) |
+| 16 | Placas-mãe para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
+| -- | *Identificação de componentes e montagem de computadores* | -- |
+| 17 | Identificação de tipos de soquetes, conexões e jumpers na placa-mãe | [Slides](aula_01.qmd) |
+| 18 | Instalação de processador, memória, fonte de alimentação, placas de expansão e armazenamento | [Slides](aula_01.qmd) |
+| 19 | Fixação da placa-mãe no gabinete, conexão do painel frontal e organização interna de cabos | [Slides](aula_01.qmd) |
+| 20 | Procedimentos básicos de acesso e configuração do firmware (BIOS/UEFI) | [Slides](aula_01.qmd) |
+| -- | *Instalação e configuração do sistema operacional* | -- |
+| 21 | Particionamento pré e pós (redimensionamento de disco) instalação de S.O. | [Slides](aula_01.qmd) |
+| 22 | Instalação de softwares e aplicativos utilitários de terceiros | [Slides](aula_01.qmd) |
+| 23 | Atualização do sistema operacional | [Slides](aula_01.qmd) |
+| 24 | Backup de dados | [Slides](aula_01.qmd) |
+| -- | *Especificação de equipamentos de informática* | -- |
+| 25 | Identificação das necessidades de uso do equipamento de informática | [Slides](aula_01.qmd) |
+| 26 | Especificação de processador, memória, placa mãe, gabinete, fonte de alimentação, dispositivos de armazenamento, placas de expansão e demais componentes internos | [Slides](aula_01.qmd) |
+| 27 | Especificação de periféricos | [Slides](aula_01.qmd) |
+| 28 | Dimensionamento de fontes de alimentação ATX | [Slides](aula_01.qmd) |-->
+
+## Listas de Exercícios
+* [Lista 01 - Hardware básico (.pdf)](files/lista01.pdf)

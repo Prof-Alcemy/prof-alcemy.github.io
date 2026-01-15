@@ -1,0 +1,10 @@
+- title: "Título do Projeto 1"
+  description: "Descrição do projeto 1."
+  date: "2019-01-31"
+  categories: [Extensão, Educação]
+  image: img/projeto.jpg
+
+- title: "Título do Projeto 2"
+  description: "Descrição do projeto 2."
+  date: "2019-01-31"
+  categories: [Pesquisa, Programação]

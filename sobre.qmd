@@ -1,0 +1,33 @@
+---
+title: "Professor Alcemy"
+image: img/alcemy.jpg
+about:
+  template: trestles # Opções: jolla, solana, trestles
+  links:
+    - icon: instagram
+      text: Instagram
+      href: https://www.instagram.com/prof.alcemy
+    - icon: github
+      text: Github
+      href: https://github.com/Prof-Alcemy
+    - icon: envelope
+      text: Email
+      href: mailto:alcemy.severino@ifrn.edu.br
+---
+
+## Sobre Mim
+
+Sou professor do **IFRN**, atuando nas áreas de Hardware, Desenvolvimento de Software e Informática na Educação.
+
+🎯 Meus interesses de pesquisa incluem:
+
+- Inteligência Artificial
+- Internet das Coisas (IoT)
+- Aprendizagem por projetos
+
+🎓 Formação Acadêmica
+
+- Bacharel em Ciências e Tecnologia - UFRN
+- Bacharel em Engenharia Mecatrônica - UFRN
+- Mestre em Engenharia Mecatrônica - UFRN
+- Doutor em Engenharia Elétrica e de Computação - UFRN

@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+
+lang: pt-BR
+
+execute: 
+  freeze: auto
+
+website:
+  title: "Prof. Alcemy"
+  site-url: "https://prof-alcemy.github.io"
+  favicon: img/ifrn-logo.png
+  search: true
+
+  navbar:
+    background: "#2f9e41"  # Verde do IF (ou use "#cd191e" para vermelho)
+    left:
+      - href: index.qmd
+        text: Início
+      - text: "🎓 Disciplinas"
+        menu:
+          # - href: disciplinas/etd/index.qmd
+          #   text: "🌐 Educação em Tecnologias Digitais"
+          # - href: disciplinas/ip/index.qmd
+          #   text: "💻 Introdução à Programação"
+          - href: disciplinas/omc/index.qmd
+            text: "🛠️ Organização e Manutenção de Computadores"
+      # - href: projetos.qmd
+      #   text: "🔬 Projetos"
+      # - href: publicacoes.qmd
+      #   text: "📑 Publicações"
+      - href: sobre.qmd
+        text: "👨🏻‍🏫 Sobre Mim"
+    right:
+      - icon: github
+        href: https://github.com/Prof-Alcemy
+      - icon: mortarboard
+        href: http://lattes.cnpq.br/7324129312150435
+  
+  page-footer:
+    background: "#f8f9fa"     # Fundo cinza bem claro (profissional)
+    border: true              # Adiciona uma linha fina separando do conteúdo
+    left: |
+      © 2026 Prof. Alcemy Gabriel | IFRN
+    right: |
+      Este material está sob licença <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR" target="_blank">CC BY-NC 4.0</a>
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+    toc-title: "Nesta página"
+    code-copy: true
+    smooth-scroll: true

@@ -1,0 +1,50 @@
+/*-- scss:defaults --*/
+
+// 1. Tipografia (Baseado na Página 16 do Manual)
+// O manual exige o uso exclusivo da família "Open Sans".
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$font-family-sans-serif: "Open Sans", sans-serif !default;
+$presentation-heading-font: "Open Sans", sans-serif !default;
+
+// 2. Cores Institucionais (Baseado na Página 14 do Manual)
+$if-red:   #cd191e; // Vermelho IF
+$if-green: #2f9e41; // Verde IF
+$if-black: #000000; // Preto IF (ou cinza muito escuro para leitura)
+$white:    #ffffff;
+
+// 3. Substituição das Variáveis do Tema
+// Fundo: O manual sugere fundo branco para integridade da marca (Pág. 19/12)
+$body-bg: $white !default;
+
+// Texto Principal: Preto ou cinza escuro para contraste
+$body-color: #333333 !default; 
+
+// Títulos: Usando o Vermelho institucional para destaque
+$presentation-heading-color: $if-red !default;
+$presentation-heading-font-weight: 700 !default; // Bold (Pág. 16)
+$presentation-heading-text-transform: none !default; // Remove o maiúsculo forçado do tema original
+
+// Links: Usando o Verde institucional
+$link-color: $if-green !default;
+
+// Seleção de texto: Um verde suave
+$selection-bg: rgba($if-green, 0.3) !default;
+$selection-color: $if-black !default;
+
+// Blocos de Código
+$code-block-bg: #f0f0f0 !default; // Cinza claro para destacar do fundo branco
+$code-block-border-color: $if-green !default; // Borda verde sutil
+
+/*-- scss:rules --*/
+
+// Ajuste para garantir que elementos específicos usem a fonte correta
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+// Opcional: Barra de progresso com a cor vermelha
+.reveal .progress span {
+  background-color: $if-red;
+}

@@ -1,0 +1,13 @@
+---
+page-layout: full
+---
+
+## Seja bem-vindo(a)!
+
+Este é o espaço oficial de apoio às minhas atividades de ensino, pesquisa e extensão. 
+
+Um local para compartilhar informações, materiais, dicas e muitos mais. Aqui você encontrará meus materiais de aula, listas de exercícios, códigos-fonte e informações sobre projetos em andamento e finalizados.
+
+Utilize o menu acima para navegar diretamente para a área de seu interesse.
+
+> 🚧 Projeto em construção 🚧

@@ -1,0 +1,87 @@
+---
+# --- INFORMAÇÕES DA AULA ---
+title: "Título da Aula"
+subtitle: "Subtítulo ou tópico específico"
+author: "Prof. Seu Nome"
+institute: "IFRN - Campus [Seu Campus]"
+date: today              # Data automática (ou coloque "DD/MM/AAAA")
+date-format: short       # Formato da data
+lang: pt-br              # Define o idioma (corrige hifenização e textos padrão)
+
+# --- CONFIGURAÇÃO DO PYTHON (JUPYTER)
+jupyter: 
+    kernelspec:
+        display_name: Python 3
+        language: python
+        name: python3
+    python: "C:/Users/alcem/AppData/Local/Microsoft/WindowsApps/python3.exe"
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
+format:
+  revealjs:
+    # Aparência
+    theme: [default, ifrn]              # Carrega o CSS padrão + nossa personalização
+    logo: img/ifrn-logo.png            # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                 # Numeração de páginas no canto
+    center: false                      # false = alinha conteúdo ao topo (melhor para aulas)
+    
+    # Interatividade (Lousa)
+    chalkboard: 
+      buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    
+    # Navegação
+    preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
+    controls: true                     # Mostra setas de navegação
+    controlsLayout: edges              # Setas grandes nas laterais esquerda/direita
+    controlsTutorial: true             # Pisca a seta para indicar navegação
+    touch: true                        # Melhora o uso em tablets/celulares
+    
+    # Código (Para suas aulas de Programação)
+    code-line-numbers: true            # Permite referenciar linhas de código
+    highlight-style: github            # Estilo de cores do código (claro e limpo)
+---
+
+## Objetivos da Aula
+
+O que aprenderemos hoje:
+
+1.  Primeiro conceito importante
+2.  Segundo conceito importante
+3.  Prática no computador
+
+---
+
+## 1. Exemplo de Texto e Imagem
+:::: {.columns}
+
+::: {.column width="60%"}
+**Conceito Principal**
+
+Aqui você explica a teoria. O espaço é otimizado para não ficar muito texto amontoado.
+
+* Detalhe técnico A
+* Detalhe técnico B
+:::
+
+::: {.column width="40%"}
+![Legenda da Imagem](https://placehold.co/400x400/png)
+:::
+
+::::
+
+## 2. Exemplo de Código
+Podemos explicar o código linha a linha.
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "1|2|4-5|6-7"
+
+# Exemplo de entrada e saída
+nome = 'input('Qual seu nome? ')'
+
+if nome:
+    print(f'Bem-vindo, {nome}!')
+else:
+    print('Nome inválido.')
+```

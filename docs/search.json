@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Professor Alcemy",
+    "section": "",
+    "text": "Sou professor do IFRN, atuando nas áreas de Hardware, Desenvolvimento de Software e Informática na Educação.\n🎯 Meus interesses de pesquisa incluem:\n\nInteligência Artificial\nInternet das Coisas (IoT)\nAprendizagem por projetos\n\n🎓 Formação Acadêmica\n\nBacharel em Ciências e Tecnologia - UFRN\nBacharel em Engenharia Mecatrônica - UFRN\nMestre em Engenharia Mecatrônica - UFRN\nDoutor em Engenharia Elétrica e de Computação - UFRN"
+  },
+  {
+    "objectID": "sobre.html#sobre-mim",
+    "href": "sobre.html#sobre-mim",
+    "title": "Professor Alcemy",
+    "section": "",
+    "text": "Sou professor do IFRN, atuando nas áreas de Hardware, Desenvolvimento de Software e Informática na Educação.\n🎯 Meus interesses de pesquisa incluem:\n\nInteligência Artificial\nInternet das Coisas (IoT)\nAprendizagem por projetos\n\n🎓 Formação Acadêmica\n\nBacharel em Ciências e Tecnologia - UFRN\nBacharel em Engenharia Mecatrônica - UFRN\nMestre em Engenharia Mecatrônica - UFRN\nDoutor em Engenharia Elétrica e de Computação - UFRN"
+  },
+  {
+    "objectID": "projetos.html",
+    "href": "projetos.html",
+    "title": "Meus Projetos",
+    "section": "",
+    "text": "Aqui estão os projetos de pesquisa, ensino e extensão que coordeno ou participo.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTítulo do Projeto 1\n\n\n\nExtensão\n\nEducação\n\n\n\nDescrição do projeto 1.\n\n\n\n31 de jan. de 2019\n\n\n\n\n\n\n\n\n\n\n\nTítulo do Projeto 2\n\n\n\nPesquisa\n\nProgramação\n\n\n\nDescrição do projeto 2.\n\n\n\n31 de jan. de 2019\n\n\n\n\n\n\nSem itens correspondentes"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Prof. Alcemy",
+    "section": "",
+    "text": "Este é o espaço oficial de apoio às minhas atividades de ensino, pesquisa e extensão.\nUm local para compartilhar informações, materiais, dicas e muitos mais. Aqui você encontrará meus materiais de aula, listas de exercícios, códigos-fonte e informações sobre projetos em andamento e finalizados.\nUtilize o menu acima para navegar diretamente para a área de seu interesse.\n\n🚧 Projeto em construção 🚧"
+  },
+  {
+    "objectID": "index.html#seja-bem-vindoa",
+    "href": "index.html#seja-bem-vindoa",
+    "title": "Prof. Alcemy",
+    "section": "",
+    "text": "Este é o espaço oficial de apoio às minhas atividades de ensino, pesquisa e extensão.\nUm local para compartilhar informações, materiais, dicas e muitos mais. Aqui você encontrará meus materiais de aula, listas de exercícios, códigos-fonte e informações sobre projetos em andamento e finalizados.\nUtilize o menu acima para navegar diretamente para a área de seu interesse.\n\n🚧 Projeto em construção 🚧"
+  },
+  {
+    "objectID": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
+    "href": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
+    "title": "Introdução à organização de computadores",
+    "section": "O que define um computador?",
+    "text": "O que define um computador?\nUm smartwatch é um computador? E uma calculadora de padaria? E um PS5?\n\nDiferentes tipos de computadores"
+  },
+  {
+    "objectID": "disciplinas/ip/aula01-python.html#objetivos-da-aula",
+    "href": "disciplinas/ip/aula01-python.html#objetivos-da-aula",
+    "title": "Título da Aula",
+    "section": "Objetivos da Aula",
+    "text": "Objetivos da Aula\nO que aprenderemos hoje:\n\nPrimeiro conceito importante\nSegundo conceito importante\nPrática no computador"
+  },
+  {
+    "objectID": "disciplinas/ip/aula01-python.html#exemplo-de-texto-e-imagem",
+    "href": "disciplinas/ip/aula01-python.html#exemplo-de-texto-e-imagem",
+    "title": "Título da Aula",
+    "section": "1. Exemplo de Texto e Imagem",
+    "text": "1. Exemplo de Texto e Imagem\n\n\nConceito Principal\nAqui você explica a teoria. O espaço é otimizado para não ficar muito texto amontoado.\n\nDetalhe técnico A\nDetalhe técnico B\n\n\n\n\n\nLegenda da Imagem"
+  },
+  {
+    "objectID": "disciplinas/ip/aula01-python.html#exemplo-de-código",
+    "href": "disciplinas/ip/aula01-python.html#exemplo-de-código",
+    "title": "Título da Aula",
+    "section": "2. Exemplo de Código",
+    "text": "2. Exemplo de Código\nPodemos explicar o código linha a linha.\n\n# Exemplo de entrada e saída\nnome = 'input('Qual seu nome? ')'\n\nif nome:\n    print(f'Bem-vindo, {nome}!')\nelse:\n    print('Nome inválido.')"
+  },
+  {
+    "objectID": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
+    "href": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
+    "title": "Organização e Manutenção de Computadores",
+    "section": "Apresentação da disciplina",
+    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\nDia da semana: Quintas-feiras\n\n\nHorário: 8h50 às 10h20\n\n\nDuração: 40 semanas"
+  },
+  {
+    "objectID": "disciplinas/omc/index.html",
+    "href": "disciplinas/omc/index.html",
+    "title": "🛠️ Organização e Manutenção de Computadores",
+    "section": "",
+    "text": "Estudo da organização de computadores: organização de computadores e seus conceitos, unidade central de processamento e suas características, diversos tipos de sistemas encontrados em sistemas computacionais: sistemas de memória, sistema de interconexão e sistemas de entrada e saída.\nNoções de montagem de computadores: identificação do hardware dos sistemas computacionais (diversos tipos de componentes tangíveis), montagem de computadores e instalação dos componentes, configuração do sistema operacional (formatação, instalação e configurações dos softwares), sistemas de backup e especificação de equipamentos para sistemas computacionais."
+  },
+  {
+    "objectID": "disciplinas/omc/index.html#ementa",
+    "href": "disciplinas/omc/index.html#ementa",
+    "title": "🛠️ Organização e Manutenção de Computadores",
+    "section": "",
+    "text": "Estudo da organização de computadores: organização de computadores e seus conceitos, unidade central de processamento e suas características, diversos tipos de sistemas encontrados em sistemas computacionais: sistemas de memória, sistema de interconexão e sistemas de entrada e saída.\nNoções de montagem de computadores: identificação do hardware dos sistemas computacionais (diversos tipos de componentes tangíveis), montagem de computadores e instalação dos componentes, configuração do sistema operacional (formatação, instalação e configurações dos softwares), sistemas de backup e especificação de equipamentos para sistemas computacionais."
+  },
+  {
+    "objectID": "disciplinas/omc/index.html#objetivos",
+    "href": "disciplinas/omc/index.html#objetivos",
+    "title": "🛠️ Organização e Manutenção de Computadores",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nApreender os conceitos básicos relacionados à estrutura e funcionamento dos computadores digitais.\nCompreender o funcionamento dos microcomputadores e periféricos.\nIdentificar os componentes físicos dos microcomputadores e compreender suas funcionalidades. Executar montagem, instalação e configuração de equipamentos de informática.\nInstalar e configurar sistemas operacionais e aplicativos em equipamentos computacionais."
+  },
+  {
+    "objectID": "disciplinas/omc/index.html#slides",
+    "href": "disciplinas/omc/index.html#slides",
+    "title": "🛠️ Organização e Manutenção de Computadores",
+    "section": "Slides",
+    "text": "Slides\n\n\n\nAula\nTópico\nMaterial\n\n\n\n\n01\nApresentação\nSlides\n\n\n–\nOrganização de Computadores\n–\n\n\n–\nIntrodução à organização de computadores\n–\n\n\n02\nConceitos básicos e terminologias usadas nos sistemas de informática\nSlides"
+  },
+  {
+    "objectID": "disciplinas/omc/index.html#listas-de-exercícios",
+    "href": "disciplinas/omc/index.html#listas-de-exercícios",
+    "title": "🛠️ Organização e Manutenção de Computadores",
+    "section": "Listas de Exercícios",
+    "text": "Listas de Exercícios\n\nLista 01 - Hardware básico (.pdf)"
+  },
+  {
+    "objectID": "modelo/modelo_aula.html#objetivos-da-aula",
+    "href": "modelo/modelo_aula.html#objetivos-da-aula",
+    "title": "Título da Aula",
+    "section": "Objetivos da Aula",
+    "text": "Objetivos da Aula\nO que aprenderemos hoje:\n\nPrimeiro conceito importante\nSegundo conceito importante\nPrática no computador"
+  },
+  {
+    "objectID": "modelo/modelo_aula.html#exemplo-de-texto-e-imagem",
+    "href": "modelo/modelo_aula.html#exemplo-de-texto-e-imagem",
+    "title": "Título da Aula",
+    "section": "1. Exemplo de Texto e Imagem",
+    "text": "1. Exemplo de Texto e Imagem\n\n\nConceito Principal\nAqui você explica a teoria. O espaço é otimizado para não ficar muito texto amontoado.\n\nDetalhe técnico A\nDetalhe técnico B\n\n\n\n\n\nLegenda da Imagem"
+  },
+  {
+    "objectID": "modelo/modelo_aula.html#exemplo-de-código",
+    "href": "modelo/modelo_aula.html#exemplo-de-código",
+    "title": "Título da Aula",
+    "section": "2. Exemplo de Código",
+    "text": "2. Exemplo de Código\nPodemos explicar o código linha a linha.\n\n# Exemplo de entrada e saída\nnome = 'input('Qual seu nome? ')'\n\nif nome:\n    print(f'Bem-vindo, {nome}!')\nelse:\n    print('Nome inválido.')"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "ip/aula01-python.qmd": {
+    "aula01-python.html": "30ae90ca"
+  },
+  "index.md": {
+    "index.html": "7813d8b6"
+  },
+  "modelo/modelo_aula.qmd": {
+    "modelo_aula.html": "a3119397"
+  },
+  "index.qmd": {
+    "index.html": "50d14fba"
+  },
+  "ensino/omc/index.qmd": {
+    "index.html": "abe0cd69"
+  },
+  "ensino/ip/aula01-python.qmd": {
+    "aula01-python.html": "9365f599"
+  },
+  "ensino/omc/aula_01.qmd": {
+    "aula_01.html": "d779efb9"
+  },
+  "projetos.qmd": {
+    "projetos.html": "4809ab83"
+  },
+  "publicacoes.qmd": {
+    "publicacoes.html": "8890e8b9"
+  },
+  "ensino/etd/index.qmd": {
+    "index.html": "76a61b17"
+  },
+  "ensino/ip/index.qmd": {
+    "index.html": "00fc1c7d"
+  },
+  "sobre.qmd": {
+    "sobre.html": "29a9f69c"
+  },
+  "disciplinas/etd/index.qmd": {
+    "index.html": "3cde8a9b"
+  },
+  "disciplinas/ip/aula01-python.qmd": {
+    "aula01-python.html": "fcb46470"
+  },
+  "disciplinas/ip/index.qmd": {
+    "index.html": "420bd196"
+  },
+  "disciplinas/omc/aula_01.qmd": {
+    "aula_01.html": "e2eb9ac2"
+  },
+  "disciplinas/omc/index.qmd": {
+    "index.html": "62167533"
+  },
+  "disciplinas/omc/aula_00.qmd": {
+    "aula_00.html": "0d6ce00e"
+  },
+  "disciplinas/omc/ementa.qmd": {
+    "ementa.html": "f1400bf4"
+  }
+}

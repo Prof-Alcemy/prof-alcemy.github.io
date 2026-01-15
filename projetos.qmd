@@ -1,0 +1,10 @@
+---
+title: "Meus Projetos"
+listing:
+  contents: projetos.yml    # Lê o arquivo acima
+  type: grid                # Opções: default, grid, table
+  sort: "date desc"
+  categories: true          # Cria filtros laterais automáticos!
+---
+
+Aqui estão os projetos de pesquisa, ensino e extensão que coordeno ou participo.
