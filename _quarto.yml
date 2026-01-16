@@ -10,7 +10,7 @@ execute:
 website:
   title: "Prof. Alcemy"
   site-url: "https://prof-alcemy.github.io"
-  favicon: img/ifrn-logo.png
+  favicon: img/favicon.svg
   search: true
 
   navbar:
