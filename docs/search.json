@@ -35,11 +35,11 @@
     "text": "Este é o espaço oficial de apoio às minhas atividades de ensino, pesquisa e extensão.\nUm local para compartilhar informações, materiais, dicas e muitos mais. Aqui você encontrará meus materiais de aula, listas de exercícios, códigos-fonte e informações sobre projetos em andamento e finalizados.\nUtilize o menu acima para navegar diretamente para a área de seu interesse.\n\n🚧 Projeto em construção 🚧"
   },
   {
-    "objectID": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
-    "href": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
-    "title": "Introdução à organização de computadores",
-    "section": "O que define um computador?",
-    "text": "O que define um computador?\nUm smartwatch é um computador? E uma calculadora de padaria? E um PS5?\n\nDiferentes tipos de computadores"
+    "objectID": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
+    "href": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
+    "title": "Organização e Manutenção de Computadores",
+    "section": "Apresentação da disciplina",
+    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\nDia da semana: Quintas-feiras\n\n\nHorário: 8h50 às 10h20\n\n\nDuração: 40 semanas"
   },
   {
     "objectID": "disciplinas/ip/aula01-python.html#objetivos-da-aula",
@@ -63,11 +63,11 @@
     "text": "2. Exemplo de Código\nPodemos explicar o código linha a linha.\n\n# Exemplo de entrada e saída\nnome = 'input('Qual seu nome? ')'\n\nif nome:\n    print(f'Bem-vindo, {nome}!')\nelse:\n    print('Nome inválido.')"
   },
   {
-    "objectID": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
-    "href": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
-    "title": "Organização e Manutenção de Computadores",
-    "section": "Apresentação da disciplina",
-    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\nDia da semana: Quintas-feiras\n\n\nHorário: 8h50 às 10h20\n\n\nDuração: 40 semanas"
+    "objectID": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
+    "href": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
+    "title": "Introdução à organização de computadores",
+    "section": "O que define um computador?",
+    "text": "O que define um computador?\nUm smartwatch é um computador? E uma calculadora de padaria? E um PS5?\n\nDiferentes tipos de computadores"
   },
   {
     "objectID": "disciplinas/omc/index.html",

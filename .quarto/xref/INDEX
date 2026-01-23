@@ -55,5 +55,8 @@
   },
   "disciplinas/omc/ementa.qmd": {
     "ementa.html": "f1400bf4"
+  },
+  "disciplinas/omc/aula_02.qmd": {
+    "aula_02.html": "c979c788"
   }
 }
