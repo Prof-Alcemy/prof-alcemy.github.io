@@ -39,10 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-fc8d3d93f0a84b7619e1f8ff6eb63d42.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f00840ecddb56491fffe0f87a2a42627.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a8957de40cb2b5aa461c5d0e53e5d2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ba4469a1a2f5f927432b02b507584fd7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a8957de40cb2b5aa461c5d0e53e5d2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +80,169 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -127,6 +293,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="javascript:quarto.toggleDarkMode()" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-moon"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -143,12 +311,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ementa" id="toc-ementa" class="nav-link active" data-scroll-target="#ementa">Ementa</a></li>
   <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos">Objetivos</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#listas-de-exercícios" id="toc-listas-de-exercícios" class="nav-link" data-scroll-target="#listas-de-exercícios">Listas de Exercícios</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -202,7 +370,7 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">01</td>
+<td style="text-align: center;">00</td>
 <td style="text-align: left;">Apresentação</td>
 <td style="text-align: center;"><a href="../../disciplinas/omc/aula_00.html">Slides</a></td>
 </tr>
@@ -217,52 +385,48 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;">–</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">02</td>
+<td style="text-align: center;">01</td>
 <td style="text-align: left;">Conceitos básicos e terminologias usadas nos sistemas de informática</td>
 <td style="text-align: center;"><a href="../../disciplinas/omc/aula_01.html">Slides</a></td>
 </tr>
 </tbody>
 </table>
-<!--| 03 | Evolução histórica dos componentes internos e externos do computador | [Slides](aula_01.qmd) |
-| 04 | Diferenças entre o hardware para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
+<!--| 02 | Evolução histórica dos componentes internos e externos do computador | [Slides](aula_01.qmd) |
+| 03 | Diferenças entre o hardware para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
 | -- | *Unidade central de processamento*  | -- |
-| 05 | Tipos de processadores | [Slides](aula_01.qmd) |
-| 06 | Processadores para servidores, desktops, notebooks e dispositivos móveis | [Slides](aula_01.qmd) |
-| 07 | Termal Design Power (TDP) e sistemas de refrigeração | [Slides](aula_01.qmd) |
+| 04 | Tipos de processadores | [Slides](aula_01.qmd) |
+| 05 | Processadores para servidores, desktops, notebooks e dispositivos móveis | [Slides](aula_01.qmd) |
+| 06 | Termal Design Power (TDP) e sistemas de refrigeração | [Slides](aula_01.qmd) |
 | -- | *Sistema de memória* | -- |
-| 08 | Tecnologias de memória principal para servidores, desktops e notebooks | [Slides](aula_01.qmd) |
-| 09 | Tecnologias de armazenamento secundário para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
-| 10 | Introdução às tecnologias de transmissão de dados PCIe e SATA | [Slides](aula_01.qmd) |
-| 11 | Protocolo de transferência de dados NVMe | [Slides](aula_01.qmd) |
+| 07 | Tecnologias de memória principal para servidores, desktops e notebooks | [Slides](aula_01.qmd) |
+| 08 | Tecnologias de armazenamento secundário para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
+| 09 | Introdução às tecnologias de transmissão de dados PCIe e SATA | [Slides](aula_01.qmd) |
+| 10 | Protocolo de transferência de dados NVMe | [Slides](aula_01.qmd) |
 | -- | *Sistema de interconexão* | [Slides](aula_01.qmd) |
-| 12 | Sistema de entrada, saída e periféricos | [Slides](aula_01.qmd) |
+| 11 | Sistema de entrada, saída e periféricos | [Slides](aula_01.qmd) |
 | -- | **Montagem de computadores** | -- |
 | -- | *Introdução* | -- |
-| 13 | Equipamentos e ferramentas usados na manutenção de computadores | [Slides](aula_01.qmd) |
-| 14 | Manuseio adequado de componentes eletrônicos sensíveis à ESD | [Slides](aula_01.qmd) |
-| 15 | Visão geral do hardware para computador | [Slides](aula_01.qmd) |
-| 16 | Placas-mãe para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
+| 12 | Equipamentos e ferramentas usados na manutenção de computadores | [Slides](aula_01.qmd) |
+| 13 | Manuseio adequado de componentes eletrônicos sensíveis à ESD | [Slides](aula_01.qmd) |
+| 14 | Visão geral do hardware para computador | [Slides](aula_01.qmd) |
+| 15 | Placas-mãe para Servidores, Desktops e Notebooks | [Slides](aula_01.qmd) |
 | -- | *Identificação de componentes e montagem de computadores* | -- |
-| 17 | Identificação de tipos de soquetes, conexões e jumpers na placa-mãe | [Slides](aula_01.qmd) |
-| 18 | Instalação de processador, memória, fonte de alimentação, placas de expansão e armazenamento | [Slides](aula_01.qmd) |
-| 19 | Fixação da placa-mãe no gabinete, conexão do painel frontal e organização interna de cabos | [Slides](aula_01.qmd) |
-| 20 | Procedimentos básicos de acesso e configuração do firmware (BIOS/UEFI) | [Slides](aula_01.qmd) |
+| 16 | Identificação de tipos de soquetes, conexões e jumpers na placa-mãe | [Slides](aula_01.qmd) |
+| 17 | Fixação da placa-mãe no gabinete, conexão do painel frontal e organização interna de cabos | [Slides](aula_01.qmd) |
+| 18 | Procedimentos básicos de acesso e configuração do firmware (BIOS/UEFI) | [Slides](aula_01.qmd) |
 | -- | *Instalação e configuração do sistema operacional* | -- |
-| 21 | Particionamento pré e pós (redimensionamento de disco) instalação de S.O. | [Slides](aula_01.qmd) |
-| 22 | Instalação de softwares e aplicativos utilitários de terceiros | [Slides](aula_01.qmd) |
-| 23 | Atualização do sistema operacional | [Slides](aula_01.qmd) |
-| 24 | Backup de dados | [Slides](aula_01.qmd) |
+| 19 | Particionamento pré e pós (redimensionamento de disco) instalação de S.O. | [Slides](aula_01.qmd) |
+| 20 | Instalação de softwares e aplicativos utilitários de terceiros | [Slides](aula_01.qmd) |
+| 21 | Atualização do sistema operacional | [Slides](aula_01.qmd) |
+| 22 | Backup de dados | [Slides](aula_01.qmd) |
 | -- | *Especificação de equipamentos de informática* | -- |
-| 25 | Identificação das necessidades de uso do equipamento de informática | [Slides](aula_01.qmd) |
-| 26 | Especificação de processador, memória, placa mãe, gabinete, fonte de alimentação, dispositivos de armazenamento, placas de expansão e demais componentes internos | [Slides](aula_01.qmd) |
-| 27 | Especificação de periféricos | [Slides](aula_01.qmd) |
-| 28 | Dimensionamento de fontes de alimentação ATX | [Slides](aula_01.qmd) |-->
-</section>
-<section id="listas-de-exercícios" class="level2">
-<h2 class="anchored" data-anchor-id="listas-de-exercícios">Listas de Exercícios</h2>
-<ul>
-<li><a href="files/lista01.pdf">Lista 01 - Hardware básico (.pdf)</a></li>
-</ul>
+| 23 | Identificação das necessidades de uso do equipamento de informática | [Slides](aula_01.qmd) |
+| 24 | Especificação de processador, memória, placa mãe, gabinete, fonte de alimentação, dispositivos de armazenamento, placas de expansão e demais componentes internos | [Slides](aula_01.qmd) |
+| 25 | Especificação de periféricos | [Slides](aula_01.qmd) |
+| 26 | Dimensionamento de fontes de alimentação ATX | [Slides](aula_01.qmd) |
+
+## Listas de Exercícios
+* [Lista 01 - Hardware básico (.pdf)](files/lista01.pdf)-->
 
 
 </section>
@@ -270,6 +434,19 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

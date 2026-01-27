@@ -14,7 +14,14 @@ website:
   search: true
 
   navbar:
-    background: "#2f9e41"  # Verde do IF (ou use "#cd191e" para vermelho)
+    # IMPORTANTE: Removi a linha 'background'. 
+    # Agora a cor é controlada pelo 'site-custom.scss' (Verde no claro, Escuro no dark mode).
+    
+    # Adiciona o botão de alternar tema (Lua/Sol)
+    tools:
+      - icon: moon
+        href: javascript:quarto.toggleDarkMode()
+        
     left:
       - href: index.qmd
         text: Início
@@ -39,8 +46,8 @@ website:
         href: http://lattes.cnpq.br/7324129312150435
   
   page-footer:
-    background: "#f8f9fa"     # Fundo cinza bem claro (profissional)
-    border: true              # Adiciona uma linha fina separando do conteúdo
+    # Também removi o background fixo cinza. O tema cuidará disso.
+    border: true              
     left: |
       © 2026 Prof. Alcemy Gabriel | IFRN
     right: |
@@ -48,8 +55,20 @@ website:
 
 format:
   html:
-    theme: minty
-    css: styles.css
+    # --- CONFIGURAÇÃO DO NOVO DESIGN SYSTEM ---
+    # Usamos 'cosmo' como base limpa para o claro
+    # Usamos 'darkly' como base para o escuro
+    # E aplicamos suas regras personalizadas (site-custom.scss) em cima de ambos.
+    theme:
+      light: [cosmo, assets/scss/site-custom.scss]
+      dark: [darkly, assets/scss/site-custom.scss]
+    
+    # Highlight de código inteligente (Claro para dia, Drácula para noite)
+    highlight-style:
+      light: github
+      dark: dracula
+      
+    css: styles.css # Pode manter para ajustes pequenos que não sejam de cor
     toc: true
     toc-title: "Nesta página"
     code-copy: true

@@ -1,0 +1,75 @@
+/* assets/scss/site-custom.scss */
+/*-- scss:defaults --*/
+
+// 1. IMPORTAÇÃO DE FONTES E CORES
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+@import "paleta";
+
+// 2. VARIÁVEIS BASE (Configurações do Bootstrap)
+// Definimos a cor primária (Links, Navbar, Botões)
+$primary: $tech-green-dark; 
+
+// A cor de destaque (Vermelho Framboesa)
+$secondary: #BE123C;
+
+// Fontes
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-code: "Fira Code", "JetBrains Mono", monospace;
+
+// NOTA: Não definimos $body-bg aqui para não travar o tema Dark.
+// Vamos definir isso nas regras CSS abaixo.
+
+/*-- scss:rules --*/
+
+// ==========================================
+// 3. REGRAS CSS ESPECÍFICAS (A Lógica Real)
+// ==========================================
+
+// --- MODO CLARO (PADRÃO) ---
+// Aplicamos manualmente a cor de fundo Cinza Gelo
+body {
+  background-color: $tech-bg-light; // Fundo Cinza Gelo
+  color: #1F2937; // Texto Grafite
+}
+
+// Estilização da Navbar no Modo Claro
+.navbar {
+  background-color: $tech-green-dark !important; // Verde Esmeralda
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+// --- MODO ESCURO (DARK MODE) ---
+// O Quarto adiciona a classe 'quarto-dark' ao body automaticamente.
+body.quarto-dark {
+  // Aqui "vencemos" a regra anterior e aplicamos o fundo escuro
+  background-color: $tech-bg-dark; // Azul Petróleo Profundo
+  color: #E5E7EB; // Texto Cinza Claro
+  
+  // Reajuste da cor dos links para Verde Menta (melhor contraste)
+  a {
+    color: $tech-green-light;
+  }
+  
+  // Títulos em branco suave
+  h1, h2, h3, h4, h5, h6, .title {
+    color: #F9FAFB; 
+  }
+
+  // Navbar no modo escuro (Pode ser mais escura que o fundo ou manter a identidade)
+  .navbar {
+    background-color: darken($tech-bg-dark, 5%) !important; // Um pouco mais escuro que o fundo
+    border-bottom: 1px solid #374151;
+  }
+  
+  // Ajuste de botões
+  .btn-primary {
+    background-color: $tech-green-dark; 
+    border-color: $tech-green-dark;
+  }
+  
+  // Cards e containers precisam ter o fundo ajustado também
+  .card, .quarto-grid-item {
+    background-color: lighten($tech-bg-dark, 5%); // Ligeiramente mais claro que o fundo
+    border-color: #374151;
+  }
+}

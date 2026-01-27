@@ -1,163 +1,42 @@
-/* --- IFRN IDENTITY STYLES (VERSÃO MINIMALISTA) --- */
+/* styles.css - APENAS AJUSTES DE LAYOUT */
+/* As cores e fontes agora são gerenciadas pelo assets/scss/site-custom.scss */
 
-/* 1. IMPORTAÇÃO DA FONTE (Manual Pág. 16) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-:root {
-  /* Cores Oficiais (Manual Pág. 14) */
-  --if-red:   #cd191e; 
-  --if-green: #2f9e41; 
-  --if-black: #000000; 
-  --if-gray:  #333333; 
-  --if-light: #f8f9fa; 
-}
-
-/* 2. TIPOGRAFIA GERAL */
+/* 1. AJUSTES FINOS DE ESPAÇAMENTO */
 body {
-  font-family: "Open Sans", sans-serif !important;
-  color: var(--if-gray);
   line-height: 1.6;
 }
 
-/* 3. BARRA DE NAVEGAÇÃO (NAVBAR) */
-.navbar {
-  background-color: var(--if-green) !important;
-  /* Reduzimos a presença do vermelho apenas para uma linha fina de acabamento */
-  border-bottom: 3px solid var(--if-red); 
-}
-
-.navbar-brand {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white !important;
-}
-
-.navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.95) !important;
-  font-weight: 600;
-}
-
-/* Hover no menu: Texto fica sutilmente mais brilhante, sem mudar de cor bruscamente */
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-  color: white !important;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: rgba(255, 255, 255, 0.5);
-}
-
-/* 4. CABEÇALHOS (H1, H2, H3...) */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  margin-top: 1.5em;
-  color: var(--if-gray); /* Títulos padrão em cinza para leitura confortável */
-}
-
-/* H1: Mudamos de Vermelho para VERDE (Mais harmônico) */
-h1.title {
-  color: var(--if-green); 
-  font-weight: 800; 
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-}
-
-/* H2: Mantém o verde, mas com destaque lateral */
-h2 {
-  color: var(--if-green);
-  border-left: 5px solid var(--if-green);
-  padding-left: 10px;
-}
-
-/* 5. LINKS E INTERAÇÃO (A Grande Mudança) */
-a {
-  color: var(--if-green); /* Antes era vermelho. Agora é Verde (mais calmo) */
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-/* O VERMELHO aparece APENAS quando você interage (passa o mouse) */
-a:hover {
-  color: var(--if-red); 
-  text-decoration: underline;
-}
-
-/* Menu lateral (Sidebar) */
-.sidebar-item-text {
-  color: var(--if-gray);
-}
-/* Item ativo no menu lateral ganha o destaque vermelho sutil */
-.sidebar-item.active .sidebar-item-text {
-  color: var(--if-red) !important;
-  font-weight: bold;
-  border-right: 2px solid var(--if-red); /* Detalhe minimalista */
-}
-
-/* 6. LISTAGEM (Cards de Projetos) */
+/* 2. LISTAGEM (Cards de Projetos) - Animação suave */
 .quarto-grid-item {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .quarto-grid-item:hover {
   transform: translateY(-3px);
-  /* Borda muda para verde ao passar o mouse */
-  border-color: var(--if-green); 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  /* Removemos a borda colorida fixa para respeitar o tema dark/light */
 }
 
-.card-title {
-  color: var(--if-green) !important; /* Títulos dos cards em verde */
-  font-weight: 700;
-}
-
-/* Categorias (tags) */
+/* 3. CATEGORIAS/TAGS */
 .listing-categories .listing-category {
-  background-color: #f0f0f0; /* Fundo cinza claro (neutro) */
-  color: var(--if-gray);
   border-radius: 15px;
   font-size: 0.75rem;
   transition: all 0.2s;
+  /* Removemos cores fixas. O Bootstrap/Quarto vai gerenciar isso, 
+     ou podemos adicionar no SCSS se quiser customizar */
 }
 
-/* Apenas ao passar o mouse na tag ela fica vermelha */
-.listing-categories .listing-category:hover {
-  background-color: var(--if-red);
-  color: white;
-}
-
-/* 7. BOTÕES E CALLOUTS */
-.btn-primary {
-  background-color: var(--if-green);
-  border-color: var(--if-green);
-}
-
-/* Botão fica vermelho apenas na ação de clique/hover */
-.btn-primary:hover {
-  background-color: var(--if-red);
-  border-color: var(--if-red);
-}
-
-/* Tabelas */
-th {
-  background-color: var(--if-light);
-  color: var(--if-green); /* Cabeçalho da tabela verde */
-  border-bottom: 2px solid var(--if-green) !important;
-}
-
-/* Seleção de texto (quando arrasta o mouse) */
-::selection {
-  background: rgba(205, 25, 30, 0.1); /* Vermelho muito suave */
-  color: var(--if-black);
-}
-
-/* Footer */
+/* 4. RODAPÉ */
 footer.footer {
-  background-color: var(--if-light);
-  color: var(--if-gray);
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--bs-border-color); /* Usa a variável do tema (muda no dark mode) */
   margin-top: 4rem;
   padding: 2rem 0;
   font-size: 0.9em;
+}
+
+/* 5. SELEÇÃO DE TEXTO */
+/* Isso é seguro manter aqui, ou mover para o SCSS */
+::selection {
+  background: rgba(4, 120, 87, 0.2); /* Verde Esmeralda suave */
+  color: inherit;
 }

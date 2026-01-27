@@ -1,0 +1,113 @@
+/*-- scss:defaults --*/
+
+// ==========================================
+// 1. IMPORTAÇÃO E VARIÁVEIS BASE
+// ==========================================
+
+// Importa a sua "Fonte da Verdade" de cores
+@import "paleta";
+
+// Criação de ALIAS locais (Mapeia o nome oficial para um nome curto para usar aqui)
+// Isso assume que no seu _paleta.scss você definiu $if-red-official, etc.
+$if-red: $if-red-official !default;
+$if-green: $if-green-official !default;
+$if-black: #333333 !default; // Suavizado para leitura (não use preto #000 puro)
+$white: #ffffff !default;
+
+// ==========================================
+// 2. TIPOGRAFIA
+// ==========================================
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+// Definições de fontes do Quarto/RevealJS
+$font-family-sans-serif: "Open Sans", sans-serif !default;
+$font-family-code: "Fira Code", monospace !default;
+$presentation-heading-font: "Open Sans", sans-serif !default;
+$presentation-heading-font-weight: 600 !default;
+$presentation-heading-text-transform: none !default; // Remove caixa alta forçada
+
+// ==========================================
+// 3. MAPEAMENTO DO TEMA (QUARTO VARIABLES)
+// ==========================================
+
+// Cores Gerais
+$body-bg: $white !default;
+$body-color: $if-black !default;
+$link-color: $if-red !default;
+
+// Títulos e Seleção
+$presentation-heading-color: $if-green !default;
+$selection-bg: rgba($if-green, 0.3) !default;
+$selection-color: $if-black !default;
+
+// Blocos de Código
+$code-block-bg: #f0f0f0 !default;
+$code-block-border-color: $if-red !default;
+
+/*-- scss:rules --*/
+
+// ==========================================
+// 4. REGRAS CSS ESPECÍFICAS
+// ==========================================
+
+// Reforço de tipografia nos títulos
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+// Barra de progresso com a cor institucional
+.reveal .progress span {
+  background-color: $if-green;
+}
+
+// --- ESTILO DE CITAÇÕES (BLOCKQUOTES) ---
+.reveal blockquote {
+  border-left: 6px solid $if-green;
+  background-color: rgba($if-green, 0.08);
+  color: #444;
+  font-style: italic;
+  font-size: 0.9em;
+  padding: 20px;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: none;
+  border-radius: 0 8px 8px 0;
+
+  footer,
+  cite {
+    display: block;
+    text-align: right;
+    font-size: 0.7em;
+    font-style: normal;
+    color: $if-red;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+}
+
+// --- CALLOUTS PERSONALIZADOS ---
+// Usando as variáveis SASS para facilitar manutenção
+
+.callout-tip {
+  --callout-color: #{$if-green} !important;
+  --callout-bg: rgba($if-green, 0.1) !important;
+}
+
+.callout-important {
+  --callout-color: #{$if-red} !important;
+  --callout-bg: rgba($if-red, 0.1) !important;
+}
+
+// --- LEGENDAS ---
+
+figcaption {
+  text-align: center !important;
+  width: 100%;
+}

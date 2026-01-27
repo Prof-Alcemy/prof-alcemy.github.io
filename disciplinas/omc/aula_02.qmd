@@ -99,6 +99,14 @@ format:
 
 ---
 
+![](img/armazenamento.jpg)
+
+---
+
+
+
+---
+
 ### Comparando com o corpo humano
 
 ![](img/analogia_pc_corpo.png){fig-align="center"}
