@@ -21,7 +21,7 @@ description: "Material de apoio, slides e listas de exercícios."
 | Aula | Tópico | Material |
 | :---: | :--- | :---: |
 | 00 | Apresentação | [Slides](aula_00.qmd) |
-| -- | 1. ** Introdução** | -- |
+| -- | 1. **Introdução** | -- |
 | 01 | a. *Principais grandezas elétricas* | [Slides](aula_01.qmd) |
 | -- | i. Corrente | -- |
 | -- | ii. Tensão | -- |
