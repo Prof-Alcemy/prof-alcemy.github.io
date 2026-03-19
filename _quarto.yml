@@ -31,8 +31,10 @@ website:
           #   text: "🌐 Educação em Tecnologias Digitais"
           # - href: disciplinas/ip/index.qmd
           #   text: "💻 Introdução à Programação"
-          - href: disciplinas/omc/index.qmd
-            text: "🛠️ Organização e Manutenção de Computadores"
+          - href: disciplinas/ei/index.qmd
+            text: "⚡Eletricidade Instrumental"
+          # - href: disciplinas/omc/index.qmd
+          #   text: "🛠️ Organização e Manutenção de Computadores"
       # - href: projetos.qmd
       #   text: "🔬 Projetos"
       # - href: publicacoes.qmd

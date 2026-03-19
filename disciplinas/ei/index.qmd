@@ -1,0 +1,42 @@
+---
+title: "⚡ Eletricidade Instrumental"
+description: "Material de apoio, slides e listas de exercícios."
+---
+
+## Ementa
+* Estudo sobre a eletricidade como apoio ao exercício profissional do técnico em informática.
+* Principais grandezas da eletricidade, como corrente, tensão, energia e potência, bem como conceitos iniciais, como fontes, resistores, capacitores e indutores, e técnicas básicas de análise de circuito em corrente contínua como as Leis de nós e malhas são apresentadas.
+* Demonstração do uso de instrumentos de medições das grandezas elétricas: voltímetro, amperímetro e ohmímetro.
+* Noções básicas de instalações elétricas e cuidados complementam a disciplina.
+
+## Objetivos
+* Identificar as principais grandezas elétricas, fazendo a devida relação entre as mesmas.
+* Identificar circuitos série, paralelo e misto visando à análise de circuitos elétricos.
+* Identificar as especificidades de circuitos elétricos em CC e CA.
+* Utilizar instrumentos de medição de grandezas elétricas.
+* Utilizar regras gerais para operação e manuseio de equipamentos elétricos e eletrônicos.
+
+## Slides
+
+| Aula | Tópico | Material |
+| :---: | :--- | :---: |
+| 00 | Apresentação | [Slides](aula_00.qmd) |
+| -- | 1. ** Introdução** | -- |
+| 01 | a. *Principais grandezas elétricas* | [Slides](aula_01.qmd) |
+| -- | i. Corrente | -- |
+| -- | ii. Tensão | -- |
+| -- | iii. Corrente contínua e tensão contínua | -- |
+| -- | iV. Corrente alternada e tensão alternada | -- |
+| -- | v. Potência | -- |
+| -- | vi. Energia | -- |
+| 02 | b. *Classificação dos materiais quanto à condução de corrente elétrica* | [Slides](aula_02.qmd) |
+| -- | i. Condutores, isolantes e semicondutores | -- |
+| -- | ii. Equipamentos elétricos | -- |
+| -- | - Fontes, geradores | -- |
+| -- | - Cargas, consumidores (motores, lâmpadas, aquecedores) | -- |
+<!--| -- | **Conceitos iniciais** | -- |
+| -- | *Principais componentes elétricos e suas grandezas associadas* | -- |
+| -- | *Fontes* | -- |
+
+## Listas de Exercícios
+* [Lista 01 - Hardware básico (.pdf)](files/lista01.pdf)-->

@@ -58,5 +58,17 @@
   },
   "disciplinas/omc/aula_02.qmd": {
     "aula_02.html": "c979c788"
+  },
+  "disciplinas/ei/index.qmd": {
+    "index.html": "0423c42f"
+  },
+  "disciplinas/ei/aula_00.qmd": {
+    "aula_00.html": "0a3480d3"
+  },
+  "disciplinas/ei/aula_01.qmd": {
+    "aula_01.html": "736ce325"
+  },
+  "disciplinas/ei/aula_02.qmd": {
+    "aula_02.html": "3dee4236"
   }
 }
