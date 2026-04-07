@@ -88,154 +88,7 @@
     "href": "disciplinas/ei/index.html#slides",
     "title": "⚡ Eletricidade Instrumental",
     "section": "Slides",
-    "text": "Slides\n\n\n\nAula\nTópico\nMaterial\n\n\n\n\n00\nApresentação\nSlides\n\n\n–\n1. Introdução\n–\n\n\n01\na. Principais grandezas elétricas\nSlides\n\n\n–\ni. Corrente\n–\n\n\n–\nii. Tensão\n–\n\n\n–\niii. Corrente contínua e tensão contínua\n–\n\n\n–\niV. Corrente alternada e tensão alternada\n–\n\n\n–\nv. Potência\n–\n\n\n–\nvi. Energia\n–\n\n\n02\nb. Classificação dos materiais quanto à condução de corrente elétrica\nSlides\n\n\n–\ni. Condutores, isolantes e semicondutores\n–\n\n\n–\nii. Equipamentos elétricos\n–\n\n\n–\n- Fontes, geradores\n–\n\n\n–\n- Cargas, consumidores (motores, lâmpadas, aquecedores)\n–"
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#objetivos-da-aula",
-    "href": "disciplinas/ei/aula_01.html#objetivos-da-aula",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Objetivos da aula",
-    "text": "Objetivos da aula\n\nEntender o que são as grandezas elétricas.\nDiferenciar condutores de isolantes.\nConhecer os tipos de corrente e tensão."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#magia-ou-ciência",
-    "href": "disciplinas/ei/aula_01.html#magia-ou-ciência",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Magia ou Ciência?",
-    "text": "Magia ou Ciência?\n\n\n\nHá 200 anos, a eletricidade era vista como magia ou passatempo.\nExemplo: Atrito entre vidro e pano atraindo papel.\nHoje é a base de toda a nossa tecnologia e conforto."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#tudo-começa-no-átomo",
-    "href": "disciplinas/ei/aula_01.html#tudo-começa-no-átomo",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Tudo começa no Átomo",
-    "text": "Tudo começa no Átomo\n\n\n\nToda matéria (plástico, madeira, pele) é formada por átomos.\nAnalogia: O átomo é o “bloco de construção” universal."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#a-anatomia-do-átomo",
-    "href": "disciplinas/ei/aula_01.html#a-anatomia-do-átomo",
-    "title": "Principais Grandezas Elétricas",
-    "section": "A Anatomia do Átomo",
-    "text": "A Anatomia do Átomo\n\n\n\nNúcleo: Prótons (Carga \\(+\\)) e Nêutrons (Carga Neutra).\nEletrosfera: Elétrons (Carga \\(-\\)) orbitando em movimento."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#o-protagonista-o-elétron-livre",
-    "href": "disciplinas/ei/aula_01.html#o-protagonista-o-elétron-livre",
-    "title": "Principais Grandezas Elétricas",
-    "section": "O Protagonista: O Elétron Livre",
-    "text": "O Protagonista: O Elétron Livre\n\n\n\nEm alguns materiais, os elétrons da camada externa “fogem” facilmente.\nEsses elétrons livres são os responsáveis pela eletricidade que usamos."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#principais-grandezas-elétricas",
-    "href": "disciplinas/ei/aula_01.html#principais-grandezas-elétricas",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Principais grandezas elétricas",
-    "text": "Principais grandezas elétricas\n\nAs principais grandezas elétricas são:\n\na corrente,\na tensão,\na resistência\ne a potência.\n\nEssas grandezas estão presentes em qualquer circuito elétrico e são interdependentes — ou seja, a alteração em uma delas afeta diretamente as outras."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#o-que-é-a-corrente-elétrica",
-    "href": "disciplinas/ei/aula_01.html#o-que-é-a-corrente-elétrica",
-    "title": "Principais Grandezas Elétricas",
-    "section": "O que é a Corrente Elétrica?",
-    "text": "O que é a Corrente Elétrica?\n\nDefinição: A corrente elétrica é a movimentação de cargas ordenadas num condutor.\nAnalogia: Uma multidão (elétrons) correndo organizada em um corredor (fio)."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#tipos-de-corrente",
-    "href": "disciplinas/ei/aula_01.html#tipos-de-corrente",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Tipos de Corrente",
-    "text": "Tipos de Corrente"
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#carga-elétrica-q",
-    "href": "disciplinas/ei/aula_01.html#carga-elétrica-q",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Carga Elétrica (\\(Q\\))",
-    "text": "Carga Elétrica (\\(Q\\))\n\nQuantidade de eletricidade de um corpo.\n\nExcesso de elétrons, carga negativa.\nMais prótons que elétrons, carga positiva.\n\nUnidade: Coulomb (\\(C\\)).\nCargas iguais se repelem, cargas opostas se atraem."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente",
-    "href": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Medindo a Intensidade da Corrente",
-    "text": "Medindo a Intensidade da Corrente\n\nQuantidade de carga que passa no fio por segundo.\nFórmula: \\(I = \\frac{\\Delta Q}{\\Delta t}\\).\nUnidade: Ampère (\\(A\\)).\nRepresentada pela letra\n\n\\(I\\), em maiúsculo, para sinais contínuos\ne \\(i\\), em minúsculo, para sinais alternados."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente-1",
-    "href": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente-1",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Medindo a Intensidade da Corrente",
-    "text": "Medindo a Intensidade da Corrente\n\n\n\n\n\\[\n\\begin{align}\n1A &= \\dfrac{6.2\\times {10}^{18} \\text{elétrons}}{1s} \\\\\n&= \\dfrac{1C}{1s} \\\\\nI &= \\dfrac{\\Delta Q}{\\Delta t}\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#tensão-elétrica",
-    "href": "disciplinas/ei/aula_01.html#tensão-elétrica",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Tensão Elétrica",
-    "text": "Tensão Elétrica\n\nÉ a “força” que empurra os elétrons.\nSem diferença de potencial (ddp), os elétrons não se movem de forma ordenada.\nUnidade: Volt (V).\nRepresentada pela letra\n\n\\(V\\), em maiúsculo, para sinais contínuos\ne \\(v\\), em minúsculo, para sinais alternados."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#resistência-elétrica-r",
-    "href": "disciplinas/ei/aula_01.html#resistência-elétrica-r",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Resistência Elétrica (\\(R\\))",
-    "text": "Resistência Elétrica (\\(R\\))\n\nOposição à passagem da corrente.\nOcorre devido aos choques dos elétrons com os núcleos dos átomos.\nUnidade: Ohm (\\(\\Omega\\))."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#ª-lei-de-ohm",
-    "href": "disciplinas/ei/aula_01.html#ª-lei-de-ohm",
-    "title": "Principais Grandezas Elétricas",
-    "section": "1ª Lei de Ohm",
-    "text": "1ª Lei de Ohm\n\n\n\nA resistência é a relação entre a “força” aplicada e o “fluxo” obtido.\nFórmula: \\(R = \\frac{V}{I}\\).\n\n\n\n\n\nGeorg Simon Ohm | Fonte: Wikipedia"
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#ª-lei-de-ohm-1",
-    "href": "disciplinas/ei/aula_01.html#ª-lei-de-ohm-1",
-    "title": "Principais Grandezas Elétricas",
-    "section": "2ª Lei de Ohm",
-    "text": "2ª Lei de Ohm\n\nA resistência depende do material, do comprimento e da espessura do fio.\nFórmula: \\(R = \\rho \\times \\frac{l}{S}\\)."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#efeito-joule",
-    "href": "disciplinas/ei/aula_01.html#efeito-joule",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Efeito Joule",
-    "text": "Efeito Joule\n\nQuando elétrons enfrentam resistência, geram calor."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#potência-elétrica-p",
-    "href": "disciplinas/ei/aula_01.html#potência-elétrica-p",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Potência Elétrica (\\(P\\))",
-    "text": "Potência Elétrica (\\(P\\))\n\nRapidez com que a energia elétrica é transformada (em luz, calor ou movimento).\nUnidade: Watt (\\(W\\)); Fórmula: \\(P = V \\times I\\)."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#energia-elétrica-e-ou-tau",
-    "href": "disciplinas/ei/aula_01.html#energia-elétrica-e-ou-tau",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Energia Elétrica (\\(E\\) ou \\(\\tau\\))",
-    "text": "Energia Elétrica (\\(E\\) ou \\(\\tau\\))\n\n\n\nÉ o que a concessionária cobra no final do mês.\nCalculada pela potência multiplicada pelo tempo de uso.\nUnidade comercial: kWh.\n\n\n\n\n\nFonte: Neoenergia"
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#analogia-da-caixa-dágua",
-    "href": "disciplinas/ei/aula_01.html#analogia-da-caixa-dágua",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Analogia da Caixa d’Água",
-    "text": "Analogia da Caixa d’Água\n\n\n\nTensão (\\(U\\)): A altura da caixa d’água (pressão).\nCorrente (\\(i\\)): O fluxo de água saindo pelo cano.\nResistência (\\(R\\)): O diâmetro do cano (dificuldade).\nPotência (\\(P\\)): O trabalho realizado."
-  },
-  {
-    "objectID": "disciplinas/ei/aula_01.html#tabela-resumo-de-grandezas",
-    "href": "disciplinas/ei/aula_01.html#tabela-resumo-de-grandezas",
-    "title": "Principais Grandezas Elétricas",
-    "section": "Tabela Resumo de Grandezas",
-    "text": "Tabela Resumo de Grandezas\n\n\n\nGrandeza\nSímbolo\nUnidade\nAbreviatura\n\n\n\n\nTensão\n\\(v\\) ou \\(V\\)\nVolt\n\\(V\\)\n\n\nCorrente\n\\(i\\) ou \\(I\\)\nAmpère\n\\(A\\)\n\n\nResistência\n\\(R\\)\nOhm\n\\(\\Omega\\)\n\n\nPotência\n\\(P\\)\nWatt\n\\(W\\)\n\n\nEnergia\n\\(E\\)\nQuilowatt-hora\n\\(kWh\\)"
-  },
-  {
-    "objectID": "disciplinas/ei/aula_00.html#apresentação-da-disciplina",
-    "href": "disciplinas/ei/aula_00.html#apresentação-da-disciplina",
-    "title": "Eletricidade Instrumental",
-    "section": "Apresentação da disciplina",
-    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\n1INF1M: Quintas-feiras / 8h50 às 10h20\n\n\n1INF1V: Quartas-feiras / 13h00 às 14h30\n\n\nDuração: 40 semanas"
+    "text": "Slides\n\n\n\nAula\nTópico\nMaterial\n\n\n\n\n00\nApresentação\nSlides\n\n\n\n1. Introdução\n\n\n\n01\na. Principais grandezas elétricas\nSlides\n\n\n\ni. Corrente\n\n\n\n\nii. Tensão\n\n\n\n\niii. Corrente contínua e tensão contínua\n\n\n\n\niv. Corrente alternada e tensão alternada\n\n\n\n\nv. Potência\n\n\n\n\nvi. Energia\n\n\n\n02\nb. Classificação dos materiais quanto à condução de corrente elétrica\nSlides\n\n\n\ni. Condutores, isolantes e semicondutores\n\n\n\n\nii. Equipamentos elétricos\n\n\n\n\n- Fontes, geradores\n\n\n\n\n- Cargas, consumidores (motores, lâmpadas, aquecedores)\n\n\n\n\n2. Conceitos iniciais\n\n\n\n03\na. Principais componentes elétricos e suas grandezas associadas\nSlides\n\n\n\nb. Fontes\n\n\n\n\ni. Resistores\n\n\n\n\n- Conceitos, tipos, unidades de medida, códigos de leitura de valores\n\n\n\n\n- Associações série, paralela e mista\n\n\n\n\nii. Capacitores\n\n\n\n\n- Conceitos, tipos, unidades de medida e associações\n\n\n\n\niii. Indutores\n\n\n\n\niv. Lei de Ohm"
   },
   {
     "objectID": "disciplinas/ei/aula_02.html#objetivos-da-aula",
@@ -411,6 +264,209 @@
     "title": "Classificação dos materiais quanto à condução de corrente elétrica",
     "section": "Tabela Resumo Final",
     "text": "Tabela Resumo Final\n\n\n\nMaterial\nExemplo\nPapel no Circuito\n\n\n\n\nCondutor\nCobre, Prata\nCaminho livre para cargas.\n\n\nIsolante\nVidro, Plástico\nProteção e separação.\n\n\nSemicondutor\nSilício\nControle inteligente (Chave).\n\n\nResistor\nCarbono\nLimita a corrente."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_00.html#apresentação-da-disciplina",
+    "href": "disciplinas/ei/aula_00.html#apresentação-da-disciplina",
+    "title": "Eletricidade Instrumental",
+    "section": "Apresentação da disciplina",
+    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\n1INF1M: Quintas-feiras / 8h50 às 10h20\n\n\n1INF1V: Quartas-feiras / 13h00 às 14h30\n\n\nDuração: 40 semanas"
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#objetivos-da-aula",
+    "href": "disciplinas/ei/aula_01.html#objetivos-da-aula",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Objetivos da aula",
+    "text": "Objetivos da aula\n\nEntender o que são as grandezas elétricas.\nDiferenciar condutores de isolantes.\nConhecer os tipos de corrente e tensão."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#magia-ou-ciência",
+    "href": "disciplinas/ei/aula_01.html#magia-ou-ciência",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Magia ou Ciência?",
+    "text": "Magia ou Ciência?\n\n\n\nHá 200 anos, a eletricidade era vista como magia ou passatempo.\nExemplo: Atrito entre vidro e pano atraindo papel.\nHoje é a base de toda a nossa tecnologia e conforto."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#tudo-começa-no-átomo",
+    "href": "disciplinas/ei/aula_01.html#tudo-começa-no-átomo",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Tudo começa no Átomo",
+    "text": "Tudo começa no Átomo\n\n\n\nToda matéria (plástico, madeira, pele) é formada por átomos.\nAnalogia: O átomo é o “bloco de construção” universal."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#a-anatomia-do-átomo",
+    "href": "disciplinas/ei/aula_01.html#a-anatomia-do-átomo",
+    "title": "Principais Grandezas Elétricas",
+    "section": "A Anatomia do Átomo",
+    "text": "A Anatomia do Átomo\n\n\n\nNúcleo: Prótons (Carga \\(+\\)) e Nêutrons (Carga Neutra).\nEletrosfera: Elétrons (Carga \\(-\\)) orbitando em movimento."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#o-protagonista-o-elétron-livre",
+    "href": "disciplinas/ei/aula_01.html#o-protagonista-o-elétron-livre",
+    "title": "Principais Grandezas Elétricas",
+    "section": "O Protagonista: O Elétron Livre",
+    "text": "O Protagonista: O Elétron Livre\n\n\n\nEm alguns materiais, os elétrons da camada externa “fogem” facilmente.\nEsses elétrons livres são os responsáveis pela eletricidade que usamos."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#principais-grandezas-elétricas",
+    "href": "disciplinas/ei/aula_01.html#principais-grandezas-elétricas",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Principais grandezas elétricas",
+    "text": "Principais grandezas elétricas\n\nAs principais grandezas elétricas são:\n\na corrente,\na tensão,\na resistência\ne a potência.\n\nEssas grandezas estão presentes em qualquer circuito elétrico e são interdependentes — ou seja, a alteração em uma delas afeta diretamente as outras."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#o-que-é-a-corrente-elétrica",
+    "href": "disciplinas/ei/aula_01.html#o-que-é-a-corrente-elétrica",
+    "title": "Principais Grandezas Elétricas",
+    "section": "O que é a Corrente Elétrica?",
+    "text": "O que é a Corrente Elétrica?\n\nDefinição: A corrente elétrica é a movimentação de cargas ordenadas num condutor.\nAnalogia: Uma multidão (elétrons) correndo organizada em um corredor (fio)."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#tipos-de-corrente",
+    "href": "disciplinas/ei/aula_01.html#tipos-de-corrente",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Tipos de Corrente",
+    "text": "Tipos de Corrente"
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#carga-elétrica-q",
+    "href": "disciplinas/ei/aula_01.html#carga-elétrica-q",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Carga Elétrica (\\(Q\\))",
+    "text": "Carga Elétrica (\\(Q\\))\n\nQuantidade de eletricidade de um corpo.\n\nExcesso de elétrons, carga negativa.\nMais prótons que elétrons, carga positiva.\n\nUnidade: Coulomb (\\(C\\)).\nCargas iguais se repelem, cargas opostas se atraem."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente",
+    "href": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Medindo a Intensidade da Corrente",
+    "text": "Medindo a Intensidade da Corrente\n\nQuantidade de carga que passa no fio por segundo.\nFórmula: \\(I = \\frac{\\Delta Q}{\\Delta t}\\).\nUnidade: Ampère (\\(A\\)).\nRepresentada pela letra\n\n\\(I\\), em maiúsculo, para sinais contínuos\ne \\(i\\), em minúsculo, para sinais alternados."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente-1",
+    "href": "disciplinas/ei/aula_01.html#medindo-a-intensidade-da-corrente-1",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Medindo a Intensidade da Corrente",
+    "text": "Medindo a Intensidade da Corrente\n\n\n\n\n\\[\n\\begin{align}\n1A &= \\dfrac{6.2\\times {10}^{18} \\text{elétrons}}{1s} \\\\\n&= \\dfrac{1C}{1s} \\\\\nI &= \\dfrac{\\Delta Q}{\\Delta t}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#tensão-elétrica",
+    "href": "disciplinas/ei/aula_01.html#tensão-elétrica",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Tensão Elétrica",
+    "text": "Tensão Elétrica\n\nÉ a “força” que empurra os elétrons.\nSem diferença de potencial (ddp), os elétrons não se movem de forma ordenada.\nUnidade: Volt (V).\nRepresentada pela letra\n\n\\(V\\), em maiúsculo, para sinais contínuos\ne \\(v\\), em minúsculo, para sinais alternados."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#resistência-elétrica-r",
+    "href": "disciplinas/ei/aula_01.html#resistência-elétrica-r",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Resistência Elétrica (\\(R\\))",
+    "text": "Resistência Elétrica (\\(R\\))\n\nOposição à passagem da corrente.\nOcorre devido aos choques dos elétrons com os núcleos dos átomos.\nUnidade: Ohm (\\(\\Omega\\))."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#ª-lei-de-ohm",
+    "href": "disciplinas/ei/aula_01.html#ª-lei-de-ohm",
+    "title": "Principais Grandezas Elétricas",
+    "section": "1ª Lei de Ohm",
+    "text": "1ª Lei de Ohm\n\n\n\nA resistência é a relação entre a “força” aplicada e o “fluxo” obtido.\nFórmula: \\(R = \\frac{V}{I}\\).\n\n\n\n\n\nGeorg Simon Ohm | Fonte: Wikipedia"
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#ª-lei-de-ohm-1",
+    "href": "disciplinas/ei/aula_01.html#ª-lei-de-ohm-1",
+    "title": "Principais Grandezas Elétricas",
+    "section": "2ª Lei de Ohm",
+    "text": "2ª Lei de Ohm\n\nA resistência depende do material, do comprimento e da espessura do fio.\nFórmula: \\(R = \\rho \\times \\frac{l}{A}\\)."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#efeito-joule",
+    "href": "disciplinas/ei/aula_01.html#efeito-joule",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Efeito Joule",
+    "text": "Efeito Joule\n\nQuando elétrons enfrentam resistência, geram calor."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#potência-elétrica-p",
+    "href": "disciplinas/ei/aula_01.html#potência-elétrica-p",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Potência Elétrica (\\(P\\))",
+    "text": "Potência Elétrica (\\(P\\))\n\nRapidez com que a energia elétrica é transformada (em luz, calor ou movimento).\nUnidade: Watt (\\(W\\)); Fórmula: \\(P = V \\times I\\)."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#energia-elétrica-e-ou-tau",
+    "href": "disciplinas/ei/aula_01.html#energia-elétrica-e-ou-tau",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Energia Elétrica (\\(E\\) ou \\(\\tau\\))",
+    "text": "Energia Elétrica (\\(E\\) ou \\(\\tau\\))\n\n\n\nÉ o que a concessionária cobra no final do mês.\nCalculada pela potência multiplicada pelo tempo de uso.\nUnidade comercial: kWh.\n\n\n\n\n\nFonte: Neoenergia"
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#analogia-da-caixa-dágua",
+    "href": "disciplinas/ei/aula_01.html#analogia-da-caixa-dágua",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Analogia da Caixa d’Água",
+    "text": "Analogia da Caixa d’Água\n\n\n\nTensão (\\(U\\)): A altura da caixa d’água (pressão).\nCorrente (\\(i\\)): O fluxo de água saindo pelo cano.\nResistência (\\(R\\)): O diâmetro do cano (dificuldade).\nPotência (\\(P\\)): O trabalho realizado."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_01.html#tabela-resumo-de-grandezas",
+    "href": "disciplinas/ei/aula_01.html#tabela-resumo-de-grandezas",
+    "title": "Principais Grandezas Elétricas",
+    "section": "Tabela Resumo de Grandezas",
+    "text": "Tabela Resumo de Grandezas\n\n\n\nGrandeza\nSímbolo\nUnidade\nAbreviatura\n\n\n\n\nTensão\n\\(v\\) ou \\(V\\)\nVolt\n\\(V\\)\n\n\nCorrente\n\\(i\\) ou \\(I\\)\nAmpère\n\\(A\\)\n\n\nResistência\n\\(R\\)\nOhm\n\\(\\Omega\\)\n\n\nPotência\n\\(P\\)\nWatt\n\\(W\\)\n\n\nEnergia\n\\(E\\)\nQuilowatt-hora\n\\(kWh\\)"
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#objetivos-da-aula",
+    "href": "disciplinas/ei/aula_03.html#objetivos-da-aula",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Objetivos da aula",
+    "text": "Objetivos da aula\n\nRelacionar os componentes físicos dos circuitos às suas grandezas elétricas.\nCompreender as unidades de medida padrão e seus múltiplos.\nDiferenciar conceitos cruciais."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#fontes-e-geradores",
+    "href": "disciplinas/ei/aula_03.html#fontes-e-geradores",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Fontes e Geradores",
+    "text": "Fontes e Geradores\nPara que os elétrons se movam, precisamos de uma força motriz. As fontes e geradores criam uma diferença de potencial (ddp) entre dois pontos, conhecidos como polos.\n\nO polo positivo possui menos elétrons que o polo negativo.\nIsso cria um “dipolo elétrico” e um campo de força invisível."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#trilhas-fios-e-a-corrente-elétrica",
+    "href": "disciplinas/ei/aula_03.html#trilhas-fios-e-a-corrente-elétrica",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Trilhas, Fios e a Corrente Elétrica",
+    "text": "Trilhas, Fios e a Corrente Elétrica\n\n\nQuando interligamos os polos de uma fonte com um material condutor, as cargas começam a fluir para igualar a diferença.\n\nGrandeza associada: Corrente Elétrica.\nUnidade de medida: Ampère (\\(A\\))."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#resistores",
+    "href": "disciplinas/ei/aula_03.html#resistores",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Resistores",
+    "text": "Resistores\nA resistência quantifica a oposição que um circuito impõe ao fluxo de corrente. Componentes fabricados para ter uma oposição específica são os resistores.\n\nUnidade de medida: Ohm (\\(\\Omega\\)).\nFios longos e finos têm maior resistência que fios curtos e grossos."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#indutores",
+    "href": "disciplinas/ei/aula_03.html#indutores",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Indutores",
+    "text": "Indutores\nSempre que uma corrente elétrica flui por um fio, um campo magnético aparece ao seu redor.\n\nSe enrolarmos o fio em uma bobina bem apertada, o fluxo magnético cria dois polos bem definidos (Norte e Sul).\nIsso forma um Eletroímã ou Indutor."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#capacitores",
+    "href": "disciplinas/ei/aula_03.html#capacitores",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Capacitores",
+    "text": "Capacitores\nSão componentes que mantêm as cargas elétricas separadas, armazenando energia em um campo elétrico estático (dipolo elétrico).\n\nGrandeza associada: Capacitância.\nUnidade de medida: Farad (\\(F\\)).\nEstrutura: Duas placas condutoras isoladas por um material Dielétrico (isolante)."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#cargas-e-o-consumo-de-energia",
+    "href": "disciplinas/ei/aula_03.html#cargas-e-o-consumo-de-energia",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Cargas e o Consumo de Energia",
+    "text": "Cargas e o Consumo de Energia\nQualquer componente que ofereça resistência transforma parte da eletricidade em calor.\n\nA intensidade desse aquecimento (ou trabalho realizado) é a Potência.\nUnidade de medida: Watt (\\(W\\))."
+  },
+  {
+    "objectID": "disciplinas/ei/aula_03.html#resumo-das-principais-grandezas",
+    "href": "disciplinas/ei/aula_03.html#resumo-das-principais-grandezas",
+    "title": "Principais componentes elétricos e suas grandezas associadas",
+    "section": "Resumo das Principais Grandezas",
+    "text": "Resumo das Principais Grandezas\n\n\n\n\n\n\n\n\n\nComponente\nGrandeza\nUnidade\n\n\n\n\nFonte\nTensão (ddp)\nVolt (\\(V\\))\n\n\nFio/Trilha\nCorrente\nAmpère (\\(A\\))\n\n\nResistor\nResistência / Condutância\nOhm (\\(\\Omega\\)) / Siemens (\\(S\\))\n\n\nCapacitor\nCapacitância\nFarad (\\(F\\))\n\n\nIndutor\nFluxo Magnético\nWeber (\\(Wb\\)) / Tesla (\\(T\\))\n\n\nCarga\nPotência / Energia\nWatt (\\(W\\)) / Watt-hora (\\(Wh\\))"
   },
   {
     "objectID": "disciplinas/omc/aula_01.html#o-que-define-um-computador",

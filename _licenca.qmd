@@ -3,19 +3,21 @@
 ::: {.callout-note icon=false}
 ## <i class="fa-brands fa-creative-commons"></i> Licença de Uso (CC BY-NC 4.0)
 
-Você tem o direito de:
-<ul>
-  <li><i class="fa-solid fa-share-nodes"></i> <strong>Compartilhar:</strong> copiar e redistribuir o material.</li>
-  <li><i class="fa-solid fa-pen-to-square"></i> <strong>Adaptar:</strong> remixar, transformar e criar a partir do material.</li>
-</ul>
+<div>
+  Você tem o direito de:
+  <ul>
+    <li><i class="fa-solid fa-share-nodes"></i> <strong>Compartilhar:</strong> copiar e redistribuir o material.</li>
+    <li><i class="fa-solid fa-pen-to-square"></i> <strong>Adaptar:</strong> remixar, transformar e criar a partir do material.</li>
+  </ul>
+</div>
 
-Sob as seguintes condições:
-<ol>
-  <li><strong>Atribuição:</strong> Você deve dar o crédito apropriado ao autor.</li>
-  <li><strong>Não Comercial:</strong> Você <strong>não</strong> pode usar o material para fins comerciais.</li>
-</ol>
-
-:::
+<div>
+  Sob as seguintes condições:
+  <ol>
+    <li><strong>Atribuição:</strong> Você deve dar o crédito apropriado ao autor.</li>
+    <li><strong>Não Comercial:</strong> Você <strong>não</strong> pode usar o material para fins comerciais.</li>
+  </ol>
+</div>
 
 <div style="text-align: center; margin-top: 20px;">
   <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR" target="_blank">

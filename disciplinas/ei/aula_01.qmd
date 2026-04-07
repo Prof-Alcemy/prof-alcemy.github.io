@@ -235,7 +235,7 @@ $$
 ## 2ª Lei de Ohm
 
 - A resistência depende do material, do comprimento e da espessura do fio.
-- Fórmula: $R = \rho \times \frac{l}{S}$.
+- Fórmula: $R = \rho \times \frac{l}{A}$.
 
 ![](img/dimensoes_condutor.png){fig-align="center"}
 

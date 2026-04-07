@@ -21,22 +21,33 @@ description: "Material de apoio, slides e listas de exercícios."
 | Aula | Tópico | Material |
 | :---: | :--- | :---: |
 | 00 | Apresentação | [Slides](aula_00.qmd) |
-| -- | 1. **Introdução** | -- |
+|    | 1. **Introdução** |    |
 | 01 | a. *Principais grandezas elétricas* | [Slides](aula_01.qmd) |
-| -- | i. Corrente | -- |
-| -- | ii. Tensão | -- |
-| -- | iii. Corrente contínua e tensão contínua | -- |
-| -- | iV. Corrente alternada e tensão alternada | -- |
-| -- | v. Potência | -- |
-| -- | vi. Energia | -- |
+|    | i. Corrente |    |
+|    | ii. Tensão |    |
+|    | iii. Corrente contínua e tensão contínua |    |
+|    | iv. Corrente alternada e tensão alternada |    |
+|    | v. Potência |    |
+|    | vi. Energia |    |
 | 02 | b. *Classificação dos materiais quanto à condução de corrente elétrica* | [Slides](aula_02.qmd) |
-| -- | i. Condutores, isolantes e semicondutores | -- |
-| -- | ii. Equipamentos elétricos | -- |
-| -- | - Fontes, geradores | -- |
-| -- | - Cargas, consumidores (motores, lâmpadas, aquecedores) | -- |
-<!--| -- | **Conceitos iniciais** | -- |
-| -- | *Principais componentes elétricos e suas grandezas associadas* | -- |
-| -- | *Fontes* | -- |
+|    | i. Condutores, isolantes e semicondutores |    |
+|    | ii. Equipamentos elétricos |    |
+|    | - Fontes, geradores |    |
+|    | - Cargas, consumidores (motores, lâmpadas, aquecedores) |    |
+|    | 2. **Conceitos iniciais** |    |
+| 03 | a. *Principais componentes elétricos e suas grandezas associadas* | [Slides](aula_03.qmd) |
+|    | b. *Fontes* |    |
+|    | i. Resistores |    |
+|    | - Conceitos, tipos, unidades de medida, códigos de leitura de valores |    |
+|    | - Associações série, paralela e mista |    |
+|    | ii. Capacitores |    |
+|    | - Conceitos, tipos, unidades de medida e associações |    |
+|    | iii. Indutores |    |
+|    | iv. Lei de Ohm |    |
+<!--| -- | c. *Circuitos Elétricos* | [Slides](aula_04.qmd) |
+| -- | i. Ramos, nós, malhas | -- |
+| -- | ii. Lei dos nós e lei das malhas | -- |
+
 
 ## Listas de Exercícios
 * [Lista 01 - Hardware básico (.pdf)](files/lista01.pdf)-->

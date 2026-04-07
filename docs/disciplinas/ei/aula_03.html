@@ -7,11 +7,14 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Prof.&nbsp;Alcemy Severino">
-  <title>Prof. Alcemy – Organização e Manutenção de Computadores</title>
+  <title>Prof. Alcemy – Principais componentes elétricos e suas grandezas associadas</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -130,7 +133,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Organização e Manutenção de Computadores</h1>
+  <h1 class="title">Principais componentes elétricos e suas grandezas associadas</h1>
+  <p class="subtitle">Conceitos iniciais</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -144,105 +148,323 @@ Prof.&nbsp;Alcemy Severino
 </div>
 
 </section>
-<section id="apresentação-da-disciplina" class="slide level2">
-<h2>Apresentação da disciplina</h2>
+<section id="objetivos-da-aula" class="slide level2">
+<h2>Objetivos da aula</h2>
+<ul>
+<li>Relacionar os componentes físicos dos circuitos às suas grandezas elétricas.</li>
+<li>Compreender as unidades de medida padrão e seus múltiplos.</li>
+<li>Diferenciar conceitos cruciais.</li>
+</ul>
+</section>
+<section id="fontes-e-geradores" class="slide level2" data-background-image="img/fontes_eletricidade.png" data-background-size="cover" data-background-opacity="0.2">
+<h2>Fontes e Geradores</h2>
+<p>Para que os elétrons se movam, precisamos de uma força motriz. As fontes e geradores criam uma diferença de potencial (ddp) entre dois pontos, conhecidos como polos.</p>
+<ul>
+<li>O polo positivo possui menos elétrons que o polo negativo.</li>
+<li>Isso cria um “dipolo elétrico” e um campo de força invisível.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="a-grandeza-tensão-elétrica">A Grandeza: Tensão Elétrica</h3>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:77%;">
+<ul>
+<li><strong>Unidade de medida:</strong> Volt (<span class="math inline">\(V\)</span>).</li>
+<li>É a “pressão” que impulsiona os portadores de carga.</li>
+<li>Exemplos do dia a dia:
+<ul>
+<li>Pilhas comuns: 1,2 <span class="math inline">\(V\)</span> a 1,7 <span class="math inline">\(V\)</span>.</li>
+<li>Baterias de carro: 12 <span class="math inline">\(V\)</span> a 14 <span class="math inline">\(V\)</span>.</li>
+<li>Tomadas residenciais: 117 <span class="math inline">\(V\)</span> ou 234 <span class="math inline">\(V\)</span> (aprox. 110/220<span class="math inline">\(V\)</span>).</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:23%;">
+<p><a href="img/fontes_tensao.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/fontes_tensao.png"></a></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="corrente-contínua">Corrente Contínua</h3>
+<p>Nas pilhas e baterias, a tensão é constante ao longo do tempo.</p>
+<ul>
+<li>A corrente flui sempre na mesma direção.</li>
+<li>O gráfico da tensão por tempo é uma linha reta horizontal.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="corrente-alternada">Corrente Alternada</h3>
+<p>Nas tomadas das nossas casas, a corrente reverte sua direção em intervalos regulares.</p>
+<ul>
+<li><strong>Grandeza associada:</strong> Frequência.</li>
+<li><strong>Unidade de medida:</strong> Hertz (<span class="math inline">\(Hz\)</span>), que representa um ciclo completo por segundo.</li>
+<li>No Brasil e nos EUA, o padrão é 60 <span class="math inline">\(Hz\)</span>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="atenção-à-tensão-alternada">Atenção à Tensão Alternada!</h3>
 <blockquote>
-<p>Carga horária: <strong>60H</strong></p>
+<p>Você sabia que a tomada de “220 <span class="math inline">\(V\)</span>” na verdade atinge picos maiores?</p>
 </blockquote>
-<blockquote>
-<p>Dia da semana: <strong>Quintas-feiras</strong></p>
-</blockquote>
-<blockquote>
-<p>Horário: <strong>8h50 às 10h20</strong></p>
-</blockquote>
-<blockquote>
-<p>Duração: <strong>40 semanas</strong></p>
-</blockquote>
-</div><div class="column" style="width:45%;">
+<ul>
+<li>O valor de 220 <span class="math inline">\(V\)</span> é a tensão <em>efetiva</em>.</li>
+<li>A tensão <em>de pico</em> (máxima instantânea) chega perto de 311 <span class="math inline">\(V\)</span>.</li>
+<li>A tensão de pico é aproximadamente 1,414 vezes maior que a efetiva.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="diodos-e-retificação">Diodos e Retificação</h3>
+<ul>
+<li>Equipamentos de informática não funcionam com CA puro. Eles precisam converter CA para CC. O processo de transformação se chama <strong>retificação</strong>.</li>
+<li>Utilizamos componentes semicondutores chamados <strong>diodos</strong> para permitir que a corrente flua em apenas um sentido.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/gato_ti.png" class="quarto-figure quarto-figure-center"></p>
+<p><a href="img/diodo_retificacao.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/diodo_retificacao.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="trilhas-fios-e-a-corrente-elétrica" class="slide level2">
+<h2>Trilhas, Fios e a Corrente Elétrica</h2>
+<div class="columns">
+<div class="column" style="width:75%;">
+<p>Quando interligamos os polos de uma fonte com um material condutor, as cargas começam a fluir para igualar a diferença.</p>
+<ul>
+<li><strong>Grandeza associada:</strong> Corrente Elétrica.</li>
+<li><strong>Unidade de medida:</strong> Ampère (<span class="math inline">\(A\)</span>).</li>
+</ul>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/trilhas_fios.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/trilhas_fios.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 </div></div>
 </section>
 <section class="slide level2">
 
-<h3 id="ementa">Ementa</h3>
-<p><strong>Estudo da organização de computadores:</strong></p>
+<h3 id="o-que-é-1-ampère">O que é 1 Ampère?</h3>
+<p>É uma quantidade gigantesca de elétrons em movimento!</p>
 <ul>
-<li>organização de computadores e seus conceitos,</li>
-<li>unidade central de processamento e suas características,</li>
-<li>diversos tipos de sistemas encontrados em sistemas computacionais:
+<li>1 Ampère equivale a 1 Coulomb (<span class="math inline">\(C\)</span>) de cargas passando por um ponto a cada segundo.</li>
+<li>Isso significa <span class="math inline">\(6,24 \times 10^{18}\)</span> (mais de 6 quintilhões) de elétrons por segundo.</li>
+<li>Uma simples lâmpada de 60W puxa cerca de 0,5 <span class="math inline">\(A\)</span>.</li>
+</ul>
+</section>
+<section id="resistores" class="slide level2" data-background-image="img/resistores.png" data-background-size="cover" data-background-opacity="0.2">
+<h2>Resistores</h2>
+<p>A resistência quantifica a oposição que um circuito impõe ao fluxo de corrente. Componentes fabricados para ter uma oposição específica são os resistores.</p>
 <ul>
-<li>sistemas de memória,</li>
-<li>sistema de interconexão</li>
-<li>e sistemas de entrada e saída.</li>
-</ul></li>
+<li><strong>Unidade de medida:</strong> Ohm (<span class="math inline">\(\Omega\)</span>).</li>
+<li>Fios longos e finos têm maior resistência que fios curtos e grossos.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="ementa-1">Ementa</h3>
-<p><strong>Noções de montagem de computadores:</strong></p>
+<h3 id="a-lei-de-ohm-na-prática">A Lei de Ohm na Prática</h3>
 <ul>
-<li>identificação do hardware dos sistemas computacionais,</li>
-<li>montagem de computadores e instalação dos componentes,</li>
-<li>configuração do sistema operacional,</li>
-<li>sistemas de backup</li>
-<li>e especificação de equipamentos para sistemas computacionais.</li>
+<li>Para uma tensão constante, a corrente varia em proporção inversa à resistência.</li>
+<li>Se você reduzir a resistência pela metade, a corrente dobra.</li>
 </ul>
-</section>
-<section class="slide level2">
-
-<h3 id="objetivos">Objetivos</h3>
-<div style="font-size: .9em">
-<ul>
-<li>Apreender os conceitos básicos relacionados à estrutura e funcionamento dos computadores digitais.</li>
-<li>Compreender o funcionamento dos microcomputadores e periféricos.</li>
-<li>Identificar os componentes físicos dos microcomputadores e compreender suas funcionalidades.</li>
-<li>Executar montagem, instalação e configuração de equipamentos de informática.</li>
-<li>Instalar e configurar sistemas operacionais e aplicativos em equipamentos computacionais.</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/lei_de_ohm.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="img/lei_de_ohm.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+</figure>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="bases-científico-tecnológicas">Bases científico-tecnológicas</h3>
-<ol type="1">
-<li><strong>Organização de Computadores</strong>
-<ol type="1">
-<li>Introdução à organização de computadores.</li>
-<li>Unidade central de processamento.</li>
-<li>Sistema de memória.</li>
-<li>Sistema de interconexão.</li>
-<li>Sistema de entrada, saída e periféricos.</li>
-</ol></li>
-</ol>
+<h3 id="a-condutância">A Condutância</h3>
+<p>Em vez de falar sobre a “dificuldade” (Resistência), técnicos frequentemente falam sobre a “facilidade” da passagem da corrente.</p>
+<ul>
+<li><strong>Grandeza associada:</strong> Condutância (<span class="math inline">\(G\)</span>).</li>
+<li><strong>Unidade de medida:</strong> Siemens (<span class="math inline">\(S\)</span>).</li>
+<li>A condutância é exatamente o inverso da resistência (<span class="math inline">\(G = 1/R\)</span>).</li>
+</ul>
+</section>
+<section id="indutores" class="slide level2" data-background-image="img/indutores.png" data-background-size="cover" data-background-opacity="0.2">
+<h2>Indutores</h2>
+<p>Sempre que uma corrente elétrica flui por um fio, um campo magnético aparece ao seu redor.</p>
+<ul>
+<li>Se enrolarmos o fio em uma bobina bem apertada, o fluxo magnético cria dois polos bem definidos (Norte e Sul).</li>
+<li>Isso forma um <strong>Eletroímã</strong> ou <strong>Indutor</strong>.</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<h3 id="bases-científico-tecnológicas-1">Bases científico-tecnológicas</h3>
-<ol start="2" type="1">
-<li><strong>Montagem de computadores</strong>
-<ol type="1">
-<li>Introdução.</li>
-<li>Visão geral do hardware para computador.</li>
-<li>Identificação de componentes e montagem de computadores.</li>
-<li>Instalação e configuração do sistema operacional.</li>
-<li>Especificação de equipamentos de informática.</li>
-</ol></li>
-</ol>
+<h3 id="grandezas-magnéticas">Grandezas Magnéticas</h3>
+<p>Os indutores são medidos por sua capacidade de gerar e armazenar campos magnéticos.</p>
+<ul>
+<li>O fluxo magnético total é medido em <strong>Webers (<span class="math inline">\(Wb\)</span>)</strong>.</li>
+<li>A densidade desse fluxo (intensidade) é medida em <strong>Teslas (<span class="math inline">\(T\)</span>)</strong>, onde 1 Tesla equivale a 1 Weber por metro quadrado.</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<h3 id="métodos-avaliativos">Métodos avaliativos</h3>
-<p>A avaliação se dará de forma contínua durante a disciplina, observando a assiduidade dos alunos em relação às aulas e a resolução de atividades.</p>
+<h3 id="o-núcleo-do-indutor">O Núcleo do Indutor</h3>
+<ul>
+<li>Para aumentar a intensidade do campo magnético sem mudar a corrente, adicionamos um núcleo ao indutor.</li>
+<li>Materiais como ferro e aço (ferromagnéticos) são ideais para isso.</li>
+<li>É assim que funcionam os grandes transformadores de energia.</li>
+</ul>
+</section>
+<section id="capacitores" class="slide level2" data-background-image="img/capacitores.png" data-background-size="cover" data-background-opacity="0.2">
+<h2>Capacitores</h2>
+<p>São componentes que mantêm as cargas elétricas separadas, armazenando energia em um campo elétrico estático (dipolo elétrico).</p>
+<ul>
+<li><strong>Grandeza associada:</strong> Capacitância.</li>
+<li><strong>Unidade de medida:</strong> Farad (<span class="math inline">\(F\)</span>).</li>
+<li><strong>Estrutura:</strong> Duas placas condutoras isoladas por um material Dielétrico (isolante).</li>
+</ul>
+</section>
+<section id="cargas-e-o-consumo-de-energia" class="slide level2">
+<h2>Cargas e o Consumo de Energia</h2>
+<p>Qualquer componente que ofereça resistência transforma parte da eletricidade em calor.</p>
+<ul>
+<li>A intensidade desse aquecimento (ou trabalho realizado) é a <strong>Potência</strong>.</li>
+<li><strong>Unidade de medida:</strong> Watt (<span class="math inline">\(W\)</span>).</li>
+</ul>
+</section>
+<section class="slide level2">
 
-<img data-src="img/gato_prova.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="section" class="slide level2" data-background-image="img/gato_duvidas.png">
+<h3 id="calculando-a-potência">Calculando a Potência</h3>
+<p>A potência consumida (<span class="math inline">\(P\)</span>) por um componente é o produto da tensão (<span class="math inline">\(V\)</span>) pela corrente (<span class="math inline">\(I\)</span>).</p>
+<p><span class="math display">\[P = V \times I\]</span></p>
+<ul>
+<li>Exemplo: Uma lâmpada em 220 V puxando 0,4 A.</li>
+<li><span class="math inline">\(P = 220 \times 0,4 = 88\)</span> Watts.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="potência-vs.-energia">Potência vs.&nbsp;Energia</h3>
+<p>Esses termos NÃO são a mesma coisa!</p>
+<ul>
+<li><strong>Potência:</strong> É a taxa instantânea de gasto em um momento exato.</li>
+<li><strong>Energia:</strong> É a potência dissipada ao longo de um período de tempo.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="grandezas-de-energia">Grandezas de Energia</h3>
+<ul>
+<li>Físicos medem energia em <strong>Joules (<span class="math inline">\(J\)</span>)</strong>.</li>
+<li>Um Joule equivale a um Watt-segundo (1 <span class="math inline">\(W\)</span> dissipado por 1 segundo).</li>
+<li>Na eletricidade prática e informática, usamos o <strong>Watt-hora (<span class="math inline">\(Wh\)</span>)</strong> ou o <strong>Quilowatt-hora (<span class="math inline">\(kWh\)</span>)</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="o-medidor-da-concessionária">O Medidor da Concessionária</h3>
+<ul>
+<li>O “relógio de luz” na sua casa é um medidor de energia, e não um medidor de potência.</li>
+<li>Ele soma automaticamente o total de <strong>Quilowatts-hora (<span class="math inline">\(kWh\)</span>)</strong> consumidos.</li>
+<li>Uma lâmpada de 60 <span class="math inline">\(W\)</span> deixada ligada por 1 hora consome 60 <span class="math inline">\(Wh\)</span> de energia.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="múltiplos-importantes-revisão">Múltiplos Importantes (Revisão)</h3>
+<p>Na informática e eletrônica, trabalhamos com valores extremos.</p>
+<ul>
+<li><strong>Tera (<span class="math inline">\(T\)</span>):</strong> 1.000.000.000.000 (Ex: Terabyte - <span class="math inline">\(TB\)</span>).</li>
+<li><strong>Giga (<span class="math inline">\(G\)</span>):</strong> 1.000.000.000 (Ex: Gigabyte - <span class="math inline">\(GB\)</span>).</li>
+<li><strong>Mega (<span class="math inline">\(M\)</span>):</strong> 1.000.000 (Ex: Megahertz - <span class="math inline">\(MHz\)</span>).</li>
+<li><strong>Kilo (<span class="math inline">\(k\)</span>):</strong> 1.000 (Ex: Kilovolt - <span class="math inline">\(kV\)</span>).</li>
+<li><strong>Mili (<span class="math inline">\(m\)</span>):</strong> 0,001 (Ex: Miliampère - <span class="math inline">\(mA\)</span>).</li>
+<li><strong>Micro (<span class="math inline">\(\mu\)</span>):</strong> 0,000.001 (Ex: Microfarad - <span class="math inline">\(\mu F\)</span>).</li>
+<li><strong>Nano (<span class="math inline">\(n\)</span>):</strong> 0,000.000.001 (Ex: Nanosegundo - <span class="math inline">\(ns\)</span>).</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="aviso-de-segurança">Aviso de Segurança!</h3>
+<ul>
+<li>Tensão suficiente para gerar apenas 50 <span class="math inline">\(mA\)</span> pode causar choques severos.</li>
+<li>100 <span class="math inline">\(mA\)</span> circulando pelo coração pode ser letal.</li>
+<li>A rede de 110 <span class="math inline">\(V\)</span> ou 220 <span class="math inline">\(V\)</span> das nossas casas é mais que suficiente para ser fatal se a corrente passar pela cavidade torácica.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="regra-de-ouro-da-profissão">Regra de Ouro da Profissão</h3>
+<ul>
+<li>Se houver dúvida se um circuito é seguro para manipular, presuma que <strong>não é</strong>.</li>
+<li>Solicite ajuda de um eletricista profissional.</li>
+</ul>
+</section>
+<section id="resumo-das-principais-grandezas" class="slide level2">
+<h2>Resumo das Principais Grandezas</h2>
+<div style="font-size: 0.9em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Componente</th>
+<th style="text-align: left;">Grandeza</th>
+<th style="text-align: left;">Unidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Fonte</strong></td>
+<td style="text-align: left;">Tensão (ddp)</td>
+<td style="text-align: left;">Volt (<span class="math inline">\(V\)</span>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Fio/Trilha</strong></td>
+<td style="text-align: left;">Corrente</td>
+<td style="text-align: left;">Ampère (<span class="math inline">\(A\)</span>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Resistor</strong></td>
+<td style="text-align: left;">Resistência / Condutância</td>
+<td style="text-align: left;">Ohm (<span class="math inline">\(\Omega\)</span>) / Siemens (<span class="math inline">\(S\)</span>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Capacitor</strong></td>
+<td style="text-align: left;">Capacitância</td>
+<td style="text-align: left;">Farad (<span class="math inline">\(F\)</span>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Indutor</strong></td>
+<td style="text-align: left;">Fluxo Magnético</td>
+<td style="text-align: left;">Weber (<span class="math inline">\(Wb\)</span>) / Tesla (<span class="math inline">\(T\)</span>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Carga</strong></td>
+<td style="text-align: left;">Potência / Energia</td>
+<td style="text-align: left;">Watt (<span class="math inline">\(W\)</span>) / Watt-hora (<span class="math inline">\(Wh\)</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="desafio-final">Desafio Final</h3>
+<ul>
+<li>Um computador fica ligado 10 horas por dia, e sua fonte consome em média 300 <span class="math inline">\(W\)</span> (Potência) de forma constante.</li>
+<li>Qual será a <strong>Energia</strong> total consumida por esse computador ao final de 30 dias (em <span class="math inline">\(kWh\)</span>)?</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="resolução-do-desafio">Resolução do Desafio</h3>
+<ol type="1">
+<li>Potência diária: 300 <span class="math inline">\(W\)</span> <span class="math inline">\(\times\)</span> 10 horas = 3000 <span class="math inline">\(Wh\)</span>/dia</li>
+<li>Potência mensal: 3000 <span class="math inline">\(Wh\)</span> <span class="math inline">\(\times\)</span> 30 dias = 90.000 <span class="math inline">\(Wh\)</span></li>
+<li>Convertendo para <span class="math inline">\(kWh\)</span> (dividindo por 1000): <strong>90 <span class="math inline">\(kWh\)</span></strong>.</li>
+</ol>
+</section>
+<section id="section" class="slide level2" data-background-image="img/fry_1.png">
 <h2></h2>
 </section>
 <section class="slide level2">
@@ -290,7 +512,7 @@ Sob as seguintes condições:
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/ifrn-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>OMC</p>
+<p>Eletricidade Instrumental</p>
 </div>
 </div></div>
 
@@ -672,6 +894,38 @@ Sob as seguintes condições:
         }
       });
       </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
