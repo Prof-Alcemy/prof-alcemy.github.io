@@ -1,0 +1,499 @@
+---
+# --- INFORMAÇÕES DA AULA ---
+title: "Código de Cores dos Resistores"
+subtitle: "Conceitos iniciais"
+author: "Prof. Alcemy Severino"
+license: "CC BY-NC"
+copyright: "© 2026 Alcemy Gabriel"
+institute: "IFRN"
+lang: pt-br
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
+format:
+  revealjs:
+    # Aparência
+    theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
+    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                  # Numeração de páginas no canto
+    center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
+    
+    # Interatividade (Lousa)
+    chalkboard: 
+      buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    lightbox: true                     # Permite ampliar imagens para detalhes (útil para diagramas)
+    
+    # Navegação
+    preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
+    controls: true                     # Mostra setas de navegação
+    controls-layout: edges             # Setas grandes nas laterais esquerda/direita
+    controls-tutorial: true            # Pisca a seta para indicar navegação
+    touch: true                        # Melhora o uso em tablets/celulares
+    
+    # Código (Para suas aulas de Programação)
+    code-line-numbers: true            # Permite referenciar linhas de código
+    highlight-style: github            # Estilo de cores do código (claro e limpo)
+---
+
+## Situação inicial
+
+::: {.columns}
+::: {.column width="55%"}
+Imagine que você encontrou este componente em uma bancada:
+
+![](img/a06_resistor_1.png)
+
+:::
+
+::: {.column width="45%"}
+Perguntas...
+
+- Qual é o valor nominal do resistor?
+- Qual é a tolerância?
+- Qual é a faixa de valores aceitável?
+- Como confirmar isso com o multímetro?
+:::
+:::
+
+---
+
+## Objetivos da aula
+
+Ao final da aula, você deverá ser capaz de:
+
+- identificar o valor de um resistor pelo código de cores;
+- diferenciar resistores de 4, 5 e 6 faixas;
+- calcular valor nominal, multiplicador e tolerância;
+- converter valores entre Ω, kΩ e MΩ;
+- estimar a faixa mínima e máxima permitida pela tolerância;
+- conferir a leitura usando um multímetro.
+
+---
+
+## Por que usamos cores?
+
+- Os resistores são componentes pequenos. Escrever diretamente "4700 $\Omega\pm5\%$" em um corpo pequeno nem sempre é prático.
+
+- Por isso, muitos resistores usam **faixas coloridas** para representar:
+
+  - algarismos significativos;
+  - fator multiplicador;
+  - tolerância;
+  - coeficiente de temperatura, em alguns modelos.
+
+::: {.box}
+O código de cores é uma linguagem padronizada para transformar faixas coloridas em valores de resistência elétrica.
+:::
+
+---
+
+## Unidade de resistência
+
+A resistência elétrica é medida em **ohm** ($\Omega$).
+
+Alguns múltiplos comuns:
+
+| Forma | Significado | Exemplo |
+|---|---:|---:|
+| $\Omega$ | ohm | 220 $\Omega$ |
+| $k\Omega$ | quilohm | 4,7 $k\Omega$ = 4.700 $\Omega$ |
+| $M\Omega$ | megaohm | 1 $M\Omega$ = 1.000.000 $\Omega$ |
+
+---
+
+## Tabela básica: algarismos
+
+::: {.color-table}
+| Cor | Algarismo |
+|---|---:|
+| <span class="swatch black"></span> Preto | 0 |
+| <span class="swatch brown"></span> Marrom | 1 |
+| <span class="swatch red"></span> Vermelho | 2 |
+| <span class="swatch orange"></span> Laranja | 3 |
+| <span class="swatch yellow"></span> Amarelo | 4 |
+| <span class="swatch green"></span> Verde | 5 |
+| <span class="swatch blue"></span> Azul | 6 |
+| <span class="swatch violet"></span> Violeta | 7 |
+| <span class="swatch gray"></span> Cinza | 8 |
+| <span class="swatch white"></span> Branco | 9 |
+:::
+
+---
+
+## Tabela básica: multiplicador
+
+::: {.color-table}
+| Cor | Multiplicador | Interpretação |
+|---|---:|---:|
+| <span class="swatch black"></span> Preto | ×1 | \(10^0\) |
+| <span class="swatch brown"></span> Marrom | ×10 | \(10^1\) |
+| <span class="swatch red"></span> Vermelho | ×100 | \(10^2\) |
+| <span class="swatch orange"></span> Laranja | ×1.000 | \(10^3\) |
+| <span class="swatch yellow"></span> Amarelo | ×10.000 | \(10^4\) |
+| <span class="swatch green"></span> Verde | ×100.000 | \(10^5\) |
+| <span class="swatch blue"></span> Azul | ×1.000.000 | \(10^6\) |
+| <span class="swatch gold"></span> Dourado | ×0,1 | \(10^{-1}\) |
+| <span class="swatch silver"></span> Prateado | ×0,01 | \(10^{-2}\) |
+:::
+
+## Tabela básica: tolerância
+
+::: {.color-table}
+| Cor | Tolerância |
+|---|---:|
+| <span class="swatch brown"></span> Marrom | ±1% |
+| <span class="swatch red"></span> Vermelho | ±2% |
+| <span class="swatch green"></span> Verde | ±0,5% |
+| <span class="swatch blue"></span> Azul | ±0,25% |
+| <span class="swatch violet"></span> Violeta | ±0,1% |
+| <span class="swatch gray"></span> Cinza | ±0,05% |
+| <span class="swatch gold"></span> Dourado | ±5% |
+| <span class="swatch silver"></span> Prateado | ±10% |
+| Sem faixa | ±20% |
+:::
+
+## Como identificar o sentido de leitura? {style="font-size: 0.9em;"}
+
+- Normalmente lemos o resistor da esquerda para a direita, deixando a faixa de tolerância no final.
+- A faixa de tolerância costuma ser:
+  - dourada;
+  - prateada;
+  - marrom ou vermelha, em resistores de precisão;
+  - mais afastada das demais faixas.
+
+::: {.warning}
+**Erro comum:** começar a leitura pelo lado da tolerância. Isso inverte o valor e gera respostas incorretas.
+:::
+
+---
+
+## Resistor de 4 faixas {style="font-size: 0.8em;"}
+
+:::: {.columns}
+::: {.column width="40%"}
+
+![](img/a06_resistor_2.png)
+
+:::
+::: {.column width="60%"}
+
+| Faixa | Função |
+|---|---|
+| 1ª faixa | 1º algarismo significativo |
+| 2ª faixa | 2º algarismo significativo |
+| 3ª faixa | multiplicador |
+| 4ª faixa | tolerância |
+
+:::
+::::
+
+Fórmula para resitor de 4 faixas:
+
+$R = \left(\text{1º algarismo; 2º algarismo}\right) \times \text{multiplicador}$
+
+$R_{mín}=R-R\cdot\text{tolerância}$
+
+$R_{máx}=R+R\cdot\text{tolerância}$
+
+---
+
+## Exemplo 1: marrom, preto, vermelho, dourado {style="font-size: 0.8em;"}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](img/a06_resistor_3.png)
+
+:::
+::: {.column width="50%"}
+
+- Marrom = $1$
+- Preto = $0$
+- Vermelho = $\times 100$
+- Dourado = $\pm 5\%$
+
+:::
+::::
+
+- $R = 10 \times 100 = 1000\ \Omega = 1\ k\Omega$
+- Valor nominal: $R = 1000 \Omega$
+- Tolerância: $5\% = 0,05$
+- Variação permitida: $1000 \times 0,05 = 50 \Omega$
+- Faixa aceitável: $950\ \Omega \le R \le 1050\ \Omega$
+
+---
+
+## Exemplo 2 e 3:
+
+:::: {.columns}
+::: {.column width="50%"}
+
+amarelo, violeta, laranja, dourado
+
+![](img/a06_resistor_4.png)
+
+- Leitura:
+  - $47 \times 1000 = 47000 \Omega$
+  - $R = 47\ k\Omega \pm 5\%$
+
+:::
+::: {.column width="50%"}
+
+vermelho, vermelho, marrom, dourado
+
+![](img/a06_resistor_5.png)
+
+- Leitura:
+  - $22 \times 10 = 220 \Omega$
+  - $R = 220\ \Omega \pm 5\%$
+
+:::
+::::
+
+---
+
+## Resistor de 5 faixas {style="font-size: 0.9em;"}
+
+Usado quando precisamos de maior precisão.
+
+| Faixa | Função |
+|---|---|
+| 1ª faixa | 1º algarismo significativo |
+| 2ª faixa | 2º algarismo significativo |
+| 3ª faixa | 3º algarismo significativo |
+| 4ª faixa | multiplicador |
+| 5ª faixa | tolerância |
+
+::: {.box}
+No resistor de 5 faixas, usamos três algarismos antes do multiplicador.
+:::
+
+---
+
+## Exemplo 4 e 5:
+
+:::: {.columns}
+::: {.column width="50%"}
+
+marrom, preto, preto, vermelho, marrom
+
+![](img/a06_resistor_6.png)
+
+- Leitura:
+  - $100 \times 100 = 10000 \Omega$
+$R = 10\ k\Omega \pm 1\%$
+
+:::
+::: {.column width="50%"}
+
+azul, cinza, preto, marrom, vermelho
+
+![](img/a06_resistor_7.png)
+
+- Leitura:
+  - $680 \times 10 = 6800 \Omega$
+  - $R = 6,8\ k\Omega \pm 2\%$
+
+:::
+::::
+
+---
+
+## Resistor de 6 faixas {style="font-size: 0.8em;"}
+
+- O resistor de 6 faixas acrescenta uma informação extra:
+
+| Faixa | Função |
+|---|---|
+| 1ª, 2ª e 3ª | algarismos significativos |
+| 4ª | multiplicador |
+| 5ª | tolerância |
+| 6ª | coeficiente de temperatura |
+
+- O coeficiente de temperatura indica quanto a resistência varia quando a temperatura muda.
+
+::: {.box}
+Em aulas iniciais, normalmente focamos nas quatro ou cinco primeiras faixas.
+:::
+
+---
+
+## Estratégia de resolução
+
+Para ler qualquer resistor:
+
+1. Identifique o lado correto da leitura.
+2. Conte o número de faixas.
+3. Separe algarismos, multiplicador e tolerância.
+4. Monte o número inicial.
+5. Aplique o multiplicador.
+6. Converta para Ω, kΩ ou MΩ.
+7. Calcule a faixa de tolerância, se solicitado.
+
+---
+
+## Exercícios: leitura de cores
+
+Determine o valor nominal e a tolerância.
+
+1. Marrom, preto, vermelho, dourado
+2. Amarelo, violeta, laranja, dourado
+3. Vermelho, vermelho, marrom, dourado
+4. Laranja, laranja, marrom, dourado
+5. Verde, azul, vermelho, dourado
+
+---
+
+## Exercícios: leitura de cores
+
+Determine o valor nominal e a tolerância.
+
+6. Azul, cinza, preto, marrom, vermelho
+7. Marrom, preto, preto, vermelho, marrom
+8. Vermelho, violeta, preto, laranja, marrom
+9. Amarelo, violeta, preto, vermelho, vermelho
+10. Marrom, verde, preto, dourado
+
+---
+
+## Exercícios: escreva as cores
+
+Indique as cores correspondentes.
+
+11. 330 Ω ±5%
+12. 4,7 kΩ ±5%
+13. 1 kΩ ±5%
+14. 10 kΩ ±1% usando 5 faixas
+15. 6,8 kΩ ±2% usando 5 faixas
+
+---
+
+## Exercícios: tolerância
+
+Calcule a faixa mínima e máxima aceitável.
+
+16. 220 Ω ±5%
+17. 1 kΩ ±5%
+18. 10 kΩ ±1%
+19. 47 kΩ ±5%
+20. 6,8 kΩ ±2%
+
+---
+
+## Gabarito: exercícios 1 a 5
+
+| Exercício | Resultado |
+|---|---:|
+| 1 | 1 kΩ ±5% |
+| 2 | 47 kΩ ±5% |
+| 3 | 220 Ω ±5% |
+| 4 | 330 Ω ±5% |
+| 5 | 5,6 kΩ ±5% |
+
+---
+
+## Gabarito: exercícios 6 a 10
+
+| Exercício | Resultado |
+|---|---:|
+| 6 | 6,8 kΩ ±2% |
+| 7 | 10 kΩ ±1% |
+| 8 | 270 kΩ ±1% |
+| 9 | 47 kΩ ±2% |
+| 10 | 1,5 Ω ±5% |
+
+---
+
+## Gabarito: exercícios 11 a 15
+
+| Exercício | Cores |
+|---|---|
+| 11 | laranja, laranja, marrom, dourado |
+| 12 | amarelo, violeta, vermelho, dourado |
+| 13 | marrom, preto, vermelho, dourado |
+| 14 | marrom, preto, preto, vermelho, marrom |
+| 15 | azul, cinza, preto, marrom, vermelho |
+
+---
+
+## Gabarito: exercícios 16 a 20
+
+| Exercício | Faixa aceitável |
+|---|---:|
+| 16 | 209 Ω a 231 Ω |
+| 17 | 950 Ω a 1050 Ω |
+| 18 | 9,9 kΩ a 10,1 kΩ |
+| 19 | 44,65 kΩ a 49,35 kΩ |
+| 20 | 6,664 kΩ a 6,936 kΩ |
+
+---
+
+## Fechamento {style="font-size: 0.85em;"}
+
+Nesta aula, vimos que:
+
+- cada cor representa um número ou uma informação;
+- resistores de 4 faixas usam dois algarismos, multiplicador e tolerância;
+- resistores de 5 faixas usam três algarismos, multiplicador e tolerância;
+- a tolerância define a faixa real aceitável;
+- o multímetro confirma se o resistor está dentro do esperado.
+
+::: {.box}
+Na próxima aula, podemos usar esses resistores em circuitos série, paralelo e mistos para verificar experimentalmente a resistência equivalente.
+:::
+
+---
+
+## Desafio prático {style="font-size: 0.9em;"}
+
+Você recebeu três resistores misturados em uma bancada.
+
+| Resistor | Cores |
+|---|---|
+| A | marrom, preto, vermelho, dourado |
+| B | amarelo, violeta, laranja, dourado |
+| C | vermelho, vermelho, marrom, dourado |
+
+Tarefa:
+
+1. Calcule o valor de cada resistor.
+2. Calcule a faixa aceitável de cada um.
+3. Meça com multímetro.
+4. Classifique como “dentro” ou “fora” da tolerância.
+
+---
+
+## Atividade rápida em dupla
+
+Um aluno escolhe um resistor físico da bancada.
+
+O outro aluno deve:
+
+- ler as faixas;
+- calcular o valor nominal;
+- estimar a tolerância;
+- medir com o multímetro;
+- verificar se o valor medido está dentro da faixa esperada.
+
+---
+
+## Como medir com multímetro
+
+Passos básicos:
+
+1. Retire o resistor do circuito ou isole pelo menos um terminal.
+2. Selecione a escala de resistência, se o multímetro não for automático.
+3. Encoste uma ponta de prova em cada terminal.
+4. Compare a leitura com o valor nominal e com a tolerância.
+
+::: {.warning}
+Nunca meça resistência com o circuito energizado.
+:::
+
+---
+
+## {background-image="img/fry_1.png"}
+
+---
+
+{{< include ../../_licenca.qmd >}}

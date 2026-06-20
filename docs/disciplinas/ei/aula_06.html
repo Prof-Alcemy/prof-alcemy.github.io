@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<link href="../../img/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="Prof.&nbsp;Alcemy Severino">
+  <title>Prof. Alcemy – Redes de Resistores em Estrela e Delta</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-e459d4464295833fbc87f690ce29be75.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Redes de Resistores em Estrela e Delta</h1>
+  <p class="subtitle">Conceitos iniciais</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Alcemy Severino 
+</div>
+        <p class="quarto-title-affiliation">
+            IFRN
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="objetivos-da-aula" class="slide level2">
+<h2>Objetivos da aula</h2>
+<p>Ao final desta aula, o estudante deverá ser capaz de:</p>
+<ul>
+<li>identificar redes em <strong>estrela (<span class="math inline">\(Y\)</span>)</strong> e <strong>triângulo (<span class="math inline">\(\Delta\)</span>)</strong>;</li>
+<li>compreender por que alguns circuitos não podem ser reduzidos diretamente por série/paralelo;</li>
+<li>aplicar as transformações <strong><span class="math inline">\(\Delta \rightarrow Y\)</span></strong> e <strong><span class="math inline">\(Y \rightarrow \Delta\)</span></strong>;</li>
+<li>deduzir as principais fórmulas de conversão;</li>
+<li>resolver circuitos mistos usando transformação estrela-triângulo.</li>
+</ul>
+</section>
+<section id="o-problema-nem-tudo-é-sérieparalelo" class="slide level2">
+<h2>O problema: nem tudo é série/paralelo</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Em muitos circuitos, os resistores não estão claramente em série nem em paralelo.</p>
+<p>Se não conseguimos identificar pares em série ou paralelo, precisamos de outra estratégia.</p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/circuito_em_ponte.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/circuito_em_ponte.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="rede-em-estrela-y-ou-t" class="slide level2">
+<h2>Rede em estrela: <span class="math inline">\(Y\)</span> ou <span class="math inline">\(T\)</span></h2>
+<ul>
+<li>A rede <strong>Y</strong> possui três resistores ligados a um ponto comum central.</li>
+<li>Também pode aparecer desenhada como uma rede em <strong>T</strong>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/rede_ipsilon_ou_t.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/rede_ipsilon_ou_t.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
+<section id="rede-em-triângulo-delta-ou-pi" class="slide level2">
+<h2>Rede em triângulo: <span class="math inline">\(\Delta\)</span> ou <span class="math inline">\(\Pi\)</span></h2>
+<ul>
+<li>A rede Δ possui três resistores formando um caminho fechado entre três terminais.</li>
+<li>Também pode aparecer desenhada como uma rede em <strong><span class="math inline">\(\Pi\)</span></strong>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/rede_delta_ou_pi.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/rede_delta_ou_pi.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
+<section id="ideia-central" class="slide level2">
+<h2>Ideia central</h2>
+<ul>
+<li>A transformação <span class="math inline">\(Y-\Delta\)</span> permite substituir uma rede de três resistores por outra equivalente.</li>
+<li>Duas redes são equivalentes quando apresentam a mesma resistência entre os mesmos terminais externos.</li>
+<li>Assim, para os terminais 1, 2 e 3:</li>
+</ul>
+<p><span class="math display">\[R_{12}^{(Y)} = R_{12}^{(\Delta)}\]</span></p>
+<p><span class="math display">\[R_{13}^{(Y)} = R_{13}^{(\Delta)}\]</span></p>
+<p><span class="math display">\[R_{23}^{(Y)} = R_{23}^{(\Delta)}\]</span></p>
+</section>
+<section id="o-que-significa-converter" class="slide level2">
+<h2>O que significa converter?</h2>
+<ul>
+<li>Converter não significa retirar resistores do circuito.</li>
+<li>Significa substituir uma rede por outra que, vista de fora, se comporta da mesma forma.</li>
+</ul>
+<div class="box">
+<p>A transformação conserva o comportamento elétrico nos terminais externos, mas muda a forma interna da rede.</p>
+</div>
+</section>
+<section id="conversão-delta-rightarrow-y" class="slide level2">
+<h2>Conversão <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Partimos de uma rede em triângulo e queremos chegar a uma rede em estrela.</li>
+<li>Na rede Y, entre os terminais 1 e 2, a corrente passa por <span class="math inline">\(R_1\)</span> e depois por <span class="math inline">\(R_3\)</span>.</li>
+<li>Logo:</li>
+</ul>
+<p><span class="math display">\[R_{12}^{(Y)} = R_1 + R_3\]</span></p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/superposicao_redes_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Superposição das redes \Delta e Y"><img data-src="img/superposicao_redes_y_delta.png" alt="Superposição das redes \Delta e Y"></a></p>
+<figcaption>Superposição das redes <span class="math inline">\(\Delta\)</span> e <span class="math inline">\(Y\)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="conversão-delta-rightarrow-y-1" class="slide level2">
+<h2>Conversão <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Na rede <span class="math inline">\(\Delta\)</span>, entre 1 e 2, existem dois caminhos:
+<ul>
+<li>caminho direto: <span class="math inline">\(R_b\)</span>;</li>
+<li>caminho alternativo: <span class="math inline">\(R_c + R_a\)</span>.</li>
+</ul></li>
+</ul>
+<p>Esses caminhos estão em paralelo:</p>
+<p><span class="math display">\[R_{12}^{(\Delta)} = R_b \parallel (R_c + R_a)\]</span></p>
+<p><span class="math display">\[R_{12}^{(\Delta)} = \frac{R_b(R_c+R_a)}{R_a+(R_b+R_c)}\]</span></p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/superposicao_redes_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Superposição das redes \Delta e Y"><img data-src="img/superposicao_redes_y_delta.png" alt="Superposição das redes \Delta e Y"></a></p>
+<figcaption>Superposição das redes <span class="math inline">\(\Delta\)</span> e <span class="math inline">\(Y\)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="igualando-as-redes" class="slide level2">
+<h2>Igualando as redes</h2>
+<p>Como as redes devem ser equivalentes:</p>
+<p><span class="math display">\[R_{12}^{(Y)} = R_{12}^{(\Delta)}\]</span></p>
+<p>Então:</p>
+<p><span class="math display">\[R_1 + R_3 = \frac{R_b(R_c+R_a)}{R_a+R_b+R_c}\]</span></p>
+</section>
+<section id="igualando-as-redes-1" class="slide level2">
+<h2>Igualando as redes</h2>
+<p>De forma semelhante:</p>
+<p><span class="math display">\[R_1 + R_2 = \frac{R_c(R_a+R_b)}{R_a+R_b+R_c}\]</span></p>
+<p><span class="math display">\[R_2 + R_3 = \frac{R_a(R_b+R_c)}{R_a+R_b+R_c}\]</span></p>
+</section>
+<section id="fórmulas-delta-rightarrow-y" class="slide level2">
+<h2>Fórmulas <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
+<p>Temos:</p>
+<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a + R_b + R_c}, \quad R_2 = \frac{R_cR_a}{R_a + R_b + R_c}\]</span> <span class="math display">\[R_3 = \frac{R_aR_b}{R_a + R_b + R_c}\]</span></p>
+<div class="box">
+<p>Cada resistor da estrela é o produto dos dois resistores adjacentes do triângulo dividido pela soma dos três resistores do triângulo.</p>
+</div>
+</section>
+<section id="como-memorizar-delta-rightarrow-y" class="slide level2">
+<h2>Como memorizar <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Observe o resistor <span class="math inline">\(R_1\)</span>, que é o resistor da estrela ligado ao terminal 1.</li>
+<li>No triângulo, os resistores que encostam no terminal 1 são <span class="math inline">\(R_b\)</span> e <span class="math inline">\(R_c\)</span>.</li>
+<li>Logo:</li>
+</ul>
+<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a+R_b+R_c}\]</span></p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/superposicao_redes_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Superposição das redes \Delta e Y"><img data-src="img/superposicao_redes_y_delta.png" alt="Superposição das redes \Delta e Y"></a></p>
+<figcaption>Superposição das redes <span class="math inline">\(\Delta\)</span> e <span class="math inline">\(Y\)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="conversão-y-rightarrow-delta" class="slide level2">
+<h2>Conversão <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
+<ul>
+<li>Agora fazemos o processo inverso.</li>
+<li>Partimos da rede <span class="math inline">\(Y\)</span> e queremos encontrar a rede <span class="math inline">\(\Delta\)</span> equivalente.</li>
+<li>A partir das fórmulas da conversão <span class="math inline">\(\Delta \rightarrow Y\)</span>:</li>
+</ul>
+<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a+R_b+R_c}, \quad R_2 = \frac{R_cR_a}{R_a+R_b+R_c}\]</span></p>
+<p><span class="math display">\[R_3 = \frac{R_aR_b}{R_a+R_b+R_c}\]</span></p>
+</section>
+<section id="soma-dos-produtos-da-rede-y" class="slide level2">
+<h2>Soma dos produtos da rede <span class="math inline">\(Y\)</span></h2>
+<ul>
+<li>Manipulando essas relações, obtemos a soma dos produtos dois a dois da rede <span class="math inline">\(Y\)</span>. Definimos:</li>
+</ul>
+<p><span class="math display">\[P = R_1R_2 + R_2R_3 + R_3R_1\]</span></p>
+<ul>
+<li>Então, os resistores do triângulo são obtidos dividindo <span class="math inline">\(P\)</span> pelo resistor oposto na estrela.</li>
+</ul>
+<div class="box">
+<p>Na conversão <span class="math inline">\(Y \rightarrow \Delta\)</span>, cada resistor do triângulo é a soma dos produtos dois a dois da estrela, dividida pelo resistor <span class="math inline">\(Y\)</span> oposto.</p>
+</div>
+</section>
+<section id="fórmulas-y-rightarrow-delta" class="slide level2">
+<h2>Fórmulas <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
+<p><span class="math display">\[R_a = \frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\]</span></p>
+<p><span class="math display">\[R_b = \frac{R_1R_2+R_2R_3+R_3R_1}{R_2}\]</span></p>
+<p><span class="math display">\[R_c = \frac{R_1R_2+R_2R_3+R_3R_1}{R_3}\]</span></p>
+<div class="warning">
+<p><strong>Cuidado:</strong> o denominador é o resistor oposto ao lado do triângulo que está sendo calculado.</p>
+</div>
+</section>
+<section id="como-memorizar-y-rightarrow-delta" class="slide level2">
+<h2>Como memorizar <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
+<ul>
+<li>Para calcular <span class="math inline">\(R_a\)</span>, sabemos que ele fica no lado oposto a <span class="math inline">\(R_1\)</span>.</li>
+<li>Por isso: <span class="math display">\[R_a = \frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\]</span></li>
+</ul>
+</section>
+<section id="caso-especial-redes-balanceadas" class="slide level2">
+<h2>Caso especial: redes balanceadas</h2>
+<ul>
+<li>Uma rede é balanceada quando todos os resistores são iguais.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Na estrela:</li>
+</ul>
+<p><span class="math display">\[R_1 = R_2 = R_3 = R_Y\]</span></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>No triângulo:</li>
+</ul>
+<p><span class="math display">\[R_a = R_b = R_c = R_\Delta\]</span></p>
+</div></div>
+<ul>
+<li>Nesse caso:</li>
+</ul>
+<p><span class="math display">\[R_Y = \frac{R_\Delta}{3} \quad \text{ou} \quad R_\Delta = 3R_Y\]</span></p>
+</section>
+<section id="quando-usar-y-delta" class="slide level2">
+<h2>Quando usar <span class="math inline">\(Y-\Delta\)</span>?</h2>
+<p>Use quando:</p>
+<ul>
+<li>o circuito possui uma ponte ou malha interna;</li>
+<li>não há resistores claramente em série ou paralelo;</li>
+<li>há uma rede de três terminais que pode ser convertida;</li>
+<li>a conversão cria novas associações em série ou paralelo.</li>
+</ul>
+<div class="alerta">
+<p>Não é obrigatório usar <span class="math inline">\(Y-\Delta\)</span> em todos os circuitos. Use quando ela simplificar a análise.</p>
+</div>
+</section>
+<section id="estratégia-para-resolver-circuitos-com-y-delta" class="slide level2">
+<h2>Estratégia para resolver circuitos com <span class="math inline">\(Y-\Delta\)</span></h2>
+<ol type="1">
+<li>Identifique redes em <span class="math inline">\(Y\)</span> ou <span class="math inline">\(\Delta\)</span>.</li>
+<li>Escolha a conversão que simplifica o circuito.</li>
+<li>Substitua a rede original pela equivalente.</li>
+<li>Procure novas associações série/paralelo.</li>
+<li>Calcule a resistência equivalente.</li>
+<li>Se houver fonte, determine corrente e tensões.</li>
+</ol>
+</section>
+<section id="exemplo-de-aplicação" class="slide level2">
+<h2>Exemplo de aplicação</h2>
+<p>Circuito em ponte:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/exemplo_aplicacao_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="img/exemplo_aplicacao_y_delta.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+</figure>
+</div>
+<p>Neste tipo de circuito, uma transformação <span class="math inline">\(Y-\Delta\)</span> pode gerar novas associações em paralelo.</p>
+</section>
+<section id="exemplo-de-aplicação-ideia-de-solução" class="slide level2">
+<h2>Exemplo de aplicação: ideia de solução</h2>
+<p>Podemos transformar uma rede <span class="math inline">\(Y\)</span> interna em <span class="math inline">\(\Delta\)</span>.</p>
+<p>Depois da conversão, podem surgir pares em paralelo, por exemplo:</p>
+<p><span class="math display">\[70\Omega \parallel 30\Omega\]</span></p>
+<p><span class="math display">\[12,5\Omega \parallel 17,5\Omega\]</span></p>
+<p><span class="math display">\[15\Omega \parallel 35\Omega\]</span></p>
+<p>Após isso, o circuito pode ser simplificado por série e paralelo.</p>
+</section>
+<section id="erros-comuns" class="slide level2">
+<h2>Erros comuns</h2>
+<div class="alerta">
+<p><strong>Erro 1:</strong> aplicar série/paralelo onde os resistores não compartilham os mesmos nós.</p>
+</div>
+<div class="alerta">
+<p><strong>Erro 2:</strong> confundir resistor adjacente com resistor oposto.</p>
+</div>
+<div class="alerta">
+<p><strong>Erro 3:</strong> converter uma rede que não simplifica o circuito.</p>
+</div>
+</section>
+<section id="resumo-delta-rightarrow-y" class="slide level2">
+<h2>Resumo: <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
+<p>Se a rede original é <span class="math inline">\(\Delta\)</span>:</p>
+<p>Então:</p>
+<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a+R_b+R_c}\]</span></p>
+<p><span class="math display">\[R_2 = \frac{R_cR_a}{R_a+R_b+R_c}\]</span></p>
+<p><span class="math display">\[R_3 = \frac{R_aR_b}{R_a+R_b+R_c}\]</span></p>
+</section>
+<section id="resumo-y-rightarrow-delta" class="slide level2">
+<h2>Resumo: <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
+<p>Se a rede original é <span class="math inline">\(Y\)</span>:</p>
+<p>Então:</p>
+<p><span class="math display">\[R_a = \frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\]</span></p>
+<p><span class="math display">\[R_b = \frac{R_1R_2+R_2R_3+R_3R_1}{R_2}\]</span></p>
+<p><span class="math display">\[R_c = \frac{R_1R_2+R_2R_3+R_3R_1}{R_3}\]</span></p>
+</section>
+<section id="exercício-1" class="slide level2">
+<h2>Exercício 1</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Converta a rede <span class="math inline">\(\Delta\)</span> abaixo para <span class="math inline">\(Y\)</span>.</p>
+<p>Determine:</p>
+<p><span class="math display">\[R_1, \quad R_2, \quad R_3\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/exercicio_1_aula_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="img/exercicio_1_aula_6.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="exercício-2" class="slide level2">
+<h2>Exercício 2</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Converta a rede <span class="math inline">\(Y\)</span> abaixo para <span class="math inline">\(\Delta\)</span>.</p>
+<p>Determine:</p>
+<p><span class="math display">\[R_a, \quad R_b, \quad R_c\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/exercicio_2_aula_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="img/exercicio_2_aula_6.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="exercício-3" class="slide level2">
+<h2>Exercício 3</h2>
+<p>Uma rede <span class="math inline">\(\Delta\)</span> balanceada possui três resistores de <span class="math inline">\(45\Omega\)</span>.</p>
+<p>Determine a rede <span class="math inline">\(Y\)</span> equivalente.</p>
+</section>
+<section id="exercício-4" class="slide level2">
+<h2>Exercício 4</h2>
+<p>Explique com suas palavras por que a transformação <span class="math inline">\(Y-\Delta\)</span> é útil na análise de circuitos em ponte.</p>
+</section>
+<section id="gabarito-exercício-1" class="slide level2">
+<h2>Gabarito: Exercício 1</h2>
+<p><span class="math display">\[S = 6+12+18 = 36\Omega\]</span></p>
+<p><span class="math display">\[R_1=\frac{12\cdot18}{36}=6\Omega\]</span></p>
+<p><span class="math display">\[R_2=\frac{18\cdot6}{36}=3\Omega\]</span></p>
+<p><span class="math display">\[R_3=\frac{6\cdot12}{36}=2\Omega\]</span></p>
+</section>
+<section id="gabarito-exercício-2" class="slide level2">
+<h2>Gabarito: Exercício 2</h2>
+<p><span class="math display">\[P = (4)(8)+(8)(12)+(12)(4)\]</span></p>
+<p><span class="math display">\[P = 32+96+48 = 176\]</span></p>
+<p><span class="math display">\[R_a=\frac{176}{4}=44\Omega\]</span></p>
+<p><span class="math display">\[R_b=\frac{176}{8}=22\Omega\]</span></p>
+<p><span class="math display">\[R_c=\frac{176}{12}=14,67\Omega\]</span></p>
+</section>
+<section id="gabarito-exercício-3" class="slide level2">
+<h2>Gabarito: Exercício 3</h2>
+<p>Para rede balanceada:</p>
+<p><span class="math display">\[R_Y=\frac{R_\Delta}{3}\]</span></p>
+<p><span class="math display">\[R_Y=\frac{45}{3}=15\Omega\]</span></p>
+<p>Portanto:</p>
+<p><span class="math display">\[R_1=R_2=R_3=15\Omega\]</span></p>
+</section>
+<section id="gabarito-exercício-4" class="slide level2">
+<h2>Gabarito: Exercício 4</h2>
+<p>Resposta esperada:</p>
+<div class="box">
+<p>A transformação <span class="math inline">\(Y-\Delta\)</span> é útil porque permite substituir uma parte do circuito por uma rede equivalente. Isso pode revelar novas associações em série e paralelo, tornando possível calcular resistência equivalente, correntes e tensões em circuitos que inicialmente não podem ser simplificados diretamente.</p>
+</div>
+</section>
+<section id="fechamento" class="slide level2">
+<h2>Fechamento</h2>
+<p>A transformação <span class="math inline">\(Y-\Delta\)</span> é uma ferramenta intermediária entre a análise simples por série/paralelo e métodos mais gerais, como Kirchhoff.</p>
+<div class="warning">
+<p>Ela não altera o circuito do ponto de vista dos terminais externos, mas muda sua forma interna para facilitar a análise.</p>
+</div>
+</section>
+<section id="section" class="slide level2" data-background-image="img/fry_1.png">
+<h2></h2>
+</section>
+<section class="slide level2">
+
+<p><small>Este material foi produzido pelo <strong>Prof.&nbsp;Alcemy Gabriel</strong> para uso educacional.</small></p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-brands fa-creative-commons"></i> Licença de Uso (CC BY-NC 4.0)</strong></p>
+</div>
+<div class="callout-content">
+<div>
+Você tem o direito de:
+<ul>
+<li>
+<i class="fa-solid fa-share-nodes"></i> <strong>Compartilhar:</strong> copiar e redistribuir o material.
+</li>
+<li>
+<i class="fa-solid fa-pen-to-square"></i> <strong>Adaptar:</strong> remixar, transformar e criar a partir do material.
+</li>
+</ul>
+</div>
+<div>
+Sob as seguintes condições:
+<ol>
+<li>
+<strong>Atribuição:</strong> Você deve dar o crédito apropriado ao autor.
+</li>
+<li>
+<strong>Não Comercial:</strong> Você <strong>não</strong> pode usar o material para fins comerciais.
+</li>
+</ol>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+<p><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR" target="_blank"> <img src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" alt="Licença Creative Commons"> </a></p>
+</div>
+<p><small>Para uso comercial ou outras finalidades não listadas, entre em contato para solicitar autorização.</small></p>
+</div>
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="img/ifrn-logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Eletricidade Instrumental</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/prof-alcemy\.github\.io");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
+    
+
+</body></html>

@@ -26,3 +26,5 @@
 </div>
 
 <small>Para uso comercial ou outras finalidades não listadas, entre em contato para solicitar autorização.</small>
+
+:::

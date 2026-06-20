@@ -1,0 +1,403 @@
+---
+# --- INFORMAÇÕES DA AULA ---
+title: "Inteligência artificial na educação"
+subtitle: "Educação em Tecnologias Digitais"
+author: "Prof. Alcemy Severino"
+license: "CC BY-NC"
+copyright: "© 2026 Alcemy Gabriel"
+institute: "IFRN"
+lang: pt-br
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
+format:
+  revealjs:
+    # Aparência
+    theme: [default, ifrn]             # Carrega o CSS padrão + nossa personalização
+    footer: "Operador de Computador" # Adiciona a nota de rodapé
+    logo: img/ifrn-logo.png            # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                 # Numeração de páginas no canto
+    center: false                      # false = alinha conteúdo ao topo (melhor para aulas)
+    
+    # Interatividade (Lousa)
+    chalkboard: 
+      buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    lightbox: true                     # Permite ampliar imagens para detalhes (útil para diagramas)
+    
+    # Navegação
+    preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
+    controls: true                     # Mostra setas de navegação
+    controlsLayout: edges              # Setas grandes nas laterais esquerda/direita
+    controlsTutorial: true             # Pisca a seta para indicar navegação
+    touch: true                        # Melhora o uso em tablets/celulares
+    
+    # Código (Para suas aulas de Programação)
+    code-line-numbers: true            # Permite referenciar linhas de código
+    highlight-style: github            # Estilo de cores do código (claro e limpo)
+---
+
+## Objetivos da aula {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+- Compreender a IA:
+  - como tecnologia,
+  - como ferramenta pedagógica
+  - e como objeto de análise crítica.
+
+---
+
+## Por que falar de IA na educação? {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+- A IA deixou de ser apenas um tema técnico e passou a atravessar práticas cotidianas de ensino, estudo, pesquisa, gestão e produção de conteúdo.
+- A UNESCO defende uma visão humanocentrada para o uso de IA generativa na educação e pesquisa. Fonte: [UNESCO, 2023](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research).
+
+---
+
+## Os três níveis de IA na Educação {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+1. **Ferramenta de apoio**: planejamento, feedback, revisão, síntese, tutoria.
+2. **Objeto de aprendizagem**: compreender como funciona, limites e impactos.
+3. **Tema ético e social**: privacidade, autoria, desigualdade, vieses e autonomia.
+
+---
+
+## O que é inteligência artificial? {background-image="img/bg_4.png" background-size="cover" background-opacity="0.2"}
+
+**Inteligência artificial** é um campo da computação dedicado à criação de sistemas capazes de realizar tarefas que normalmente exigiriam capacidades cognitivas humanas.
+
+---
+
+## O que é inteligência artificial? {background-image="img/bg_5.png" background-size="cover" background-opacity="0.2"}
+
+Essas tarefas podem envolver:
+
+- reconhecer padrões;
+- classificar informações;
+- gerar textos, imagens, códigos ou áudios;
+- fazer previsões;
+- recomendar caminhos;
+- dialogar em linguagem natural.
+
+---
+
+## O que é inteligência artificial? {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+IA não é “inteligência humana dentro da máquina”. É um conjunto de métodos matemáticos, estatísticos e computacionais que operam sobre dados.
+
+---
+
+## Três ideias essenciais: dados, modelo e saída {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+**Dados de entrada**: textos, imagens, notas, registros, perguntas, documentos.
+
+**Modelo**: sistema treinado para identificar padrões e produzir respostas.
+
+**Saída**: classificação, previsão, recomendação, texto, imagem, resumo ou código.
+
+**Avaliação humana**: etapa indispensável no contexto educacional.
+
+---
+
+## IA simbólica {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+Baseada em regras explícitas.
+
+Ex.: sistemas especialistas, árvores de decisão, regras “se... então...”.
+
+---
+
+## Aprendizado de máquina {background-image="img/bg_4.png" background-size="cover" background-opacity="0.2"}
+
+Aprende padrões a partir de dados.
+
+Ex.: classificação, previsão, recomendação.
+
+---
+
+## IA generativa {background-image="img/bg_5.png" background-size="cover" background-opacity="0.2"}
+
+Produz novos conteúdos a partir de padrões aprendidos.
+
+Ex.: textos, imagens, vídeos, códigos, planos de aula.
+
+A IA generativa não “consulta a verdade” automaticamente: ela gera uma resposta provável a partir do contexto e dos dados/padrões disponíveis.
+
+---
+
+## Tipos de aprendizado de máquina {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+**Supervisionado**
+
+O sistema aprende com exemplos rotulados.
+
+Ex.: corrigir questões, prever evasão, classificar respostas.
+
+---
+
+## Tipos de aprendizado de máquina {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+**Não supervisionado**
+
+O sistema identifica agrupamentos ou padrões sem rótulos prévios.
+
+Ex.: agrupar perfis de aprendizagem ou temas em respostas abertas.
+
+---
+
+## Tipos de aprendizado de máquina {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+**Por reforço**
+
+O sistema aprende por tentativa, erro e recompensa.
+
+Ex.: agentes que otimizam decisões em ambientes simulados.
+
+---
+
+## O que são modelos de linguagem? {background-image="img/bg_4.png" background-size="cover" background-opacity="0.2"}
+
+Modelos de linguagem são sistemas treinados para processar e gerar linguagem natural.
+
+Eles funcionam a partir de **tokens**, que são unidades de texto, como partes de palavras, palavras ou símbolos.
+
+---
+
+## O que são modelos de linguagem? {background-image="img/bg_5.png" background-size="cover" background-opacity="0.2"}
+
+A resposta é gerada considerando:
+
+- o texto da pergunta;
+- o contexto fornecido;
+- padrões aprendidos no treinamento;
+- instruções do sistema;
+- limites da janela de contexto;
+- mecanismos de segurança do serviço utilizado.
+
+---
+
+## Como um modelo de linguagem responde? {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+```{mermaid}
+flowchart LR
+  A[Prompt do usuário] --> B[Quebra em tokens]
+  B --> C[Análise do contexto]
+  C --> D[Predição de próximos tokens]
+  D --> E[Resposta gerada]
+  E --> F[Revisão humana]
+```
+
+A resposta pode parecer fluida e segura, mas isso não garante que esteja correta.
+
+::: {.callout}
+Na educação, a pergunta central não é apenas “a IA respondeu?”, mas “a resposta é adequada ao objetivo pedagógico?”.
+:::
+
+---
+
+## Prompt {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+A qualidade da pergunta muda a resposta. Um bom prompt deixa claro:
+
+- **papel**: “Atue como professor de...”;
+- **objetivo**: “explique para estudantes do ensino médio”;
+- **conteúdo**: tema, texto-base, critérios ou contexto;
+- continua...
+
+---
+
+## Prompt {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+- **formato**: tabela, roteiro, rubrica, quiz, plano de aula;
+- **restrições**: nível de complexidade, tamanho, linguagem, fontes;
+- **critério de revisão**: “aponte incertezas” ou “não invente referências”.
+
+::: {.small}
+Exemplo: “Crie 5 questões objetivas sobre fotossíntese para turma do 1º ano, com gabarito comentado e uma questão contextualizada.”
+:::
+
+---
+
+## Usos pedagógicos da IA {background-image="img/bg_4.png" background-size="cover" background-opacity="0.2"}
+
+**Para docentes**
+
+- planejar aulas;
+- criar exemplos e analogias;
+- elaborar rubricas;
+- adaptar linguagem;
+- gerar questões;
+- propor atividades inclusivas;
+- revisar materiais.
+
+---
+
+## Usos pedagógicos da IA {background-image="img/bg_5.png" background-size="cover" background-opacity="0.2"}
+
+**Para estudantes**
+
+- tirar dúvidas;
+- revisar conteúdos;
+- simular entrevistas ou debates;
+- criar mapas mentais;
+- receber feedback formativo;
+- estudar com quizzes;
+- organizar leituras.
+
+---
+
+## IA não substitui o professor {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+- A IA pode acelerar tarefas, ampliar repertórios e apoiar personalização.
+- O professor continua sendo o responsável pela intencionalidade pedagógica, pela curadoria e pela avaliação do uso da tecnologia.
+
+---
+
+## IA não substitui o professor {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+Mas o trabalho pedagógico envolve dimensões que não são reduzíveis à automação:
+
+- vínculo;
+- escuta;
+- mediação;
+- interpretação do contexto;
+- cuidado com desigualdades;
+- avaliação ética;
+- tomada de decisão situada.
+
+---
+
+## Principais serviços de IA para educação {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+**Assistentes generalistas**
+
+ChatGPT, Gemini, Microsoft Copilot.
+
+Bons para diálogo, escrita, explicação, brainstorming, planejamento e análise.
+
+---
+
+## Principais serviços de IA para educação {background-image="img/bg_4.png" background-size="cover" background-opacity="0.2"}
+
+**Tutores e plataformas educacionais**
+
+Khanmigo e recursos integrados a ambientes de aprendizagem.
+
+Bons para acompanhamento, prática guiada e apoio personalizado.
+
+---
+
+## Principais serviços de IA para educação {background-image="img/bg_5.png" background-size="cover" background-opacity="0.2"}
+
+**Pesquisa e leitura com fontes**
+
+NotebookLM, Elicit, Perplexity.
+
+Bons para estudar documentos, levantar literatura, resumir e comparar informações.
+
+---
+
+## Principais serviços de IA para educação {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+**Criação multimídia**
+
+Canva, geradores de imagem, vídeo, áudio e apresentações.
+
+Bons para materiais didáticos, comunicação visual e acessibilidade.
+
+---
+
+## Assistentes generalistas {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+- **ChatGPT Edu**
+- **Gemini for Education**
+- **Microsoft 365 Copilot**
+
+::: {.tiny}
+Fontes: [OpenAI, ChatGPT Edu](https://openai.com/index/introducing-chatgpt-edu/); [Google Gemini for Education](https://edu.google.com/intl/ALL_us/ai/gemini-for-education/); [Microsoft Copilot in Education](https://www.microsoft.com/en-us/education/products/copilot-in-education).
+:::
+
+---
+
+## Limitações técnicas e pedagógicas da IA {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+A IA pode falhar por diferentes razões: gerar informações falsas, inventar referências, reproduzir vieses, errar cálculos, simplificar temas complexos ou responder com excesso de confiança.
+
+---
+
+## Limitações técnicas e pedagógicas da IA {background-image="img/bg_5.png" background-size="cover" background-opacity="0.2"}
+
+
+O uso acrítico também pode gerar problemas educacionais:
+
+- dependência excessiva;
+- redução de esforço cognitivo;
+- enfraquecimento da autoria;
+- respostas padronizadas;
+- avaliação pouco confiável;
+- invisibilização de desigualdades de acesso.
+
+---
+
+## Ética: privacidade, justiça e responsabilidade {background-image="img/bg_1.png" background-size="cover" background-opacity="0.2"}
+
+Critérios mínimos para uso educacional responsável:
+
+- não inserir dados sensíveis de estudantes em ferramentas sem autorização;
+- informar quando IA foi usada em materiais ou atividades;
+- exigir checagem de fontes;
+- continua...
+
+---
+
+## Ética: privacidade, justiça e responsabilidade {background-image="img/bg_2.png" background-size="cover" background-opacity="0.2"}
+
+- evitar decisões automatizadas sem revisão humana;
+- considerar acessibilidade e inclusão;
+- discutir autoria e integridade acadêmica;
+- documentar regras de uso em sala.
+
+---
+
+## Ética: privacidade, justiça e responsabilidade {background-image="img/bg_3.png" background-size="cover" background-opacity="0.2"}
+
+No Brasil, a LGPD estabelece que o tratamento de dados de crianças e adolescentes deve considerar seu melhor interesse. Fonte: [Lei nº 13.709/2018, art. 14](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm).
+
+---
+
+## Fechamento {background-image="img/bg_4.png" background-size="cover" background-opacity="0.2"}
+
+A IA na educação deve ser compreendida como:
+
+1. **tecnologia**: tem fundamentos, possibilidades e limites;
+2. **ferramenta pedagógica**: pode apoiar ensino, estudo, pesquisa e gestão;
+3. **questão ética**: exige transparência, privacidade, inclusão, autoria e responsabilidade.
+
+::: {.callout}
+A pergunta decisiva não é “podemos usar IA?”, mas “como usar IA para ampliar aprendizagem, autonomia, justiça e responsabilidade?”.
+:::
+
+---
+
+## Referências consultadas
+
+::: {.tiny}
+- UNESCO. [Guidance for generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research), 2023.
+- UNESCO. [AI competency framework for teachers](https://www.unesco.org/en/articles/ai-competency-framework-teachers), 2024.
+- UNESCO. [AI competency framework for students](https://www.unesco.org/en/articles/ai-competency-framework-students), 2024.
+- OpenAI. [Introducing ChatGPT Edu](https://openai.com/index/introducing-chatgpt-edu/), 2024.
+- Google for Education. [Gemini for Education](https://edu.google.com/intl/ALL_us/ai/gemini-for-education/); [NotebookLM](https://edu.google.com/intl/ALL_us/ai-notebooklm/).
+- Microsoft Education. [Copilot in Education](https://www.microsoft.com/en-us/education/products/copilot-in-education).
+:::
+
+---
+
+## Referências consultadas
+
+::: {.tiny}
+- Khan Academy. [Khanmigo](https://www.khanmigo.ai/).
+- NIST. [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework), 2023.
+- UNICEF. [Guidance on AI and Children 3.0](https://www.unicef.org/innocenti/media/11991/file/UNICEF-Innocenti-Guidance-on-AI-and-Children-3-2025.pdf), 2025.
+- Brasil. [Lei Geral de Proteção de Dados Pessoais — Lei nº 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm).
+:::
+
+---
+
+{{< include ../../_licenca.qmd >}}
