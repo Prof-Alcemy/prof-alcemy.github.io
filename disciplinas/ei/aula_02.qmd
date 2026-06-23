@@ -53,7 +53,7 @@ format:
 
 ## Arranjos Moleculares
 
-![](img/estados_materia.png){fig-align="center"}
+![](img/a02_estados_materia.png){fig-align="center"}
 
 ---
 
@@ -67,7 +67,7 @@ format:
 
 ## Condutores: o salto do elétron
 
-![](img/salto_eletron.png){fig-align="center"}
+![](img/a02_salto_eletron.png){fig-align="center"}
 
 ---
 
@@ -76,7 +76,7 @@ format:
 - Cobre e Alumínio: Os mais comuns em fiações elétricas.
 - Mercúrio: Um exemplo de metal líquido que conduz eletricidade.
 
-![](img/cobre_aluminio_mercurio.png){fig-align="center"}
+![](img/a02_cobre_aluminio_mercurio.png){fig-align="center"}
 
 ---
 
@@ -132,7 +132,7 @@ format:
 
 ## Isolantes/Dielétricos
 
-![](img/isolantes_dieletricos.png){fig-align="center"}
+![](img/a02_isolantes_dieletricos.png){fig-align="center"}
 
 ---
 
@@ -146,7 +146,7 @@ format:
 
 ## Falha do Isolante
 
-![](img/falha_isolante.jpg){fig-align="center"}
+![](img/a02_falha_isolante.jpg){fig-align="center"}
 
 ---
 
@@ -161,7 +161,7 @@ format:
 :::
 ::: {.column width="50%"}
 
-![](img/isolantes_dieletricos.png)
+![](img/a02_isolantes_dieletricos.png)
 
 :::
 ::::
@@ -174,7 +174,7 @@ format:
 - Conduzem facilmente sob certas condições e com dificuldade em outras.
 - São quimicamente "dopados" (adição de impurezas como índio ou antimônio) para controlar sua condutividade.
 
-![](img/exemplos_semicondutores.jpg){fig-align="center"}
+![](img/a02_exemplos_semicondutores.jpg){fig-align="center"}
 
 ---
 
@@ -192,7 +192,7 @@ format:
 - **Tipo-P**: Lacunas são as cargas majoritárias.
 - *Exemplos*: Silício, Selênio e Arsenieto de Gálio.
 
-![](img/tipo_p_n.jpg){fig-align="center"}
+![](img/a02_tipo_p_n.jpg){fig-align="center"}
 
 
 # Controle e Cargas
@@ -203,7 +203,7 @@ format:
 - Feitos de materiais como pasta de carbono e argila.
 - *Regra*: Quanto maior a condutividade, menor a resistência (e vice-versa).
 
-![](img/resistores.jpg){fig-align="center"}
+![](img/a02_resistores.jpg){fig-align="center"}
 
 ---
 
@@ -212,7 +212,7 @@ format:
 - Transformam outras formas de energia (química, mecânica) em energia elétrica.
 - Fornecem a "pressão" para o movimento das cargas.
 
-![](img/fontes_geradores.jpg){fig-align="center"}
+![](img/a02_fontes_geradores.jpg){fig-align="center"}
 
 ---
 
@@ -221,7 +221,7 @@ format:
 - Transformam eletricidade em calor por meio da resistência.
 - Exemplos: Chuveiros e aquecedores de utilidade (que puxam de 10A a 12A).
 
-![](img/cargas_termicas.jpg){fig-align="center"}
+![](img/a02_cargas_termicas.jpg){fig-align="center"}
 
 ---
 
@@ -230,7 +230,7 @@ format:
 - Transformam eletricidade em movimento por campos magnéticos.
 - Exemplos: Ventiladores e motores de indução.
 
-![](img/cargas_mecanicas.jpg){fig-align="center"}
+![](img/a02_cargas_mecanicas.jpg){fig-align="center"}
 
 ---
 
@@ -239,7 +239,7 @@ format:
 - Transformam eletricidade em luz.
 - Uma lâmpada de 60W consome cerca de 0,5A de corrente.
 
-![](img/cargas_luminosas.jpg){fig-align="center"}
+![](img/a02_cargas_luminosas.jpg){fig-align="center"}
 
 ---
 
@@ -259,23 +259,3 @@ format:
 ---
 
 {{< include ../../_licenca.qmd >}}
-
-<!--# Materiais e Movimento
-
-## Condutores: A "Autoestrada" dos Elétrons 
-
-- Materiais que possuem muitos elétrons livres.
-- Exemplos: Metais como cobre, alumínio e ouro.
-
----
-
-## Isolantes: A "Barreira"
-- Materiais com ligações fortes que não permitem elétrons livres.
-- Exemplos: Borracha, vidro e plástico.
-- Função: Segurança e proteção contra choques.
-
----
-
-## Semicondutores: O Coração da Informática
-- Materiais que podem se comportar como condutores ou isolantes sob certas condições.
-- Exemplo: Silício e Germânio (bases dos chips de computador).--->

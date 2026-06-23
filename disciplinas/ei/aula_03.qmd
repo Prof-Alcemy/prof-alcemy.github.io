@@ -43,7 +43,7 @@ format:
 
 ---
 
-## Fontes e Geradores {background-image="img/fontes_eletricidade.png" background-size="cover" background-opacity="0.2"}
+## Fontes e Geradores {background-image="img/a03_fontes_eletricidade.png" background-size="cover" background-opacity="0.2"}
 
 Para que os elétrons se movam, precisamos de uma força motriz. As fontes e geradores criam uma diferença de potencial (ddp) entre dois pontos, conhecidos como polos.
 
@@ -68,7 +68,7 @@ Para que os elétrons se movam, precisamos de uma força motriz. As fontes e ger
 :::
 ::: {.column width="23%"}
 
-![](img/fontes_tensao.png)
+![](img/a03_fontes_tensao.png)
 
 :::
 ::::
@@ -109,7 +109,7 @@ Nas tomadas das nossas casas, a corrente reverte sua direção em intervalos reg
 * Equipamentos de informática não funcionam com CA puro. Eles precisam converter CA para CC. O processo de transformação se chama **retificação**.
 * Utilizamos componentes semicondutores chamados **diodos** para permitir que a corrente flua em apenas um sentido.
 
-![](img/diodo_retificacao.png){fig-align="center" width="60%"}
+![](img/a03_diodo_retificacao.png){fig-align="center" width="60%"}
 
 ---
 
@@ -126,7 +126,7 @@ Quando interligamos os polos de uma fonte com um material condutor, as cargas co
 :::
 ::: {.column width="25%"}
 
-![](img/trilhas_fios.png){fig-align="center"}
+![](img/a03_trilhas_fios.png){fig-align="center"}
 
 :::
 ::::
@@ -143,7 +143,7 @@ Quando interligamos os polos de uma fonte com um material condutor, as cargas co
 
 ---
 
-## Resistores {background-image="img/resistores.png" background-size="cover" background-opacity="0.2"}
+## Resistores {background-image="img/a03_resistores.png" background-size="cover" background-opacity="0.2"}
 
 A resistência quantifica a oposição que um circuito impõe ao fluxo de corrente. Componentes fabricados para ter uma oposição específica são os resistores.
 
@@ -157,7 +157,7 @@ A resistência quantifica a oposição que um circuito impõe ao fluxo de corren
 * Para uma tensão constante, a corrente varia em proporção inversa à resistência.
 * Se você reduzir a resistência pela metade, a corrente dobra.
 
-![](img/lei_de_ohm.png){fig-align="center" width="60%"}
+![](img/a03_lei_de_ohm.png){fig-align="center" width="60%"}
 
 ---
 
@@ -171,7 +171,7 @@ Em vez de falar sobre a "dificuldade" (Resistência), técnicos frequentemente f
 
 ---
 
-## Indutores {background-image="img/indutores.png" background-size="cover" background-opacity="0.2"}
+## Indutores {background-image="a03_indutores.png" background-size="cover" background-opacity="0.2"}
 
 Sempre que uma corrente elétrica flui por um fio, um campo magnético aparece ao seu redor. 
 
@@ -197,7 +197,7 @@ Os indutores são medidos por sua capacidade de gerar e armazenar campos magnét
 
 ---
 
-## Capacitores {background-image="img/capacitores.png" background-size="cover" background-opacity="0.2"}
+## Capacitores {background-image="img/a03_capacitores.png" background-size="cover" background-opacity="0.2"}
 
 São componentes que mantêm as cargas elétricas separadas, armazenando energia em um campo elétrico estático (dipolo elétrico).
 

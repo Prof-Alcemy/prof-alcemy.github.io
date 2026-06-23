@@ -151,7 +151,7 @@ Para nunca mais esquecer:
 
 ## Símbolos dos elementos de um circuito
 
-![](img/componentes.png){fig-align="center" width="50%"}
+![](img/a04_componentes.png){fig-align="center" width="50%"}
 
 ---
 

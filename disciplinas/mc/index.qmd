@@ -38,17 +38,16 @@ description: "Material de apoio, slides e listas de exercícios."
 | 03 | a. *Principais componentes elétricos e suas grandezas associadas* | [Slides](aula_03.qmd) |
 |    | b. *Fontes* |    |
 |    | i. Resistores |    |
-|    | - Conceitos, tipos, unidades de medida, códigos de leitura de valores | [Slides](aula_07.qmd) |
-|    | - Associações série, paralela e mista | [Slides](aula_05.qmd) |
-|    | - Redes de resistores em estrela e delta | [Slides](aula_06.qmd) |
+|    | - Conceitos, tipos, unidades de medida, códigos de leitura de valores |    |
+|    | - Associações série, paralela e mista |    |
 |    | ii. Capacitores |    |
 |    | - Conceitos, tipos, unidades de medida e associações |    |
 |    | iii. Indutores |    |
 |    | iv. Lei de Ohm |    |
-|    | c. *Circuitos Elétricos* |  |
-|    | i. Ramos, nós, malhas | [Slides](aula_04.qmd) |
-|    | ii. Lei dos nós e lei das malhas |    |
+<!--| -- | c. *Circuitos Elétricos* | [Slides](aula_04.qmd) |
+| -- | i. Ramos, nós, malhas | -- |
+| -- | ii. Lei dos nós e lei das malhas | -- |
 
-<!--
+
 ## Listas de Exercícios
 * [Lista 01 - Hardware básico (.pdf)](files/lista01.pdf)-->

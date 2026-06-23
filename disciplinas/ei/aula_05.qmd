@@ -216,7 +216,7 @@ A resistência equivalente representa o efeito elétrico total do conjunto de re
 
 Na associação em série, os resistores estão no mesmo caminho.
 
-![](img/resistores_em_serie.png){fig-align="center" width="60%"}
+![](img/a05_resistores_em_serie.png){fig-align="center" width="60%"}
 
 ::: {.box}
 **Regra principal:** a corrente é a mesma em todos os resistores.
@@ -276,7 +276,7 @@ A corrente de **0,2 A** passa por $R_1$, $R_2$ e $R_3$.
 
 Na associação em paralelo, os resistores compartilham os mesmos dois nós.
 
-![](img/resistores_em_paralelo.png){fig-align="center" width="60%"}
+![](img/a05_resistores_em_paralelo.png){fig-align="center" width="60%"}
 
 ::: {.box}
 **Regra principal:** a tensão é a mesma em todos os resistores.
@@ -392,7 +392,7 @@ Observe: $I_T = I_1 + I_2 = 1\,A$.
 
 A associação mista combina trechos em série e em paralelo.
 
-![](img/circuito_misto_ex5.png){fig-align="center" width="70%"}
+![](img/a05_circuito_misto_ex5.png){fig-align="center" width="70%"}
 
 ::: {.box}
 Para resolver, simplificamos o circuito por partes.
@@ -418,7 +418,7 @@ No circuito:
 - $R_1 = 4\,\Omega$ está em série com o bloco paralelo;
 - $R_2 = 6\,\Omega$ está em paralelo com $R_3 = 3\,\Omega$.
 
-![](img/circuito_misto_ex5.png){fig-align="center" width="60%"}
+![](img/a05_circuito_misto_ex5.png){fig-align="center" width="60%"}
 
 ---
 

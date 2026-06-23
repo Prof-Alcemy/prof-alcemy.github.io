@@ -79,7 +79,7 @@ format:
 :::
 ::: {.column width="40%"}
 
-![](img/atomo_tijolos.png)
+![](img/a01_atomo_tijolos.png)
 
 :::
 ::::
@@ -97,7 +97,7 @@ format:
 :::
 ::: {.column width="50%"}
 
-![](img/atomo.png)
+![](img/a01_atomo.png)
 
 :::
 ::::
@@ -115,7 +115,7 @@ format:
 :::
 ::: {.column width="50%"}
 
-![](img/eletrons_livres.png)
+![](img/a01_eletrons_livres.png)
 
 :::
 ::::
@@ -138,13 +138,13 @@ format:
 - **Definição**: A corrente elétrica é a movimentação de cargas ordenadas num condutor.
 - *Analogia*: Uma multidão (elétrons) correndo organizada em um corredor (fio).
 
-![](img/corrente_eletrica.png)
+![](img/a01_corrente_eletrica.png)
 
 ---
 
 ## Tipos de Corrente
 
-![](img/corrente_continua_vs_alternada.png)
+![](img/a01_corrente_continua_vs_alternada.png)
 
 ---
 
@@ -174,7 +174,7 @@ format:
 :::: {.columns}
 ::: {.column width="50%"}
 
-![](img/passagem_eletrons.png)
+![](img/a01_passagem_eletrons.png)
 
 :::
 ::: {.column width="50%"}
@@ -210,7 +210,7 @@ $$
 - Ocorre devido aos choques dos elétrons com os núcleos dos átomos.
 - Unidade: Ohm ($\Omega$).
 
-![](img/resistencia_eletrica.png){fig-align="center"}
+![](img/a01_resistencia_eletrica.png){fig-align="center"}
 
 ---
 
@@ -237,7 +237,7 @@ $$
 - A resistência depende do material, do comprimento e da espessura do fio.
 - Fórmula: $R = \rho \times \frac{l}{A}$.
 
-![](img/dimensoes_condutor.png){fig-align="center"}
+![](img/a01_dimensoes_condutor.png){fig-align="center"}
 
 ---
 
@@ -245,7 +245,7 @@ $$
 
 - Quando elétrons enfrentam resistência, geram calor.
 
-![](img/efeito_joule.png){fig-align="center"}
+![](img/a01_efeito_joule.png){fig-align="center"}
 
 ---
 
@@ -254,7 +254,7 @@ $$
 - Rapidez com que a energia elétrica é transformada (em luz, calor ou movimento).
 - Unidade: Watt ($W$); Fórmula: $P = V \times I$.
 
-![](img/potencia_eletrica.png){fig-align="center"}
+![](img/a01_potencia_eletrica.png){fig-align="center"}
 
 ---
 
@@ -270,7 +270,7 @@ $$
 :::
 ::: {.column width="55%"}
 
-![Fonte: [Neoenergia](https://www.neoenergia.com/w/distribuidoras-da-neoenergia-tem-nova-conta-de-luz)](img/nova-fatura.jpg)
+![Fonte: [Neoenergia](https://www.neoenergia.com/w/distribuidoras-da-neoenergia-tem-nova-conta-de-luz)](img/a01_nova-fatura.jpg)
 
 :::
 ::::
@@ -290,7 +290,7 @@ $$
 :::
 ::: {.column width="50%"}
 
-![](img/analogia_reservatorio.png)
+![](img/a01_analogia_reservatorio.png)
 
 :::
 ::::

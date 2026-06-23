@@ -59,7 +59,7 @@ Se não conseguimos identificar pares em série ou paralelo, precisamos de outra
 :::
 ::: {.column width="50%"}
 
-![](img/circuito_em_ponte.png){fig-align="center" width="100%"}
+![](img/a06_circuito_em_ponte.png){fig-align="center" width="100%"}
 
 :::
 ::::
@@ -71,7 +71,7 @@ Se não conseguimos identificar pares em série ou paralelo, precisamos de outra
 - A rede **Y** possui três resistores ligados a um ponto comum central.
 - Também pode aparecer desenhada como uma rede em **T**.
 
-![](img/rede_ipsilon_ou_t.png){fig-align="center" width="60%}
+![](img/a06_rede_ipsilon_ou_t.png){fig-align="center" width="60%}
 
 ---
 
@@ -80,7 +80,7 @@ Se não conseguimos identificar pares em série ou paralelo, precisamos de outra
 - A rede Δ possui três resistores formando um caminho fechado entre três terminais.
 - Também pode aparecer desenhada como uma rede em **$\Pi$**.
 
-![](img/rede_delta_ou_pi.png){fig-align="center" width="60%}
+![](img/a06_rede_delta_ou_pi.png){fig-align="center" width="60%}
 
 ---
 
@@ -123,7 +123,7 @@ $$R_{12}^{(Y)} = R_1 + R_3$$
 :::
 ::: {.column width="40%"}
 
-![Superposição das redes $\Delta$ e $Y$](img/superposicao_redes_y_delta.png)
+![Superposição das redes $\Delta$ e $Y$](img/a06_superposicao_redes_y_delta.png)
 
 :::
 ::::
@@ -148,7 +148,7 @@ $$R_{12}^{(\Delta)} = \frac{R_b(R_c+R_a)}{R_a+(R_b+R_c)}$$
 :::
 ::: {.column width="40%"}
 
-![Superposição das redes $\Delta$ e $Y$](img/superposicao_redes_y_delta.png)
+![Superposição das redes $\Delta$ e $Y$](img/a06_superposicao_redes_y_delta.png)
 
 :::
 ::::
@@ -204,7 +204,7 @@ $$R_1 = \frac{R_bR_c}{R_a+R_b+R_c}$$
 :::
 ::: {.column width="40%"}
 
-![Superposição das redes $\Delta$ e $Y$](img/superposicao_redes_y_delta.png)
+![Superposição das redes $\Delta$ e $Y$](img/a06_superposicao_redes_y_delta.png)
 
 :::
 ::::
@@ -315,7 +315,7 @@ Não é obrigatório usar $Y-\Delta$ em todos os circuitos. Use quando ela simpl
 
 Circuito em ponte:
 
-![](img/exemplo_aplicacao_y_delta.png){fig-align="center" width="50%"}
+![](img/a06_exemplo_aplicacao_y_delta.png){fig-align="center" width="50%"}
 
 Neste tipo de circuito, uma transformação $Y-\Delta$ pode gerar novas associações em paralelo.
 
@@ -395,7 +395,7 @@ $$R_1, \quad R_2, \quad R_3$$
 :::
 ::: {.column width="50%"}
 
-![](img/exercicio_1_aula_6.png){fig-align="center"}
+![](img/a06_exercicio_1_aula_6.png){fig-align="center"}
 
 :::
 ::::
@@ -416,7 +416,7 @@ $$R_a, \quad R_b, \quad R_c$$
 :::
 ::: {.column width="50%"}
 
-![](img/exercicio_2_aula_6.png){fig-align="center"}
+![](img/a06_exercicio_2_aula_6.png){fig-align="center"}
 
 :::
 ::::
