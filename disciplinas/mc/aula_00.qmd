@@ -1,6 +1,6 @@
 ---
 # --- INFORMAÇÕES DA AULA ---
-title: "Eletricidade Instrumental"
+title: "Manutenção de Computadores"
 # subtitle: ""
 author: "Prof. Alcemy Severino"
 license: "CC BY-NC"
@@ -13,7 +13,7 @@ format:
   revealjs:
     # Aparência
     theme: [default, ifrn]             # Carrega o CSS padrão + nossa personalização
-    footer: "EI"                      # Adiciona a nota de rodapé
+    footer: "Manutenção de Computadores" # Adiciona a nota de rodapé
     logo: img/ifrn-logo.png            # Certifique-se de ter essa imagem na pasta 'img'
     slide-number: true                 # Numeração de páginas no canto
     center: false                      # false = alinha conteúdo ao topo (melhor para aulas)
@@ -41,16 +41,16 @@ format:
 
 > Carga horária: **60H**
 
-> 1INF1M: **Quintas-feiras / 8h50 às 10h20**
+> 3INF1M: **Quintas-feiras / 7h00 às 8h30** e **Sextas-feiras / 10h20 às 12h00**
 
-> 1INF1V: **Quartas-feiras / 13h00 às 14h30**
+> 3INF1V: **Quintas-feiras e Sextas-feiras / 13h00 às 14h30**
 
-> Duração: **40 semanas**
+> Duração: **20 semanas**
 
 :::
 ::: {.column width="45%"}
 
-![](img/a00_gato_eletricista.png){fig-align="center"}
+![](img/a00_gato_tecnico_ti.png){fig-align="center"}
 
 :::
 ::::
@@ -59,38 +59,53 @@ format:
 
 ### Ementa
 
-* Estudo sobre a eletricidade como apoio ao exercício profissional do técnico em informática.
-* Principais grandezas da eletricidade, como corrente, tensão, energia e potência, bem como conceitos iniciais, como fontes, resistores, capacitores e indutores, e técnicas básicas de análise de circuito em corrente contínua como as Leis de nós e malhas são apresentadas.
-
----
-
-### Ementa
-
-* Demonstração do uso de instrumentos de medições das grandezas elétricas: voltímetro, amperímetro e ohmímetro.
-* Noções básicas de instalações elétricas e cuidados complementam a disciplina.
+::: {style="font-size: .9em"}
+* Estudo de manutenção de computadores:
+  * como manusear e utilizar peças e equipamentos de sistemas computacionais,
+  * componentes físicos dos sistemas computacionais,
+  * manutenção desses tipos de sistemas,
+  * conhecimento das condições estruturais necessárias para desempenhar manutenções preventivas e corretivas em  computadores,
+  * manutenções preventivas em sistemas computacionais e, se necessário, manutenções corretivas nesses sistemas,
+  * suporte ao usuário (central de serviços, sistemas de chamados e softwares de suporte remoto) e
+  * defeitos comuns em sistemas computacionais.
+:::
 
 ---
 
 ### Objetivos
 
 ::: {style="font-size: .9em"}
-* Identificar as principais grandezas elétricas, fazendo a devida relação entre as mesmas.
-* Identificar circuitos série, paralelo e misto visando à análise de circuitos elétricos.
-* Identificar as especificidades de circuitos elétricos em CC e CA.
-* Utilizar instrumentos de medição de grandezas elétricas.
-* Utilizar regras gerais para operação e manuseio de equipamentos elétricos e eletrônicos.
+* Compreender detalhes dos componentes físicos dos microcomputadores, com vista a uma utilização e manutenção mais eficientes.
+* Realizar manutenções preventiva e corretiva avançadas em sistemas computacionais.
+* Realizar manutenções preventiva e corretiva não convencionais em sistemas computacionais.
+* Adquirir subsídios para compreender o funcionamento de outros equipamentos que surgirão e realizar sua
+  manutenção.
+* Manusear softwares de central de serviços e suporte ao usuário.
 :::
 
 ---
 
 ### Bases científico-tecnológicas
 
-1. Introdução.
-1. Conceitos iniciais.
-1. Fonte de alimentação.
-1. Instrumentos de medição.
-1. Noções de instalações elétricas prediais.
-1. Cuidados gerais e específicos.
+1. Cuidados no manuseio e utilização de peças e equipamentos de sistemas computacionais.
+1. Visão geral dos componentes físicos dos sistemas computacionais.
+1. Manutenção de sistemas computacionais. 
+    1. Ferramentas e procedimentos.
+    1. Instalação dos componentes.
+1. Condições reais e ideais de trabalho.
+1. Manutenção preventiva em sistemas computacionais.
+
+---
+
+### Bases científico-tecnológicas
+
+6. Manutenção corretiva em sistemas computacionais.
+7. Manutenção preventiva e corretiva em sistemas computacionais portáteis.
+8. Suporte ao usuário. 
+    1. Apresentação da central de serviços e dos conceitos evento e incidente.
+    1. Sistema de chamados e níveis de atendimento.
+    1. Software de suporte remoto ao usuário.
+9. Problemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções.
 
 ---
 

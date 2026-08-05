@@ -7,14 +7,11 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Prof.&nbsp;Alcemy Severino">
-  <title>Prof. Alcemy – Redes de Resistores em Estrela e Delta</title>
+  <title>Prof. Alcemy – Suporte ao Usuário</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -133,8 +130,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Redes de Resistores em Estrela e Delta</h1>
-  <p class="subtitle">Conceitos iniciais</p>
+  <h1 class="title">Suporte ao Usuário</h1>
+  <p class="subtitle">Central de serviços, chamados, níveis de atendimento e suporte remoto</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -150,362 +147,573 @@ Prof.&nbsp;Alcemy Severino
 </section>
 <section id="objetivos-da-aula" class="slide level2">
 <h2>Objetivos da aula</h2>
-<p>Ao final desta aula, o estudante deverá ser capaz de:</p>
+<p>Ao final da aula, você deverá ser capaz de:</p>
 <ul>
-<li>identificar redes em <strong>estrela (<span class="math inline">\(Y\)</span>)</strong> e <strong>triângulo (<span class="math inline">\(\Delta\)</span>)</strong>;</li>
-<li>compreender por que alguns circuitos não podem ser reduzidos diretamente por série/paralelo;</li>
-<li>aplicar as transformações <strong><span class="math inline">\(\Delta \rightarrow Y\)</span></strong> e <strong><span class="math inline">\(Y \rightarrow \Delta\)</span></strong>;</li>
-<li>deduzir as principais fórmulas de conversão;</li>
-<li>resolver circuitos mistos usando transformação estrela-triângulo.</li>
+<li>explicar a função de uma <strong>central de serviços</strong>;</li>
+<li>diferenciar <strong>evento</strong>, <strong>incidente</strong> e <strong>requisição de serviço</strong>;</li>
+<li>registrar corretamente um <strong>chamado técnico</strong>;</li>
+<li>classificar um atendimento por <strong>impacto, urgência e prioridade</strong>;</li>
+<li>identificar os níveis de atendimento <strong>N1, N2 e N3</strong>;</li>
+<li>reconhecer cuidados técnicos e éticos no <strong>suporte remoto</strong>.</li>
 </ul>
 </section>
-<section id="o-problema-nem-tudo-é-sérieparalelo" class="slide level2">
-<h2>O problema: nem tudo é série/paralelo</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Em muitos circuitos, os resistores não estão claramente em série nem em paralelo.</p>
-<p>Se não conseguimos identificar pares em série ou paralelo, precisamos de outra estratégia.</p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_circuito_em_ponte.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/a06_circuito_em_ponte.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="rede-em-estrela-y-ou-t" class="slide level2">
-<h2>Rede em estrela: <span class="math inline">\(Y\)</span> ou <span class="math inline">\(T\)</span></h2>
-<ul>
-<li>A rede <strong>Y</strong> possui três resistores ligados a um ponto comum central.</li>
-<li>Também pode aparecer desenhada como uma rede em <strong>T</strong>.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_rede_ipsilon_ou_t.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/a06_rede_ipsilon_ou_t.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-</section>
-<section id="rede-em-triângulo-delta-ou-pi" class="slide level2">
-<h2>Rede em triângulo: <span class="math inline">\(\Delta\)</span> ou <span class="math inline">\(\Pi\)</span></h2>
-<ul>
-<li>A rede Δ possui três resistores formando um caminho fechado entre três terminais.</li>
-<li>Também pode aparecer desenhada como uma rede em <strong><span class="math inline">\(\Pi\)</span></strong>.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_rede_delta_ou_pi.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/a06_rede_delta_ou_pi.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-</section>
-<section id="ideia-central" class="slide level2">
-<h2>Ideia central</h2>
-<ul>
-<li>A transformação <span class="math inline">\(Y-\Delta\)</span> permite substituir uma rede de três resistores por outra equivalente.</li>
-<li>Duas redes são equivalentes quando apresentam a mesma resistência entre os mesmos terminais externos.</li>
-<li>Assim, para os terminais 1, 2 e 3:</li>
-</ul>
-<p><span class="math display">\[R_{12}^{(Y)} = R_{12}^{(\Delta)}\]</span></p>
-<p><span class="math display">\[R_{13}^{(Y)} = R_{13}^{(\Delta)}\]</span></p>
-<p><span class="math display">\[R_{23}^{(Y)} = R_{23}^{(\Delta)}\]</span></p>
-</section>
-<section id="o-que-significa-converter" class="slide level2">
-<h2>O que significa converter?</h2>
-<ul>
-<li>Converter não significa retirar resistores do circuito.</li>
-<li>Significa substituir uma rede por outra que, vista de fora, se comporta da mesma forma.</li>
-</ul>
+<section id="onde-estamos-na-disciplina" class="slide level2">
+<h2>Onde estamos na disciplina?</h2>
 <div class="box">
-<p>A transformação conserva o comportamento elétrico nos terminais externos, mas muda a forma interna da rede.</p>
+<p>Na manutenção de computadores, o trabalho técnico não termina quando o problema é resolvido.</p>
+<p>Também é necessário <strong>atender o usuário</strong>, <strong>registrar o problema</strong>, <strong>documentar os testes</strong> e <strong>comunicar a solução</strong>.</p>
+</div>
+<div class="fragment">
+<p><strong>Conteúdo 8 da ementa:</strong> suporte ao usuário, central de serviços, eventos, incidentes, sistema de chamados, níveis de atendimento e suporte remoto.</p>
 </div>
 </section>
-<section id="conversão-delta-rightarrow-y" class="slide level2">
-<h2>Conversão <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<section id="situação-problema" class="slide level2">
+<h2>Situação-problema</h2>
+<blockquote>
+<p>“Professor, meu computador não presta. Está tudo travando e eu tenho que entregar um relatório ainda hoje.”</p>
+</blockquote>
+<div class="fragment">
+<div class="Small">
+<div class="grid2">
+<div>
+<p><strong>O técnico deve:</strong></p>
 <ul>
-<li>Partimos de uma rede em triângulo e queremos chegar a uma rede em estrela.</li>
-<li>Na rede Y, entre os terminais 1 e 2, a corrente passa por <span class="math inline">\(R_1\)</span> e depois por <span class="math inline">\(R_3\)</span>.</li>
-<li>Logo:</li>
+<li>ouvir o usuário;</li>
+<li>fazer perguntas objetivas;</li>
+<li>registrar o chamado;</li>
+<li>avaliar impacto e urgência;</li>
+<li>iniciar testes simples.</li>
 </ul>
-<p><span class="math display">\[R_{12}^{(Y)} = R_1 + R_3\]</span></p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_superposicao_redes_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Superposição das redes \Delta e Y"><img data-src="img/a06_superposicao_redes_y_delta.png" alt="Superposição das redes \Delta e Y"></a></p>
-<figcaption>Superposição das redes <span class="math inline">\(\Delta\)</span> e <span class="math inline">\(Y\)</span></figcaption>
-</figure>
 </div>
-</div></div>
-</section>
-<section id="conversão-delta-rightarrow-y-1" class="slide level2">
-<h2>Conversão <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<div>
+<p><strong>O técnico não deve:</strong></p>
 <ul>
-<li>Na rede <span class="math inline">\(\Delta\)</span>, entre 1 e 2, existem dois caminhos:
-<ul>
-<li>caminho direto: <span class="math inline">\(R_b\)</span>;</li>
-<li>caminho alternativo: <span class="math inline">\(R_c + R_a\)</span>.</li>
-</ul></li>
+<li>abrir o computador imediatamente;</li>
+<li>culpar o usuário;</li>
+<li>trocar peças sem diagnóstico;</li>
+<li>resolver sem registrar;</li>
+<li>ignorar a prioridade do caso.</li>
 </ul>
-<p>Esses caminhos estão em paralelo:</p>
-<p><span class="math display">\[R_{12}^{(\Delta)} = R_b \parallel (R_c + R_a)\]</span></p>
-<p><span class="math display">\[R_{12}^{(\Delta)} = \frac{R_b(R_c+R_a)}{R_a+(R_b+R_c)}\]</span></p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_superposicao_redes_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Superposição das redes \Delta e Y"><img data-src="img/a06_superposicao_redes_y_delta.png" alt="Superposição das redes \Delta e Y"></a></p>
-<figcaption>Superposição das redes <span class="math inline">\(\Delta\)</span> e <span class="math inline">\(Y\)</span></figcaption>
-</figure>
 </div>
-</div></div>
+</div>
+</div>
+</div>
 </section>
-<section id="igualando-as-redes" class="slide level2">
-<h2>Igualando as redes</h2>
-<p>Como as redes devem ser equivalentes:</p>
-<p><span class="math display">\[R_{12}^{(Y)} = R_{12}^{(\Delta)}\]</span></p>
-<p>Então:</p>
-<p><span class="math display">\[R_1 + R_3 = \frac{R_b(R_c+R_a)}{R_a+R_b+R_c}\]</span></p>
-</section>
-<section id="igualando-as-redes-1" class="slide level2">
-<h2>Igualando as redes</h2>
-<p>De forma semelhante:</p>
-<p><span class="math display">\[R_1 + R_2 = \frac{R_c(R_a+R_b)}{R_a+R_b+R_c}\]</span></p>
-<p><span class="math display">\[R_2 + R_3 = \frac{R_a(R_b+R_c)}{R_a+R_b+R_c}\]</span></p>
-</section>
-<section id="fórmulas-delta-rightarrow-y" class="slide level2">
-<h2>Fórmulas <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
-<p>Temos:</p>
-<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a + R_b + R_c}, \quad R_2 = \frac{R_cR_a}{R_a + R_b + R_c}\]</span> <span class="math display">\[R_3 = \frac{R_aR_b}{R_a + R_b + R_c}\]</span></p>
+<section id="perguntas-iniciais" class="slide level2">
+<h2>Perguntas iniciais</h2>
+<p>Antes de “mexer no computador”, o técnico precisa entender o problema.</p>
 <div class="box">
-<p>Cada resistor da estrela é o produto dos dois resistores adjacentes do triângulo dividido pela soma dos três resistores do triângulo.</p>
+<p>Boas perguntas reduzem o tempo de diagnóstico e evitam soluções erradas.</p>
+</div>
+<div class="fragment">
+<div class="small">
+<ul>
+<li>Quando o problema começou?</li>
+<li>O problema acontece sempre ou às vezes?</li>
+<li>Alguma alteração foi feita recentemente?</li>
+<li>Outros usuários ou computadores apresentam o mesmo problema?</li>
+<li>Existe mensagem de erro?</li>
+<li>O problema impede totalmente o trabalho?</li>
+</ul>
+</div>
 </div>
 </section>
-<section id="como-memorizar-delta-rightarrow-y" class="slide level2">
-<h2>Como memorizar <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li>Observe o resistor <span class="math inline">\(R_1\)</span>, que é o resistor da estrela ligado ao terminal 1.</li>
-<li>No triângulo, os resistores que encostam no terminal 1 são <span class="math inline">\(R_b\)</span> e <span class="math inline">\(R_c\)</span>.</li>
-<li>Logo:</li>
-</ul>
-<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a+R_b+R_c}\]</span></p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_superposicao_redes_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Superposição das redes \Delta e Y"><img data-src="img/a06_superposicao_redes_y_delta.png" alt="Superposição das redes \Delta e Y"></a></p>
-<figcaption>Superposição das redes <span class="math inline">\(\Delta\)</span> e <span class="math inline">\(Y\)</span></figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="conversão-y-rightarrow-delta" class="slide level2">
-<h2>Conversão <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
-<ul>
-<li>Agora fazemos o processo inverso.</li>
-<li>Partimos da rede <span class="math inline">\(Y\)</span> e queremos encontrar a rede <span class="math inline">\(\Delta\)</span> equivalente.</li>
-<li>A partir das fórmulas da conversão <span class="math inline">\(\Delta \rightarrow Y\)</span>:</li>
-</ul>
-<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a+R_b+R_c}, \quad R_2 = \frac{R_cR_a}{R_a+R_b+R_c}\]</span></p>
-<p><span class="math display">\[R_3 = \frac{R_aR_b}{R_a+R_b+R_c}\]</span></p>
-</section>
-<section id="soma-dos-produtos-da-rede-y" class="slide level2">
-<h2>Soma dos produtos da rede <span class="math inline">\(Y\)</span></h2>
-<ul>
-<li>Manipulando essas relações, obtemos a soma dos produtos dois a dois da rede <span class="math inline">\(Y\)</span>. Definimos:</li>
-</ul>
-<p><span class="math display">\[P = R_1R_2 + R_2R_3 + R_3R_1\]</span></p>
-<ul>
-<li>Então, os resistores do triângulo são obtidos dividindo <span class="math inline">\(P\)</span> pelo resistor oposto na estrela.</li>
-</ul>
+<section id="o-que-é-suporte-ao-usuário" class="slide level2">
+<h2>O que é suporte ao usuário?</h2>
+<p>Suporte ao usuário é o conjunto de procedimentos usados para <strong>receber, registrar, acompanhar e solucionar</strong> demandas relacionadas ao uso de equipamentos, sistemas e serviços de informática.</p>
+<div class="fragment">
 <div class="box">
-<p>Na conversão <span class="math inline">\(Y \rightarrow \Delta\)</span>, cada resistor do triângulo é a soma dos produtos dois a dois da estrela, dividida pelo resistor <span class="math inline">\(Y\)</span> oposto.</p>
+<p>O suporte técnico combina <strong>conhecimento técnico</strong>, <strong>comunicação clara</strong> e <strong>organização do atendimento</strong>.</p>
+</div>
 </div>
 </section>
-<section id="fórmulas-y-rightarrow-delta" class="slide level2">
-<h2>Fórmulas <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
-<p><span class="math display">\[R_a = \frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\]</span></p>
-<p><span class="math display">\[R_b = \frac{R_1R_2+R_2R_3+R_3R_1}{R_2}\]</span></p>
-<p><span class="math display">\[R_c = \frac{R_1R_2+R_2R_3+R_3R_1}{R_3}\]</span></p>
+<section id="central-de-serviços" class="slide level2">
+<h2>Central de serviços</h2>
+<p>A <strong>central de serviços</strong> é o ponto de contato entre os usuários e a equipe técnica.</p>
+<div class="grid2">
+<div>
+<p>Ela pode:</p>
+<ul>
+<li>receber solicitações;</li>
+<li>registrar chamados;</li>
+<li>orientar usuários;</li>
+<li>acompanhar atendimentos;</li>
+<li>encaminhar problemas.</li>
+</ul>
+</div>
+<div>
+<p>Ela ajuda a evitar:</p>
+<ul>
+<li>atendimentos esquecidos;</li>
+<li>retrabalho;</li>
+<li>falta de histórico;</li>
+<li>prioridades mal definidas;</li>
+<li>comunicação informal demais.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="fluxo-básico-de-atendimento" class="slide level2">
+<h2>Fluxo básico de atendimento</h2>
+<div class="center">
+<p><strong>Usuário relata</strong><br>
+↓<br>
+<strong>Chamado é registrado</strong><br>
+↓<br>
+<strong>Problema é classificado</strong><br>
+↓<br>
+<strong>Atendimento N1, N2 ou N3</strong><br>
+↓<br>
+<strong>Solução é aplicada</strong><br>
+↓<br>
+<strong>Chamado é documentado e fechado</strong></p>
+</div>
+</section>
+<section id="evento-incidente-ou-requisição" class="slide level2 Small">
+<h2>Evento, incidente ou requisição?</h2>
+<div class="grid3">
+<div class="box">
+<p><strong>Evento</strong></p>
+<p>Algo observado no sistema, mas que nem sempre representa falha.</p>
+<p><strong>Exemplo:</strong> aviso de pouco espaço em disco.</p>
+</div>
 <div class="warning">
-<p><strong>Cuidado:</strong> o denominador é o resistor oposto ao lado do triângulo que está sendo calculado.</p>
+<p><strong>Incidente</strong></p>
+<p>Interrupção ou redução da qualidade de um serviço.</p>
+<p><strong>Exemplo:</strong> computador não liga.</p>
+</div>
+<div class="box">
+<p><strong>Requisição</strong></p>
+<p>Solicitação planejada que não envolve necessariamente uma falha.</p>
+<p><strong>Exemplo:</strong> instalar um software.</p>
+</div>
 </div>
 </section>
-<section id="como-memorizar-y-rightarrow-delta" class="slide level2">
-<h2>Como memorizar <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
-<ul>
-<li>Para calcular <span class="math inline">\(R_a\)</span>, sabemos que ele fica no lado oposto a <span class="math inline">\(R_1\)</span>.</li>
-<li>Por isso: <span class="math display">\[R_a = \frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\]</span></li>
-</ul>
+<section id="exemplos-rápidos" class="slide level2 Small">
+<h2>Exemplos rápidos</h2>
+<p>Classifique cada caso como <strong>evento</strong>, <strong>incidente</strong> ou <strong>requisição de serviço</strong>.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Caso</th>
+<th>Classificação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Antivírus informa que encontrou uma ameaça</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>Usuário solicita instalação de impressora</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td>Internet não funciona no laboratório</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>Sistema avisa que há atualização disponível</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td>Monitor não apresenta imagem</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="caso-especial-redes-balanceadas" class="slide level2">
-<h2>Caso especial: redes balanceadas</h2>
-<ul>
-<li>Uma rede é balanceada quando todos os resistores são iguais.</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Na estrela:</li>
-</ul>
-<p><span class="math display">\[R_1 = R_2 = R_3 = R_Y\]</span></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>No triângulo:</li>
-</ul>
-<p><span class="math display">\[R_a = R_b = R_c = R_\Delta\]</span></p>
-</div></div>
-<ul>
-<li>Nesse caso:</li>
-</ul>
-<p><span class="math display">\[R_Y = \frac{R_\Delta}{3} \quad \text{ou} \quad R_\Delta = 3R_Y\]</span></p>
-</section>
-<section id="quando-usar-y-delta" class="slide level2">
-<h2>Quando usar <span class="math inline">\(Y-\Delta\)</span>?</h2>
-<p>Use quando:</p>
-<ul>
-<li>o circuito possui uma ponte ou malha interna;</li>
-<li>não há resistores claramente em série ou paralelo;</li>
-<li>há uma rede de três terminais que pode ser convertida;</li>
-<li>a conversão cria novas associações em série ou paralelo.</li>
-</ul>
-<div class="alerta">
-<p>Não é obrigatório usar <span class="math inline">\(Y-\Delta\)</span> em todos os circuitos. Use quando ela simplificar a análise.</p>
+<section id="respostas-esperadas" class="slide level2 Small">
+<h2>Respostas esperadas</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Caso</th>
+<th>Classificação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Antivírus informa que encontrou uma ameaça</td>
+<td>Evento</td>
+</tr>
+<tr class="even">
+<td>Usuário solicita instalação de impressora</td>
+<td>Requisição</td>
+</tr>
+<tr class="odd">
+<td>Internet não funciona no laboratório</td>
+<td>Incidente</td>
+</tr>
+<tr class="even">
+<td>Sistema avisa que há atualização disponível</td>
+<td>Evento</td>
+</tr>
+<tr class="odd">
+<td>Monitor não apresenta imagem</td>
+<td>Incidente</td>
+</tr>
+</tbody>
+</table>
+<div class="small">
+<p>Observação: em situações reais, a classificação pode depender do contexto e do impacto no serviço.</p>
 </div>
 </section>
-<section id="estratégia-para-resolver-circuitos-com-y-delta" class="slide level2">
-<h2>Estratégia para resolver circuitos com <span class="math inline">\(Y-\Delta\)</span></h2>
+<section id="sistema-de-chamados" class="slide level2">
+<h2>Sistema de chamados</h2>
+<p>Um sistema de chamados é uma ferramenta usada para <strong>registrar, acompanhar e documentar</strong> os atendimentos técnicos.</p>
+<div class="box">
+<p>Sem chamado, o atendimento fica dependente da memória do técnico e da comunicação informal.</p>
+</div>
+<div class="fragment">
+<p>Pode ser um software específico, uma plataforma web, um formulário eletrônico ou uma planilha organizada.</p>
+</div>
+</section>
+<section id="informações-essenciais-em-um-chamado" class="slide level2">
+<h2>Informações essenciais em um chamado</h2>
+<p>Um chamado técnico deve conter, no mínimo:</p>
+<div class="grid2">
+<div>
+<ul>
+<li>solicitante;</li>
+<li>setor/local;</li>
+<li>equipamento envolvido;</li>
+<li>descrição do problema;</li>
+<li>data e horário;</li>
+<li>categoria.</li>
+</ul>
+</div>
+<div>
+<ul>
+<li>impacto;</li>
+<li>urgência;</li>
+<li>prioridade;</li>
+<li>procedimentos realizados;</li>
+<li>responsável pelo atendimento;</li>
+<li>situação do chamado.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="chamado-mal-registrado" class="slide level2">
+<h2>Chamado mal registrado</h2>
+<div class="warning">
+<p>“PC ruim. Resolver.”</p>
+</div>
+<div class="fragment">
+<p><strong>Problemas desse registro:</strong></p>
+<ul>
+<li>não informa o usuário;</li>
+<li>não informa o equipamento;</li>
+<li>não descreve o sintoma;</li>
+<li>não indica quando começou;</li>
+<li>não permite definir prioridade;</li>
+<li>dificulta continuidade do atendimento.</li>
+</ul>
+</div>
+</section>
+<section id="chamado-bem-registrado" class="slide level2 Small">
+<h2>Chamado bem registrado</h2>
+<div class="box">
+<p>Usuário relata lentidão ao abrir navegador e editor de texto. <em>Equipamento:</em> computador de mesa do Laboratório 2. Problema começou há três dias. Verificado uso elevado de disco e muitos programas iniciando com o sistema. <em>Classificação:</em> incidente. <em>Prioridade:</em> média.</p>
+</div>
+<div class="fragment">
+<p><strong>Por que esse registro é melhor?</strong></p>
+<ul>
+<li>descreve o sintoma;</li>
+<li>informa o equipamento;</li>
+<li>apresenta testes iniciais;</li>
+<li>permite continuidade por outro técnico;</li>
+<li>ajuda a documentar a solução.</li>
+</ul>
+</div>
+</section>
+<section id="impacto-urgência-e-prioridade" class="slide level2">
+<h2>Impacto, urgência e prioridade</h2>
+<div class="grid3">
+<div class="box">
+<p><strong>Impacto</strong></p>
+<p>Quantas pessoas ou serviços são afetados?</p>
+</div>
+<div class="box">
+<p><strong>Urgência</strong></p>
+<p>Quanto tempo o atendimento pode esperar?</p>
+</div>
+<div class="box">
+<p><strong>Prioridade</strong></p>
+<p>Resultado da combinação entre impacto e urgência.</p>
+</div>
+</div>
+</section>
+<section id="exemplo-de-prioridade" class="slide level2 Tiny">
+<h2>Exemplo de prioridade</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação</th>
+<th>Impacto</th>
+<th>Urgência</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Um mouse com defeito em um computador reserva</td>
+<td>Baixo</td>
+<td>Baixa</td>
+<td>Baixa</td>
+</tr>
+<tr class="even">
+<td>Computador da secretaria sem acesso ao sistema acadêmico</td>
+<td>Médio</td>
+<td>Alta</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td>Internet fora em todo o laboratório durante aula prática</td>
+<td>Alto</td>
+<td>Alta</td>
+<td>Crítica</td>
+</tr>
+<tr class="even">
+<td>Solicitação de instalação de software para a próxima semana</td>
+<td>Baixo</td>
+<td>Baixa</td>
+<td>Baixa</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="níveis-de-atendimento" class="slide level2 Tiny">
+<h2>Níveis de atendimento</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nível</th>
+<th>Função principal</th>
+<th>Exemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>N1</td>
+<td>Primeiro atendimento, triagem e soluções simples</td>
+<td>orientar usuário, verificar cabos, reiniciar serviço, abrir chamado</td>
+</tr>
+<tr class="even">
+<td>N2</td>
+<td>Diagnóstico técnico mais detalhado</td>
+<td>testar hardware, reinstalar driver, configurar rede, substituir componente</td>
+</tr>
+<tr class="odd">
+<td>N3</td>
+<td>Problemas complexos ou especializados</td>
+<td>fornecedor, infraestrutura avançada, sistemas críticos, garantia</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quando-encaminhar" class="slide level2 Small">
+<h2>Quando encaminhar?</h2>
+<p>Um chamado deve ser encaminhado quando:</p>
+<ul>
+<li>o problema exige permissão ou conhecimento que o N1 não possui;</li>
+<li>há risco de perda de dados;</li>
+<li>envolve infraestrutura crítica;</li>
+<li>requer abertura de equipamento sem autorização;</li>
+<li>depende de fornecedor, garantia ou equipe especializada;</li>
+<li>a solução simples não resolveu o incidente.</li>
+</ul>
+<div class="warning">
+<p>Encaminhar não é “passar o problema adiante”. É garantir que ele seja tratado pelo nível adequado.</p>
+</div>
+</section>
+<section id="comunicação-com-o-usuário" class="slide level2">
+<h2>Comunicação com o usuário</h2>
+<p>O técnico precisa comunicar-se de forma clara, respeitosa e objetiva.</p>
+<div class="grid2">
+<div>
+<p><strong>Boas práticas</strong></p>
+<ul>
+<li>escutar antes de concluir;</li>
+<li>usar linguagem simples;</li>
+<li>explicar o que será feito;</li>
+<li>informar prazos;</li>
+<li>registrar decisões;</li>
+<li>confirmar se o problema foi resolvido.</li>
+</ul>
+</div>
+<div>
+<p><strong>Evite</strong></p>
+<ul>
+<li>ironias;</li>
+<li>termos técnicos excessivos;</li>
+<li>culpar o usuário;</li>
+<li>prometer o que não pode cumprir;</li>
+<li>acessar arquivos pessoais sem autorização.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="suporte-remoto" class="slide level2">
+<h2>Suporte remoto</h2>
+<p>O suporte remoto permite acessar ou orientar o usuário à distância para resolver problemas de software, configuração ou uso.</p>
+<p><strong>Exemplos de uso:</strong></p>
+<ul>
+<li>orientar instalação ou configuração;</li>
+<li>verificar mensagens de erro;</li>
+<li>ajustar configurações do sistema;</li>
+<li>auxiliar uso de programas;</li>
+<li>acompanhar testes com o usuário.</li>
+</ul>
+</section>
+<section id="cuidados-no-suporte-remoto" class="slide level2">
+<h2>Cuidados no suporte remoto</h2>
+<div class="warning">
+<p>O acesso remoto deve ocorrer apenas com autorização do usuário e seguindo as regras da instituição.</p>
+</div>
+<ul>
+<li>solicitar permissão antes de acessar;</li>
+<li>explicar o que será feito;</li>
+<li>evitar visualizar dados pessoais ou sigilosos;</li>
+<li>não copiar arquivos sem autorização;</li>
+<li>registrar o atendimento;</li>
+<li>encerrar a sessão ao finalizar;</li>
+<li>orientar o usuário sobre a solução aplicada.</li>
+</ul>
+</section>
+<section id="atividade-prática-em-grupo" class="slide level2">
+<h2>Atividade prática em grupo</h2>
+<p><strong>Organização:</strong> grupos de 3 a 5 discentes.</p>
+<p>Cada grupo receberá um caso de atendimento e deverá abrir um chamado técnico.</p>
+<div class="box">
+<p>O objetivo não é “adivinhar a solução”, mas registrar corretamente o problema, classificar o atendimento e definir os primeiros passos.</p>
+</div>
+</section>
+<section id="casos-para-sorteio" class="slide level2">
+<h2>Casos para sorteio</h2>
 <ol type="1">
-<li>Identifique redes em <span class="math inline">\(Y\)</span> ou <span class="math inline">\(\Delta\)</span>.</li>
-<li>Escolha a conversão que simplifica o circuito.</li>
-<li>Substitua a rede original pela equivalente.</li>
-<li>Procure novas associações série/paralelo.</li>
-<li>Calcule a resistência equivalente.</li>
-<li>Se houver fonte, determine corrente e tensões.</li>
+<li>Computador não liga.</li>
+<li>Internet não funciona em apenas uma máquina.</li>
+<li>Impressora aparece offline.</li>
+<li>Notebook superaquecendo e desligando.</li>
+<li>Usuário esqueceu a senha.</li>
+<li>Monitor sem imagem.</li>
+<li>Computador muito lento.</li>
+<li>Roteador Wi-Fi sem conexão.</li>
 </ol>
 </section>
-<section id="exemplo-de-aplicação" class="slide level2">
-<h2>Exemplo de aplicação</h2>
-<p>Circuito em ponte:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_exemplo_aplicacao_y_delta.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="img/a06_exemplo_aplicacao_y_delta.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
-</figure>
-</div>
-<p>Neste tipo de circuito, uma transformação <span class="math inline">\(Y-\Delta\)</span> pode gerar novas associações em paralelo.</p>
+<section id="ficha-de-chamado-técnico" class="slide level2 Tiny">
+<h2>Ficha de chamado técnico</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Solicitante</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Equipamento</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Descrição do problema</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tipo: evento, incidente ou requisição</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Impacto</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Urgência</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Prioridade</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Nível inicial de atendimento</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Perguntas ao usuário</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Primeiros testes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Possível encaminhamento</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="exemplo-de-aplicação-ideia-de-solução" class="slide level2">
-<h2>Exemplo de aplicação: ideia de solução</h2>
-<p>Podemos transformar uma rede <span class="math inline">\(Y\)</span> interna em <span class="math inline">\(\Delta\)</span>.</p>
-<p>Depois da conversão, podem surgir pares em paralelo, por exemplo:</p>
-<p><span class="math display">\[70\Omega \parallel 30\Omega\]</span></p>
-<p><span class="math display">\[12,5\Omega \parallel 17,5\Omega\]</span></p>
-<p><span class="math display">\[15\Omega \parallel 35\Omega\]</span></p>
-<p>Após isso, o circuito pode ser simplificado por série e paralelo.</p>
+<section id="socialização" class="slide level2">
+<h2>Socialização</h2>
+<p>Cada grupo apresentará rapidamente seu chamado.</p>
+<p>Durante a apresentação, observaremos:</p>
+<ul>
+<li>A classificação está correta?</li>
+<li>A prioridade faz sentido?</li>
+<li>O chamado tem informações suficientes?</li>
+<li>O problema começa no N1, N2 ou N3?</li>
+<li>Faltou alguma pergunta ao usuário?</li>
+<li>O encaminhamento foi bem justificado?</li>
+</ul>
 </section>
-<section id="erros-comuns" class="slide level2">
-<h2>Erros comuns</h2>
-<div class="alerta">
-<p><strong>Erro 1:</strong> aplicar série/paralelo onde os resistores não compartilham os mesmos nós.</p>
-</div>
-<div class="alerta">
-<p><strong>Erro 2:</strong> confundir resistor adjacente com resistor oposto.</p>
-</div>
-<div class="alerta">
-<p><strong>Erro 3:</strong> converter uma rede que não simplifica o circuito.</p>
-</div>
+<section id="avaliação-da-atividade" class="slide level2">
+<h2>Avaliação da atividade</h2>
+<p>A avaliação será formativa, considerando:</p>
+<ul>
+<li>participação na discussão;</li>
+<li>preenchimento adequado da ficha de chamado;</li>
+<li>diferenciação entre evento, incidente e requisição;</li>
+<li>justificativa para impacto, urgência e prioridade;</li>
+<li>escolha adequada do nível de atendimento;</li>
+<li>clareza na comunicação técnica.</li>
+</ul>
 </section>
-<section id="resumo-delta-rightarrow-y" class="slide level2">
-<h2>Resumo: <span class="math inline">\(\Delta \rightarrow Y\)</span></h2>
-<p>Se a rede original é <span class="math inline">\(\Delta\)</span>:</p>
-<p>Então:</p>
-<p><span class="math display">\[R_1 = \frac{R_bR_c}{R_a+R_b+R_c}\]</span></p>
-<p><span class="math display">\[R_2 = \frac{R_cR_a}{R_a+R_b+R_c}\]</span></p>
-<p><span class="math display">\[R_3 = \frac{R_aR_b}{R_a+R_b+R_c}\]</span></p>
-</section>
-<section id="resumo-y-rightarrow-delta" class="slide level2">
-<h2>Resumo: <span class="math inline">\(Y \rightarrow \Delta\)</span></h2>
-<p>Se a rede original é <span class="math inline">\(Y\)</span>:</p>
-<p>Então:</p>
-<p><span class="math display">\[R_a = \frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\]</span></p>
-<p><span class="math display">\[R_b = \frac{R_1R_2+R_2R_3+R_3R_1}{R_2}\]</span></p>
-<p><span class="math display">\[R_c = \frac{R_1R_2+R_2R_3+R_3R_1}{R_3}\]</span></p>
-</section>
-<section id="exercício-1" class="slide level2">
-<h2>Exercício 1</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Converta a rede <span class="math inline">\(\Delta\)</span> abaixo para <span class="math inline">\(Y\)</span>.</p>
-<p>Determine:</p>
-<p><span class="math display">\[R_1, \quad R_2, \quad R_3\]</span></p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_exercicio_1_aula_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="img/a06_exercicio_1_aula_6.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="exercício-2" class="slide level2">
-<h2>Exercício 2</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Converta a rede <span class="math inline">\(Y\)</span> abaixo para <span class="math inline">\(\Delta\)</span>.</p>
-<p>Determine:</p>
-<p><span class="math display">\[R_a, \quad R_b, \quad R_c\]</span></p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a06_exercicio_2_aula_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="img/a06_exercicio_2_aula_6.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="exercício-3" class="slide level2">
-<h2>Exercício 3</h2>
-<p>Uma rede <span class="math inline">\(\Delta\)</span> balanceada possui três resistores de <span class="math inline">\(45\Omega\)</span>.</p>
-<p>Determine a rede <span class="math inline">\(Y\)</span> equivalente.</p>
-</section>
-<section id="exercício-4" class="slide level2">
-<h2>Exercício 4</h2>
-<p>Explique com suas palavras por que a transformação <span class="math inline">\(Y-\Delta\)</span> é útil na análise de circuitos em ponte.</p>
-</section>
-<section id="gabarito-exercício-1" class="slide level2">
-<h2>Gabarito: Exercício 1</h2>
-<p><span class="math display">\[S = 6+12+18 = 36\Omega\]</span></p>
-<p><span class="math display">\[R_1=\frac{12\cdot18}{36}=6\Omega\]</span></p>
-<p><span class="math display">\[R_2=\frac{18\cdot6}{36}=3\Omega\]</span></p>
-<p><span class="math display">\[R_3=\frac{6\cdot12}{36}=2\Omega\]</span></p>
-</section>
-<section id="gabarito-exercício-2" class="slide level2">
-<h2>Gabarito: Exercício 2</h2>
-<p><span class="math display">\[P = (4)(8)+(8)(12)+(12)(4)\]</span></p>
-<p><span class="math display">\[P = 32+96+48 = 176\]</span></p>
-<p><span class="math display">\[R_a=\frac{176}{4}=44\Omega\]</span></p>
-<p><span class="math display">\[R_b=\frac{176}{8}=22\Omega\]</span></p>
-<p><span class="math display">\[R_c=\frac{176}{12}=14,67\Omega\]</span></p>
-</section>
-<section id="gabarito-exercício-3" class="slide level2">
-<h2>Gabarito: Exercício 3</h2>
-<p>Para rede balanceada:</p>
-<p><span class="math display">\[R_Y=\frac{R_\Delta}{3}\]</span></p>
-<p><span class="math display">\[R_Y=\frac{45}{3}=15\Omega\]</span></p>
-<p>Portanto:</p>
-<p><span class="math display">\[R_1=R_2=R_3=15\Omega\]</span></p>
-</section>
-<section id="gabarito-exercício-4" class="slide level2">
-<h2>Gabarito: Exercício 4</h2>
-<p>Resposta esperada:</p>
+<section id="fechamento-da-aula" class="slide level2">
+<h2>Fechamento da aula</h2>
 <div class="box">
-<p>A transformação <span class="math inline">\(Y-\Delta\)</span> é útil porque permite substituir uma parte do circuito por uma rede equivalente. Isso pode revelar novas associações em série e paralelo, tornando possível calcular resistência equivalente, correntes e tensões em circuitos que inicialmente não podem ser simplificados diretamente.</p>
+<p>Um bom suporte técnico depende de três elementos: <strong>escuta</strong>, <strong>método</strong> e <strong>registro</strong>.</p>
+</div>
+<div class="fragment">
+<p>Resolver o problema é importante, mas documentar o atendimento permite melhorar o serviço, evitar retrabalho e criar histórico para futuras manutenções.</p>
 </div>
 </section>
-<section id="fechamento" class="slide level2">
-<h2>Fechamento</h2>
-<p>A transformação <span class="math inline">\(Y-\Delta\)</span> é uma ferramenta intermediária entre a análise simples por série/paralelo e métodos mais gerais, como Kirchhoff.</p>
-<div class="warning">
-<p>Ela não altera o circuito do ponto de vista dos terminais externos, mas muda sua forma interna para facilitar a análise.</p>
+<section id="para-a-próxima-aula" class="slide level2">
+<h2>Para a próxima aula</h2>
+<p>Na próxima aula, vamos estudar:</p>
+<p><strong>Problemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções.</strong></p>
+<div class="fragment">
+<p>Vamos conectar o chamado técnico ao processo de diagnóstico:</p>
+<div class="center">
+<p><strong>relato do usuário → hipóteses → testes → diagnóstico → solução → registro</strong></p>
+</div>
 </div>
 </section>
 <section id="section" class="slide level2" data-background-image="img/fry_1.png">
@@ -556,7 +764,7 @@ Sob as seguintes condições:
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/ifrn-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Eletricidade Instrumental</p>
+<p>Manutenção de Computadores</p>
 </div>
 </div></div>
 
@@ -938,38 +1146,6 @@ Sob as seguintes condições:
         }
       });
       </script>
-    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-    (function() {
-      let previousOnload = window.onload;
-      window.onload = () => {
-        if (previousOnload) {
-          previousOnload();
-        }
-        lightboxQuarto.on('slide_before_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          const href = trigger.getAttribute('href');
-          if (href !== null) {
-            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-            if (imgEl !== null) {
-              const srcAttr = imgEl.getAttribute("src");
-              if (srcAttr && srcAttr.startsWith("data:")) {
-                slideConfig.href = srcAttr;
-              }
-            }
-          } 
-        });
-      
-        lightboxQuarto.on('slide_after_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(slideNode);
-          }
-        });
-      
-      };
-      
-    })();
-              </script>
     
 
 </body></html>

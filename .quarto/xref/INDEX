@@ -118,5 +118,14 @@
   },
   "disciplinas/mc/index.qmd": {
     "index.html": "4d0240df"
+  },
+  "disciplinas/mc/aula_08.qmd": {
+    "aula_08.html": "b4db5514"
+  },
+  "disciplinas/mc/aula_09.qmd": {
+    "aula_09.html": "701a7461"
+  },
+  "disciplinas/mc/aula_01.qmd": {
+    "aula_01.html": "1b3eb13e"
   }
 }

@@ -1,0 +1,51 @@
+---
+# --- INFORMAÇÕES DA AULA ---
+title: "Título da aula"
+subtitle: "Subtítulo da aula"
+author: "Prof. Alcemy Severino"
+license: "CC BY-NC"
+copyright: "© 2026 Alcemy Gabriel"
+institute: "IFRN"
+lang: pt-br
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
+format:
+  revealjs:
+    # Aparência
+    theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
+    footer: "Nome da disciplina"        # Adiciona a nota de rodapé
+    logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                  # Numeração de páginas no canto
+    center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
+    
+    # Interatividade (Lousa)
+    chalkboard: 
+      buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    lightbox: true                     # Permite ampliar imagens para detalhes (útil para diagramas)
+    
+    # Navegação
+    preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
+    controls: true                     # Mostra setas de navegação
+    controls-layout: edges             # Setas grandes nas laterais esquerda/direita
+    controls-tutorial: true            # Pisca a seta para indicar navegação
+    touch: true                        # Melhora o uso em tablets/celulares
+    
+    # Código (Para suas aulas de Programação)
+    code-line-numbers: true            # Permite referenciar linhas de código
+    highlight-style: github            # Estilo de cores do código (claro e limpo)
+---
+
+## Objetivos da aula
+
+Ao final da aula, você deverá ser capaz de:
+
+- listar os objetivos da aula;
+- continua...
+
+---
+
+## {background-image="img/fry_1.png"}
+
+---
+
+{{< include ../../_licenca.qmd >}}

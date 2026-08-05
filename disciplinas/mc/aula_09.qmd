@@ -1,0 +1,516 @@
+---
+# --- INFORMAÇÕES DA AULA ---
+title: "Problemas Comuns e Possíveis Soluções"
+subtitle: "Diagnóstico técnico em sistemas computacionais"
+author: "Prof. Alcemy Severino"
+license: "CC BY-NC"
+copyright: "© 2026 Alcemy Gabriel"
+institute: "IFRN"
+lang: pt-br
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
+format:
+  revealjs:
+    theme: [default, ifrn_2]
+    footer: "Manutenção de Computadores"
+    logo: img/ifrn-logo.png
+    slide-number: true
+    center: false
+    chalkboard:
+      buttons: false
+    lightbox: true
+    preview-links: auto
+    controls: true
+    controls-layout: edges
+    controls-tutorial: true
+    touch: true
+    code-line-numbers: true
+    highlight-style: github
+---
+
+## Objetivos da aula
+
+Ao final da aula, você deverá ser capaz de:
+
+- diferenciar **sintoma**, **causa**, **teste** e **solução**;
+- aplicar uma sequência lógica de **diagnóstico técnico**;
+- investigar problemas comuns sem trocar peças desnecessariamente;
+- relacionar falhas de **hardware**, **software**, **energia**, **rede** e **periféricos**;
+- registrar a solução adotada em linguagem técnica;
+- propor soluções seguras e justificadas.
+
+---
+
+## Onde estamos na disciplina?
+
+::: {.box}
+Na aula anterior, estudamos como **abrir, classificar e encaminhar um chamado técnico**.
+
+Agora, vamos estudar como transformar o chamado em um **processo de diagnóstico**.
+:::
+
+. . .
+
+**Conteúdo 9 da ementa:** problemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções.
+
+---
+
+## Do chamado ao diagnóstico
+
+<div class="center">
+
+**Relato do usuário**  
+↓  
+**Observação do sintoma**  
+↓  
+**Levantamento de hipóteses**  
+↓  
+**Testes**  
+↓  
+**Diagnóstico**  
+↓  
+**Solução**  
+↓  
+**Registro do atendimento**
+
+</div>
+
+---
+
+## Ideia central da aula
+
+> O bom técnico não decora soluções. Ele organiza hipóteses e testa uma de cada vez.
+
+. . .
+
+::: {.warning}
+Trocar peças sem diagnóstico pode gerar custo desnecessário, perda de tempo e até novos problemas.
+:::
+
+---
+
+## Sintoma, causa, teste e solução
+
+<div class="grid2">
+<div class="box">
+
+**Sintoma**
+
+É aquilo que aparece para o usuário ou para o técnico.
+
+**Exemplo:** computador liga, mas não dá vídeo.
+
+</div>
+<div class="box">
+
+**Causa provável**
+
+É uma hipótese para explicar o sintoma.
+
+**Exemplo:** cabo de vídeo, monitor, memória RAM ou placa de vídeo.
+
+</div>
+</div>
+
+<div class="grid2">
+<div class="box">
+
+**Teste**
+
+É o procedimento usado para confirmar ou eliminar hipóteses.
+
+**Exemplo:** testar outro cabo ou outro monitor.
+
+</div>
+<div class="box">
+
+**Solução**
+
+É a ação tomada após o diagnóstico.
+
+**Exemplo:** substituir cabo, reencaixar RAM ou trocar componente defeituoso.
+
+</div>
+</div>
+
+---
+
+## Antes de qualquer intervenção
+
+O técnico deve começar pelos procedimentos mais simples e seguros.
+
+- Ouvir o relato do usuário.
+- Verificar cabos, energia e conexões.
+- Observar mensagens de erro.
+- Identificar alterações recentes.
+- Confirmar se o problema ocorre sempre.
+- Preservar dados do usuário.
+- Registrar todos os testes realizados.
+
+::: {.warning}
+Nunca abra equipamentos energizados e nunca intervenha em fonte de alimentação internamente sem formação específica e autorização.
+:::
+
+---
+
+## Tabela geral de diagnóstico {.smaller}
+
+| Sintoma | Possíveis causas | Testes iniciais | Possíveis soluções |
+|---|---|---|---|
+| Computador não liga | cabo, tomada, fonte, botão power, placa-mãe | testar tomada, cabo, fonte e conexões | reconectar cabos, testar fonte, substituir componente |
+| Liga, mas não dá vídeo | cabo de vídeo, RAM, monitor, placa de vídeo | testar monitor, cabo e memória RAM | trocar cabo, reencaixar RAM, testar vídeo onboard |
+| Computador lento | pouco espaço, muitos programas, malware, HD com falha, pouca RAM | verificar CPU, RAM, disco e inicialização | limpar inicialização, remover malware, trocar HD por SSD |
+| Reinicia ou desliga | superaquecimento, fonte instável, pasta térmica ressecada | verificar temperaturas, ventoinhas e fonte | limpar cooler, trocar pasta térmica, testar fonte |
+
+---
+
+## Mais problemas comuns {.smaller}
+
+| Sintoma | Possíveis causas | Testes iniciais | Possíveis soluções |
+|---|---|---|---|
+| Internet não funciona | cabo, IP, DNS, driver, roteador, placa de rede | testar outro dispositivo, ping, IP e DNS | revisar cabo, renovar IP, configurar DNS, reinstalar driver |
+| Impressora não imprime | fila travada, cabo, driver, papel, rede | verificar fila, status, conexão e driver | limpar fila, reinstalar driver, reconectar impressora |
+| Teclado ou mouse não funciona | porta USB, pilha, driver, periférico defeituoso | testar outra porta ou outro computador | trocar pilha, reinstalar driver, substituir periférico |
+| Sistema não inicia | arquivos corrompidos, disco com defeito, atualização falha | modo de recuperação e checagem de disco | reparar inicialização, restaurar sistema, substituir disco |
+
+---
+
+## Caso 1: computador não liga
+
+<div class="grid2">
+<div>
+
+**Hipóteses comuns**
+
+- tomada sem energia;
+- cabo de força solto;
+- fonte com defeito;
+- botão power com problema;
+- cabo do painel frontal desconectado;
+- placa-mãe em curto ou defeituosa.
+
+</div>
+<div>
+
+**Testes iniciais**
+
+- testar a tomada;
+- testar outro cabo de força;
+- verificar chave da fonte, quando existir;
+- conferir conexões internas;
+- testar com outra fonte compatível;
+- observar LEDs e sinais sonoros.
+
+</div>
+</div>
+
+---
+
+## Caso 2: liga, mas não dá vídeo
+
+::: {.box}
+Sintoma: o computador liga, acende LEDs ou gira ventoinhas, mas o monitor mostra “sem sinal” ou fica apagado.
+:::
+
+**Hipóteses:** monitor, cabo, entrada errada, memória RAM, placa de vídeo, configuração de vídeo ou placa-mãe.
+
+. . .
+
+**Sequência de testes:**
+
+1. Verificar se o monitor está ligado.
+2. Conferir o cabo de vídeo.
+3. Testar outro monitor ou outro cabo.
+4. Verificar a entrada correta: HDMI, VGA, DisplayPort.
+5. Reencaixar e limpar contatos da memória RAM.
+6. Testar vídeo onboard ou placa de vídeo dedicada.
+
+---
+
+## Caso 3: computador lento
+
+<div class="grid2">
+<div>
+
+**Possíveis causas**
+
+- muitos programas iniciando com o sistema;
+- pouco espaço em disco;
+- HD com falha;
+- malware;
+- pouca memória RAM;
+- sistema desatualizado;
+- superaquecimento.
+
+</div>
+<div>
+
+**Testes e verificações**
+
+- Gerenciador de Tarefas;
+- uso de CPU, RAM e disco;
+- espaço livre em disco;
+- programas de inicialização;
+- verificação de malware;
+- temperatura do processador;
+- saúde do disco.
+
+</div>
+</div>
+
+---
+
+## Caso 4: reinicia ou desliga sozinho
+
+::: {.warning}
+Esse sintoma pode indicar risco de perda de dados ou dano ao equipamento.
+:::
+
+**Hipóteses comuns:**
+
+- superaquecimento do processador;
+- cooler parado ou obstruído por poeira;
+- pasta térmica ressecada;
+- fonte instável;
+- memória RAM com falha;
+- sistema operacional corrompido.
+
+. . .
+
+**Soluções possíveis:** limpeza interna, correção do fluxo de ar, troca de pasta térmica, teste de fonte, teste de memória e reparo do sistema.
+
+---
+
+## Caso 5: internet não funciona
+
+Antes de concluir que “a internet caiu”, identifique o escopo do problema.
+
+<div class="grid2">
+<div class="box">
+
+**Afeta só um computador?**
+
+Pode ser cabo, placa de rede, IP, DNS, driver ou configuração local.
+
+</div>
+<div class="box">
+
+**Afeta vários computadores?**
+
+Pode ser roteador, switch, provedor, servidor DHCP ou infraestrutura da rede.
+
+</div>
+</div>
+
+. . .
+
+**Testes úteis:** verificar cabo, testar outro dispositivo, conferir IP, usar `ping`, testar DNS e reiniciar equipamentos de rede quando autorizado.
+
+---
+
+## Caso 6: impressora não imprime
+
+**Perguntas iniciais:**
+
+- A impressora está ligada?
+- Há papel e tinta ou toner?
+- Existe mensagem de erro?
+- A impressora está em rede ou via USB?
+- O problema ocorre com todos os usuários?
+- Os documentos ficam presos na fila?
+
+. . .
+
+**Soluções possíveis:** limpar fila de impressão, definir impressora correta, verificar conexão, reinstalar driver, configurar IP ou reconectar à rede.
+
+---
+
+## Caso 7: sistema não inicia
+
+::: {.warning}
+Antes de formatar, avalie a possibilidade de recuperar o sistema e preservar os dados do usuário.
+:::
+
+**Possíveis causas:**
+
+- falha após atualização;
+- arquivos de inicialização corrompidos;
+- disco com defeito;
+- alteração incorreta na BIOS/UEFI;
+- partição ou sistema de arquivos danificado.
+
+**Testes e ações:** modo de recuperação, reparo de inicialização, checagem de disco, backup dos dados e substituição do disco quando necessário.
+
+---
+
+## Ferramentas úteis no diagnóstico
+
+<div class="grid2">
+<div>
+
+**Ferramentas físicas**
+
+- chave Phillips;
+- pincel antiestático;
+- álcool isopropílico;
+- borracha branca ou limpa-contato apropriado;
+- multímetro, quando autorizado;
+- pendrive de instalação ou recuperação.
+
+</div>
+<div>
+
+**Ferramentas de software**
+
+- Gerenciador de Tarefas;
+- ferramentas de diagnóstico de disco;
+- antivírus;
+- monitor de temperatura;
+- prompt de comando;
+- logs do sistema;
+- ferramentas de rede.
+
+</div>
+</div>
+
+---
+
+## Demonstração do raciocínio técnico
+
+**Caso:** computador liga, acende LEDs, mas não aparece imagem.
+
+. . .
+
+Perguntas que eliminam hipóteses:
+
+1. O monitor está ligado?
+2. O cabo de vídeo está conectado corretamente?
+3. O monitor funciona em outro computador?
+4. O computador emite bipes?
+5. A memória RAM está bem encaixada?
+6. Há placa de vídeo dedicada?
+7. A saída de vídeo usada é a correta?
+8. O problema está no monitor, no cabo, na RAM, na placa de vídeo ou na placa-mãe?
+
+---
+
+## Como registrar a manutenção corretiva
+
+Um bom registro deve responder:
+
+- Qual foi o sintoma relatado?
+- Quais hipóteses foram consideradas?
+- Quais testes foram realizados?
+- Qual foi o diagnóstico?
+- Qual solução foi aplicada?
+- Houve troca de peça?
+- O usuário confirmou a solução?
+- Que orientação preventiva foi dada?
+
+::: {.box}
+O registro técnico cria histórico e facilita atendimentos futuros.
+:::
+
+---
+
+## Atividade prática: estudo de caso
+
+**Organização:** grupos de 3 a 5 discentes.
+
+Cada grupo receberá dois casos de problemas comuns em sistemas computacionais.
+
+::: {.box}
+O objetivo é montar uma sequência de diagnóstico e propor uma solução tecnicamente justificada.
+:::
+
+---
+
+## Casos para sorteio
+
+1. O computador liga, mas fica reiniciando sozinho depois de alguns minutos.
+2. O notebook está muito quente e a ventoinha faz muito barulho.
+3. O computador do laboratório está extremamente lento ao iniciar.
+4. A impressora está instalada, mas os documentos ficam presos na fila.
+5. O computador acessa a rede local, mas não abre sites.
+6. O monitor exibe “sem sinal”.
+7. O sistema informa erro de disco na inicialização.
+8. O teclado USB funciona em um computador, mas não funciona em outro.
+
+---
+
+## Ficha de diagnóstico
+
+| Item | Resposta |
+|---|---|
+| Sintoma relatado |  |
+| Perguntas ao usuário |  |
+| Hipóteses iniciais |  |
+| Testes a realizar |  |
+| Ferramentas ou softwares necessários |  |
+| Solução provável |  |
+| Como registrar no chamado |  |
+| Como evitar que o problema se repita |  |
+
+---
+
+## Socialização dos casos
+
+Cada grupo apresentará um dos casos resolvidos.
+
+Durante a apresentação, observaremos:
+
+- O grupo começou pelos testes mais simples?
+- As hipóteses fazem sentido?
+- Alguma hipótese importante ficou de fora?
+- A solução proposta é segura?
+- O grupo registrou corretamente o atendimento?
+- A solução evita reincidência?
+
+---
+
+## Avaliação da atividade
+
+A avaliação será formativa, considerando:
+
+- identificação correta do sintoma;
+- coerência das hipóteses;
+- sequência lógica dos testes;
+- adequação da solução proposta;
+- clareza do registro técnico;
+- participação do grupo.
+
+---
+
+## Fechamento da aula
+
+::: {.box}
+Resolver um problema técnico exige método: **observar, perguntar, testar, diagnosticar, solucionar e registrar**.
+:::
+
+. . .
+
+A manutenção corretiva não deve ser baseada em tentativa e erro, mas em raciocínio técnico e documentação.
+
+---
+
+## Integração com a aula anterior
+
+A atividade pode ser concluída com o fechamento de um chamado técnico.
+
+<div class="center">
+
+**chamado aberto → diagnóstico realizado → solução aplicada → chamado fechado**
+
+</div>
+
+. . .
+
+Na prática profissional, resolver o problema e registrar a solução são partes do mesmo atendimento.
+
+---
+
+## {background-image="img/fry_1.png"}
+
+---
+
+{{< include ../../_licenca.qmd >}}

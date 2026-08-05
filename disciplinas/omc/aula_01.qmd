@@ -12,21 +12,22 @@ lang: pt-br
 format:
   revealjs:
     # Aparência
-    theme: [default, ifrn]             # Carrega o CSS padrão + nossa personalização
-    footer: "OMC"                      # Adiciona a nota de rodapé
-    logo: img/ifrn-logo.png            # Certifique-se de ter essa imagem na pasta 'img'
-    slide-number: true                 # Numeração de páginas no canto
-    center: false                      # false = alinha conteúdo ao topo (melhor para aulas)
+    theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
+    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                  # Numeração de páginas no canto
+    center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
     
     # Interatividade (Lousa)
     chalkboard: 
       buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    lightbox: true                     # Permite ampliar imagens para detalhes (útil para diagramas)
     
     # Navegação
     preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
     controls: true                     # Mostra setas de navegação
-    controlsLayout: edges              # Setas grandes nas laterais esquerda/direita
-    controlsTutorial: true             # Pisca a seta para indicar navegação
+    controls-layout: edges             # Setas grandes nas laterais esquerda/direita
+    controls-tutorial: true            # Pisca a seta para indicar navegação
     touch: true                        # Melhora o uso em tablets/celulares
     
     # Código (Para suas aulas de Programação)
@@ -86,7 +87,7 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
 > **Definição:** Conjunto de instruções que dizem ao hardware o que fazer.
 
-![](img/so_vs_app.png){fig-align="center"}
+![](img/so_vs_app.png){fig-align="center" width="85%"}
 
 * Onde fica o software quando o PC está desligado?
 
@@ -96,7 +97,7 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
 > **Definição:** O fator humano. Usuários domésticos, técnicos, programadores, analistas. Sem o humano, o computador não tem propósito.
 
-![](img/peopleware.png){fig-align="center"}
+![](img/peopleware.png){fig-align="center" width="90%"}
 
 ---
 

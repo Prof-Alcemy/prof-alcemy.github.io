@@ -1,0 +1,554 @@
+---
+# --- INFORMAÇÕES DA AULA ---
+title: "Suporte ao Usuário"
+subtitle: "Central de serviços, chamados, níveis de atendimento e suporte remoto"
+author: "Prof. Alcemy Severino"
+license: "CC BY-NC"
+copyright: "© 2026 Alcemy Gabriel"
+institute: "IFRN"
+lang: pt-br
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
+format:
+  revealjs:
+    theme: [default, ifrn_2]
+    footer: "Manutenção de Computadores"
+    logo: img/ifrn-logo.png
+    slide-number: true
+    center: false
+    chalkboard:
+      buttons: false
+    lightbox: true
+    preview-links: auto
+    controls: true
+    controls-layout: edges
+    controls-tutorial: true
+    touch: true
+    code-line-numbers: true
+    highlight-style: github
+---
+
+## Objetivos da aula
+
+Ao final da aula, você deverá ser capaz de:
+
+- explicar a função de uma **central de serviços**;
+- diferenciar **evento**, **incidente** e **requisição de serviço**;
+- registrar corretamente um **chamado técnico**;
+- classificar um atendimento por **impacto, urgência e prioridade**;
+- identificar os níveis de atendimento **N1, N2 e N3**;
+- reconhecer cuidados técnicos e éticos no **suporte remoto**.
+
+---
+
+## Onde estamos na disciplina?
+
+::: {.box}
+Na manutenção de computadores, o trabalho técnico não termina quando o problema é resolvido.
+
+Também é necessário **atender o usuário**, **registrar o problema**, **documentar os testes** e **comunicar a solução**.
+:::
+
+. . .
+
+**Conteúdo 8 da ementa:** suporte ao usuário, central de serviços, eventos, incidentes, sistema de chamados, níveis de atendimento e suporte remoto.
+
+---
+
+## Situação-problema
+
+> “Professor, meu computador não presta. Está tudo travando e eu tenho que entregar um relatório ainda hoje.”
+
+. . .
+
+::: {.Small}
+<div class="grid2">
+<div>
+
+**O técnico deve:**
+
+- ouvir o usuário;
+- fazer perguntas objetivas;
+- registrar o chamado;
+- avaliar impacto e urgência;
+- iniciar testes simples.
+
+</div>
+<div>
+
+**O técnico não deve:**
+
+- abrir o computador imediatamente;
+- culpar o usuário;
+- trocar peças sem diagnóstico;
+- resolver sem registrar;
+- ignorar a prioridade do caso.
+
+</div>
+</div>
+:::
+
+---
+
+## Perguntas iniciais
+
+Antes de “mexer no computador”, o técnico precisa entender o problema.
+
+::: {.box}
+Boas perguntas reduzem o tempo de diagnóstico e evitam soluções erradas.
+:::
+
+. . .
+
+::: {.small}
+- Quando o problema começou?
+- O problema acontece sempre ou às vezes?
+- Alguma alteração foi feita recentemente?
+- Outros usuários ou computadores apresentam o mesmo problema?
+- Existe mensagem de erro?
+- O problema impede totalmente o trabalho?
+:::
+
+---
+
+## O que é suporte ao usuário?
+
+Suporte ao usuário é o conjunto de procedimentos usados para **receber, registrar, acompanhar e solucionar** demandas relacionadas ao uso de equipamentos, sistemas e serviços de informática.
+
+. . .
+
+::: {.box}
+O suporte técnico combina **conhecimento técnico**, **comunicação clara** e **organização do atendimento**.
+:::
+
+---
+
+## Central de serviços
+
+A **central de serviços** é o ponto de contato entre os usuários e a equipe técnica.
+
+<div class="grid2">
+<div>
+
+Ela pode:
+
+- receber solicitações;
+- registrar chamados;
+- orientar usuários;
+- acompanhar atendimentos;
+- encaminhar problemas.
+
+</div>
+<div>
+
+Ela ajuda a evitar:
+
+- atendimentos esquecidos;
+- retrabalho;
+- falta de histórico;
+- prioridades mal definidas;
+- comunicação informal demais.
+
+</div>
+</div>
+
+---
+
+## Fluxo básico de atendimento
+
+<div class="center">
+
+**Usuário relata**  
+↓  
+**Chamado é registrado**  
+↓  
+**Problema é classificado**  
+↓  
+**Atendimento N1, N2 ou N3**  
+↓  
+**Solução é aplicada**  
+↓  
+**Chamado é documentado e fechado**
+
+</div>
+
+---
+
+## Evento, incidente ou requisição? {.Small}
+
+<div class="grid3">
+<div class="box">
+
+**Evento**
+
+Algo observado no sistema, mas que nem sempre representa falha.
+
+**Exemplo:** aviso de pouco espaço em disco.
+
+</div>
+<div class="warning">
+
+**Incidente**
+
+Interrupção ou redução da qualidade de um serviço.
+
+**Exemplo:** computador não liga.
+
+</div>
+<div class="box">
+
+**Requisição**
+
+Solicitação planejada que não envolve necessariamente uma falha.
+
+**Exemplo:** instalar um software.
+
+</div>
+</div>
+
+---
+
+## Exemplos rápidos {.Small}
+
+Classifique cada caso como **evento**, **incidente** ou **requisição de serviço**.
+
+| Caso | Classificação |
+|---|---|
+| Antivírus informa que encontrou uma ameaça | ? |
+| Usuário solicita instalação de impressora | ? |
+| Internet não funciona no laboratório | ? |
+| Sistema avisa que há atualização disponível | ? |
+| Monitor não apresenta imagem | ? |
+
+---
+
+## Respostas esperadas {.Small}
+
+| Caso | Classificação |
+|---|---|
+| Antivírus informa que encontrou uma ameaça | Evento |
+| Usuário solicita instalação de impressora | Requisição |
+| Internet não funciona no laboratório | Incidente |
+| Sistema avisa que há atualização disponível | Evento |
+| Monitor não apresenta imagem | Incidente |
+
+::: {.small}
+Observação: em situações reais, a classificação pode depender do contexto e do impacto no serviço.
+:::
+
+---
+
+## Sistema de chamados
+
+Um sistema de chamados é uma ferramenta usada para **registrar, acompanhar e documentar** os atendimentos técnicos.
+
+::: {.box}
+Sem chamado, o atendimento fica dependente da memória do técnico e da comunicação informal.
+:::
+
+. . .
+
+Pode ser um software específico, uma plataforma web, um formulário eletrônico ou uma planilha organizada.
+
+---
+
+## Informações essenciais em um chamado
+
+Um chamado técnico deve conter, no mínimo:
+
+<div class="grid2">
+<div>
+
+- solicitante;
+- setor/local;
+- equipamento envolvido;
+- descrição do problema;
+- data e horário;
+- categoria.
+
+</div>
+<div>
+
+- impacto;
+- urgência;
+- prioridade;
+- procedimentos realizados;
+- responsável pelo atendimento;
+- situação do chamado.
+
+</div>
+</div>
+
+---
+
+## Chamado mal registrado
+
+::: {.warning}
+“PC ruim. Resolver.”
+:::
+
+. . .
+
+**Problemas desse registro:**
+
+- não informa o usuário;
+- não informa o equipamento;
+- não descreve o sintoma;
+- não indica quando começou;
+- não permite definir prioridade;
+- dificulta continuidade do atendimento.
+
+---
+
+## Chamado bem registrado {.Small}
+
+::: {.box}
+Usuário relata lentidão ao abrir navegador e editor de texto. *Equipamento:* computador de mesa do Laboratório 2. Problema começou há três dias. Verificado uso elevado de disco e muitos programas iniciando com o sistema. *Classificação:* incidente. *Prioridade:* média.
+:::
+
+. . .
+
+**Por que esse registro é melhor?**
+
+- descreve o sintoma;
+- informa o equipamento;
+- apresenta testes iniciais;
+- permite continuidade por outro técnico;
+- ajuda a documentar a solução.
+
+---
+
+## Impacto, urgência e prioridade
+
+<div class="grid3">
+<div class="box">
+
+**Impacto**
+
+Quantas pessoas ou serviços são afetados?
+
+</div>
+<div class="box">
+
+**Urgência**
+
+Quanto tempo o atendimento pode esperar?
+
+</div>
+<div class="box">
+
+**Prioridade**
+
+Resultado da combinação entre impacto e urgência.
+
+</div>
+</div>
+
+---
+
+## Exemplo de prioridade {.Tiny}
+
+| Situação | Impacto | Urgência | Prioridade |
+|---|---|---|---|
+| Um mouse com defeito em um computador reserva | Baixo | Baixa | Baixa |
+| Computador da secretaria sem acesso ao sistema acadêmico | Médio | Alta | Alta |
+| Internet fora em todo o laboratório durante aula prática | Alto | Alta | Crítica |
+| Solicitação de instalação de software para a próxima semana | Baixo | Baixa | Baixa |
+
+---
+
+## Níveis de atendimento {.Tiny}
+
+| Nível | Função principal | Exemplos |
+|---|---|---|
+| N1 | Primeiro atendimento, triagem e soluções simples | orientar usuário, verificar cabos, reiniciar serviço, abrir chamado |
+| N2 | Diagnóstico técnico mais detalhado | testar hardware, reinstalar driver, configurar rede, substituir componente |
+| N3 | Problemas complexos ou especializados | fornecedor, infraestrutura avançada, sistemas críticos, garantia |
+
+---
+
+## Quando encaminhar? {.Small}
+
+Um chamado deve ser encaminhado quando:
+
+- o problema exige permissão ou conhecimento que o N1 não possui;
+- há risco de perda de dados;
+- envolve infraestrutura crítica;
+- requer abertura de equipamento sem autorização;
+- depende de fornecedor, garantia ou equipe especializada;
+- a solução simples não resolveu o incidente.
+
+::: {.warning}
+Encaminhar não é “passar o problema adiante”. É garantir que ele seja tratado pelo nível adequado.
+:::
+
+---
+
+## Comunicação com o usuário
+
+O técnico precisa comunicar-se de forma clara, respeitosa e objetiva.
+
+<div class="grid2">
+<div>
+
+**Boas práticas**
+
+- escutar antes de concluir;
+- usar linguagem simples;
+- explicar o que será feito;
+- informar prazos;
+- registrar decisões;
+- confirmar se o problema foi resolvido.
+
+</div>
+<div>
+
+**Evite**
+
+- ironias;
+- termos técnicos excessivos;
+- culpar o usuário;
+- prometer o que não pode cumprir;
+- acessar arquivos pessoais sem autorização.
+
+</div>
+</div>
+
+---
+
+## Suporte remoto
+
+O suporte remoto permite acessar ou orientar o usuário à distância para resolver problemas de software, configuração ou uso.
+
+**Exemplos de uso:**
+
+- orientar instalação ou configuração;
+- verificar mensagens de erro;
+- ajustar configurações do sistema;
+- auxiliar uso de programas;
+- acompanhar testes com o usuário.
+
+---
+
+## Cuidados no suporte remoto
+
+::: {.warning}
+O acesso remoto deve ocorrer apenas com autorização do usuário e seguindo as regras da instituição.
+:::
+
+- solicitar permissão antes de acessar;
+- explicar o que será feito;
+- evitar visualizar dados pessoais ou sigilosos;
+- não copiar arquivos sem autorização;
+- registrar o atendimento;
+- encerrar a sessão ao finalizar;
+- orientar o usuário sobre a solução aplicada.
+
+---
+
+## Atividade prática em grupo
+
+**Organização:** grupos de 3 a 5 discentes.
+
+Cada grupo receberá um caso de atendimento e deverá abrir um chamado técnico.
+
+::: {.box}
+O objetivo não é “adivinhar a solução”, mas registrar corretamente o problema, classificar o atendimento e definir os primeiros passos.
+:::
+
+---
+
+## Casos para sorteio
+
+1. Computador não liga.
+2. Internet não funciona em apenas uma máquina.
+3. Impressora aparece offline.
+4. Notebook superaquecendo e desligando.
+5. Usuário esqueceu a senha.
+6. Monitor sem imagem.
+7. Computador muito lento.
+8. Roteador Wi-Fi sem conexão.
+
+---
+
+## Ficha de chamado técnico {.Tiny}
+
+| Campo | Resposta |
+|---|---|
+| Solicitante |  |
+| Equipamento |  |
+| Descrição do problema |  |
+| Tipo: evento, incidente ou requisição |  |
+| Impacto |  |
+| Urgência |  |
+| Prioridade |  |
+| Nível inicial de atendimento |  |
+| Perguntas ao usuário |  |
+| Primeiros testes |  |
+| Possível encaminhamento |  |
+
+---
+
+## Socialização
+
+Cada grupo apresentará rapidamente seu chamado.
+
+Durante a apresentação, observaremos:
+
+- A classificação está correta?
+- A prioridade faz sentido?
+- O chamado tem informações suficientes?
+- O problema começa no N1, N2 ou N3?
+- Faltou alguma pergunta ao usuário?
+- O encaminhamento foi bem justificado?
+
+---
+
+## Avaliação da atividade
+
+A avaliação será formativa, considerando:
+
+- participação na discussão;
+- preenchimento adequado da ficha de chamado;
+- diferenciação entre evento, incidente e requisição;
+- justificativa para impacto, urgência e prioridade;
+- escolha adequada do nível de atendimento;
+- clareza na comunicação técnica.
+
+---
+
+## Fechamento da aula
+
+::: {.box}
+Um bom suporte técnico depende de três elementos: **escuta**, **método** e **registro**.
+:::
+
+. . .
+
+Resolver o problema é importante, mas documentar o atendimento permite melhorar o serviço, evitar retrabalho e criar histórico para futuras manutenções.
+
+---
+
+## Para a próxima aula
+
+Na próxima aula, vamos estudar:
+
+**Problemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções.**
+
+. . .
+
+Vamos conectar o chamado técnico ao processo de diagnóstico:
+
+<div class="center">
+
+**relato do usuário → hipóteses → testes → diagnóstico → solução → registro**
+
+</div>
+
+---
+
+## {background-image="img/fry_1.png"}
+
+---
+
+{{< include ../../_licenca.qmd >}}

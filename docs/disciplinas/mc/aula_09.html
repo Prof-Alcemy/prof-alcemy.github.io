@@ -7,14 +7,11 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Prof.&nbsp;Alcemy Severino">
-  <title>Prof. Alcemy – Código de Cores dos Resistores</title>
+  <title>Prof. Alcemy – Problemas Comuns e Possíveis Soluções</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -33,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-e459d4464295833fbc87f690ce29be75.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-7bbbdf7eac8c16c886aac640cc9fff13.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -133,8 +130,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Código de Cores dos Resistores</h1>
-  <p class="subtitle">Conceitos iniciais</p>
+  <h1 class="title">Problemas Comuns e Possíveis Soluções</h1>
+  <p class="subtitle">Diagnóstico técnico em sistemas computacionais</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -148,706 +145,499 @@ Prof.&nbsp;Alcemy Severino
 </div>
 
 </section>
-<section id="situação-inicial" class="slide level2">
-<h2>Situação inicial</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p>Imagine que você encontrou este componente em uma bancada:</p>
-<p><a href="img/a07_resistor_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/a07_resistor_1.png"></a></p>
-</div><div class="column" style="width:45%;">
-<p>Perguntas…</p>
-<ul>
-<li>Qual é o valor nominal do resistor?</li>
-<li>Qual é a tolerância?</li>
-<li>Qual é a faixa de valores aceitável?</li>
-<li>Como confirmar isso com o multímetro?</li>
-</ul>
-</div></div>
-</section>
 <section id="objetivos-da-aula" class="slide level2">
 <h2>Objetivos da aula</h2>
 <p>Ao final da aula, você deverá ser capaz de:</p>
 <ul>
-<li>identificar o valor de um resistor pelo código de cores;</li>
-<li>diferenciar resistores de 4, 5 e 6 faixas;</li>
-<li>calcular valor nominal, multiplicador e tolerância;</li>
-<li>converter valores entre Ω, kΩ e MΩ;</li>
-<li>estimar a faixa mínima e máxima permitida pela tolerância;</li>
-<li>conferir a leitura usando um multímetro.</li>
+<li>diferenciar <strong>sintoma</strong>, <strong>causa</strong>, <strong>teste</strong> e <strong>solução</strong>;</li>
+<li>aplicar uma sequência lógica de <strong>diagnóstico técnico</strong>;</li>
+<li>investigar problemas comuns sem trocar peças desnecessariamente;</li>
+<li>relacionar falhas de <strong>hardware</strong>, <strong>software</strong>, <strong>energia</strong>, <strong>rede</strong> e <strong>periféricos</strong>;</li>
+<li>registrar a solução adotada em linguagem técnica;</li>
+<li>propor soluções seguras e justificadas.</li>
 </ul>
 </section>
-<section id="por-que-usamos-cores" class="slide level2">
-<h2>Por que usamos cores?</h2>
-<ul>
-<li><p>Os resistores são componentes pequenos. Escrever diretamente “4700 <span class="math inline">\(\Omega\pm5\%\)</span>” em um corpo pequeno nem sempre é prático.</p></li>
-<li><p>Por isso, muitos resistores usam <strong>faixas coloridas</strong> para representar:</p>
-<ul>
-<li>algarismos significativos;</li>
-<li>fator multiplicador;</li>
-<li>tolerância;</li>
-<li>coeficiente de temperatura, em alguns modelos.</li>
-</ul></li>
-</ul>
+<section id="onde-estamos-na-disciplina" class="slide level2">
+<h2>Onde estamos na disciplina?</h2>
 <div class="box">
-<p>O código de cores é uma linguagem padronizada para transformar faixas coloridas em valores de resistência elétrica.</p>
+<p>Na aula anterior, estudamos como <strong>abrir, classificar e encaminhar um chamado técnico</strong>.</p>
+<p>Agora, vamos estudar como transformar o chamado em um <strong>processo de diagnóstico</strong>.</p>
+</div>
+<div class="fragment">
+<p><strong>Conteúdo 9 da ementa:</strong> problemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções.</p>
 </div>
 </section>
-<section id="unidade-de-resistência" class="slide level2">
-<h2>Unidade de resistência</h2>
-<p>A resistência elétrica é medida em <strong>ohm</strong> (<span class="math inline">\(\Omega\)</span>).</p>
-<p>Alguns múltiplos comuns:</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Forma</th>
-<th style="text-align: right;">Significado</th>
-<th style="text-align: right;">Exemplo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(\Omega\)</span></td>
-<td style="text-align: right;">ohm</td>
-<td style="text-align: right;">220 <span class="math inline">\(\Omega\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(k\Omega\)</span></td>
-<td style="text-align: right;">quilohm</td>
-<td style="text-align: right;">4,7 <span class="math inline">\(k\Omega\)</span> = 4.700 <span class="math inline">\(\Omega\)</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(M\Omega\)</span></td>
-<td style="text-align: right;">megaohm</td>
-<td style="text-align: right;">1 <span class="math inline">\(M\Omega\)</span> = 1.000.000 <span class="math inline">\(\Omega\)</span></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="tabela-básica-algarismos" class="slide level2">
-<h2>Tabela básica: algarismos</h2>
-<div class="color-table">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Cor</th>
-<th style="text-align: right;">Algarismo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="swatch black"></span> Preto</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td><span class="swatch brown"></span> Marrom</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch red"></span> Vermelho</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td><span class="swatch orange"></span> Laranja</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch yellow"></span> Amarelo</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td><span class="swatch green"></span> Verde</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch blue"></span> Azul</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="even">
-<td><span class="swatch violet"></span> Violeta</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch gray"></span> Cinza</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="even">
-<td><span class="swatch white"></span> Branco</td>
-<td style="text-align: right;">9</td>
-</tr>
-</tbody>
-</table>
+<section id="do-chamado-ao-diagnóstico" class="slide level2">
+<h2>Do chamado ao diagnóstico</h2>
+<div class="center">
+<p><strong>Relato do usuário</strong><br>
+↓<br>
+<strong>Observação do sintoma</strong><br>
+↓<br>
+<strong>Levantamento de hipóteses</strong><br>
+↓<br>
+<strong>Testes</strong><br>
+↓<br>
+<strong>Diagnóstico</strong><br>
+↓<br>
+<strong>Solução</strong><br>
+↓<br>
+<strong>Registro do atendimento</strong></p>
 </div>
 </section>
-<section id="tabela-básica-multiplicador" class="slide level2">
-<h2>Tabela básica: multiplicador</h2>
-<div class="color-table">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Cor</th>
-<th style="text-align: right;">Multiplicador</th>
-<th style="text-align: right;">Interpretação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="swatch black"></span> Preto</td>
-<td style="text-align: right;">×1</td>
-<td style="text-align: right;">(10^0)</td>
-</tr>
-<tr class="even">
-<td><span class="swatch brown"></span> Marrom</td>
-<td style="text-align: right;">×10</td>
-<td style="text-align: right;">(10^1)</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch red"></span> Vermelho</td>
-<td style="text-align: right;">×100</td>
-<td style="text-align: right;">(10^2)</td>
-</tr>
-<tr class="even">
-<td><span class="swatch orange"></span> Laranja</td>
-<td style="text-align: right;">×1.000</td>
-<td style="text-align: right;">(10^3)</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch yellow"></span> Amarelo</td>
-<td style="text-align: right;">×10.000</td>
-<td style="text-align: right;">(10^4)</td>
-</tr>
-<tr class="even">
-<td><span class="swatch green"></span> Verde</td>
-<td style="text-align: right;">×100.000</td>
-<td style="text-align: right;">(10^5)</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch blue"></span> Azul</td>
-<td style="text-align: right;">×1.000.000</td>
-<td style="text-align: right;">(10^6)</td>
-</tr>
-<tr class="even">
-<td><span class="swatch gold"></span> Dourado</td>
-<td style="text-align: right;">×0,1</td>
-<td style="text-align: right;">(10^{-1})</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch silver"></span> Prateado</td>
-<td style="text-align: right;">×0,01</td>
-<td style="text-align: right;">(10^{-2})</td>
-</tr>
-</tbody>
-</table>
+<section id="ideia-central-da-aula" class="slide level2">
+<h2>Ideia central da aula</h2>
+<blockquote>
+<p>O bom técnico não decora soluções. Ele organiza hipóteses e testa uma de cada vez.</p>
+</blockquote>
+<div class="fragment">
+<div class="warning">
+<p>Trocar peças sem diagnóstico pode gerar custo desnecessário, perda de tempo e até novos problemas.</p>
+</div>
 </div>
 </section>
-<section id="tabela-básica-tolerância" class="slide level2">
-<h2>Tabela básica: tolerância</h2>
-<div class="color-table">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Cor</th>
-<th style="text-align: right;">Tolerância</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="swatch brown"></span> Marrom</td>
-<td style="text-align: right;">±1%</td>
-</tr>
-<tr class="even">
-<td><span class="swatch red"></span> Vermelho</td>
-<td style="text-align: right;">±2%</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch green"></span> Verde</td>
-<td style="text-align: right;">±0,5%</td>
-</tr>
-<tr class="even">
-<td><span class="swatch blue"></span> Azul</td>
-<td style="text-align: right;">±0,25%</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch violet"></span> Violeta</td>
-<td style="text-align: right;">±0,1%</td>
-</tr>
-<tr class="even">
-<td><span class="swatch gray"></span> Cinza</td>
-<td style="text-align: right;">±0,05%</td>
-</tr>
-<tr class="odd">
-<td><span class="swatch gold"></span> Dourado</td>
-<td style="text-align: right;">±5%</td>
-</tr>
-<tr class="even">
-<td><span class="swatch silver"></span> Prateado</td>
-<td style="text-align: right;">±10%</td>
-</tr>
-<tr class="odd">
-<td>Sem faixa</td>
-<td style="text-align: right;">±20%</td>
-</tr>
-</tbody>
-</table>
+<section id="sintoma-causa-teste-e-solução" class="slide level2">
+<h2>Sintoma, causa, teste e solução</h2>
+<div class="grid2">
+<div class="box">
+<p><strong>Sintoma</strong></p>
+<p>É aquilo que aparece para o usuário ou para o técnico.</p>
+<p><strong>Exemplo:</strong> computador liga, mas não dá vídeo.</p>
+</div>
+<div class="box">
+<p><strong>Causa provável</strong></p>
+<p>É uma hipótese para explicar o sintoma.</p>
+<p><strong>Exemplo:</strong> cabo de vídeo, monitor, memória RAM ou placa de vídeo.</p>
+</div>
+</div>
+<div class="grid2">
+<div class="box">
+<p><strong>Teste</strong></p>
+<p>É o procedimento usado para confirmar ou eliminar hipóteses.</p>
+<p><strong>Exemplo:</strong> testar outro cabo ou outro monitor.</p>
+</div>
+<div class="box">
+<p><strong>Solução</strong></p>
+<p>É a ação tomada após o diagnóstico.</p>
+<p><strong>Exemplo:</strong> substituir cabo, reencaixar RAM ou trocar componente defeituoso.</p>
+</div>
 </div>
 </section>
-<section id="como-identificar-o-sentido-de-leitura" class="slide level2" style="font-size: 0.9em;">
-<h2>Como identificar o sentido de leitura?</h2>
+<section id="antes-de-qualquer-intervenção" class="slide level2">
+<h2>Antes de qualquer intervenção</h2>
+<p>O técnico deve começar pelos procedimentos mais simples e seguros.</p>
 <ul>
-<li>Normalmente lemos o resistor da esquerda para a direita, deixando a faixa de tolerância no final.</li>
-<li>A faixa de tolerância costuma ser:
-<ul>
-<li>dourada;</li>
-<li>prateada;</li>
-<li>marrom ou vermelha, em resistores de precisão;</li>
-<li>mais afastada das demais faixas.</li>
-</ul></li>
+<li>Ouvir o relato do usuário.</li>
+<li>Verificar cabos, energia e conexões.</li>
+<li>Observar mensagens de erro.</li>
+<li>Identificar alterações recentes.</li>
+<li>Confirmar se o problema ocorre sempre.</li>
+<li>Preservar dados do usuário.</li>
+<li>Registrar todos os testes realizados.</li>
 </ul>
 <div class="warning">
-<p><strong>Erro comum:</strong> começar a leitura pelo lado da tolerância. Isso inverte o valor e gera respostas incorretas.</p>
+<p>Nunca abra equipamentos energizados e nunca intervenha em fonte de alimentação internamente sem formação específica e autorização.</p>
 </div>
 </section>
-<section id="resistor-de-4-faixas" class="slide level2" style="font-size: 0.8em;">
-<h2>Resistor de 4 faixas</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><a href="img/a07_resistor_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/a07_resistor_2.png"></a></p>
-</div><div class="column" style="width:60%;">
+<section id="tabela-geral-de-diagnóstico" class="slide level2 smaller">
+<h2>Tabela geral de diagnóstico</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Faixa</th>
-<th>Função</th>
+<th>Sintoma</th>
+<th>Possíveis causas</th>
+<th>Testes iniciais</th>
+<th>Possíveis soluções</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1ª faixa</td>
-<td>1º algarismo significativo</td>
+<td>Computador não liga</td>
+<td>cabo, tomada, fonte, botão power, placa-mãe</td>
+<td>testar tomada, cabo, fonte e conexões</td>
+<td>reconectar cabos, testar fonte, substituir componente</td>
 </tr>
 <tr class="even">
-<td>2ª faixa</td>
-<td>2º algarismo significativo</td>
+<td>Liga, mas não dá vídeo</td>
+<td>cabo de vídeo, RAM, monitor, placa de vídeo</td>
+<td>testar monitor, cabo e memória RAM</td>
+<td>trocar cabo, reencaixar RAM, testar vídeo onboard</td>
 </tr>
 <tr class="odd">
-<td>3ª faixa</td>
-<td>multiplicador</td>
+<td>Computador lento</td>
+<td>pouco espaço, muitos programas, malware, HD com falha, pouca RAM</td>
+<td>verificar CPU, RAM, disco e inicialização</td>
+<td>limpar inicialização, remover malware, trocar HD por SSD</td>
 </tr>
 <tr class="even">
-<td>4ª faixa</td>
-<td>tolerância</td>
+<td>Reinicia ou desliga</td>
+<td>superaquecimento, fonte instável, pasta térmica ressecada</td>
+<td>verificar temperaturas, ventoinhas e fonte</td>
+<td>limpar cooler, trocar pasta térmica, testar fonte</td>
 </tr>
 </tbody>
 </table>
-</div></div>
-<p>Fórmula para resitor de 4 faixas:</p>
-<p><span class="math inline">\(R = \left(\text{1º algarismo; 2º algarismo}\right) \times \text{multiplicador}\)</span></p>
-<p><span class="math inline">\(R_{mín}=R-R\cdot\text{tolerância}\)</span></p>
-<p><span class="math inline">\(R_{máx}=R+R\cdot\text{tolerância}\)</span></p>
 </section>
-<section id="exemplo-1-marrom-preto-vermelho-dourado" class="slide level2" style="font-size: 0.8em;">
-<h2>Exemplo 1: marrom, preto, vermelho, dourado</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><a href="img/a07_resistor_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/a07_resistor_3.png"></a></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Marrom = <span class="math inline">\(1\)</span></li>
-<li>Preto = <span class="math inline">\(0\)</span></li>
-<li>Vermelho = <span class="math inline">\(\times 100\)</span></li>
-<li>Dourado = <span class="math inline">\(\pm 5\%\)</span></li>
-</ul>
-</div></div>
-<ul>
-<li><span class="math inline">\(R = 10 \times 100 = 1000\ \Omega = 1\ k\Omega\)</span></li>
-<li>Valor nominal: <span class="math inline">\(R = 1000 \Omega\)</span></li>
-<li>Tolerância: <span class="math inline">\(5\% = 0,05\)</span></li>
-<li>Variação permitida: <span class="math inline">\(1000 \times 0,05 = 50 \Omega\)</span></li>
-<li>Faixa aceitável: <span class="math inline">\(950\ \Omega \le R \le 1050\ \Omega\)</span></li>
-</ul>
-</section>
-<section id="exemplo-2-e-3" class="slide level2">
-<h2>Exemplo 2 e 3:</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>amarelo, violeta, laranja, dourado</p>
-<p><a href="img/a07_resistor_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="img/a07_resistor_4.png"></a></p>
-<ul>
-<li>Leitura:
-<ul>
-<li><span class="math inline">\(47 \times 1000 = 47000 \Omega\)</span></li>
-<li><span class="math inline">\(R = 47\ k\Omega \pm 5\%\)</span></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p>vermelho, vermelho, marrom, dourado</p>
-<p><a href="img/a07_resistor_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="img/a07_resistor_5.png"></a></p>
-<ul>
-<li>Leitura:
-<ul>
-<li><span class="math inline">\(22 \times 10 = 220 \Omega\)</span></li>
-<li><span class="math inline">\(R = 220\ \Omega \pm 5\%\)</span></li>
-</ul></li>
-</ul>
-</div></div>
-</section>
-<section id="resistor-de-5-faixas" class="slide level2" style="font-size: 0.9em;">
-<h2>Resistor de 5 faixas</h2>
-<p>Usado quando precisamos de maior precisão.</p>
+<section id="mais-problemas-comuns" class="slide level2 smaller">
+<h2>Mais problemas comuns</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Faixa</th>
-<th>Função</th>
+<th>Sintoma</th>
+<th>Possíveis causas</th>
+<th>Testes iniciais</th>
+<th>Possíveis soluções</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1ª faixa</td>
-<td>1º algarismo significativo</td>
+<td>Internet não funciona</td>
+<td>cabo, IP, DNS, driver, roteador, placa de rede</td>
+<td>testar outro dispositivo, ping, IP e DNS</td>
+<td>revisar cabo, renovar IP, configurar DNS, reinstalar driver</td>
 </tr>
 <tr class="even">
-<td>2ª faixa</td>
-<td>2º algarismo significativo</td>
+<td>Impressora não imprime</td>
+<td>fila travada, cabo, driver, papel, rede</td>
+<td>verificar fila, status, conexão e driver</td>
+<td>limpar fila, reinstalar driver, reconectar impressora</td>
 </tr>
 <tr class="odd">
-<td>3ª faixa</td>
-<td>3º algarismo significativo</td>
+<td>Teclado ou mouse não funciona</td>
+<td>porta USB, pilha, driver, periférico defeituoso</td>
+<td>testar outra porta ou outro computador</td>
+<td>trocar pilha, reinstalar driver, substituir periférico</td>
 </tr>
 <tr class="even">
-<td>4ª faixa</td>
-<td>multiplicador</td>
-</tr>
-<tr class="odd">
-<td>5ª faixa</td>
-<td>tolerância</td>
+<td>Sistema não inicia</td>
+<td>arquivos corrompidos, disco com defeito, atualização falha</td>
+<td>modo de recuperação e checagem de disco</td>
+<td>reparar inicialização, restaurar sistema, substituir disco</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="caso-1-computador-não-liga" class="slide level2">
+<h2>Caso 1: computador não liga</h2>
+<div class="grid2">
+<div>
+<p><strong>Hipóteses comuns</strong></p>
+<ul>
+<li>tomada sem energia;</li>
+<li>cabo de força solto;</li>
+<li>fonte com defeito;</li>
+<li>botão power com problema;</li>
+<li>cabo do painel frontal desconectado;</li>
+<li>placa-mãe em curto ou defeituosa.</li>
+</ul>
+</div>
+<div>
+<p><strong>Testes iniciais</strong></p>
+<ul>
+<li>testar a tomada;</li>
+<li>testar outro cabo de força;</li>
+<li>verificar chave da fonte, quando existir;</li>
+<li>conferir conexões internas;</li>
+<li>testar com outra fonte compatível;</li>
+<li>observar LEDs e sinais sonoros.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="caso-2-liga-mas-não-dá-vídeo" class="slide level2">
+<h2>Caso 2: liga, mas não dá vídeo</h2>
 <div class="box">
-<p>No resistor de 5 faixas, usamos três algarismos antes do multiplicador.</p>
+<p>Sintoma: o computador liga, acende LEDs ou gira ventoinhas, mas o monitor mostra “sem sinal” ou fica apagado.</p>
+</div>
+<p><strong>Hipóteses:</strong> monitor, cabo, entrada errada, memória RAM, placa de vídeo, configuração de vídeo ou placa-mãe.</p>
+<div class="fragment">
+<p><strong>Sequência de testes:</strong></p>
+<ol type="1">
+<li>Verificar se o monitor está ligado.</li>
+<li>Conferir o cabo de vídeo.</li>
+<li>Testar outro monitor ou outro cabo.</li>
+<li>Verificar a entrada correta: HDMI, VGA, DisplayPort.</li>
+<li>Reencaixar e limpar contatos da memória RAM.</li>
+<li>Testar vídeo onboard ou placa de vídeo dedicada.</li>
+</ol>
 </div>
 </section>
-<section id="exemplo-4-e-5" class="slide level2">
-<h2>Exemplo 4 e 5:</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>marrom, preto, preto, vermelho, marrom</p>
-<p><a href="img/a07_resistor_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="img/a07_resistor_6.png"></a></p>
+<section id="caso-3-computador-lento" class="slide level2">
+<h2>Caso 3: computador lento</h2>
+<div class="grid2">
+<div>
+<p><strong>Possíveis causas</strong></p>
 <ul>
-<li>Leitura:
-<ul>
-<li><span class="math inline">\(100 \times 100 = 10000 \Omega\)</span> <span class="math inline">\(R = 10\ k\Omega \pm 1\%\)</span></li>
-</ul></li>
+<li>muitos programas iniciando com o sistema;</li>
+<li>pouco espaço em disco;</li>
+<li>HD com falha;</li>
+<li>malware;</li>
+<li>pouca memória RAM;</li>
+<li>sistema desatualizado;</li>
+<li>superaquecimento.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p>azul, cinza, preto, marrom, vermelho</p>
-<p><a href="img/a07_resistor_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="img/a07_resistor_7.png"></a></p>
+</div>
+<div>
+<p><strong>Testes e verificações</strong></p>
 <ul>
-<li>Leitura:
-<ul>
-<li><span class="math inline">\(680 \times 10 = 6800 \Omega\)</span></li>
-<li><span class="math inline">\(R = 6,8\ k\Omega \pm 2\%\)</span></li>
-</ul></li>
+<li>Gerenciador de Tarefas;</li>
+<li>uso de CPU, RAM e disco;</li>
+<li>espaço livre em disco;</li>
+<li>programas de inicialização;</li>
+<li>verificação de malware;</li>
+<li>temperatura do processador;</li>
+<li>saúde do disco.</li>
 </ul>
-</div></div>
-</section>
-<section id="resistor-de-6-faixas" class="slide level2" style="font-size: 0.8em;">
-<h2>Resistor de 6 faixas</h2>
-<ul>
-<li>O resistor de 6 faixas acrescenta uma informação extra:</li>
-</ul>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Faixa</th>
-<th>Função</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1ª, 2ª e 3ª</td>
-<td>algarismos significativos</td>
-</tr>
-<tr class="even">
-<td>4ª</td>
-<td>multiplicador</td>
-</tr>
-<tr class="odd">
-<td>5ª</td>
-<td>tolerância</td>
-</tr>
-<tr class="even">
-<td>6ª</td>
-<td>coeficiente de temperatura</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>O coeficiente de temperatura indica quanto a resistência varia quando a temperatura muda.</li>
-</ul>
-<div class="box">
-<p>Em aulas iniciais, normalmente focamos nas quatro ou cinco primeiras faixas.</p>
+</div>
 </div>
 </section>
-<section id="estratégia-de-resolução" class="slide level2">
-<h2>Estratégia de resolução</h2>
-<p>Para ler qualquer resistor:</p>
-<ol type="1">
-<li>Identifique o lado correto da leitura.</li>
-<li>Conte o número de faixas.</li>
-<li>Separe algarismos, multiplicador e tolerância.</li>
-<li>Monte o número inicial.</li>
-<li>Aplique o multiplicador.</li>
-<li>Converta para Ω, kΩ ou MΩ.</li>
-<li>Calcule a faixa de tolerância, se solicitado.</li>
-</ol>
-</section>
-<section id="exercícios-leitura-de-cores" class="slide level2">
-<h2>Exercícios: leitura de cores</h2>
-<p>Determine o valor nominal e a tolerância.</p>
-<ol type="1">
-<li>Marrom, preto, vermelho, dourado</li>
-<li>Amarelo, violeta, laranja, dourado</li>
-<li>Vermelho, vermelho, marrom, dourado</li>
-<li>Laranja, laranja, marrom, dourado</li>
-<li>Verde, azul, vermelho, dourado</li>
-</ol>
-</section>
-<section id="exercícios-leitura-de-cores-1" class="slide level2">
-<h2>Exercícios: leitura de cores</h2>
-<p>Determine o valor nominal e a tolerância.</p>
-<ol start="6" type="1">
-<li>Azul, cinza, preto, marrom, vermelho</li>
-<li>Marrom, preto, preto, vermelho, marrom</li>
-<li>Vermelho, violeta, preto, laranja, marrom</li>
-<li>Amarelo, violeta, preto, vermelho, vermelho</li>
-<li>Marrom, verde, preto, dourado</li>
-</ol>
-</section>
-<section id="exercícios-escreva-as-cores" class="slide level2">
-<h2>Exercícios: escreva as cores</h2>
-<p>Indique as cores correspondentes.</p>
-<ol start="11" type="1">
-<li>330 Ω ±5%</li>
-<li>4,7 kΩ ±5%</li>
-<li>1 kΩ ±5%</li>
-<li>10 kΩ ±1% usando 5 faixas</li>
-<li>6,8 kΩ ±2% usando 5 faixas</li>
-</ol>
-</section>
-<section id="exercícios-tolerância" class="slide level2">
-<h2>Exercícios: tolerância</h2>
-<p>Calcule a faixa mínima e máxima aceitável.</p>
-<ol start="16" type="1">
-<li>220 Ω ±5%</li>
-<li>1 kΩ ±5%</li>
-<li>10 kΩ ±1%</li>
-<li>47 kΩ ±5%</li>
-<li>6,8 kΩ ±2%</li>
-</ol>
-</section>
-<section id="gabarito-exercícios-1-a-5" class="slide level2">
-<h2>Gabarito: exercícios 1 a 5</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Exercício</th>
-<th style="text-align: right;">Resultado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td style="text-align: right;">1 kΩ ±5%</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td style="text-align: right;">47 kΩ ±5%</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td style="text-align: right;">220 Ω ±5%</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td style="text-align: right;">330 Ω ±5%</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td style="text-align: right;">5,6 kΩ ±5%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="gabarito-exercícios-6-a-10" class="slide level2">
-<h2>Gabarito: exercícios 6 a 10</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Exercício</th>
-<th style="text-align: right;">Resultado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>6</td>
-<td style="text-align: right;">6,8 kΩ ±2%</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td style="text-align: right;">10 kΩ ±1%</td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td style="text-align: right;">270 kΩ ±1%</td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td style="text-align: right;">47 kΩ ±2%</td>
-</tr>
-<tr class="odd">
-<td>10</td>
-<td style="text-align: right;">1,5 Ω ±5%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="gabarito-exercícios-11-a-15" class="slide level2">
-<h2>Gabarito: exercícios 11 a 15</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Exercício</th>
-<th>Cores</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>11</td>
-<td>laranja, laranja, marrom, dourado</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td>amarelo, violeta, vermelho, dourado</td>
-</tr>
-<tr class="odd">
-<td>13</td>
-<td>marrom, preto, vermelho, dourado</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>marrom, preto, preto, vermelho, marrom</td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td>azul, cinza, preto, marrom, vermelho</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="gabarito-exercícios-16-a-20" class="slide level2">
-<h2>Gabarito: exercícios 16 a 20</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Exercício</th>
-<th style="text-align: right;">Faixa aceitável</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>16</td>
-<td style="text-align: right;">209 Ω a 231 Ω</td>
-</tr>
-<tr class="even">
-<td>17</td>
-<td style="text-align: right;">950 Ω a 1050 Ω</td>
-</tr>
-<tr class="odd">
-<td>18</td>
-<td style="text-align: right;">9,9 kΩ a 10,1 kΩ</td>
-</tr>
-<tr class="even">
-<td>19</td>
-<td style="text-align: right;">44,65 kΩ a 49,35 kΩ</td>
-</tr>
-<tr class="odd">
-<td>20</td>
-<td style="text-align: right;">6,664 kΩ a 6,936 kΩ</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fechamento" class="slide level2" style="font-size: 0.85em;">
-<h2>Fechamento</h2>
-<p>Nesta aula, vimos que:</p>
-<ul>
-<li>cada cor representa um número ou uma informação;</li>
-<li>resistores de 4 faixas usam dois algarismos, multiplicador e tolerância;</li>
-<li>resistores de 5 faixas usam três algarismos, multiplicador e tolerância;</li>
-<li>a tolerância define a faixa real aceitável;</li>
-<li>o multímetro confirma se o resistor está dentro do esperado.</li>
-</ul>
-<div class="box">
-<p>Na próxima aula, podemos usar esses resistores em circuitos série, paralelo e mistos para verificar experimentalmente a resistência equivalente.</p>
-</div>
-</section>
-<section id="desafio-prático" class="slide level2" style="font-size: 0.9em;">
-<h2>Desafio prático</h2>
-<p>Você recebeu três resistores misturados em uma bancada.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Resistor</th>
-<th>Cores</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td>marrom, preto, vermelho, dourado</td>
-</tr>
-<tr class="even">
-<td>B</td>
-<td>amarelo, violeta, laranja, dourado</td>
-</tr>
-<tr class="odd">
-<td>C</td>
-<td>vermelho, vermelho, marrom, dourado</td>
-</tr>
-</tbody>
-</table>
-<p>Tarefa:</p>
-<ol type="1">
-<li>Calcule o valor de cada resistor.</li>
-<li>Calcule a faixa aceitável de cada um.</li>
-<li>Meça com multímetro.</li>
-<li>Classifique como “dentro” ou “fora” da tolerância.</li>
-</ol>
-</section>
-<section id="atividade-rápida-em-dupla" class="slide level2">
-<h2>Atividade rápida em dupla</h2>
-<p>Um aluno escolhe um resistor físico da bancada.</p>
-<p>O outro aluno deve:</p>
-<ul>
-<li>ler as faixas;</li>
-<li>calcular o valor nominal;</li>
-<li>estimar a tolerância;</li>
-<li>medir com o multímetro;</li>
-<li>verificar se o valor medido está dentro da faixa esperada.</li>
-</ul>
-</section>
-<section id="como-medir-com-multímetro" class="slide level2">
-<h2>Como medir com multímetro</h2>
-<p>Passos básicos:</p>
-<ol type="1">
-<li>Retire o resistor do circuito ou isole pelo menos um terminal.</li>
-<li>Selecione a escala de resistência, se o multímetro não for automático.</li>
-<li>Encoste uma ponta de prova em cada terminal.</li>
-<li>Compare a leitura com o valor nominal e com a tolerância.</li>
-</ol>
+<section id="caso-4-reinicia-ou-desliga-sozinho" class="slide level2">
+<h2>Caso 4: reinicia ou desliga sozinho</h2>
 <div class="warning">
-<p>Nunca meça resistência com o circuito energizado.</p>
+<p>Esse sintoma pode indicar risco de perda de dados ou dano ao equipamento.</p>
+</div>
+<p><strong>Hipóteses comuns:</strong></p>
+<ul>
+<li>superaquecimento do processador;</li>
+<li>cooler parado ou obstruído por poeira;</li>
+<li>pasta térmica ressecada;</li>
+<li>fonte instável;</li>
+<li>memória RAM com falha;</li>
+<li>sistema operacional corrompido.</li>
+</ul>
+<div class="fragment">
+<p><strong>Soluções possíveis:</strong> limpeza interna, correção do fluxo de ar, troca de pasta térmica, teste de fonte, teste de memória e reparo do sistema.</p>
+</div>
+</section>
+<section id="caso-5-internet-não-funciona" class="slide level2">
+<h2>Caso 5: internet não funciona</h2>
+<p>Antes de concluir que “a internet caiu”, identifique o escopo do problema.</p>
+<div class="grid2">
+<div class="box">
+<p><strong>Afeta só um computador?</strong></p>
+<p>Pode ser cabo, placa de rede, IP, DNS, driver ou configuração local.</p>
+</div>
+<div class="box">
+<p><strong>Afeta vários computadores?</strong></p>
+<p>Pode ser roteador, switch, provedor, servidor DHCP ou infraestrutura da rede.</p>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Testes úteis:</strong> verificar cabo, testar outro dispositivo, conferir IP, usar <code>ping</code>, testar DNS e reiniciar equipamentos de rede quando autorizado.</p>
+</div>
+</section>
+<section id="caso-6-impressora-não-imprime" class="slide level2">
+<h2>Caso 6: impressora não imprime</h2>
+<p><strong>Perguntas iniciais:</strong></p>
+<ul>
+<li>A impressora está ligada?</li>
+<li>Há papel e tinta ou toner?</li>
+<li>Existe mensagem de erro?</li>
+<li>A impressora está em rede ou via USB?</li>
+<li>O problema ocorre com todos os usuários?</li>
+<li>Os documentos ficam presos na fila?</li>
+</ul>
+<div class="fragment">
+<p><strong>Soluções possíveis:</strong> limpar fila de impressão, definir impressora correta, verificar conexão, reinstalar driver, configurar IP ou reconectar à rede.</p>
+</div>
+</section>
+<section id="caso-7-sistema-não-inicia" class="slide level2">
+<h2>Caso 7: sistema não inicia</h2>
+<div class="warning">
+<p>Antes de formatar, avalie a possibilidade de recuperar o sistema e preservar os dados do usuário.</p>
+</div>
+<p><strong>Possíveis causas:</strong></p>
+<ul>
+<li>falha após atualização;</li>
+<li>arquivos de inicialização corrompidos;</li>
+<li>disco com defeito;</li>
+<li>alteração incorreta na BIOS/UEFI;</li>
+<li>partição ou sistema de arquivos danificado.</li>
+</ul>
+<p><strong>Testes e ações:</strong> modo de recuperação, reparo de inicialização, checagem de disco, backup dos dados e substituição do disco quando necessário.</p>
+</section>
+<section id="ferramentas-úteis-no-diagnóstico" class="slide level2">
+<h2>Ferramentas úteis no diagnóstico</h2>
+<div class="grid2">
+<div>
+<p><strong>Ferramentas físicas</strong></p>
+<ul>
+<li>chave Phillips;</li>
+<li>pincel antiestático;</li>
+<li>álcool isopropílico;</li>
+<li>borracha branca ou limpa-contato apropriado;</li>
+<li>multímetro, quando autorizado;</li>
+<li>pendrive de instalação ou recuperação.</li>
+</ul>
+</div>
+<div>
+<p><strong>Ferramentas de software</strong></p>
+<ul>
+<li>Gerenciador de Tarefas;</li>
+<li>ferramentas de diagnóstico de disco;</li>
+<li>antivírus;</li>
+<li>monitor de temperatura;</li>
+<li>prompt de comando;</li>
+<li>logs do sistema;</li>
+<li>ferramentas de rede.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="demonstração-do-raciocínio-técnico" class="slide level2">
+<h2>Demonstração do raciocínio técnico</h2>
+<p><strong>Caso:</strong> computador liga, acende LEDs, mas não aparece imagem.</p>
+<div class="fragment">
+<p>Perguntas que eliminam hipóteses:</p>
+<ol type="1">
+<li>O monitor está ligado?</li>
+<li>O cabo de vídeo está conectado corretamente?</li>
+<li>O monitor funciona em outro computador?</li>
+<li>O computador emite bipes?</li>
+<li>A memória RAM está bem encaixada?</li>
+<li>Há placa de vídeo dedicada?</li>
+<li>A saída de vídeo usada é a correta?</li>
+<li>O problema está no monitor, no cabo, na RAM, na placa de vídeo ou na placa-mãe?</li>
+</ol>
+</div>
+</section>
+<section id="como-registrar-a-manutenção-corretiva" class="slide level2">
+<h2>Como registrar a manutenção corretiva</h2>
+<p>Um bom registro deve responder:</p>
+<ul>
+<li>Qual foi o sintoma relatado?</li>
+<li>Quais hipóteses foram consideradas?</li>
+<li>Quais testes foram realizados?</li>
+<li>Qual foi o diagnóstico?</li>
+<li>Qual solução foi aplicada?</li>
+<li>Houve troca de peça?</li>
+<li>O usuário confirmou a solução?</li>
+<li>Que orientação preventiva foi dada?</li>
+</ul>
+<div class="box">
+<p>O registro técnico cria histórico e facilita atendimentos futuros.</p>
+</div>
+</section>
+<section id="atividade-prática-estudo-de-caso" class="slide level2">
+<h2>Atividade prática: estudo de caso</h2>
+<p><strong>Organização:</strong> grupos de 3 a 5 discentes.</p>
+<p>Cada grupo receberá dois casos de problemas comuns em sistemas computacionais.</p>
+<div class="box">
+<p>O objetivo é montar uma sequência de diagnóstico e propor uma solução tecnicamente justificada.</p>
+</div>
+</section>
+<section id="casos-para-sorteio" class="slide level2">
+<h2>Casos para sorteio</h2>
+<ol type="1">
+<li>O computador liga, mas fica reiniciando sozinho depois de alguns minutos.</li>
+<li>O notebook está muito quente e a ventoinha faz muito barulho.</li>
+<li>O computador do laboratório está extremamente lento ao iniciar.</li>
+<li>A impressora está instalada, mas os documentos ficam presos na fila.</li>
+<li>O computador acessa a rede local, mas não abre sites.</li>
+<li>O monitor exibe “sem sinal”.</li>
+<li>O sistema informa erro de disco na inicialização.</li>
+<li>O teclado USB funciona em um computador, mas não funciona em outro.</li>
+</ol>
+</section>
+<section id="ficha-de-diagnóstico" class="slide level2">
+<h2>Ficha de diagnóstico</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sintoma relatado</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Perguntas ao usuário</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Hipóteses iniciais</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Testes a realizar</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ferramentas ou softwares necessários</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Solução provável</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Como registrar no chamado</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Como evitar que o problema se repita</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="socialização-dos-casos" class="slide level2">
+<h2>Socialização dos casos</h2>
+<p>Cada grupo apresentará um dos casos resolvidos.</p>
+<p>Durante a apresentação, observaremos:</p>
+<ul>
+<li>O grupo começou pelos testes mais simples?</li>
+<li>As hipóteses fazem sentido?</li>
+<li>Alguma hipótese importante ficou de fora?</li>
+<li>A solução proposta é segura?</li>
+<li>O grupo registrou corretamente o atendimento?</li>
+<li>A solução evita reincidência?</li>
+</ul>
+</section>
+<section id="avaliação-da-atividade" class="slide level2">
+<h2>Avaliação da atividade</h2>
+<p>A avaliação será formativa, considerando:</p>
+<ul>
+<li>identificação correta do sintoma;</li>
+<li>coerência das hipóteses;</li>
+<li>sequência lógica dos testes;</li>
+<li>adequação da solução proposta;</li>
+<li>clareza do registro técnico;</li>
+<li>participação do grupo.</li>
+</ul>
+</section>
+<section id="fechamento-da-aula" class="slide level2">
+<h2>Fechamento da aula</h2>
+<div class="box">
+<p>Resolver um problema técnico exige método: <strong>observar, perguntar, testar, diagnosticar, solucionar e registrar</strong>.</p>
+</div>
+<div class="fragment">
+<p>A manutenção corretiva não deve ser baseada em tentativa e erro, mas em raciocínio técnico e documentação.</p>
+</div>
+</section>
+<section id="integração-com-a-aula-anterior" class="slide level2">
+<h2>Integração com a aula anterior</h2>
+<p>A atividade pode ser concluída com o fechamento de um chamado técnico.</p>
+<div class="center">
+<p><strong>chamado aberto → diagnóstico realizado → solução aplicada → chamado fechado</strong></p>
+</div>
+<div class="fragment">
+<p>Na prática profissional, resolver o problema e registrar a solução são partes do mesmo atendimento.</p>
 </div>
 </section>
 <section id="section" class="slide level2" data-background-image="img/fry_1.png">
@@ -898,7 +688,7 @@ Sob as seguintes condições:
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/ifrn-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Eletricidade Instrumental</p>
+<p>Manutenção de Computadores</p>
 </div>
 </div></div>
 
@@ -1280,38 +1070,6 @@ Sob as seguintes condições:
         }
       });
       </script>
-    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-    (function() {
-      let previousOnload = window.onload;
-      window.onload = () => {
-        if (previousOnload) {
-          previousOnload();
-        }
-        lightboxQuarto.on('slide_before_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          const href = trigger.getAttribute('href');
-          if (href !== null) {
-            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-            if (imgEl !== null) {
-              const srcAttr = imgEl.getAttribute("src");
-              if (srcAttr && srcAttr.startsWith("data:")) {
-                slideConfig.href = srcAttr;
-              }
-            }
-          } 
-        });
-      
-        lightboxQuarto.on('slide_after_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(slideNode);
-          }
-        });
-      
-      };
-      
-    })();
-              </script>
     
 
 </body></html>

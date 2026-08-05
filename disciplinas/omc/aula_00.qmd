@@ -12,21 +12,22 @@ lang: pt-br
 format:
   revealjs:
     # Aparência
-    theme: [default, ifrn]             # Carrega o CSS padrão + nossa personalização
-    footer: "OMC"                      # Adiciona a nota de rodapé
-    logo: img/ifrn-logo.png            # Certifique-se de ter essa imagem na pasta 'img'
-    slide-number: true                 # Numeração de páginas no canto
-    center: false                      # false = alinha conteúdo ao topo (melhor para aulas)
+    theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
+    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                  # Numeração de páginas no canto
+    center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
     
     # Interatividade (Lousa)
     chalkboard: 
       buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    lightbox: true                     # Permite ampliar imagens para detalhes (útil para diagramas)
     
     # Navegação
     preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
     controls: true                     # Mostra setas de navegação
-    controlsLayout: edges              # Setas grandes nas laterais esquerda/direita
-    controlsTutorial: true             # Pisca a seta para indicar navegação
+    controls-layout: edges             # Setas grandes nas laterais esquerda/direita
+    controls-tutorial: true            # Pisca a seta para indicar navegação
     touch: true                        # Melhora o uso em tablets/celulares
     
     # Código (Para suas aulas de Programação)
@@ -39,13 +40,36 @@ format:
 :::: {.columns}
 ::: {.column width="55%"}
 
-> Carga horária: **60H**
+> Turma: **2.INF.1M**
 
-> Dia da semana: **Quintas-feiras**
+> Dia da semana: **Quartas-feiras e Sextas-feiras**
+
+> Horário: **10h30 às 12h00**
+
+> Carga horária e Duração: **60H** e **40 semanas**
+
+:::
+::: {.column width="45%"}
+
+![](img/gato_ti.png){fig-align="center"}
+
+:::
+::::
+
+---
+
+## Apresentação da disciplina
+
+:::: {.columns}
+::: {.column width="55%"}
+
+> Turma: **2.INF.2M**
+
+> Dia da semana: **Quintas-feiras e Sextas-feiras**
 
 > Horário: **8h50 às 10h20**
 
-> Duração: **40 semanas**
+> Carga horária e Duração: **60H** e **40 semanas**
 
 :::
 ::: {.column width="45%"}
@@ -74,10 +98,10 @@ format:
 
 **Noções de montagem de computadores:**
 
-* identificação do hardware dos sistemas computacionais,
+* identificação do *hardware* dos sistemas computacionais,
 * montagem de computadores e instalação dos componentes,
 * configuração do sistema operacional,
-* sistemas de backup
+* sistemas de *backup*
 * e especificação de equipamentos para sistemas computacionais.
 
 ---
@@ -98,7 +122,7 @@ format:
 
 1. **Organização de Computadores**
     1. Introdução à organização de computadores. 
-    1.  Unidade central de processamento. 
+    1. Unidade central de processamento. 
     1. Sistema de memória. 
     1. Sistema de interconexão.
     1. Sistema de entrada, saída e periféricos.
@@ -120,7 +144,7 @@ format:
 
 A avaliação se dará de forma contínua durante a disciplina, observando a assiduidade dos alunos em relação às aulas e a resolução de atividades.
 
-![](img/gato_prova.png){fig-align="center"}
+![](img/gato_prova.png){fig-align="center" width="75%"}
 
 ---
 

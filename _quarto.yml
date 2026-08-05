@@ -33,8 +33,8 @@ website:
           #   text: "💻 Introdução à Programação"
           - href: disciplinas/ei/index.qmd
             text: "⚡Eletricidade Instrumental"
-          # - href: disciplinas/omc/index.qmd
-          #   text: "🛠️ Organização e Manutenção de Computadores"
+          - href: disciplinas/omc/index.qmd
+            text: "🛠️ Organização e Montagem de Computadores"
       # - href: projetos.qmd
       #   text: "🔬 Projetos"
       # - href: publicacoes.qmd

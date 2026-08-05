@@ -1,5 +1,5 @@
 ---
-title: "🛠️ Organização e Manutenção de Computadores"
+title: "🛠️ Organização e Montagem de Computadores"
 description: "Material de apoio, slides e listas de exercícios."
 ---
 

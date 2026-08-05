@@ -39,196 +39,196 @@
     "href": "disciplinas/omc/aula_00.html#apresentação-da-disciplina",
     "title": "Organização e Manutenção de Computadores",
     "section": "Apresentação da disciplina",
-    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\nDia da semana: Quintas-feiras\n\n\nHorário: 8h50 às 10h20\n\n\nDuração: 40 semanas"
+    "text": "Apresentação da disciplina\n\n\n\nTurma: 2.INF.1M\n\n\nDia da semana: Quartas-feiras e Sextas-feiras\n\n\nHorário: 10h30 às 12h00\n\n\nCarga horária e Duração: 60H e 40 semanas"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#situação-inicial",
-    "href": "disciplinas/mc/aula_07.html#situação-inicial",
-    "title": "Código de Cores dos Resistores",
-    "section": "Situação inicial",
-    "text": "Situação inicial\n\n\nImagine que você encontrou este componente em uma bancada:\n\n\nPerguntas…\n\nQual é o valor nominal do resistor?\nQual é a tolerância?\nQual é a faixa de valores aceitável?\nComo confirmar isso com o multímetro?"
+    "objectID": "disciplinas/omc/aula_00.html#apresentação-da-disciplina-1",
+    "href": "disciplinas/omc/aula_00.html#apresentação-da-disciplina-1",
+    "title": "Organização e Manutenção de Computadores",
+    "section": "Apresentação da disciplina",
+    "text": "Apresentação da disciplina\n\n\n\nTurma: 2.INF.2M\n\n\nDia da semana: Quintas-feiras e Sextas-feiras\n\n\nHorário: 8h50 às 10h20\n\n\nCarga horária e Duração: 60H e 40 semanas"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#objetivos-da-aula",
-    "href": "disciplinas/mc/aula_07.html#objetivos-da-aula",
-    "title": "Código de Cores dos Resistores",
+    "objectID": "disciplinas/mc/aula_09.html#objetivos-da-aula",
+    "href": "disciplinas/mc/aula_09.html#objetivos-da-aula",
+    "title": "Problemas Comuns e Possíveis Soluções",
     "section": "Objetivos da aula",
-    "text": "Objetivos da aula\nAo final da aula, você deverá ser capaz de:\n\nidentificar o valor de um resistor pelo código de cores;\ndiferenciar resistores de 4, 5 e 6 faixas;\ncalcular valor nominal, multiplicador e tolerância;\nconverter valores entre Ω, kΩ e MΩ;\nestimar a faixa mínima e máxima permitida pela tolerância;\nconferir a leitura usando um multímetro."
+    "text": "Objetivos da aula\nAo final da aula, você deverá ser capaz de:\n\ndiferenciar sintoma, causa, teste e solução;\naplicar uma sequência lógica de diagnóstico técnico;\ninvestigar problemas comuns sem trocar peças desnecessariamente;\nrelacionar falhas de hardware, software, energia, rede e periféricos;\nregistrar a solução adotada em linguagem técnica;\npropor soluções seguras e justificadas."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#por-que-usamos-cores",
-    "href": "disciplinas/mc/aula_07.html#por-que-usamos-cores",
-    "title": "Código de Cores dos Resistores",
-    "section": "Por que usamos cores?",
-    "text": "Por que usamos cores?\n\nOs resistores são componentes pequenos. Escrever diretamente “4700 \\(\\Omega\\pm5\\%\\)” em um corpo pequeno nem sempre é prático.\nPor isso, muitos resistores usam faixas coloridas para representar:\n\nalgarismos significativos;\nfator multiplicador;\ntolerância;\ncoeficiente de temperatura, em alguns modelos.\n\n\n\nO código de cores é uma linguagem padronizada para transformar faixas coloridas em valores de resistência elétrica."
+    "objectID": "disciplinas/mc/aula_09.html#onde-estamos-na-disciplina",
+    "href": "disciplinas/mc/aula_09.html#onde-estamos-na-disciplina",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Onde estamos na disciplina?",
+    "text": "Onde estamos na disciplina?\n\nNa aula anterior, estudamos como abrir, classificar e encaminhar um chamado técnico.\nAgora, vamos estudar como transformar o chamado em um processo de diagnóstico.\n\n\nConteúdo 9 da ementa: problemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#unidade-de-resistência",
-    "href": "disciplinas/mc/aula_07.html#unidade-de-resistência",
-    "title": "Código de Cores dos Resistores",
-    "section": "Unidade de resistência",
-    "text": "Unidade de resistência\nA resistência elétrica é medida em ohm (\\(\\Omega\\)).\nAlguns múltiplos comuns:\n\n\n\nForma\nSignificado\nExemplo\n\n\n\n\n\\(\\Omega\\)\nohm\n220 \\(\\Omega\\)\n\n\n\\(k\\Omega\\)\nquilohm\n4,7 \\(k\\Omega\\) = 4.700 \\(\\Omega\\)\n\n\n\\(M\\Omega\\)\nmegaohm\n1 \\(M\\Omega\\) = 1.000.000 \\(\\Omega\\)"
+    "objectID": "disciplinas/mc/aula_09.html#do-chamado-ao-diagnóstico",
+    "href": "disciplinas/mc/aula_09.html#do-chamado-ao-diagnóstico",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Do chamado ao diagnóstico",
+    "text": "Do chamado ao diagnóstico\n\nRelato do usuário\n↓\nObservação do sintoma\n↓\nLevantamento de hipóteses\n↓\nTestes\n↓\nDiagnóstico\n↓\nSolução\n↓\nRegistro do atendimento"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#tabela-básica-algarismos",
-    "href": "disciplinas/mc/aula_07.html#tabela-básica-algarismos",
-    "title": "Código de Cores dos Resistores",
-    "section": "Tabela básica: algarismos",
-    "text": "Tabela básica: algarismos\n\n\n\n\nCor\nAlgarismo\n\n\n\n\n Preto\n0\n\n\n Marrom\n1\n\n\n Vermelho\n2\n\n\n Laranja\n3\n\n\n Amarelo\n4\n\n\n Verde\n5\n\n\n Azul\n6\n\n\n Violeta\n7\n\n\n Cinza\n8\n\n\n Branco\n9"
+    "objectID": "disciplinas/mc/aula_09.html#ideia-central-da-aula",
+    "href": "disciplinas/mc/aula_09.html#ideia-central-da-aula",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Ideia central da aula",
+    "text": "Ideia central da aula\n\nO bom técnico não decora soluções. Ele organiza hipóteses e testa uma de cada vez.\n\n\n\nTrocar peças sem diagnóstico pode gerar custo desnecessário, perda de tempo e até novos problemas."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#tabela-básica-multiplicador",
-    "href": "disciplinas/mc/aula_07.html#tabela-básica-multiplicador",
-    "title": "Código de Cores dos Resistores",
-    "section": "Tabela básica: multiplicador",
-    "text": "Tabela básica: multiplicador\n\n\n\n\nCor\nMultiplicador\nInterpretação\n\n\n\n\n Preto\n×1\n(10^0)\n\n\n Marrom\n×10\n(10^1)\n\n\n Vermelho\n×100\n(10^2)\n\n\n Laranja\n×1.000\n(10^3)\n\n\n Amarelo\n×10.000\n(10^4)\n\n\n Verde\n×100.000\n(10^5)\n\n\n Azul\n×1.000.000\n(10^6)\n\n\n Dourado\n×0,1\n(10^{-1})\n\n\n Prateado\n×0,01\n(10^{-2})"
+    "objectID": "disciplinas/mc/aula_09.html#sintoma-causa-teste-e-solução",
+    "href": "disciplinas/mc/aula_09.html#sintoma-causa-teste-e-solução",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Sintoma, causa, teste e solução",
+    "text": "Sintoma, causa, teste e solução\n\n\nSintoma\nÉ aquilo que aparece para o usuário ou para o técnico.\nExemplo: computador liga, mas não dá vídeo.\n\n\nCausa provável\nÉ uma hipótese para explicar o sintoma.\nExemplo: cabo de vídeo, monitor, memória RAM ou placa de vídeo.\n\n\n\n\nTeste\nÉ o procedimento usado para confirmar ou eliminar hipóteses.\nExemplo: testar outro cabo ou outro monitor.\n\n\nSolução\nÉ a ação tomada após o diagnóstico.\nExemplo: substituir cabo, reencaixar RAM ou trocar componente defeituoso."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#tabela-básica-tolerância",
-    "href": "disciplinas/mc/aula_07.html#tabela-básica-tolerância",
-    "title": "Código de Cores dos Resistores",
-    "section": "Tabela básica: tolerância",
-    "text": "Tabela básica: tolerância\n\n\n\n\nCor\nTolerância\n\n\n\n\n Marrom\n±1%\n\n\n Vermelho\n±2%\n\n\n Verde\n±0,5%\n\n\n Azul\n±0,25%\n\n\n Violeta\n±0,1%\n\n\n Cinza\n±0,05%\n\n\n Dourado\n±5%\n\n\n Prateado\n±10%\n\n\nSem faixa\n±20%"
+    "objectID": "disciplinas/mc/aula_09.html#antes-de-qualquer-intervenção",
+    "href": "disciplinas/mc/aula_09.html#antes-de-qualquer-intervenção",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Antes de qualquer intervenção",
+    "text": "Antes de qualquer intervenção\nO técnico deve começar pelos procedimentos mais simples e seguros.\n\nOuvir o relato do usuário.\nVerificar cabos, energia e conexões.\nObservar mensagens de erro.\nIdentificar alterações recentes.\nConfirmar se o problema ocorre sempre.\nPreservar dados do usuário.\nRegistrar todos os testes realizados.\n\n\nNunca abra equipamentos energizados e nunca intervenha em fonte de alimentação internamente sem formação específica e autorização."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#como-identificar-o-sentido-de-leitura",
-    "href": "disciplinas/mc/aula_07.html#como-identificar-o-sentido-de-leitura",
-    "title": "Código de Cores dos Resistores",
-    "section": "Como identificar o sentido de leitura?",
-    "text": "Como identificar o sentido de leitura?\n\nNormalmente lemos o resistor da esquerda para a direita, deixando a faixa de tolerância no final.\nA faixa de tolerância costuma ser:\n\ndourada;\nprateada;\nmarrom ou vermelha, em resistores de precisão;\nmais afastada das demais faixas.\n\n\n\nErro comum: começar a leitura pelo lado da tolerância. Isso inverte o valor e gera respostas incorretas."
+    "objectID": "disciplinas/mc/aula_09.html#tabela-geral-de-diagnóstico",
+    "href": "disciplinas/mc/aula_09.html#tabela-geral-de-diagnóstico",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Tabela geral de diagnóstico",
+    "text": "Tabela geral de diagnóstico\n\n\n\n\n\n\n\n\n\nSintoma\nPossíveis causas\nTestes iniciais\nPossíveis soluções\n\n\n\n\nComputador não liga\ncabo, tomada, fonte, botão power, placa-mãe\ntestar tomada, cabo, fonte e conexões\nreconectar cabos, testar fonte, substituir componente\n\n\nLiga, mas não dá vídeo\ncabo de vídeo, RAM, monitor, placa de vídeo\ntestar monitor, cabo e memória RAM\ntrocar cabo, reencaixar RAM, testar vídeo onboard\n\n\nComputador lento\npouco espaço, muitos programas, malware, HD com falha, pouca RAM\nverificar CPU, RAM, disco e inicialização\nlimpar inicialização, remover malware, trocar HD por SSD\n\n\nReinicia ou desliga\nsuperaquecimento, fonte instável, pasta térmica ressecada\nverificar temperaturas, ventoinhas e fonte\nlimpar cooler, trocar pasta térmica, testar fonte"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#resistor-de-4-faixas",
-    "href": "disciplinas/mc/aula_07.html#resistor-de-4-faixas",
-    "title": "Código de Cores dos Resistores",
-    "section": "Resistor de 4 faixas",
-    "text": "Resistor de 4 faixas\n\n\n\n\n\n\n\nFaixa\nFunção\n\n\n\n\n1ª faixa\n1º algarismo significativo\n\n\n2ª faixa\n2º algarismo significativo\n\n\n3ª faixa\nmultiplicador\n\n\n4ª faixa\ntolerância\n\n\n\n\nFórmula para resitor de 4 faixas:\n\\(R = \\left(\\text{1º algarismo; 2º algarismo}\\right) \\times \\text{multiplicador}\\)\n\\(R_{mín}=R-R\\cdot\\text{tolerância}\\)\n\\(R_{máx}=R+R\\cdot\\text{tolerância}\\)"
+    "objectID": "disciplinas/mc/aula_09.html#mais-problemas-comuns",
+    "href": "disciplinas/mc/aula_09.html#mais-problemas-comuns",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Mais problemas comuns",
+    "text": "Mais problemas comuns\n\n\n\n\n\n\n\n\n\nSintoma\nPossíveis causas\nTestes iniciais\nPossíveis soluções\n\n\n\n\nInternet não funciona\ncabo, IP, DNS, driver, roteador, placa de rede\ntestar outro dispositivo, ping, IP e DNS\nrevisar cabo, renovar IP, configurar DNS, reinstalar driver\n\n\nImpressora não imprime\nfila travada, cabo, driver, papel, rede\nverificar fila, status, conexão e driver\nlimpar fila, reinstalar driver, reconectar impressora\n\n\nTeclado ou mouse não funciona\nporta USB, pilha, driver, periférico defeituoso\ntestar outra porta ou outro computador\ntrocar pilha, reinstalar driver, substituir periférico\n\n\nSistema não inicia\narquivos corrompidos, disco com defeito, atualização falha\nmodo de recuperação e checagem de disco\nreparar inicialização, restaurar sistema, substituir disco"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exemplo-1-marrom-preto-vermelho-dourado",
-    "href": "disciplinas/mc/aula_07.html#exemplo-1-marrom-preto-vermelho-dourado",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exemplo 1: marrom, preto, vermelho, dourado",
-    "text": "Exemplo 1: marrom, preto, vermelho, dourado\n\n\n\n\n\nMarrom = \\(1\\)\nPreto = \\(0\\)\nVermelho = \\(\\times 100\\)\nDourado = \\(\\pm 5\\%\\)\n\n\n\n\\(R = 10 \\times 100 = 1000\\ \\Omega = 1\\ k\\Omega\\)\nValor nominal: \\(R = 1000 \\Omega\\)\nTolerância: \\(5\\% = 0,05\\)\nVariação permitida: \\(1000 \\times 0,05 = 50 \\Omega\\)\nFaixa aceitável: \\(950\\ \\Omega \\le R \\le 1050\\ \\Omega\\)"
+    "objectID": "disciplinas/mc/aula_09.html#caso-1-computador-não-liga",
+    "href": "disciplinas/mc/aula_09.html#caso-1-computador-não-liga",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 1: computador não liga",
+    "text": "Caso 1: computador não liga\n\n\nHipóteses comuns\n\ntomada sem energia;\ncabo de força solto;\nfonte com defeito;\nbotão power com problema;\ncabo do painel frontal desconectado;\nplaca-mãe em curto ou defeituosa.\n\n\n\nTestes iniciais\n\ntestar a tomada;\ntestar outro cabo de força;\nverificar chave da fonte, quando existir;\nconferir conexões internas;\ntestar com outra fonte compatível;\nobservar LEDs e sinais sonoros."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exemplo-2-e-3",
-    "href": "disciplinas/mc/aula_07.html#exemplo-2-e-3",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exemplo 2 e 3:",
-    "text": "Exemplo 2 e 3:\n\n\namarelo, violeta, laranja, dourado\n\n\nLeitura:\n\n\\(47 \\times 1000 = 47000 \\Omega\\)\n\\(R = 47\\ k\\Omega \\pm 5\\%\\)\n\n\n\nvermelho, vermelho, marrom, dourado\n\n\nLeitura:\n\n\\(22 \\times 10 = 220 \\Omega\\)\n\\(R = 220\\ \\Omega \\pm 5\\%\\)"
+    "objectID": "disciplinas/mc/aula_09.html#caso-2-liga-mas-não-dá-vídeo",
+    "href": "disciplinas/mc/aula_09.html#caso-2-liga-mas-não-dá-vídeo",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 2: liga, mas não dá vídeo",
+    "text": "Caso 2: liga, mas não dá vídeo\n\nSintoma: o computador liga, acende LEDs ou gira ventoinhas, mas o monitor mostra “sem sinal” ou fica apagado.\n\nHipóteses: monitor, cabo, entrada errada, memória RAM, placa de vídeo, configuração de vídeo ou placa-mãe.\n\nSequência de testes:\n\nVerificar se o monitor está ligado.\nConferir o cabo de vídeo.\nTestar outro monitor ou outro cabo.\nVerificar a entrada correta: HDMI, VGA, DisplayPort.\nReencaixar e limpar contatos da memória RAM.\nTestar vídeo onboard ou placa de vídeo dedicada."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#resistor-de-5-faixas",
-    "href": "disciplinas/mc/aula_07.html#resistor-de-5-faixas",
-    "title": "Código de Cores dos Resistores",
-    "section": "Resistor de 5 faixas",
-    "text": "Resistor de 5 faixas\nUsado quando precisamos de maior precisão.\n\n\n\nFaixa\nFunção\n\n\n\n\n1ª faixa\n1º algarismo significativo\n\n\n2ª faixa\n2º algarismo significativo\n\n\n3ª faixa\n3º algarismo significativo\n\n\n4ª faixa\nmultiplicador\n\n\n5ª faixa\ntolerância\n\n\n\n\nNo resistor de 5 faixas, usamos três algarismos antes do multiplicador."
+    "objectID": "disciplinas/mc/aula_09.html#caso-3-computador-lento",
+    "href": "disciplinas/mc/aula_09.html#caso-3-computador-lento",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 3: computador lento",
+    "text": "Caso 3: computador lento\n\n\nPossíveis causas\n\nmuitos programas iniciando com o sistema;\npouco espaço em disco;\nHD com falha;\nmalware;\npouca memória RAM;\nsistema desatualizado;\nsuperaquecimento.\n\n\n\nTestes e verificações\n\nGerenciador de Tarefas;\nuso de CPU, RAM e disco;\nespaço livre em disco;\nprogramas de inicialização;\nverificação de malware;\ntemperatura do processador;\nsaúde do disco."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exemplo-4-e-5",
-    "href": "disciplinas/mc/aula_07.html#exemplo-4-e-5",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exemplo 4 e 5:",
-    "text": "Exemplo 4 e 5:\n\n\nmarrom, preto, preto, vermelho, marrom\n\n\nLeitura:\n\n\\(100 \\times 100 = 10000 \\Omega\\) \\(R = 10\\ k\\Omega \\pm 1\\%\\)\n\n\n\nazul, cinza, preto, marrom, vermelho\n\n\nLeitura:\n\n\\(680 \\times 10 = 6800 \\Omega\\)\n\\(R = 6,8\\ k\\Omega \\pm 2\\%\\)"
+    "objectID": "disciplinas/mc/aula_09.html#caso-4-reinicia-ou-desliga-sozinho",
+    "href": "disciplinas/mc/aula_09.html#caso-4-reinicia-ou-desliga-sozinho",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 4: reinicia ou desliga sozinho",
+    "text": "Caso 4: reinicia ou desliga sozinho\n\nEsse sintoma pode indicar risco de perda de dados ou dano ao equipamento.\n\nHipóteses comuns:\n\nsuperaquecimento do processador;\ncooler parado ou obstruído por poeira;\npasta térmica ressecada;\nfonte instável;\nmemória RAM com falha;\nsistema operacional corrompido.\n\n\nSoluções possíveis: limpeza interna, correção do fluxo de ar, troca de pasta térmica, teste de fonte, teste de memória e reparo do sistema."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#resistor-de-6-faixas",
-    "href": "disciplinas/mc/aula_07.html#resistor-de-6-faixas",
-    "title": "Código de Cores dos Resistores",
-    "section": "Resistor de 6 faixas",
-    "text": "Resistor de 6 faixas\n\nO resistor de 6 faixas acrescenta uma informação extra:\n\n\n\n\nFaixa\nFunção\n\n\n\n\n1ª, 2ª e 3ª\nalgarismos significativos\n\n\n4ª\nmultiplicador\n\n\n5ª\ntolerância\n\n\n6ª\ncoeficiente de temperatura\n\n\n\n\nO coeficiente de temperatura indica quanto a resistência varia quando a temperatura muda.\n\n\nEm aulas iniciais, normalmente focamos nas quatro ou cinco primeiras faixas."
+    "objectID": "disciplinas/mc/aula_09.html#caso-5-internet-não-funciona",
+    "href": "disciplinas/mc/aula_09.html#caso-5-internet-não-funciona",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 5: internet não funciona",
+    "text": "Caso 5: internet não funciona\nAntes de concluir que “a internet caiu”, identifique o escopo do problema.\n\n\nAfeta só um computador?\nPode ser cabo, placa de rede, IP, DNS, driver ou configuração local.\n\n\nAfeta vários computadores?\nPode ser roteador, switch, provedor, servidor DHCP ou infraestrutura da rede.\n\n\n\nTestes úteis: verificar cabo, testar outro dispositivo, conferir IP, usar ping, testar DNS e reiniciar equipamentos de rede quando autorizado."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#estratégia-de-resolução",
-    "href": "disciplinas/mc/aula_07.html#estratégia-de-resolução",
-    "title": "Código de Cores dos Resistores",
-    "section": "Estratégia de resolução",
-    "text": "Estratégia de resolução\nPara ler qualquer resistor:\n\nIdentifique o lado correto da leitura.\nConte o número de faixas.\nSepare algarismos, multiplicador e tolerância.\nMonte o número inicial.\nAplique o multiplicador.\nConverta para Ω, kΩ ou MΩ.\nCalcule a faixa de tolerância, se solicitado."
+    "objectID": "disciplinas/mc/aula_09.html#caso-6-impressora-não-imprime",
+    "href": "disciplinas/mc/aula_09.html#caso-6-impressora-não-imprime",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 6: impressora não imprime",
+    "text": "Caso 6: impressora não imprime\nPerguntas iniciais:\n\nA impressora está ligada?\nHá papel e tinta ou toner?\nExiste mensagem de erro?\nA impressora está em rede ou via USB?\nO problema ocorre com todos os usuários?\nOs documentos ficam presos na fila?\n\n\nSoluções possíveis: limpar fila de impressão, definir impressora correta, verificar conexão, reinstalar driver, configurar IP ou reconectar à rede."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exercícios-leitura-de-cores",
-    "href": "disciplinas/mc/aula_07.html#exercícios-leitura-de-cores",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exercícios: leitura de cores",
-    "text": "Exercícios: leitura de cores\nDetermine o valor nominal e a tolerância.\n\nMarrom, preto, vermelho, dourado\nAmarelo, violeta, laranja, dourado\nVermelho, vermelho, marrom, dourado\nLaranja, laranja, marrom, dourado\nVerde, azul, vermelho, dourado"
+    "objectID": "disciplinas/mc/aula_09.html#caso-7-sistema-não-inicia",
+    "href": "disciplinas/mc/aula_09.html#caso-7-sistema-não-inicia",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Caso 7: sistema não inicia",
+    "text": "Caso 7: sistema não inicia\n\nAntes de formatar, avalie a possibilidade de recuperar o sistema e preservar os dados do usuário.\n\nPossíveis causas:\n\nfalha após atualização;\narquivos de inicialização corrompidos;\ndisco com defeito;\nalteração incorreta na BIOS/UEFI;\npartição ou sistema de arquivos danificado.\n\nTestes e ações: modo de recuperação, reparo de inicialização, checagem de disco, backup dos dados e substituição do disco quando necessário."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exercícios-leitura-de-cores-1",
-    "href": "disciplinas/mc/aula_07.html#exercícios-leitura-de-cores-1",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exercícios: leitura de cores",
-    "text": "Exercícios: leitura de cores\nDetermine o valor nominal e a tolerância.\n\nAzul, cinza, preto, marrom, vermelho\nMarrom, preto, preto, vermelho, marrom\nVermelho, violeta, preto, laranja, marrom\nAmarelo, violeta, preto, vermelho, vermelho\nMarrom, verde, preto, dourado"
+    "objectID": "disciplinas/mc/aula_09.html#ferramentas-úteis-no-diagnóstico",
+    "href": "disciplinas/mc/aula_09.html#ferramentas-úteis-no-diagnóstico",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Ferramentas úteis no diagnóstico",
+    "text": "Ferramentas úteis no diagnóstico\n\n\nFerramentas físicas\n\nchave Phillips;\npincel antiestático;\nálcool isopropílico;\nborracha branca ou limpa-contato apropriado;\nmultímetro, quando autorizado;\npendrive de instalação ou recuperação.\n\n\n\nFerramentas de software\n\nGerenciador de Tarefas;\nferramentas de diagnóstico de disco;\nantivírus;\nmonitor de temperatura;\nprompt de comando;\nlogs do sistema;\nferramentas de rede."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exercícios-escreva-as-cores",
-    "href": "disciplinas/mc/aula_07.html#exercícios-escreva-as-cores",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exercícios: escreva as cores",
-    "text": "Exercícios: escreva as cores\nIndique as cores correspondentes.\n\n330 Ω ±5%\n4,7 kΩ ±5%\n1 kΩ ±5%\n10 kΩ ±1% usando 5 faixas\n6,8 kΩ ±2% usando 5 faixas"
+    "objectID": "disciplinas/mc/aula_09.html#demonstração-do-raciocínio-técnico",
+    "href": "disciplinas/mc/aula_09.html#demonstração-do-raciocínio-técnico",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Demonstração do raciocínio técnico",
+    "text": "Demonstração do raciocínio técnico\nCaso: computador liga, acende LEDs, mas não aparece imagem.\n\nPerguntas que eliminam hipóteses:\n\nO monitor está ligado?\nO cabo de vídeo está conectado corretamente?\nO monitor funciona em outro computador?\nO computador emite bipes?\nA memória RAM está bem encaixada?\nHá placa de vídeo dedicada?\nA saída de vídeo usada é a correta?\nO problema está no monitor, no cabo, na RAM, na placa de vídeo ou na placa-mãe?"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#exercícios-tolerância",
-    "href": "disciplinas/mc/aula_07.html#exercícios-tolerância",
-    "title": "Código de Cores dos Resistores",
-    "section": "Exercícios: tolerância",
-    "text": "Exercícios: tolerância\nCalcule a faixa mínima e máxima aceitável.\n\n220 Ω ±5%\n1 kΩ ±5%\n10 kΩ ±1%\n47 kΩ ±5%\n6,8 kΩ ±2%"
+    "objectID": "disciplinas/mc/aula_09.html#como-registrar-a-manutenção-corretiva",
+    "href": "disciplinas/mc/aula_09.html#como-registrar-a-manutenção-corretiva",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Como registrar a manutenção corretiva",
+    "text": "Como registrar a manutenção corretiva\nUm bom registro deve responder:\n\nQual foi o sintoma relatado?\nQuais hipóteses foram consideradas?\nQuais testes foram realizados?\nQual foi o diagnóstico?\nQual solução foi aplicada?\nHouve troca de peça?\nO usuário confirmou a solução?\nQue orientação preventiva foi dada?\n\n\nO registro técnico cria histórico e facilita atendimentos futuros."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#gabarito-exercícios-1-a-5",
-    "href": "disciplinas/mc/aula_07.html#gabarito-exercícios-1-a-5",
-    "title": "Código de Cores dos Resistores",
-    "section": "Gabarito: exercícios 1 a 5",
-    "text": "Gabarito: exercícios 1 a 5\n\n\n\nExercício\nResultado\n\n\n\n\n1\n1 kΩ ±5%\n\n\n2\n47 kΩ ±5%\n\n\n3\n220 Ω ±5%\n\n\n4\n330 Ω ±5%\n\n\n5\n5,6 kΩ ±5%"
+    "objectID": "disciplinas/mc/aula_09.html#atividade-prática-estudo-de-caso",
+    "href": "disciplinas/mc/aula_09.html#atividade-prática-estudo-de-caso",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Atividade prática: estudo de caso",
+    "text": "Atividade prática: estudo de caso\nOrganização: grupos de 3 a 5 discentes.\nCada grupo receberá dois casos de problemas comuns em sistemas computacionais.\n\nO objetivo é montar uma sequência de diagnóstico e propor uma solução tecnicamente justificada."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#gabarito-exercícios-6-a-10",
-    "href": "disciplinas/mc/aula_07.html#gabarito-exercícios-6-a-10",
-    "title": "Código de Cores dos Resistores",
-    "section": "Gabarito: exercícios 6 a 10",
-    "text": "Gabarito: exercícios 6 a 10\n\n\n\nExercício\nResultado\n\n\n\n\n6\n6,8 kΩ ±2%\n\n\n7\n10 kΩ ±1%\n\n\n8\n270 kΩ ±1%\n\n\n9\n47 kΩ ±2%\n\n\n10\n1,5 Ω ±5%"
+    "objectID": "disciplinas/mc/aula_09.html#casos-para-sorteio",
+    "href": "disciplinas/mc/aula_09.html#casos-para-sorteio",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Casos para sorteio",
+    "text": "Casos para sorteio\n\nO computador liga, mas fica reiniciando sozinho depois de alguns minutos.\nO notebook está muito quente e a ventoinha faz muito barulho.\nO computador do laboratório está extremamente lento ao iniciar.\nA impressora está instalada, mas os documentos ficam presos na fila.\nO computador acessa a rede local, mas não abre sites.\nO monitor exibe “sem sinal”.\nO sistema informa erro de disco na inicialização.\nO teclado USB funciona em um computador, mas não funciona em outro."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#gabarito-exercícios-11-a-15",
-    "href": "disciplinas/mc/aula_07.html#gabarito-exercícios-11-a-15",
-    "title": "Código de Cores dos Resistores",
-    "section": "Gabarito: exercícios 11 a 15",
-    "text": "Gabarito: exercícios 11 a 15\n\n\n\nExercício\nCores\n\n\n\n\n11\nlaranja, laranja, marrom, dourado\n\n\n12\namarelo, violeta, vermelho, dourado\n\n\n13\nmarrom, preto, vermelho, dourado\n\n\n14\nmarrom, preto, preto, vermelho, marrom\n\n\n15\nazul, cinza, preto, marrom, vermelho"
+    "objectID": "disciplinas/mc/aula_09.html#ficha-de-diagnóstico",
+    "href": "disciplinas/mc/aula_09.html#ficha-de-diagnóstico",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Ficha de diagnóstico",
+    "text": "Ficha de diagnóstico\n\n\n\nItem\nResposta\n\n\n\n\nSintoma relatado\n\n\n\nPerguntas ao usuário\n\n\n\nHipóteses iniciais\n\n\n\nTestes a realizar\n\n\n\nFerramentas ou softwares necessários\n\n\n\nSolução provável\n\n\n\nComo registrar no chamado\n\n\n\nComo evitar que o problema se repita"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#gabarito-exercícios-16-a-20",
-    "href": "disciplinas/mc/aula_07.html#gabarito-exercícios-16-a-20",
-    "title": "Código de Cores dos Resistores",
-    "section": "Gabarito: exercícios 16 a 20",
-    "text": "Gabarito: exercícios 16 a 20\n\n\n\nExercício\nFaixa aceitável\n\n\n\n\n16\n209 Ω a 231 Ω\n\n\n17\n950 Ω a 1050 Ω\n\n\n18\n9,9 kΩ a 10,1 kΩ\n\n\n19\n44,65 kΩ a 49,35 kΩ\n\n\n20\n6,664 kΩ a 6,936 kΩ"
+    "objectID": "disciplinas/mc/aula_09.html#socialização-dos-casos",
+    "href": "disciplinas/mc/aula_09.html#socialização-dos-casos",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Socialização dos casos",
+    "text": "Socialização dos casos\nCada grupo apresentará um dos casos resolvidos.\nDurante a apresentação, observaremos:\n\nO grupo começou pelos testes mais simples?\nAs hipóteses fazem sentido?\nAlguma hipótese importante ficou de fora?\nA solução proposta é segura?\nO grupo registrou corretamente o atendimento?\nA solução evita reincidência?"
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#fechamento",
-    "href": "disciplinas/mc/aula_07.html#fechamento",
-    "title": "Código de Cores dos Resistores",
-    "section": "Fechamento",
-    "text": "Fechamento\nNesta aula, vimos que:\n\ncada cor representa um número ou uma informação;\nresistores de 4 faixas usam dois algarismos, multiplicador e tolerância;\nresistores de 5 faixas usam três algarismos, multiplicador e tolerância;\na tolerância define a faixa real aceitável;\no multímetro confirma se o resistor está dentro do esperado.\n\n\nNa próxima aula, podemos usar esses resistores em circuitos série, paralelo e mistos para verificar experimentalmente a resistência equivalente."
+    "objectID": "disciplinas/mc/aula_09.html#avaliação-da-atividade",
+    "href": "disciplinas/mc/aula_09.html#avaliação-da-atividade",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Avaliação da atividade",
+    "text": "Avaliação da atividade\nA avaliação será formativa, considerando:\n\nidentificação correta do sintoma;\ncoerência das hipóteses;\nsequência lógica dos testes;\nadequação da solução proposta;\nclareza do registro técnico;\nparticipação do grupo."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#desafio-prático",
-    "href": "disciplinas/mc/aula_07.html#desafio-prático",
-    "title": "Código de Cores dos Resistores",
-    "section": "Desafio prático",
-    "text": "Desafio prático\nVocê recebeu três resistores misturados em uma bancada.\n\n\n\nResistor\nCores\n\n\n\n\nA\nmarrom, preto, vermelho, dourado\n\n\nB\namarelo, violeta, laranja, dourado\n\n\nC\nvermelho, vermelho, marrom, dourado\n\n\n\nTarefa:\n\nCalcule o valor de cada resistor.\nCalcule a faixa aceitável de cada um.\nMeça com multímetro.\nClassifique como “dentro” ou “fora” da tolerância."
+    "objectID": "disciplinas/mc/aula_09.html#fechamento-da-aula",
+    "href": "disciplinas/mc/aula_09.html#fechamento-da-aula",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Fechamento da aula",
+    "text": "Fechamento da aula\n\nResolver um problema técnico exige método: observar, perguntar, testar, diagnosticar, solucionar e registrar.\n\n\nA manutenção corretiva não deve ser baseada em tentativa e erro, mas em raciocínio técnico e documentação."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#atividade-rápida-em-dupla",
-    "href": "disciplinas/mc/aula_07.html#atividade-rápida-em-dupla",
-    "title": "Código de Cores dos Resistores",
-    "section": "Atividade rápida em dupla",
-    "text": "Atividade rápida em dupla\nUm aluno escolhe um resistor físico da bancada.\nO outro aluno deve:\n\nler as faixas;\ncalcular o valor nominal;\nestimar a tolerância;\nmedir com o multímetro;\nverificar se o valor medido está dentro da faixa esperada."
+    "objectID": "disciplinas/mc/aula_09.html#integração-com-a-aula-anterior",
+    "href": "disciplinas/mc/aula_09.html#integração-com-a-aula-anterior",
+    "title": "Problemas Comuns e Possíveis Soluções",
+    "section": "Integração com a aula anterior",
+    "text": "Integração com a aula anterior\nA atividade pode ser concluída com o fechamento de um chamado técnico.\n\nchamado aberto → diagnóstico realizado → solução aplicada → chamado fechado\n\n\nNa prática profissional, resolver o problema e registrar a solução são partes do mesmo atendimento."
   },
   {
-    "objectID": "disciplinas/mc/aula_07.html#como-medir-com-multímetro",
-    "href": "disciplinas/mc/aula_07.html#como-medir-com-multímetro",
-    "title": "Código de Cores dos Resistores",
-    "section": "Como medir com multímetro",
-    "text": "Como medir com multímetro\nPassos básicos:\n\nRetire o resistor do circuito ou isole pelo menos um terminal.\nSelecione a escala de resistência, se o multímetro não for automático.\nEncoste uma ponta de prova em cada terminal.\nCompare a leitura com o valor nominal e com a tolerância.\n\n\nNunca meça resistência com o circuito energizado."
+    "objectID": "disciplinas/mc/aula_01.html#objetivos-da-aula",
+    "href": "disciplinas/mc/aula_01.html#objetivos-da-aula",
+    "title": "Título da aula",
+    "section": "Objetivos da aula",
+    "text": "Objetivos da aula\nAo final da aula, você deverá ser capaz de:\n\nlistar os objetivos da aula;\ncontinua…"
   },
   {
     "objectID": "disciplinas/etd/aula_01.html#objetivos-da-aula",
@@ -2067,9 +2067,205 @@
   {
     "objectID": "disciplinas/mc/aula_00.html#apresentação-da-disciplina",
     "href": "disciplinas/mc/aula_00.html#apresentação-da-disciplina",
-    "title": "Eletricidade Instrumental",
+    "title": "Manutenção de Computadores",
     "section": "Apresentação da disciplina",
-    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\n1INF1M: Quintas-feiras / 8h50 às 10h20\n\n\n1INF1V: Quartas-feiras / 13h00 às 14h30\n\n\nDuração: 40 semanas"
+    "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\n3INF1M: Quintas-feiras / 7h00 às 8h30 e Sextas-feiras / 10h20 às 12h00\n\n\n3INF1V: Quintas-feiras e Sextas-feiras / 13h00 às 14h30\n\n\nDuração: 20 semanas"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#objetivos-da-aula",
+    "href": "disciplinas/mc/aula_08.html#objetivos-da-aula",
+    "title": "Suporte ao Usuário",
+    "section": "Objetivos da aula",
+    "text": "Objetivos da aula\nAo final da aula, você deverá ser capaz de:\n\nexplicar a função de uma central de serviços;\ndiferenciar evento, incidente e requisição de serviço;\nregistrar corretamente um chamado técnico;\nclassificar um atendimento por impacto, urgência e prioridade;\nidentificar os níveis de atendimento N1, N2 e N3;\nreconhecer cuidados técnicos e éticos no suporte remoto."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#onde-estamos-na-disciplina",
+    "href": "disciplinas/mc/aula_08.html#onde-estamos-na-disciplina",
+    "title": "Suporte ao Usuário",
+    "section": "Onde estamos na disciplina?",
+    "text": "Onde estamos na disciplina?\n\nNa manutenção de computadores, o trabalho técnico não termina quando o problema é resolvido.\nTambém é necessário atender o usuário, registrar o problema, documentar os testes e comunicar a solução.\n\n\nConteúdo 8 da ementa: suporte ao usuário, central de serviços, eventos, incidentes, sistema de chamados, níveis de atendimento e suporte remoto."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#situação-problema",
+    "href": "disciplinas/mc/aula_08.html#situação-problema",
+    "title": "Suporte ao Usuário",
+    "section": "Situação-problema",
+    "text": "Situação-problema\n\n“Professor, meu computador não presta. Está tudo travando e eu tenho que entregar um relatório ainda hoje.”\n\n\n\n\n\nO técnico deve:\n\nouvir o usuário;\nfazer perguntas objetivas;\nregistrar o chamado;\navaliar impacto e urgência;\niniciar testes simples.\n\n\n\nO técnico não deve:\n\nabrir o computador imediatamente;\nculpar o usuário;\ntrocar peças sem diagnóstico;\nresolver sem registrar;\nignorar a prioridade do caso."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#perguntas-iniciais",
+    "href": "disciplinas/mc/aula_08.html#perguntas-iniciais",
+    "title": "Suporte ao Usuário",
+    "section": "Perguntas iniciais",
+    "text": "Perguntas iniciais\nAntes de “mexer no computador”, o técnico precisa entender o problema.\n\nBoas perguntas reduzem o tempo de diagnóstico e evitam soluções erradas.\n\n\n\n\nQuando o problema começou?\nO problema acontece sempre ou às vezes?\nAlguma alteração foi feita recentemente?\nOutros usuários ou computadores apresentam o mesmo problema?\nExiste mensagem de erro?\nO problema impede totalmente o trabalho?"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#o-que-é-suporte-ao-usuário",
+    "href": "disciplinas/mc/aula_08.html#o-que-é-suporte-ao-usuário",
+    "title": "Suporte ao Usuário",
+    "section": "O que é suporte ao usuário?",
+    "text": "O que é suporte ao usuário?\nSuporte ao usuário é o conjunto de procedimentos usados para receber, registrar, acompanhar e solucionar demandas relacionadas ao uso de equipamentos, sistemas e serviços de informática.\n\n\nO suporte técnico combina conhecimento técnico, comunicação clara e organização do atendimento."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#central-de-serviços",
+    "href": "disciplinas/mc/aula_08.html#central-de-serviços",
+    "title": "Suporte ao Usuário",
+    "section": "Central de serviços",
+    "text": "Central de serviços\nA central de serviços é o ponto de contato entre os usuários e a equipe técnica.\n\n\nEla pode:\n\nreceber solicitações;\nregistrar chamados;\norientar usuários;\nacompanhar atendimentos;\nencaminhar problemas.\n\n\n\nEla ajuda a evitar:\n\natendimentos esquecidos;\nretrabalho;\nfalta de histórico;\nprioridades mal definidas;\ncomunicação informal demais."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#fluxo-básico-de-atendimento",
+    "href": "disciplinas/mc/aula_08.html#fluxo-básico-de-atendimento",
+    "title": "Suporte ao Usuário",
+    "section": "Fluxo básico de atendimento",
+    "text": "Fluxo básico de atendimento\n\nUsuário relata\n↓\nChamado é registrado\n↓\nProblema é classificado\n↓\nAtendimento N1, N2 ou N3\n↓\nSolução é aplicada\n↓\nChamado é documentado e fechado"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#evento-incidente-ou-requisição",
+    "href": "disciplinas/mc/aula_08.html#evento-incidente-ou-requisição",
+    "title": "Suporte ao Usuário",
+    "section": "Evento, incidente ou requisição?",
+    "text": "Evento, incidente ou requisição?\n\n\nEvento\nAlgo observado no sistema, mas que nem sempre representa falha.\nExemplo: aviso de pouco espaço em disco.\n\n\nIncidente\nInterrupção ou redução da qualidade de um serviço.\nExemplo: computador não liga.\n\n\nRequisição\nSolicitação planejada que não envolve necessariamente uma falha.\nExemplo: instalar um software."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#exemplos-rápidos",
+    "href": "disciplinas/mc/aula_08.html#exemplos-rápidos",
+    "title": "Suporte ao Usuário",
+    "section": "Exemplos rápidos",
+    "text": "Exemplos rápidos\nClassifique cada caso como evento, incidente ou requisição de serviço.\n\n\n\nCaso\nClassificação\n\n\n\n\nAntivírus informa que encontrou uma ameaça\n?\n\n\nUsuário solicita instalação de impressora\n?\n\n\nInternet não funciona no laboratório\n?\n\n\nSistema avisa que há atualização disponível\n?\n\n\nMonitor não apresenta imagem\n?"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#respostas-esperadas",
+    "href": "disciplinas/mc/aula_08.html#respostas-esperadas",
+    "title": "Suporte ao Usuário",
+    "section": "Respostas esperadas",
+    "text": "Respostas esperadas\n\n\n\nCaso\nClassificação\n\n\n\n\nAntivírus informa que encontrou uma ameaça\nEvento\n\n\nUsuário solicita instalação de impressora\nRequisição\n\n\nInternet não funciona no laboratório\nIncidente\n\n\nSistema avisa que há atualização disponível\nEvento\n\n\nMonitor não apresenta imagem\nIncidente\n\n\n\n\nObservação: em situações reais, a classificação pode depender do contexto e do impacto no serviço."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#sistema-de-chamados",
+    "href": "disciplinas/mc/aula_08.html#sistema-de-chamados",
+    "title": "Suporte ao Usuário",
+    "section": "Sistema de chamados",
+    "text": "Sistema de chamados\nUm sistema de chamados é uma ferramenta usada para registrar, acompanhar e documentar os atendimentos técnicos.\n\nSem chamado, o atendimento fica dependente da memória do técnico e da comunicação informal.\n\n\nPode ser um software específico, uma plataforma web, um formulário eletrônico ou uma planilha organizada."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#informações-essenciais-em-um-chamado",
+    "href": "disciplinas/mc/aula_08.html#informações-essenciais-em-um-chamado",
+    "title": "Suporte ao Usuário",
+    "section": "Informações essenciais em um chamado",
+    "text": "Informações essenciais em um chamado\nUm chamado técnico deve conter, no mínimo:\n\n\n\nsolicitante;\nsetor/local;\nequipamento envolvido;\ndescrição do problema;\ndata e horário;\ncategoria.\n\n\n\n\nimpacto;\nurgência;\nprioridade;\nprocedimentos realizados;\nresponsável pelo atendimento;\nsituação do chamado."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#chamado-mal-registrado",
+    "href": "disciplinas/mc/aula_08.html#chamado-mal-registrado",
+    "title": "Suporte ao Usuário",
+    "section": "Chamado mal registrado",
+    "text": "Chamado mal registrado\n\n“PC ruim. Resolver.”\n\n\nProblemas desse registro:\n\nnão informa o usuário;\nnão informa o equipamento;\nnão descreve o sintoma;\nnão indica quando começou;\nnão permite definir prioridade;\ndificulta continuidade do atendimento."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#chamado-bem-registrado",
+    "href": "disciplinas/mc/aula_08.html#chamado-bem-registrado",
+    "title": "Suporte ao Usuário",
+    "section": "Chamado bem registrado",
+    "text": "Chamado bem registrado\n\nUsuário relata lentidão ao abrir navegador e editor de texto. Equipamento: computador de mesa do Laboratório 2. Problema começou há três dias. Verificado uso elevado de disco e muitos programas iniciando com o sistema. Classificação: incidente. Prioridade: média.\n\n\nPor que esse registro é melhor?\n\ndescreve o sintoma;\ninforma o equipamento;\napresenta testes iniciais;\npermite continuidade por outro técnico;\najuda a documentar a solução."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#impacto-urgência-e-prioridade",
+    "href": "disciplinas/mc/aula_08.html#impacto-urgência-e-prioridade",
+    "title": "Suporte ao Usuário",
+    "section": "Impacto, urgência e prioridade",
+    "text": "Impacto, urgência e prioridade\n\n\nImpacto\nQuantas pessoas ou serviços são afetados?\n\n\nUrgência\nQuanto tempo o atendimento pode esperar?\n\n\nPrioridade\nResultado da combinação entre impacto e urgência."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#exemplo-de-prioridade",
+    "href": "disciplinas/mc/aula_08.html#exemplo-de-prioridade",
+    "title": "Suporte ao Usuário",
+    "section": "Exemplo de prioridade",
+    "text": "Exemplo de prioridade\n\n\n\n\n\n\n\n\n\nSituação\nImpacto\nUrgência\nPrioridade\n\n\n\n\nUm mouse com defeito em um computador reserva\nBaixo\nBaixa\nBaixa\n\n\nComputador da secretaria sem acesso ao sistema acadêmico\nMédio\nAlta\nAlta\n\n\nInternet fora em todo o laboratório durante aula prática\nAlto\nAlta\nCrítica\n\n\nSolicitação de instalação de software para a próxima semana\nBaixo\nBaixa\nBaixa"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#níveis-de-atendimento",
+    "href": "disciplinas/mc/aula_08.html#níveis-de-atendimento",
+    "title": "Suporte ao Usuário",
+    "section": "Níveis de atendimento",
+    "text": "Níveis de atendimento\n\n\n\n\n\n\n\n\nNível\nFunção principal\nExemplos\n\n\n\n\nN1\nPrimeiro atendimento, triagem e soluções simples\norientar usuário, verificar cabos, reiniciar serviço, abrir chamado\n\n\nN2\nDiagnóstico técnico mais detalhado\ntestar hardware, reinstalar driver, configurar rede, substituir componente\n\n\nN3\nProblemas complexos ou especializados\nfornecedor, infraestrutura avançada, sistemas críticos, garantia"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#quando-encaminhar",
+    "href": "disciplinas/mc/aula_08.html#quando-encaminhar",
+    "title": "Suporte ao Usuário",
+    "section": "Quando encaminhar?",
+    "text": "Quando encaminhar?\nUm chamado deve ser encaminhado quando:\n\no problema exige permissão ou conhecimento que o N1 não possui;\nhá risco de perda de dados;\nenvolve infraestrutura crítica;\nrequer abertura de equipamento sem autorização;\ndepende de fornecedor, garantia ou equipe especializada;\na solução simples não resolveu o incidente.\n\n\nEncaminhar não é “passar o problema adiante”. É garantir que ele seja tratado pelo nível adequado."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#comunicação-com-o-usuário",
+    "href": "disciplinas/mc/aula_08.html#comunicação-com-o-usuário",
+    "title": "Suporte ao Usuário",
+    "section": "Comunicação com o usuário",
+    "text": "Comunicação com o usuário\nO técnico precisa comunicar-se de forma clara, respeitosa e objetiva.\n\n\nBoas práticas\n\nescutar antes de concluir;\nusar linguagem simples;\nexplicar o que será feito;\ninformar prazos;\nregistrar decisões;\nconfirmar se o problema foi resolvido.\n\n\n\nEvite\n\nironias;\ntermos técnicos excessivos;\nculpar o usuário;\nprometer o que não pode cumprir;\nacessar arquivos pessoais sem autorização."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#suporte-remoto",
+    "href": "disciplinas/mc/aula_08.html#suporte-remoto",
+    "title": "Suporte ao Usuário",
+    "section": "Suporte remoto",
+    "text": "Suporte remoto\nO suporte remoto permite acessar ou orientar o usuário à distância para resolver problemas de software, configuração ou uso.\nExemplos de uso:\n\norientar instalação ou configuração;\nverificar mensagens de erro;\najustar configurações do sistema;\nauxiliar uso de programas;\nacompanhar testes com o usuário."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#cuidados-no-suporte-remoto",
+    "href": "disciplinas/mc/aula_08.html#cuidados-no-suporte-remoto",
+    "title": "Suporte ao Usuário",
+    "section": "Cuidados no suporte remoto",
+    "text": "Cuidados no suporte remoto\n\nO acesso remoto deve ocorrer apenas com autorização do usuário e seguindo as regras da instituição.\n\n\nsolicitar permissão antes de acessar;\nexplicar o que será feito;\nevitar visualizar dados pessoais ou sigilosos;\nnão copiar arquivos sem autorização;\nregistrar o atendimento;\nencerrar a sessão ao finalizar;\norientar o usuário sobre a solução aplicada."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#atividade-prática-em-grupo",
+    "href": "disciplinas/mc/aula_08.html#atividade-prática-em-grupo",
+    "title": "Suporte ao Usuário",
+    "section": "Atividade prática em grupo",
+    "text": "Atividade prática em grupo\nOrganização: grupos de 3 a 5 discentes.\nCada grupo receberá um caso de atendimento e deverá abrir um chamado técnico.\n\nO objetivo não é “adivinhar a solução”, mas registrar corretamente o problema, classificar o atendimento e definir os primeiros passos."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#casos-para-sorteio",
+    "href": "disciplinas/mc/aula_08.html#casos-para-sorteio",
+    "title": "Suporte ao Usuário",
+    "section": "Casos para sorteio",
+    "text": "Casos para sorteio\n\nComputador não liga.\nInternet não funciona em apenas uma máquina.\nImpressora aparece offline.\nNotebook superaquecendo e desligando.\nUsuário esqueceu a senha.\nMonitor sem imagem.\nComputador muito lento.\nRoteador Wi-Fi sem conexão."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#ficha-de-chamado-técnico",
+    "href": "disciplinas/mc/aula_08.html#ficha-de-chamado-técnico",
+    "title": "Suporte ao Usuário",
+    "section": "Ficha de chamado técnico",
+    "text": "Ficha de chamado técnico\n\n\n\nCampo\nResposta\n\n\n\n\nSolicitante\n\n\n\nEquipamento\n\n\n\nDescrição do problema\n\n\n\nTipo: evento, incidente ou requisição\n\n\n\nImpacto\n\n\n\nUrgência\n\n\n\nPrioridade\n\n\n\nNível inicial de atendimento\n\n\n\nPerguntas ao usuário\n\n\n\nPrimeiros testes\n\n\n\nPossível encaminhamento"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#socialização",
+    "href": "disciplinas/mc/aula_08.html#socialização",
+    "title": "Suporte ao Usuário",
+    "section": "Socialização",
+    "text": "Socialização\nCada grupo apresentará rapidamente seu chamado.\nDurante a apresentação, observaremos:\n\nA classificação está correta?\nA prioridade faz sentido?\nO chamado tem informações suficientes?\nO problema começa no N1, N2 ou N3?\nFaltou alguma pergunta ao usuário?\nO encaminhamento foi bem justificado?"
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#avaliação-da-atividade",
+    "href": "disciplinas/mc/aula_08.html#avaliação-da-atividade",
+    "title": "Suporte ao Usuário",
+    "section": "Avaliação da atividade",
+    "text": "Avaliação da atividade\nA avaliação será formativa, considerando:\n\nparticipação na discussão;\npreenchimento adequado da ficha de chamado;\ndiferenciação entre evento, incidente e requisição;\njustificativa para impacto, urgência e prioridade;\nescolha adequada do nível de atendimento;\nclareza na comunicação técnica."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#fechamento-da-aula",
+    "href": "disciplinas/mc/aula_08.html#fechamento-da-aula",
+    "title": "Suporte ao Usuário",
+    "section": "Fechamento da aula",
+    "text": "Fechamento da aula\n\nUm bom suporte técnico depende de três elementos: escuta, método e registro.\n\n\nResolver o problema é importante, mas documentar o atendimento permite melhorar o serviço, evitar retrabalho e criar histórico para futuras manutenções."
+  },
+  {
+    "objectID": "disciplinas/mc/aula_08.html#para-a-próxima-aula",
+    "href": "disciplinas/mc/aula_08.html#para-a-próxima-aula",
+    "title": "Suporte ao Usuário",
+    "section": "Para a próxima aula",
+    "text": "Para a próxima aula\nNa próxima aula, vamos estudar:\nProblemas mais comuns apresentados em sistemas computacionais e suas possíveis soluções.\n\nVamos conectar o chamado técnico ao processo de diagnóstico:\n\nrelato do usuário → hipóteses → testes → diagnóstico → solução → registro"
   },
   {
     "objectID": "disciplinas/mc/index.html",
@@ -2104,33 +2300,33 @@
     "href": "disciplinas/omc/aula_01.html#o-que-define-um-computador",
     "title": "Introdução à organização de computadores",
     "section": "O que define um computador?",
-    "text": "O que define um computador?\nUm smartwatch é um computador? E uma calculadora de padaria? E um PS5?\n\nDiferentes tipos de computadores"
+    "text": "O que define um computador?\nUm smartwatch é um computador? E uma calculadora de padaria? E um PS5?\n\n\n\nDiferentes tipos de computadores"
   },
   {
     "objectID": "disciplinas/omc/index.html",
     "href": "disciplinas/omc/index.html",
-    "title": "🛠️ Organização e Manutenção de Computadores",
+    "title": "🛠️ Organização e Montagem de Computadores",
     "section": "",
     "text": "Estudo da organização de computadores: organização de computadores e seus conceitos, unidade central de processamento e suas características, diversos tipos de sistemas encontrados em sistemas computacionais: sistemas de memória, sistema de interconexão e sistemas de entrada e saída.\nNoções de montagem de computadores: identificação do hardware dos sistemas computacionais (diversos tipos de componentes tangíveis), montagem de computadores e instalação dos componentes, configuração do sistema operacional (formatação, instalação e configurações dos softwares), sistemas de backup e especificação de equipamentos para sistemas computacionais."
   },
   {
     "objectID": "disciplinas/omc/index.html#ementa",
     "href": "disciplinas/omc/index.html#ementa",
-    "title": "🛠️ Organização e Manutenção de Computadores",
+    "title": "🛠️ Organização e Montagem de Computadores",
     "section": "",
     "text": "Estudo da organização de computadores: organização de computadores e seus conceitos, unidade central de processamento e suas características, diversos tipos de sistemas encontrados em sistemas computacionais: sistemas de memória, sistema de interconexão e sistemas de entrada e saída.\nNoções de montagem de computadores: identificação do hardware dos sistemas computacionais (diversos tipos de componentes tangíveis), montagem de computadores e instalação dos componentes, configuração do sistema operacional (formatação, instalação e configurações dos softwares), sistemas de backup e especificação de equipamentos para sistemas computacionais."
   },
   {
     "objectID": "disciplinas/omc/index.html#objetivos",
     "href": "disciplinas/omc/index.html#objetivos",
-    "title": "🛠️ Organização e Manutenção de Computadores",
+    "title": "🛠️ Organização e Montagem de Computadores",
     "section": "Objetivos",
     "text": "Objetivos\n\nApreender os conceitos básicos relacionados à estrutura e funcionamento dos computadores digitais.\nCompreender o funcionamento dos microcomputadores e periféricos.\nIdentificar os componentes físicos dos microcomputadores e compreender suas funcionalidades. Executar montagem, instalação e configuração de equipamentos de informática.\nInstalar e configurar sistemas operacionais e aplicativos em equipamentos computacionais."
   },
   {
     "objectID": "disciplinas/omc/index.html#slides",
     "href": "disciplinas/omc/index.html#slides",
-    "title": "🛠️ Organização e Manutenção de Computadores",
+    "title": "🛠️ Organização e Montagem de Computadores",
     "section": "Slides",
     "text": "Slides\n\n\n\nAula\nTópico\nMaterial\n\n\n\n\n00\nApresentação\nSlides\n\n\n–\nOrganização de Computadores\n–\n\n\n–\nIntrodução à organização de computadores\n–\n\n\n01\nConceitos básicos e terminologias usadas nos sistemas de informática\nSlides"
   },
