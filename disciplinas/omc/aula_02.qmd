@@ -1,8 +1,8 @@
 ---
 # --- INFORMAÇÕES DA AULA ---
 draft: true             # Indica que é um rascunho
-title: "Introdução à organização de computadores"
-subtitle: "Evolução histórica dos componentes internos e externos do computador"
+title: "Evolução histórica dos componentes internos e externos do computador"
+subtitle: "Introdução à organização de computadores"
 author: "Prof. Alcemy Severino"
 license: "CC BY-NC"
 copyright: "© 2026 Alcemy Gabriel"

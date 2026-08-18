@@ -1,8 +1,8 @@
 ---
 # --- INFORMAÇÕES DA AULA ---
 draft: true             # Indica que é um rascunho
-title: "Arquitetura geral dos computadores"
-subtitle: "Servidores, desktops, notebooks e dispositivos móveis"
+title: "Diferenças entre o hardware para Servidores, Desktops e Notebooks"
+subtitle: "Introdução à organização de computadores"
 author: "Prof. Alcemy Severino"
 license: "CC BY-NC"
 copyright: "© 2026 Alcemy Gabriel"

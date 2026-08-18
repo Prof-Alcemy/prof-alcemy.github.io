@@ -1,7 +1,7 @@
 ---
 # --- INFORMAÇÕES DA AULA ---
-title: "Introdução à organização de computadores"
-subtitle: "Conceitos básicos e terminologias usadas nos sistemas de informática"
+title: "Conceitos básicos e terminologias usadas nos sistemas de informática"
+subtitle: "Introdução à organização de computadores"
 author: "Prof. Alcemy Severino"
 license: "CC BY-NC"
 copyright: "© 2026 Alcemy Gabriel"
