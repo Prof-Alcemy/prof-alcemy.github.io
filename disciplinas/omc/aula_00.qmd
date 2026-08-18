@@ -1,6 +1,6 @@
 ---
 # --- INFORMAÇÕES DA AULA ---
-title: "Organização e Manutenção de Computadores"
+title: "Organização e Montagem de Computadores"
 # subtitle: ""
 author: "Prof. Alcemy Severino"
 license: "CC BY-NC"
@@ -13,7 +13,7 @@ format:
   revealjs:
     # Aparência
     theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
-    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    footer: "OMC" # Adiciona a nota de rodapé
     logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
     slide-number: true                  # Numeração de páginas no canto
     center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
@@ -51,7 +51,7 @@ format:
 :::
 ::: {.column width="45%"}
 
-![](img/gato_ti.png){fig-align="center"}
+![](img/a00_gato_ti.png){fig-align="center"}
 
 :::
 ::::
@@ -74,7 +74,7 @@ format:
 :::
 ::: {.column width="45%"}
 
-![](img/gato_ti.png){fig-align="center"}
+![](img/a00_gato_ti.png){fig-align="center"}
 
 :::
 ::::
@@ -144,11 +144,11 @@ format:
 
 A avaliação se dará de forma contínua durante a disciplina, observando a assiduidade dos alunos em relação às aulas e a resolução de atividades.
 
-![](img/gato_prova.png){fig-align="center" width="75%"}
+![](img/a00_gato_prova.png){fig-align="center" width="75%"}
 
 ---
 
-## {background-image="img/gato_duvidas.png"}
+## {background-image="img/a00_gato_duvidas.png"}
 
 ---
 

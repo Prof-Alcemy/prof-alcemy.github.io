@@ -13,7 +13,7 @@ format:
   revealjs:
     # Aparência
     theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
-    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    footer: "OMC"                       # Adiciona a nota de rodapé
     logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
     slide-number: true                  # Numeração de páginas no canto
     center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
@@ -39,7 +39,7 @@ format:
 
 Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
-![Diferentes tipos de computadores](img/computadores.png)
+![Diferentes tipos de computadores](img/a01_computadores.png){fig-align="center" width="80%"}
 
 ---
 
@@ -71,7 +71,7 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
 ### A tríade do sistema computacional
 
-![](img/triade_sistema_computacional.png)
+![](img/a01_triade_sistema_computacional.png)
 
 ---
 
@@ -79,7 +79,7 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
 > **Definição:** Tudo o que é tangível. Componentes elétricos, eletrônicos e mecânicos.
 
-![](img/hardware.png)
+![](img/a01_hardware.png)
 
 ---
 
@@ -87,7 +87,7 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
 > **Definição:** Conjunto de instruções que dizem ao hardware o que fazer.
 
-![](img/so_vs_app.png){fig-align="center" width="85%"}
+![](img/a01_so_vs_app.png){fig-align="center" width="75%"}
 
 * Onde fica o software quando o PC está desligado?
 
@@ -97,27 +97,27 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 
 > **Definição:** O fator humano. Usuários domésticos, técnicos, programadores, analistas. Sem o humano, o computador não tem propósito.
 
-![](img/peopleware.png){fig-align="center" width="90%"}
+![](img/a01_peopleware.png){fig-align="center" width="80%"}
 
 ---
 
-![](img/hard_soft_people.png){fig-align="center"}
+![](img/a01_hard_soft_people.png){fig-align="center"}
 
 ---
 
 ### O ciclo de processamento de dados
 
-![](img/ciclo_.png){fig-align="center"}
+![](img/a01_ciclo_.png){fig-align="center"}
 
 ---
 
 #### Arquitetura de Von Neumann
 
-![](img/von_neumann_simplificado.png){fig-align="center"}
+![](img/a01_von_neumann_simplificado.png){fig-align="center"}
 
 ---
 
-![](img/fluxo.png){fig-align="center"}
+![](img/a01_fluxo.png){fig-align="center"}
 
 ---
 
@@ -129,13 +129,13 @@ Um *smartwatch* é um computador? E uma calculadora de padaria? E um PS5?
 * **Informação**: Resultado útil.
   * Ex: aluno aprovado com média 6.6.
 
-![](img/analogia_receita.png)
+![](img/a01_analogia_receita.png)
 
 ---
 
 #### Unidades de medida
 
-![](img/unidades_medida.png){fig-align="center"}
+![](img/a01_unidades_medida.png){fig-align="center"}
 
 ---
 

@@ -127,5 +127,14 @@
   },
   "disciplinas/mc/aula_01.qmd": {
     "aula_01.html": "1b3eb13e"
+  },
+  "disciplinas/ei/aula_08.qmd": {
+    "aula_08.html": "447a7145"
+  },
+  "disciplinas/omc/aula_03_arquitetura_geral_tipos_computadores.qmd": {
+    "aula_03_arquitetura_geral_tipos_computadores.html": "5c752fed"
+  },
+  "disciplinas/omc/aula_03.qmd": {
+    "aula_03.html": "085978b0"
   }
 }

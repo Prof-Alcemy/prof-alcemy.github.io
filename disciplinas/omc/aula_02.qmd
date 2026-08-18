@@ -14,7 +14,7 @@ format:
   revealjs:
     # Aparência
     theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
-    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    footer: "OMC" # Adiciona a nota de rodapé
     logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
     slide-number: true                  # Numeração de páginas no canto
     center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
@@ -46,7 +46,7 @@ format:
 
 ### O que temos dentro da caixa?
 
-![](img/componentes_pc.png){fig-align="center"}
+![](img/a02_componentes_pc.png){fig-align="center"}
 
 ---
 
@@ -69,7 +69,7 @@ format:
 
 #### Placa mãe
 
-![](img/placa_mae.png){fig-align="center"}
+![](img/a02_placa_mae.png){fig-align="center"}
 
 ---
 
@@ -85,7 +85,7 @@ format:
 :::
 ::: {.column width="37%"}
 
-![](img/cpu_ram_hd_ssd.png)
+![](img/a02_cpu_ram_hd_ssd.png)
 
 :::
 ::::
@@ -100,13 +100,17 @@ format:
 
 ---
 
-![](img/armazenamento.jpg)
+![](img/a02_armazenamento.jpg)
 
 ---
 
 ### Comparando com o corpo humano
 
-![](img/analogia_pc_corpo.png){fig-align="center"}
+![](img/a02_analogia_pc_corpo.png){fig-align="center"}
+
+---
+
+## {background-image="img/fry_1.png"}
 
 ---
 

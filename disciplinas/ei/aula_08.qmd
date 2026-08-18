@@ -1,49 +1,39 @@
 ---
+# --- INFORMAÇÕES DA AULA ---
 title: "Leis de Kirchhoff"
-subtitle: "Eletricidade Instrumental"
-author: "Curso Técnico Integrado em Informática"
+subtitle: "Conceitos iniciais"
+author: "Prof. Alcemy Severino"
+license: "CC BY-NC"
+copyright: "© 2026 Alcemy Gabriel"
+institute: "IFRN"
+lang: pt-br
+
+# --- CONFIGURAÇÃO VISUAL E TÉCNICA ---
 format:
   revealjs:
-    theme: [default]
-    slide-number: true
-    center: false
-    controls: true
-    progress: true
-    transition: slide
-    chalkboard:
-      buttons: false
-    footer: "Eletricidade Instrumental"
-execute:
-  echo: false
+    # Aparência
+    theme: [default, ifrn_2]            # Carrega o CSS padrão + nossa personalização
+    footer: "Eletricidade Instrumental" # Adiciona a nota de rodapé
+    logo: img/ifrn-logo.png             # Certifique-se de ter essa imagem na pasta 'img'
+    slide-number: true                  # Numeração de páginas no canto
+    center: false                       # false = alinha conteúdo ao topo (melhor para aulas)
+    
+    # Interatividade (Lousa)
+    chalkboard: 
+      buttons: false                   # Botões ocultos (Use 'B' para lousa, 'C' para riscar slide)
+    lightbox: true                     # Permite ampliar imagens para detalhes (útil para diagramas)
+    
+    # Navegação
+    preview-links: auto                # Tenta abrir links dentro do slide sem sair da aula
+    controls: true                     # Mostra setas de navegação
+    controls-layout: edges             # Setas grandes nas laterais esquerda/direita
+    controls-tutorial: true            # Pisca a seta para indicar navegação
+    touch: true                        # Melhora o uso em tablets/celulares
+    
+    # Código (Para suas aulas de Programação)
+    code-line-numbers: true            # Permite referenciar linhas de código
+    highlight-style: github            # Estilo de cores do código (claro e limpo)
 ---
-
-<style>
-.reveal h1, .reveal h2, .reveal h3 { color: #144272; font-weight: 700; }
-.reveal .slide { font-size: 0.92em; }
-.box {
-  border-left: 8px solid #144272;
-  background: #f4f8fb;
-  padding: 0.8em 1em;
-  border-radius: 10px;
-  margin: 0.6em 0;
-}
-.alerta {
-  border-left: 8px solid #b23a48;
-  background: #fff4f4;
-  padding: 0.8em 1em;
-  border-radius: 10px;
-  margin: 0.6em 0;
-}
-.exercicio {
-  border-left: 8px solid #2a9d8f;
-  background: #f0fbf8;
-  padding: 0.8em 1em;
-  border-radius: 10px;
-  margin: 0.6em 0;
-}
-.small { font-size: 0.78em; }
-.center { text-align: center; }
-</style>
 
 ## Objetivos da aula
 
@@ -51,22 +41,22 @@ Ao final desta aula, o estudante deverá ser capaz de:
 
 - compreender a **Lei dos Nós** e a **Lei das Malhas**;
 - aplicar as leis de Kirchhoff em circuitos resistivos de corrente contínua;
-- montar equações para determinar correntes, tensões e resistências equivalentes;
+- montar equações para determinar correntes e tensões;
 - interpretar resultados físicos, verificando sinais e sentidos de corrente.
 
-::: {.box}
-As leis de Kirchhoff são ferramentas fundamentais para analisar circuitos que não podem ser resolvidos apenas por associação série/paralelo direta.
-:::
+---
 
 ## Por que estudar Kirchhoff?
 
-Em circuitos simples, muitas vezes basta identificar resistores em série ou paralelo.
+- Em circuitos simples, muitas vezes basta identificar resistores em série ou paralelo.
+- Mas em circuitos com **vários caminhos**, **fontes diferentes** ou **pontos de derivação**, precisamos de um método sistemático.
 
-Mas em circuitos com **vários caminhos**, **fontes diferentes** ou **pontos de derivação**, precisamos de um método sistemático.
 
 ::: {.box}
-As leis de Kirchhoff permitem transformar um circuito elétrico em um conjunto de equações.
+As leis de Kirchhoff são ferramentas fundamentais para analisar circuitos que não podem ser resolvidos apenas por associação série/paralelo direta e permitem transformar um circuito elétrico em um conjunto de equações.
 :::
+
+---
 
 ## Ideia central
 
@@ -83,16 +73,20 @@ $$\text{Carga se conserva} \Rightarrow \text{Lei dos Nós}$$
 $$\text{Energia se conserva} \Rightarrow \text{Lei das Malhas}$$
 :::
 
-## Antes de começar: elementos importantes
+---
+
+## Elementos importantes
 
 - **Nó:** ponto de encontro entre dois ou mais ramos.
 - **Ramo:** caminho por onde passa uma corrente.
 - **Malha:** caminho fechado dentro do circuito.
 - **Sentido de corrente:** pode ser escolhido livremente no início da análise.
 
-::: {.alerta}
+::: {.warning}
 Se o resultado da corrente for negativo, isso não significa erro. Significa apenas que o sentido real é oposto ao sentido escolhido.
 :::
+
+---
 
 ## Lei dos Nós de Kirchhoff
 
@@ -110,13 +104,7 @@ $$\sum I = 0$$
 
 ## Representação de um nó
 
-```{mermaid}
-flowchart LR
-  I1["I₁ = 2 A"] --> N((Nó))
-  I2["I₂ = 3 A"] --> N
-  N --> I3["I₃"]
-  N --> I4["I₄ = 1 A"]
-```
+![](img/a08_correntes_no.png){fig-align="center" width="50%"}
 
 Pela Lei dos Nós:
 
@@ -126,15 +114,29 @@ $$2 + 3 = I_3 + 1$$
 
 $$I_3 = 4\ A$$
 
+---
+
 ## Analogia hidráulica
 
-Imagine um encontro de tubulações de água.
+:::: {.columns}
+::: {.column width="50%"}
 
-A quantidade de água que chega ao ponto de encontro deve ser igual à quantidade que sai.
+- Imagine um encontro de tubulações de água.
+- A quantidade de água que chega ao ponto de encontro deve ser igual à quantidade que sai.
+
+:::
+::: {.column width="50%"}
+
+![](img/a08_fluxo_no.png){fig-align="center" width="85%"}
+
+:::
+::::
 
 ::: {.box}
 No circuito elétrico, a corrente representa o fluxo de cargas elétricas. Assim, o nó não “armazena” corrente.
 :::
+
+---
 
 ## Exercício 1 — Lei dos Nós
 
@@ -142,13 +144,9 @@ No circuito elétrico, a corrente representa o fluxo de cargas elétricas. Assim
 Em um nó, entram duas correntes: $I_1 = 5\ A$ e $I_2 = 2\ A$. Saem duas correntes: $I_3 = 4\ A$ e $I_4$. Determine $I_4$.
 :::
 
-```{mermaid}
-flowchart LR
-  A["I₁ = 5 A"] --> N((Nó))
-  B["I₂ = 2 A"] --> N
-  N --> C["I₃ = 4 A"]
-  N --> D["I₄ = ?"]
-```
+![](img/a08_exercicio_1.png){fig-align="center" width="70%"}
+
+---
 
 ## Resolução do Exercício 1
 
@@ -168,6 +166,8 @@ $$I_4 = 3\ A$$
 Resposta: $I_4 = 3\ A$.
 :::
 
+---
+
 ## Lei das Malhas de Kirchhoff
 
 Também chamada de **Lei das Tensões de Kirchhoff**.
@@ -180,19 +180,19 @@ $$\sum V = 0$$
 
 Isso significa que a energia fornecida pelas fontes é consumida pelos elementos do circuito, como resistores.
 
+---
+
 ## Representação de uma malha simples
 
-```{mermaid}
-flowchart LR
-  A((+)) --- R1["R₁ = 4 Ω"] --- R2["R₂ = 2 Ω"] --- B((-))
-  B --- A
-```
+![](img/a08_exemplo_1.png){fig-align="center" width="60%"}
 
 Se uma fonte de $12\ V$ alimenta os resistores em série:
 
 $$V_{fonte} - V_{R1} - V_{R2} = 0$$
 
 $$12 - V_{R1} - V_{R2} = 0$$
+
+---
 
 ## Queda de tensão no resistor
 
@@ -208,6 +208,8 @@ ou:
 
 $$V_{fonte} = I(R_1 + R_2)$$
 
+---
+
 ## Convenção de sinais
 
 Uma forma prática de percorrer uma malha:
@@ -216,19 +218,17 @@ Uma forma prática de percorrer uma malha:
 - ao passar por um resistor no sentido da corrente: **queda de tensão**;
 - ao passar por um resistor contra o sentido da corrente: **elevação de tensão**.
 
-::: {.alerta}
+::: {.warning}
 O mais importante é manter a convenção escolhida de forma consistente em toda a resolução.
 :::
+
+---
 
 ## Exemplo 1 — Uma malha
 
 Circuito com fonte de $12\ V$, $R_1 = 4\Omega$ e $R_2 = 2\Omega$ em série.
 
-```{mermaid}
-flowchart LR
-  A((+ 12 V)) --- R1["R₁ = 4 Ω"] --- R2["R₂ = 2 Ω"] --- B((-))
-  B --- A
-```
+![](img/a08_exemplo_1.png){fig-align="center" width="50%"}
 
 Pela Lei das Malhas:
 
@@ -238,17 +238,16 @@ $$12 = 6I$$
 
 $$I = 2\ A$$
 
+---
+
 ## Exercício 2 — Uma malha
 
-::: {.exercicio}
 Uma fonte de $18\ V$ alimenta dois resistores em série: $R_1 = 3\Omega$ e $R_2 = 6\Omega$. Determine a corrente do circuito e a queda de tensão em cada resistor.
-:::
 
-```{mermaid}
-flowchart LR
-  A((+ 18 V)) --- R1["R₁ = 3 Ω"] --- R2["R₂ = 6 Ω"] --- B((-))
-  B --- A
-```
+
+![](img/a08_exercicio_2.png){fig-align="center" width="60%"}
+
+---
 
 ## Resolução do Exercício 2
 
@@ -266,20 +265,15 @@ $$V_{R1} = 3 \cdot 2 = 6\ V$$
 
 $$V_{R2} = 6 \cdot 2 = 12\ V$$
 
-Verificação:
-
-$$6 + 12 = 18\ V$$
+---
 
 ## Circuito com nó e ramos paralelos
 
 Agora temos uma corrente total que se divide em dois caminhos.
 
-```{mermaid}
-flowchart LR
-  A((+ 12 V)) --- R1["R₁ = 2 Ω"] --- N((Nó))
-  N --- R2["R₂ = 6 Ω"] --- B((-))
-  N --- R3["R₃ = 3 Ω"] --- B
-```
+![](img/a08_no_ramo_paralelo.png){fig-align="center" width="50%"}
+
+. . .
 
 Neste circuito:
 
@@ -287,13 +281,13 @@ Neste circuito:
 - $R_2$ e $R_3$ estão em paralelo;
 - a corrente se divide no nó.
 
+---
+
 ## Análise por associação e Kirchhoff
 
 Primeiro, calculamos o paralelo:
 
-$$R_{23} = \frac{R_2 \cdot R_3}{R_2 + R_3}$$
-
-$$R_{23} = \frac{6 \cdot 3}{6 + 3} = 2\Omega$$
+$$R_{23} = \frac{R_2 \cdot R_3}{R_2 + R_3} = \frac{6 \cdot 3}{6 + 3} = 2\Omega$$
 
 Depois:
 
@@ -302,6 +296,8 @@ $$R_T = R_1 + R_{23} = 2 + 2 = 4\Omega$$
 Corrente total:
 
 $$I_T = \frac{12}{4} = 3\ A$$
+
+---
 
 ## Correntes nos ramos paralelos
 
@@ -319,24 +315,15 @@ $$I_2 = \frac{6}{6} = 1\ A$$
 
 $$I_3 = \frac{6}{3} = 2\ A$$
 
-Verificação pela Lei dos Nós:
-
-$$I_T = I_2 + I_3$$
-
-$$3 = 1 + 2$$
+---
 
 ## Exercício 3 — Série com paralelo
 
-::: {.exercicio}
 No circuito abaixo, uma fonte de $20\ V$ alimenta $R_1 = 4\Omega$ em série com um bloco paralelo formado por $R_2 = 12\Omega$ e $R_3 = 6\Omega$. Determine $R_T$, $I_T$, $I_2$ e $I_3$.
-:::
 
-```{mermaid}
-flowchart LR
-  A((+ 20 V)) --- R1["R₁ = 4 Ω"] --- N((Nó))
-  N --- R2["R₂ = 12 Ω"] --- B((-))
-  N --- R3["R₃ = 6 Ω"] --- B
-```
+![](img/a08_exercicio_3.png){fig-align="center" width="70%"}
+
+---
 
 ## Resolução do Exercício 3
 
@@ -352,6 +339,10 @@ Corrente total:
 
 $$I_T = \frac{20}{8} = 2{,}5\ A$$
 
+---
+
+## Resolução do Exercício 3 (cont.)
+
 Queda em $R_1$:
 
 $$V_{R1} = 4 \cdot 2{,}5 = 10\ V$$
@@ -366,6 +357,8 @@ $$I_2 = \frac{10}{12} \approx 0{,}83\ A$$
 
 $$I_3 = \frac{10}{6} \approx 1{,}67\ A$$
 
+---
+
 ## Análise por malhas: quando usar?
 
 A análise por malhas é útil quando o circuito possui mais de uma fonte ou quando a associação direta não é evidente.
@@ -377,21 +370,28 @@ O procedimento geral é:
 3. escrever uma equação de tensão para cada malha;
 4. resolver o sistema de equações.
 
+---
+
 ## Exemplo 2 — Duas malhas com resistor comum
 
-```{mermaid}
-flowchart LR
-  A((+10 V)) --- R1["R₁ = 2 Ω"] --- N((Nó)) --- R2["R₂ = 4 Ω"] --- B((-))
-  N --- R3["R₃ = 6 Ω"] --- C((-))
-  C --- A
-  C --- B
-```
+:::: {.columns}
+::: {.column width="50%"}
 
 Neste tipo de circuito, um resistor pode ser compartilhado por duas malhas.
+
+:::
+::: {.column width="50%"}
+
+![](img/a08_exemplo_2.png){fig-align="center" width="95%"}
+
+:::
+::::
 
 ::: {.box}
 Quando um resistor é comum a duas malhas, a corrente nele depende da diferença entre as correntes de malha.
 :::
+
+---
 
 ## Montagem de equações de malha
 
@@ -407,15 +407,15 @@ $$R(I_2 - I_1)$$
 
 A escolha depende do sentido percorrido na malha.
 
-::: {.alerta}
+::: {.warning}
 O ponto crítico é manter coerência entre o sentido da malha e a corrente assumida.
 :::
 
 ## Exercício 4 — Leitura conceitual
 
-::: {.exercicio}
 Explique, com suas palavras, o que acontece com a corrente elétrica quando ela chega a um nó onde existem dois caminhos possíveis.
-:::
+
+. . .
 
 ::: {.box}
 Pistas para responder:
@@ -425,77 +425,66 @@ Pistas para responder:
 - a soma das correntes dos ramos deve ser igual à corrente total.
 :::
 
+---
+
 ## Exercício 5 — Identificação de nós e malhas
 
-::: {.exercicio}
 Observe o circuito e responda:
 
 1. Quantos nós principais existem?
 2. Quantas malhas podem ser identificadas?
 3. Quais resistores estão em paralelo?
-:::
 
-```{mermaid}
-flowchart LR
-  A((+)) --- R1["R₁"] --- N((Nó 1))
-  N --- R2["R₂"] --- B((-))
-  N --- R3["R₃"] --- B
-  N --- R4["R₄"] --- B
-```
+![](img/a08_exercicio_5.png){fig-align="center" width="50%"}
+
+---
 
 ## Exercício 6 — Corrente em nó
 
-::: {.exercicio}
 No nó abaixo, determine a corrente desconhecida $I_x$.
-:::
 
-```{mermaid}
-flowchart LR
-  A["4 A"] --> N((Nó))
-  B["2 A"] --> N
-  N --> C["3 A"]
-  N --> D["Iₓ"]
-```
+![](img/a08_exercicio_6.png){fig-align="center" width="50%"}
 
 $$4 + 2 = 3 + I_x$$
 
+---
+
 ## Exercício 7 — Malha simples
 
-::: {.exercicio}
 Em uma malha com fonte de $24\ V$ e resistores $R_1 = 4\Omega$, $R_2 = 8\Omega$ e $R_3 = 12\Omega$ em série, determine:
 
 1. a resistência equivalente;
 2. a corrente do circuito;
 3. a queda de tensão em cada resistor.
-:::
 
-```{mermaid}
-flowchart LR
-  A((+24 V)) --- R1["R₁ = 4 Ω"] --- R2["R₂ = 8 Ω"] --- R3["R₃ = 12 Ω"] --- B((-))
-  B --- A
-```
+![](img/a08_exercicio_7.png){fig-align="center" width="50%"}
+
+---
 
 ## Exercício 8 — Circuito misto
 
-::: {.exercicio}
 Uma fonte de $30\ V$ alimenta $R_1 = 5\Omega$ em série com o paralelo de $R_2 = 10\Omega$ e $R_3 = 15\Omega$. Determine:
+
+:::: {.columns}
+::: {.column width="50%"}
 
 1. a resistência equivalente;
 2. a corrente total;
 3. a corrente em $R_2$;
 4. a corrente em $R_3$.
-:::
 
-```{mermaid}
-flowchart LR
-  A((+30 V)) --- R1["R₁ = 5 Ω"] --- N((Nó))
-  N --- R2["R₂ = 10 Ω"] --- B((-))
-  N --- R3["R₃ = 15 Ω"] --- B
-```
+:::
+::: {.column width="50%"}
+
+![](img/a08_exercicio_8.png){fig-align="center" width="95%"}
+
+:::
+::::
+
+---
 
 ## Exercício 9 — Verificação de Kirchhoff
 
-::: {.exercicio}
 Em um circuito, uma fonte de $18\ V$ alimenta três resistores em série. As quedas de tensão medidas foram:
 
 - $V_{R1} = 5\ V$;
@@ -503,21 +492,16 @@ Em um circuito, uma fonte de $18\ V$ alimenta três resistores em série. As que
 - $V_{R3} = 6\ V$.
 
 Verifique se os valores respeitam a Lei das Malhas de Kirchhoff.
-:::
+
+---
 
 ## Exercício 10 — Desafio orientado
 
-::: {.exercicio}
 No circuito abaixo, determine a corrente total e verifique a divisão de corrente nos ramos paralelos.
-:::
 
-```{mermaid}
-flowchart LR
-  A((+36 V)) --- R1["R₁ = 3 Ω"] --- N((Nó))
-  N --- R2["R₂ = 12 Ω"] --- B((-))
-  N --- R3["R₃ = 6 Ω"] --- B
-  N --- R4["R₄ = 4 Ω"] --- B
-```
+![](img/a08_exercicio_10.png){fig-align="center" width="70%"}
+
+---
 
 ## Gabarito resumido
 
@@ -532,7 +516,9 @@ flowchart LR
 **Exercício 10:** $R_p=2\Omega$; $R_T=5\Omega$; $I_T=7{,}2\ A$; $V_p=14{,}4\ V$; $I_2=1{,}2\ A$; $I_3=2{,}4\ A$; $I_4=3{,}6\ A$
 :::
 
-## Fechamento
+---
+
+## Fechamento {style="font-size: 0.9em;"}
 
 As leis de Kirchhoff são fundamentais porque permitem analisar circuitos além das associações simples.
 
@@ -549,11 +535,10 @@ Para resolver circuitos:
 4. escreva as equações;
 5. verifique se os resultados fazem sentido físico.
 
-## Próxima aula
+---
 
-Na próxima aula, podemos avançar para:
+## {background-image="img/fry_1.png"}
 
-- análise de circuitos por **método das malhas**;
-- análise por **método dos nós**;
-- resolução de sistemas lineares aplicados a circuitos;
-- simulação no Tinkercad, Falstad ou Wokwi.
+---
+
+{{< include ../../_licenca.qmd >}}

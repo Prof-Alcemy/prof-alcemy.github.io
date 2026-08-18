@@ -14,7 +14,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Prof.&nbsp;Alcemy Severino">
-  <title>Prof. Alcemy – Organização e Montagem de Computadores</title>
+  <title>Prof. Alcemy – Arquitetura geral dos computadores</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -133,7 +133,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Organização e Montagem de Computadores</h1>
+  <h1 class="title">Arquitetura geral dos computadores</h1>
+  <p class="subtitle">Servidores, desktops, notebooks e dispositivos móveis</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -147,133 +148,718 @@ Prof.&nbsp;Alcemy Severino
 </div>
 
 </section>
-<section id="apresentação-da-disciplina" class="slide level2">
-<h2>Apresentação da disciplina</h2>
+<section id="arquitetura-geral-dos-computadores" class="slide level2">
+<h2>Arquitetura geral dos computadores</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:60%;">
+<div class="box">
+<p><strong>Pergunta norteadora:</strong> o que muda por dentro quando comparamos um servidor, um desktop, um notebook e um smartphone?</p>
+</div>
+</div><div class="column" style="width:40%;">
 <blockquote>
-<p>Turma: <strong>2.INF.1M</strong></p>
+<p>A aparência muda bastante, mas a lógica básica de funcionamento permanece semelhante.</p>
 </blockquote>
-<blockquote>
-<p>Dia da semana: <strong>Quartas-feiras e Sextas-feiras</strong></p>
-</blockquote>
-<blockquote>
-<p>Horário: <strong>10h30 às 12h00</strong></p>
-</blockquote>
-<blockquote>
-<p>Carga horária e Duração: <strong>60H</strong> e <strong>40 semanas</strong></p>
-</blockquote>
-</div><div class="column" style="width:45%;">
+</div></div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="img/a00_gato_ti.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/a00_gato_ti.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="img/a03_diferencas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/a03_diferencas.png" class="quarto-figure quarto-figure-center" style="width:65.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="objetivos-da-aula">Objetivos da aula</h3>
+<p>Ao final desta aula, você deverá ser capaz de:</p>
+<ul>
+<li>explicar a arquitetura geral de um sistema computacional;</li>
+<li>relacionar entrada, processamento, memória, armazenamento e saída;</li>
+<li>diferenciar servidores, desktops, notebooks e dispositivos móveis;</li>
+<li>identificar vantagens, limitações e contextos de uso de cada tipo de equipamento;</li>
+<li>justificar escolhas de equipamentos de acordo com uma necessidade real.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="a-função-do-computador">A função do computador</h3>
+<p>Um computador recebe <strong>dados</strong>, executa <strong>instruções</strong>, armazena resultados e apresenta <strong>informações</strong> ao usuário ou a outro sistema.</p>
+<div class="box small">
+<p><strong>Entrada → processamento → armazenamento/memória → saída</strong></p>
+</div>
+<p>Mesmo equipamentos muito diferentes seguem essa lógica.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a03_diagrama.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/a03_diagrama.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="componentes-da-arquitetura-geral">Componentes da arquitetura geral</h3>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parte</th>
+<th>Função principal</th>
+<th>Exemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entrada</td>
+<td>Receber dados e comandos</td>
+<td>teclado, mouse, tela sensível ao toque, câmera</td>
+</tr>
+<tr class="even">
+<td>Processamento</td>
+<td>Executar instruções e cálculos</td>
+<td>CPU, GPU, NPU, SoC</td>
+</tr>
+<tr class="odd">
+<td>Memória principal</td>
+<td>Guardar dados temporários em uso</td>
+<td>RAM</td>
+</tr>
+<tr class="even">
+<td>Armazenamento</td>
+<td>Guardar dados permanentemente</td>
+<td>HD, SSD, eMMC</td>
+</tr>
+<tr class="odd">
+<td>Saída</td>
+<td>Apresentar resultados</td>
+<td>monitor, alto-falantes, impressora</td>
+</tr>
+<tr class="even">
+<td>Interconexão</td>
+<td>Permitir comunicação interna</td>
+<td>placa-mãe, barramentos, controladores</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="arquitetura-de-von-neumann">Arquitetura de Von Neumann</h3>
+<div class="columns">
+<div class="column" style="width:78%;">
+<p>Na arquitetura clássica de computadores, <strong>dados e instruções ficam armazenados na memória</strong> e são buscados pela unidade de processamento.</p>
+<p>A CPU executa um ciclo básico:</p>
+<ol type="1">
+<li>busca uma instrução na memória;</li>
+<li>decodifica o que deve ser feito;</li>
+<li>executa a operação;</li>
+<li>grava ou envia o resultado.</li>
+</ol>
+</div><div class="column" style="width:22%;">
+<p><a href="img/a03_arquitetura_von_neumann.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/a03_arquitetura_von_neumann.png"></a></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="um-computador-como-sistema">Um computador como sistema</h3>
+<div class="box">
+<p>Um computador não é apenas um conjunto de peças. Ele é um <strong>sistema</strong> em que cada componente depende dos demais para funcionar corretamente.</p>
+</div>
+<p>Exemplo:</p>
+<ul>
+<li>um processador rápido precisa de memória suficiente;</li>
+<li>um SSD NVMe precisa de interface compatível;</li>
+<li>uma GPU dedicada precisa de energia e refrigeração adequadas;</li>
+<li>um notebook potente precisa equilibrar desempenho, bateria e temperatura.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="comparando-os-tipos-de-computadores">Comparando os tipos de computadores</h3>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Prioridade comum</th>
+<th>Característica marcante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Servidor</td>
+<td>disponibilidade, segurança e processamento contínuo</td>
+<td>funciona para atender outros computadores ou usuários</td>
+</tr>
+<tr class="even">
+<td>Desktop</td>
+<td>desempenho, expansão e manutenção</td>
+<td>gabinete com componentes substituíveis</td>
+</tr>
+<tr class="odd">
+<td>Notebook</td>
+<td>portabilidade e integração</td>
+<td>tela, teclado, bateria e hardware no mesmo corpo</td>
+</tr>
+<tr class="even">
+<td>Dispositivo móvel</td>
+<td>mobilidade extrema e autonomia</td>
+<td>uso de SoC e forte integração dos componentes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="servidores" class="slide level2">
+<h2>Servidores</h2>
+<div class="box center">
+<p>Servidor é um computador projetado para fornecer serviços, dados ou recursos para outros computadores, sistemas ou usuários.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a03_servidores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="img/a03_servidores.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="onde-encontramos-servidores">Onde encontramos servidores?</h3>
+<ul>
+<li>armazenamento de arquivos de uma instituição;</li>
+<li>sistemas acadêmicos, administrativos e financeiros;</li>
+<li>hospedagem de sites e aplicações web;</li>
+<li>bancos de dados;</li>
+<li>autenticação de usuários;</li>
+<li>backups corporativos;</li>
+<li>virtualização de vários sistemas em uma mesma máquina física.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-servidores">Características comuns em servidores</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Hardware</strong></p>
+<ul>
+<li>processadores voltados para carga contínua;</li>
+<li>grande quantidade de RAM;</li>
+<li>armazenamento redundante;</li>
+<li>fontes redundantes em alguns modelos;</li>
+<li>placas de rede de maior desempenho.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Operação</strong></p>
+<ul>
+<li>funcionamento 24/7;</li>
+<li>foco em estabilidade;</li>
+<li>monitoramento constante;</li>
+<li>manutenção planejada;</li>
+<li>maior controle de acesso físico e lógico.</li>
+</ul>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="servidor-não-é-apenas-um-pc-potente">Servidor não é apenas “um PC potente”</h3>
+<div class="warning">
+<p>Um servidor pode até parecer um computador comum, mas sua finalidade muda os critérios de escolha.</p>
+</div>
+<p>No servidor, normalmente são mais importantes:</p>
+<ul>
+<li>confiabilidade;</li>
+<li>disponibilidade;</li>
+<li>redundância;</li>
+<li>segurança;</li>
+<li>capacidade de atendimento simultâneo;</li>
+<li>facilidade de manutenção.</li>
+</ul>
+</section>
+<section id="desktops" class="slide level2">
+<h2>Desktops</h2>
+<div class="box center">
+<p>Desktop é o computador de mesa tradicional, geralmente formado por gabinete, monitor, teclado, mouse e periféricos.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a03_desktop.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="img/a03_desktop.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="por-que-o-desktop-ainda-é-importante">Por que o desktop ainda é importante?</h3>
+<ul>
+<li>facilita a substituição de peças;</li>
+<li>permite melhor refrigeração;</li>
+<li>oferece mais opções de expansão;</li>
+<li>costuma ter melhor custo-desempenho;</li>
+<li>é adequado para laboratórios, escritórios, manutenção, jogos, edição e programação.</li>
+</ul>
+<div class="box">
+<p>Para a disciplina de montagem, o desktop é o principal equipamento de estudo, porque permite visualizar e manipular melhor os componentes internos.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="componentes-típicos-de-um-desktop">Componentes típicos de um desktop</h3>
+<div class="columns">
+<div class="column" style="width:35%;">
+<ul>
+<li>gabinete;</li>
+<li>placa-mãe;</li>
+<li>processador;</li>
+<li>cooler;</li>
+<li>RAM;</li>
+<li>fonte ATX;</li>
+<li>SSD ou HD;</li>
+<li>placas de expansão.</li>
+</ul>
+</div><div class="column" style="width:65%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a03_desktop_componentes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="img/a03_desktop_componentes.png" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
 </figure>
 </div>
 </div></div>
 </section>
-<section id="apresentação-da-disciplina-1" class="slide level2">
-<h2>Apresentação da disciplina</h2>
+<section class="slide level2">
+
+<h3 id="desktop-vantagens-e-limitações">Desktop: vantagens e limitações</h3>
 <div class="columns">
-<div class="column" style="width:55%;">
-<blockquote>
-<p>Turma: <strong>2.INF.2M</strong></p>
-</blockquote>
-<blockquote>
-<p>Dia da semana: <strong>Quintas-feiras e Sextas-feiras</strong></p>
-</blockquote>
-<blockquote>
-<p>Horário: <strong>8h50 às 10h20</strong></p>
-</blockquote>
-<blockquote>
-<p>Carga horária e Duração: <strong>60H</strong> e <strong>40 semanas</strong></p>
-</blockquote>
-</div><div class="column" style="width:45%;">
+<div class="column" style="width:50%;">
+<p><strong>Vantagens</strong></p>
+<ul>
+<li>maior facilidade de manutenção;</li>
+<li>melhor possibilidade de upgrade;</li>
+<li>maior variedade de peças;</li>
+<li>boa refrigeração;</li>
+<li>custo geralmente mais flexível.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Limitações</strong></p>
+<ul>
+<li>pouca mobilidade;</li>
+<li>ocupa mais espaço;</li>
+<li>depende de energia elétrica constante;</li>
+<li>exige periféricos externos.</li>
+</ul>
+</div></div>
+</section>
+<section id="notebooks" class="slide level2">
+<h2>Notebooks</h2>
+<div class="box center">
+<p>Notebook é um computador portátil que integra tela, teclado, touchpad, bateria, placa-mãe, memória, armazenamento e interfaces em um único equipamento.</p>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="img/a00_gato_ti.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/a00_gato_ti.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="img/a03_notebook.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="img/a03_notebook.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="o-que-muda-no-notebook">O que muda no notebook?</h3>
+<p>Em um notebook, o projeto precisa equilibrar:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>desempenho;</li>
+<li>consumo de energia;</li>
+<li>autonomia de bateria;</li>
+<li>peso;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>espessura;</li>
+<li>aquecimento;</li>
+<li>ruído;</li>
+<li>possibilidade de manutenção.</li>
+</ul>
+</div></div>
+<div class="warning">
+<p>Quanto mais compacto o equipamento, maior tende a ser a integração dos componentes e menor a liberdade de substituição.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="componentes-em-notebooks">Componentes em notebooks</h3>
+<div class="small">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Como aparece no notebook</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Processador</td>
+<td>geralmente soldado ou integrado à placa-mãe</td>
+</tr>
+<tr class="even">
+<td>RAM</td>
+<td>pode ser soldada, removível ou mista</td>
+</tr>
+<tr class="odd">
+<td>Armazenamento</td>
+<td>SSD M.2, SSD SATA, HD em modelos antigos</td>
+</tr>
+<tr class="even">
+<td>Placa de vídeo</td>
+<td>integrada ou dedicada em alguns modelos</td>
+</tr>
+<tr class="odd">
+<td>Tela</td>
+<td>integrada ao equipamento</td>
+</tr>
+<tr class="even">
+<td>Bateria</td>
+<td>interna ou removível, dependendo do modelo</td>
+</tr>
+<tr class="odd">
+<td>Refrigeração</td>
+<td>heatpipes, ventoinhas e dissipadores compactos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="notebook-vantagens-e-limitações">Notebook: vantagens e limitações</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Vantagens</strong></p>
+<ul>
+<li>portabilidade;</li>
+<li>bateria integrada;</li>
+<li>ocupa pouco espaço;</li>
+<li>já inclui tela, teclado, touchpad, câmera e rede sem fio.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Limitações</strong></p>
+<ul>
+<li>manutenção mais delicada;</li>
+<li>menor possibilidade de upgrade;</li>
+<li>refrigeração limitada;</li>
+<li>peças específicas por modelo;</li>
+<li>maior risco de dano em quedas e transporte.</li>
+</ul>
+</div></div>
+</section>
+<section id="dispositivos-móveis" class="slide level2">
+<h2>Dispositivos móveis</h2>
+<div class="box center">
+<p>Smartphones e tablets são computadores altamente integrados, projetados para mobilidade, conectividade e baixo consumo de energia.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a03_dispositivo_movel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="img/a03_dispositivo_movel.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="o-papel-do-soc">O papel do SoC</h3>
+<p>Nos dispositivos móveis, muitos componentes ficam reunidos em um único chip chamado <strong>SoC</strong> (<em>System-on-a-Chip</em>).</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Um SoC pode integrar:</p>
+<ul>
+<li>CPU;</li>
+<li>GPU;</li>
+<li>NPU;</li>
+<li>controladores de memória;</li>
+<li>módulos de comunicação;</li>
+<li>processamento de imagem;</li>
+<li>recursos de segurança.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a03_soc.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="img/a03_soc.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></a></p>
 </figure>
 </div>
 </div></div>
 </section>
 <section class="slide level2">
 
-<h3 id="ementa">Ementa</h3>
-<p><strong>Estudo da organização de computadores:</strong></p>
-<ul>
-<li>organização de computadores e seus conceitos,</li>
-<li>unidade central de processamento e suas características,</li>
-<li>diversos tipos de sistemas encontrados em sistemas computacionais:
-<ul>
-<li>sistemas de memória,</li>
-<li>sistema de interconexão</li>
-<li>e sistemas de entrada e saída.</li>
-</ul></li>
-</ul>
+<h3 id="por-que-o-celular-esquenta">Por que o celular esquenta?</h3>
+<div class="box">
+<p>Todo computador transforma parte da energia elétrica em calor. Em dispositivos móveis, o espaço para dissipar esse calor é muito limitado.</p>
+</div>
+<p>Quando o aparelho executa tarefas pesadas, como jogos, gravação de vídeo, chamadas longas ou uso intenso de rede, o sistema pode reduzir o desempenho para controlar a temperatura.</p>
+<p>Esse comportamento é chamado de <strong>limitação térmica</strong> ou <em>thermal throttling</em>.</p>
 </section>
 <section class="slide level2">
 
-<h3 id="ementa-1">Ementa</h3>
-<p><strong>Noções de montagem de computadores:</strong></p>
+<h3 id="dispositivos-móveis-vantagens-e-limitações">Dispositivos móveis: vantagens e limitações</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Vantagens</strong></p>
 <ul>
-<li>identificação do <em>hardware</em> dos sistemas computacionais,</li>
-<li>montagem de computadores e instalação dos componentes,</li>
-<li>configuração do sistema operacional,</li>
-<li>sistemas de <em>backup</em></li>
-<li>e especificação de equipamentos para sistemas computacionais.</li>
+<li>alta mobilidade;</li>
+<li>bateria de longa duração;</li>
+<li>câmera, sensores e conectividade integrados;</li>
+<li>interface por toque;</li>
+<li>uso imediato em qualquer lugar.</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Limitações</strong></p>
+<ul>
+<li>pouca manutenção pelo usuário;</li>
+<li>componentes fortemente integrados;</li>
+<li>armazenamento e memória geralmente não substituíveis;</li>
+<li>menor capacidade de refrigeração;</li>
+<li>maior dependência do ecossistema do fabricante.</li>
+</ul>
+</div></div>
 </section>
 <section class="slide level2">
 
-<h3 id="objetivos">Objetivos</h3>
-<div style="font-size: .9em">
-<ul>
-<li>Apreender os conceitos básicos relacionados à estrutura e funcionamento dos computadores digitais.</li>
-<li>Compreender o funcionamento dos microcomputadores e periféricos.</li>
-<li>Identificar os componentes físicos dos microcomputadores e compreender suas funcionalidades.</li>
-<li>Executar montagem, instalação e configuração de equipamentos de informática.</li>
-<li>Instalar e configurar sistemas operacionais e aplicativos em equipamentos computacionais.</li>
-</ul>
+<h3 id="comparação-técnica-o-que-observar">Comparação técnica: o que observar?</h3>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Servidor</th>
+<th>Desktop</th>
+<th>Notebook</th>
+<th>Dispositivo móvel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Portabilidade</td>
+<td>baixa</td>
+<td>baixa</td>
+<td>alta</td>
+<td>muito alta</td>
+</tr>
+<tr class="even">
+<td>Expansão</td>
+<td>alta</td>
+<td>alta</td>
+<td>média/baixa</td>
+<td>muito baixa</td>
+</tr>
+<tr class="odd">
+<td>Manutenção</td>
+<td>técnica especializada</td>
+<td>mais acessível</td>
+<td>delicada</td>
+<td>muito restrita</td>
+</tr>
+<tr class="even">
+<td>Consumo</td>
+<td>alto</td>
+<td>médio/alto</td>
+<td>médio/baixo</td>
+<td>baixo</td>
+</tr>
+<tr class="odd">
+<td>Refrigeração</td>
+<td>robusta</td>
+<td>boa</td>
+<td>compacta</td>
+<td>muito limitada</td>
+</tr>
+<tr class="even">
+<td>Uso principal</td>
+<td>serviços contínuos</td>
+<td>produtividade e desempenho</td>
+<td>mobilidade</td>
+<td>comunicação e uso cotidiano</td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="bases-científico-tecnológicas">Bases científico-tecnológicas</h3>
-<ol type="1">
-<li><strong>Organização de Computadores</strong>
-<ol type="1">
-<li>Introdução à organização de computadores.</li>
-<li>Unidade central de processamento.</li>
-<li>Sistema de memória.</li>
-<li>Sistema de interconexão.</li>
-<li>Sistema de entrada, saída e periféricos.</li>
-</ol></li>
-</ol>
+<h3 id="escolher-um-computador-é-entender-o-uso">Escolher um computador é entender o uso</h3>
+<div class="box">
+<p>Não existe “o melhor computador” de forma absoluta. Existe o equipamento mais adequado para uma necessidade, um orçamento e um contexto de uso.</p>
+</div>
+<p>Antes de escolher, pergunte:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Quem vai usar?</li>
+<li>Para quais tarefas?</li>
+<li>Onde será usado?</li>
+<li>Precisa ser transportado?</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Precisa durar muitos anos?</li>
+<li>Será fácil fazer manutenção?</li>
+<li>O orçamento é limitado?</li>
+</ul>
+</div></div>
 </section>
 <section class="slide level2">
 
-<h3 id="bases-científico-tecnológicas-1">Bases científico-tecnológicas</h3>
-<ol start="2" type="1">
-<li><strong>Montagem de computadores</strong>
-<ol type="1">
-<li>Introdução.</li>
-<li>Visão geral do hardware para computador.</li>
-<li>Identificação de componentes e montagem de computadores.</li>
-<li>Instalação e configuração do sistema operacional.</li>
-<li>Especificação de equipamentos de informática.</li>
-</ol></li>
-</ol>
-</section>
-<section class="slide level2">
-
-<h3 id="métodos-avaliativos">Métodos avaliativos</h3>
-<p>A avaliação se dará de forma contínua durante a disciplina, observando a assiduidade dos alunos em relação às aulas e a resolução de atividades.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="img/a00_gato_prova.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/a00_gato_prova.png" class="quarto-figure quarto-figure-center" style="width:75.0%"></a></p>
-</figure>
+<h3 id="estudo-de-caso-1">Estudo de caso 1</h3>
+<p>Uma escola precisa comprar computadores para um laboratório de informática usado em aulas de programação, edição de documentos, navegação e atividades de manutenção básica.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> desktop, notebook ou dispositivo móvel? Justifique tecnicamente.</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: desktops tendem a ser mais adequados pela facilidade de manutenção, expansão, substituição de peças e uso em laboratório fixo.</p>
 </div>
 </section>
-<section id="section" class="slide level2" data-background-image="img/a00_gato_duvidas.png">
+<section class="slide level2">
+
+<h3 id="estudo-de-caso-2">Estudo de caso 2</h3>
+<p>Uma equipe administrativa precisa acessar sistemas institucionais, produzir documentos, participar de reuniões on-line e transportar o equipamento entre setores e reuniões.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> desktop, notebook ou servidor? Justifique tecnicamente.</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: notebooks podem ser mais adequados pela mobilidade, bateria e integração de câmera, microfone, teclado, tela e rede sem fio.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="estudo-de-caso-3">Estudo de caso 3</h3>
+<p>Uma instituição precisa hospedar um sistema interno usado por muitos usuários ao mesmo tempo, armazenar dados com segurança e manter o serviço disponível continuamente.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> por que um servidor é mais adequado que um desktop comum?</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: o servidor é projetado para disponibilidade, acesso simultâneo, redundância, segurança, monitoramento e operação contínua.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="atividade-classifique-o-equipamento">Atividade: classifique o equipamento</h3>
+<p>Em dupla, escolha um equipamento que você usa no cotidiano e registre:</p>
+<ol type="1">
+<li>tipo: servidor, desktop, notebook, tablet ou smartphone;</li>
+<li>principais componentes de entrada;</li>
+<li>principais componentes de saída;</li>
+<li>forma de armazenamento;</li>
+<li>vantagens do equipamento;</li>
+<li>limitações do equipamento.</li>
+</ol>
+<blockquote>
+<p>Tempo sugerido: 10 minutos.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h3 id="atividade-prática-tabela-comparativa">Atividade prática: tabela comparativa</h3>
+<p>Preencha a tabela a seguir com base em pesquisa, observação ou conhecimento prévio.</p>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equipamento</th>
+<th>Uso principal</th>
+<th>Pontos fortes</th>
+<th>Limitações</th>
+<th>Exemplo de aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Servidor</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Desktop</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Notebook</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Smartphone/tablet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="síntese-da-aula">Síntese da aula</h3>
+<ul>
+<li>A arquitetura geral envolve entrada, processamento, memória, armazenamento, saída e interconexão.</li>
+<li>Servidores priorizam disponibilidade, segurança e atendimento simultâneo.</li>
+<li>Desktops priorizam expansão, manutenção e desempenho com bom custo.</li>
+<li>Notebooks priorizam portabilidade e integração.</li>
+<li>Dispositivos móveis priorizam mobilidade, autonomia e baixo consumo.</li>
+<li>A escolha técnica depende do perfil de uso, das limitações e do contexto.</li>
+</ul>
+</section>
+<section id="section" class="slide level2" data-background-image="img/fry_1.png">
 <h2></h2>
 </section>
 <section class="slide level2">
