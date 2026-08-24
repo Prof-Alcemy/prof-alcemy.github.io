@@ -273,22 +273,22 @@
     "text": "Apresentação da disciplina\n\n\n\nCarga horária: 60H\n\n\n3INF1M: Quintas-feiras / 7h00 às 8h30 e Sextas-feiras / 10h20 às 12h00\n\n\n3INF1V: Quintas-feiras e Sextas-feiras / 13h00 às 14h30\n\n\nDuração: 20 semanas"
   },
   {
-    "objectID": "disciplinas/ip/aula01-python.html#objetivos-da-aula",
-    "href": "disciplinas/ip/aula01-python.html#objetivos-da-aula",
+    "objectID": "disciplinas/ip/aula_01-python.html#objetivos-da-aula",
+    "href": "disciplinas/ip/aula_01-python.html#objetivos-da-aula",
     "title": "Título da Aula",
     "section": "Objetivos da Aula",
     "text": "Objetivos da Aula\nO que aprenderemos hoje:\n\nPrimeiro conceito importante\nSegundo conceito importante\nPrática no computador"
   },
   {
-    "objectID": "disciplinas/ip/aula01-python.html#exemplo-de-texto-e-imagem",
-    "href": "disciplinas/ip/aula01-python.html#exemplo-de-texto-e-imagem",
+    "objectID": "disciplinas/ip/aula_01-python.html#exemplo-de-texto-e-imagem",
+    "href": "disciplinas/ip/aula_01-python.html#exemplo-de-texto-e-imagem",
     "title": "Título da Aula",
     "section": "1. Exemplo de Texto e Imagem",
     "text": "1. Exemplo de Texto e Imagem\n\n\nConceito Principal\nAqui você explica a teoria. O espaço é otimizado para não ficar muito texto amontoado.\n\nDetalhe técnico A\nDetalhe técnico B\n\n\n\n\n\nLegenda da Imagem"
   },
   {
-    "objectID": "disciplinas/ip/aula01-python.html#exemplo-de-código",
-    "href": "disciplinas/ip/aula01-python.html#exemplo-de-código",
+    "objectID": "disciplinas/ip/aula_01-python.html#exemplo-de-código",
+    "href": "disciplinas/ip/aula_01-python.html#exemplo-de-código",
     "title": "Título da Aula",
     "section": "2. Exemplo de Código",
     "text": "2. Exemplo de Código\nPodemos explicar o código linha a linha.\n\n# Exemplo de entrada e saída\nnome = 'input('Qual seu nome? ')'\n\nif nome:\n    print(f'Bem-vindo, {nome}!')\nelse:\n    print('Nome inválido.')"
@@ -564,7 +564,7 @@
     "href": "disciplinas/ei/index.html#slides",
     "title": "⚡ Eletricidade Instrumental",
     "section": "Slides",
-    "text": "Slides\n\n\n\nAula\nTópico\nMaterial\n\n\n\n\n00\nApresentação\nSlides\n\n\n\n1. Introdução\n\n\n\n01\na. Principais grandezas elétricas\nSlides\n\n\n\ni. Corrente\n\n\n\n\nii. Tensão\n\n\n\n\niii. Corrente contínua e tensão contínua\n\n\n\n\niv. Corrente alternada e tensão alternada\n\n\n\n\nv. Potência\n\n\n\n\nvi. Energia\n\n\n\n02\nb. Classificação dos materiais quanto à condução de corrente elétrica\nSlides\n\n\n\ni. Condutores, isolantes e semicondutores\n\n\n\n\nii. Equipamentos elétricos\n\n\n\n\n- Fontes, geradores\n\n\n\n\n- Cargas, consumidores (motores, lâmpadas, aquecedores)\n\n\n\n\n2. Conceitos iniciais\n\n\n\n03\na. Principais componentes elétricos e suas grandezas associadas\nSlides\n\n\n\nb. Fontes\n\n\n\n\ni. Resistores\n\n\n\n\n- Conceitos, tipos, unidades de medida, códigos de leitura de valores\nSlides\n\n\n\n- Associações série, paralela e mista\nSlides\n\n\n\n- Redes de resistores em estrela e delta\nSlides\n\n\n\nii. Capacitores\n\n\n\n\n- Conceitos, tipos, unidades de medida e associações\n\n\n\n\niii. Indutores\n\n\n\n\niv. Lei de Ohm\n\n\n\n\nc. Circuitos Elétricos\n\n\n\n\ni. Ramos, nós, malhas\nSlides\n\n\n\nii. Lei dos nós e lei das malhas"
+    "text": "Slides\n\n\n\nAula\nTópico\nMaterial\n\n\n\n\n00\nApresentação\nSlides\n\n\n\n1. Introdução\n\n\n\n01\na. Principais grandezas elétricas\nSlides\n\n\n\ni. Corrente\n\n\n\n\nii. Tensão\n\n\n\n\niii. Corrente contínua e tensão contínua\n\n\n\n\niv. Corrente alternada e tensão alternada\n\n\n\n\nv. Potência\n\n\n\n\nvi. Energia\n\n\n\n02\nb. Classificação dos materiais quanto à condução de corrente elétrica\nSlides\n\n\n\ni. Condutores, isolantes e semicondutores\n\n\n\n\nii. Equipamentos elétricos\n\n\n\n\n- Fontes, geradores\n\n\n\n\n- Cargas, consumidores (motores, lâmpadas, aquecedores)\n\n\n\n\n2. Conceitos iniciais\n\n\n\n03\na. Principais componentes elétricos e suas grandezas associadas\nSlides\n\n\n\nb. Fontes\n\n\n\n\ni. Resistores\n\n\n\n\n- Conceitos, tipos, unidades de medida, códigos de leitura de valores\nSlides\n\n\n\n- Associações série, paralela e mista\nSlides\n\n\n\n- Redes de resistores em estrela e delta\nSlides\n\n\n\nii. Capacitores\n\n\n\n\n- Conceitos, tipos, unidades de medida e associações\n\n\n\n\niii. Indutores\n\n\n\n\niv. Lei de Ohm\n\n\n\n\nc. Circuitos Elétricos\n\n\n\n\ni. Ramos, nós, malhas\nSlides\n\n\n\nii. Lei dos nós e lei das malhas\nSlides"
   },
   {
     "objectID": "disciplinas/ei/aula_07.html#situação-inicial",
@@ -1696,238 +1696,238 @@
   {
     "objectID": "disciplinas/ei/aula_08.html#objetivos-da-aula",
     "href": "disciplinas/ei/aula_08.html#objetivos-da-aula",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Objetivos da aula",
     "text": "Objetivos da aula\nAo final desta aula, o estudante deverá ser capaz de:\n\ncompreender a Lei dos Nós e a Lei das Malhas;\naplicar as leis de Kirchhoff em circuitos resistivos de corrente contínua;\nmontar equações para determinar correntes e tensões;\ninterpretar resultados físicos, verificando sinais e sentidos de corrente."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#por-que-estudar-kirchhoff",
     "href": "disciplinas/ei/aula_08.html#por-que-estudar-kirchhoff",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Por que estudar Kirchhoff?",
     "text": "Por que estudar Kirchhoff?\n\nEm circuitos simples, muitas vezes basta identificar resistores em série ou paralelo.\nMas em circuitos com vários caminhos, fontes diferentes ou pontos de derivação, precisamos de um método sistemático.\n\n\nAs leis de Kirchhoff são ferramentas fundamentais para analisar circuitos que não podem ser resolvidos apenas por associação série/paralelo direta e permitem transformar um circuito elétrico em um conjunto de equações."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#ideia-central",
     "href": "disciplinas/ei/aula_08.html#ideia-central",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Ideia central",
     "text": "Ideia central\nAs leis de Kirchhoff são baseadas em dois princípios físicos:\n\nConservação da carga elétrica\nA carga não desaparece em um nó.\nConservação da energia\nAo percorrer uma malha fechada, a soma das elevações e quedas de tensão é zero.\n\n\n\\[\\text{Carga se conserva} \\Rightarrow \\text{Lei dos Nós}\\] \\[\\text{Energia se conserva} \\Rightarrow \\text{Lei das Malhas}\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#elementos-importantes",
     "href": "disciplinas/ei/aula_08.html#elementos-importantes",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Elementos importantes",
     "text": "Elementos importantes\n\nNó: ponto de encontro entre dois ou mais ramos.\nRamo: caminho por onde passa uma corrente.\nMalha: caminho fechado dentro do circuito.\nSentido de corrente: pode ser escolhido livremente no início da análise.\n\n\nSe o resultado da corrente for negativo, isso não significa erro. Significa apenas que o sentido real é oposto ao sentido escolhido."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#lei-dos-nós-de-kirchhoff",
     "href": "disciplinas/ei/aula_08.html#lei-dos-nós-de-kirchhoff",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Lei dos Nós de Kirchhoff",
     "text": "Lei dos Nós de Kirchhoff\nTambém chamada de Lei das Correntes de Kirchhoff.\n\nEm qualquer nó de um circuito, a soma das correntes que entram é igual à soma das correntes que saem.\n\n\\[\\sum I_{entrando} = \\sum I_{saindo}\\]\nOu, de forma algébrica:\n\\[\\sum I = 0\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#representação-de-um-nó",
     "href": "disciplinas/ei/aula_08.html#representação-de-um-nó",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Representação de um nó",
     "text": "Representação de um nó\n\n\n\n\n\nPela Lei dos Nós:\n\\[I_1 + I_2 = I_3 + I_4\\]\n\\[2 + 3 = I_3 + 1\\]\n\\[I_3 = 4\\ A\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#analogia-hidráulica",
     "href": "disciplinas/ei/aula_08.html#analogia-hidráulica",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Analogia hidráulica",
     "text": "Analogia hidráulica\n\n\n\nImagine um encontro de tubulações de água.\nA quantidade de água que chega ao ponto de encontro deve ser igual à quantidade que sai.\n\n\n\n\n\n\n\n\n\nNo circuito elétrico, a corrente representa o fluxo de cargas elétricas. Assim, o nó não “armazena” corrente."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-1-lei-dos-nós",
     "href": "disciplinas/ei/aula_08.html#exercício-1-lei-dos-nós",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 1 — Lei dos Nós",
     "text": "Exercício 1 — Lei dos Nós\n\nEm um nó, entram duas correntes: \\(I_1 = 5\\ A\\) e \\(I_2 = 2\\ A\\). Saem duas correntes: \\(I_3 = 4\\ A\\) e \\(I_4\\). Determine \\(I_4\\)."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#resolução-do-exercício-1",
     "href": "disciplinas/ei/aula_08.html#resolução-do-exercício-1",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Resolução do Exercício 1",
     "text": "Resolução do Exercício 1\nPela Lei dos Nós:\n\\[I_1 + I_2 = I_3 + I_4\\]\nSubstituindo:\n\\[5 + 2 = 4 + I_4\\]\n\\[7 = 4 + I_4\\]\n\\[I_4 = 3\\ A\\]\n\nResposta: \\(I_4 = 3\\ A\\)."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#lei-das-malhas-de-kirchhoff",
     "href": "disciplinas/ei/aula_08.html#lei-das-malhas-de-kirchhoff",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Lei das Malhas de Kirchhoff",
     "text": "Lei das Malhas de Kirchhoff\nTambém chamada de Lei das Tensões de Kirchhoff.\n\nEm qualquer malha fechada de um circuito, a soma algébrica das tensões é igual a zero.\n\n\\[\\sum V = 0\\]\nIsso significa que a energia fornecida pelas fontes é consumida pelos elementos do circuito, como resistores."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#representação-de-uma-malha-simples",
     "href": "disciplinas/ei/aula_08.html#representação-de-uma-malha-simples",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Representação de uma malha simples",
     "text": "Representação de uma malha simples\n\n\n\n\n\nSe uma fonte de \\(12\\ V\\) alimenta os resistores em série:\n\\[V_{fonte} - V_{R1} - V_{R2} = 0\\]\n\\[12 - V_{R1} - V_{R2} = 0\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#queda-de-tensão-no-resistor",
     "href": "disciplinas/ei/aula_08.html#queda-de-tensão-no-resistor",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Queda de tensão no resistor",
     "text": "Queda de tensão no resistor\nEm um resistor, usamos a Lei de Ohm:\n\\[V_R = R \\cdot I\\]\nAssim, em uma malha com fonte e resistores:\n\\[V_{fonte} - R_1I - R_2I = 0\\]\nou:\n\\[V_{fonte} = I(R_1 + R_2)\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#convenção-de-sinais",
     "href": "disciplinas/ei/aula_08.html#convenção-de-sinais",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Convenção de sinais",
     "text": "Convenção de sinais\nUma forma prática de percorrer uma malha:\n\nao passar por uma fonte do terminal \\(-\\) para o terminal \\(+\\): ganho de tensão;\nao passar por um resistor no sentido da corrente: queda de tensão;\nao passar por um resistor contra o sentido da corrente: elevação de tensão.\n\n\nO mais importante é manter a convenção escolhida de forma consistente em toda a resolução."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exemplo-1-uma-malha",
     "href": "disciplinas/ei/aula_08.html#exemplo-1-uma-malha",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exemplo 1 — Uma malha",
     "text": "Exemplo 1 — Uma malha\nCircuito com fonte de \\(12\\ V\\), \\(R_1 = 4\\Omega\\) e \\(R_2 = 2\\Omega\\) em série.\n\n\n\n\n\nPela Lei das Malhas:\n\\[12 - 4I - 2I = 0\\]\n\\[12 = 6I\\]\n\\[I = 2\\ A\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-2-uma-malha",
     "href": "disciplinas/ei/aula_08.html#exercício-2-uma-malha",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 2 — Uma malha",
     "text": "Exercício 2 — Uma malha\nUma fonte de \\(18\\ V\\) alimenta dois resistores em série: \\(R_1 = 3\\Omega\\) e \\(R_2 = 6\\Omega\\). Determine a corrente do circuito e a queda de tensão em cada resistor."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#resolução-do-exercício-2",
     "href": "disciplinas/ei/aula_08.html#resolução-do-exercício-2",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Resolução do Exercício 2",
     "text": "Resolução do Exercício 2\nResistência total:\n\\[R_T = 3 + 6 = 9\\Omega\\]\nCorrente:\n\\[I = \\frac{V}{R_T} = \\frac{18}{9} = 2\\ A\\]\nQuedas de tensão:\n\\[V_{R1} = 3 \\cdot 2 = 6\\ V\\]\n\\[V_{R2} = 6 \\cdot 2 = 12\\ V\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#circuito-com-nó-e-ramos-paralelos",
     "href": "disciplinas/ei/aula_08.html#circuito-com-nó-e-ramos-paralelos",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Circuito com nó e ramos paralelos",
     "text": "Circuito com nó e ramos paralelos\nAgora temos uma corrente total que se divide em dois caminhos.\n\n\n\n\n\n\nNeste circuito:\n\n\\(R_1\\) está em série com o bloco paralelo;\n\\(R_2\\) e \\(R_3\\) estão em paralelo;\na corrente se divide no nó."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#análise-por-associação-e-kirchhoff",
     "href": "disciplinas/ei/aula_08.html#análise-por-associação-e-kirchhoff",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Análise por associação e Kirchhoff",
     "text": "Análise por associação e Kirchhoff\nPrimeiro, calculamos o paralelo:\n\\[R_{23} = \\frac{R_2 \\cdot R_3}{R_2 + R_3} = \\frac{6 \\cdot 3}{6 + 3} = 2\\Omega\\]\nDepois:\n\\[R_T = R_1 + R_{23} = 2 + 2 = 4\\Omega\\]\nCorrente total:\n\\[I_T = \\frac{12}{4} = 3\\ A\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#correntes-nos-ramos-paralelos",
     "href": "disciplinas/ei/aula_08.html#correntes-nos-ramos-paralelos",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Correntes nos ramos paralelos",
     "text": "Correntes nos ramos paralelos\nA queda de tensão em \\(R_1\\) é:\n\\[V_{R1} = R_1 \\cdot I_T = 2 \\cdot 3 = 6\\ V\\]\nLogo, a tensão no paralelo é:\n\\[V_{paralelo} = 12 - 6 = 6\\ V\\]\nCorrentes:\n\\[I_2 = \\frac{6}{6} = 1\\ A\\]\n\\[I_3 = \\frac{6}{3} = 2\\ A\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-3-série-com-paralelo",
     "href": "disciplinas/ei/aula_08.html#exercício-3-série-com-paralelo",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 3 — Série com paralelo",
     "text": "Exercício 3 — Série com paralelo\nNo circuito abaixo, uma fonte de \\(20\\ V\\) alimenta \\(R_1 = 4\\Omega\\) em série com um bloco paralelo formado por \\(R_2 = 12\\Omega\\) e \\(R_3 = 6\\Omega\\). Determine \\(R_T\\), \\(I_T\\), \\(I_2\\) e \\(I_3\\)."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#resolução-do-exercício-3",
     "href": "disciplinas/ei/aula_08.html#resolução-do-exercício-3",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Resolução do Exercício 3",
     "text": "Resolução do Exercício 3\nParalelo:\n\\[R_{23} = \\frac{12 \\cdot 6}{12 + 6} = 4\\Omega\\]\nResistência total:\n\\[R_T = 4 + 4 = 8\\Omega\\]\nCorrente total:\n\\[I_T = \\frac{20}{8} = 2{,}5\\ A\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#resolução-do-exercício-3-cont.",
     "href": "disciplinas/ei/aula_08.html#resolução-do-exercício-3-cont.",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Resolução do Exercício 3 (cont.)",
     "text": "Resolução do Exercício 3 (cont.)\nQueda em \\(R_1\\):\n\\[V_{R1} = 4 \\cdot 2{,}5 = 10\\ V\\]\nTensão no paralelo:\n\\[V_{paralelo} = 20 - 10 = 10\\ V\\]\nCorrentes:\n\\[I_2 = \\frac{10}{12} \\approx 0{,}83\\ A\\]\n\\[I_3 = \\frac{10}{6} \\approx 1{,}67\\ A\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#análise-por-malhas-quando-usar",
     "href": "disciplinas/ei/aula_08.html#análise-por-malhas-quando-usar",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Análise por malhas: quando usar?",
     "text": "Análise por malhas: quando usar?\nA análise por malhas é útil quando o circuito possui mais de uma fonte ou quando a associação direta não é evidente.\nO procedimento geral é:\n\nidentificar as malhas;\nescolher um sentido para cada corrente de malha;\nescrever uma equação de tensão para cada malha;\nresolver o sistema de equações."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exemplo-2-duas-malhas-com-resistor-comum",
     "href": "disciplinas/ei/aula_08.html#exemplo-2-duas-malhas-com-resistor-comum",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exemplo 2 — Duas malhas com resistor comum",
     "text": "Exemplo 2 — Duas malhas com resistor comum\n\n\nNeste tipo de circuito, um resistor pode ser compartilhado por duas malhas.\n\n\n\n\n\n\n\n\nQuando um resistor é comum a duas malhas, a corrente nele depende da diferença entre as correntes de malha."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#montagem-de-equações-de-malha",
     "href": "disciplinas/ei/aula_08.html#montagem-de-equações-de-malha",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Montagem de equações de malha",
     "text": "Montagem de equações de malha\nSuponha duas correntes de malha: \\(I_1\\) e \\(I_2\\).\nEm um resistor compartilhado, a queda pode ser escrita como:\n\\[R(I_1 - I_2)\\]\nou:\n\\[R(I_2 - I_1)\\]\nA escolha depende do sentido percorrido na malha.\n\nO ponto crítico é manter coerência entre o sentido da malha e a corrente assumida."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-4-leitura-conceitual",
     "href": "disciplinas/ei/aula_08.html#exercício-4-leitura-conceitual",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 4 — Leitura conceitual",
     "text": "Exercício 4 — Leitura conceitual\nExplique, com suas palavras, o que acontece com a corrente elétrica quando ela chega a um nó onde existem dois caminhos possíveis.\n\n\nPistas para responder:\n\na corrente total se divide;\nos ramos com menor resistência tendem a conduzir maior corrente;\na soma das correntes dos ramos deve ser igual à corrente total."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-5-identificação-de-nós-e-malhas",
     "href": "disciplinas/ei/aula_08.html#exercício-5-identificação-de-nós-e-malhas",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 5 — Identificação de nós e malhas",
     "text": "Exercício 5 — Identificação de nós e malhas\nObserve o circuito e responda:\n\nQuantos nós principais existem?\nQuantas malhas podem ser identificadas?\nQuais resistores estão em paralelo?"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-6-corrente-em-nó",
     "href": "disciplinas/ei/aula_08.html#exercício-6-corrente-em-nó",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 6 — Corrente em nó",
     "text": "Exercício 6 — Corrente em nó\nNo nó abaixo, determine a corrente desconhecida \\(I_x\\).\n\n\n\n\n\n\\[4 + 2 = 3 + I_x\\]"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-7-malha-simples",
     "href": "disciplinas/ei/aula_08.html#exercício-7-malha-simples",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 7 — Malha simples",
     "text": "Exercício 7 — Malha simples\nEm uma malha com fonte de \\(24\\ V\\) e resistores \\(R_1 = 4\\Omega\\), \\(R_2 = 8\\Omega\\) e \\(R_3 = 12\\Omega\\) em série, determine:\n\na resistência equivalente;\na corrente do circuito;\na queda de tensão em cada resistor."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-8-circuito-misto",
     "href": "disciplinas/ei/aula_08.html#exercício-8-circuito-misto",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 8 — Circuito misto",
     "text": "Exercício 8 — Circuito misto\nUma fonte de \\(30\\ V\\) alimenta \\(R_1 = 5\\Omega\\) em série com o paralelo de \\(R_2 = 10\\Omega\\) e \\(R_3 = 15\\Omega\\). Determine:\n\n\n\na resistência equivalente;\na corrente total;\na corrente em \\(R_2\\);\na corrente em \\(R_3\\)."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-9-verificação-de-kirchhoff",
     "href": "disciplinas/ei/aula_08.html#exercício-9-verificação-de-kirchhoff",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 9 — Verificação de Kirchhoff",
     "text": "Exercício 9 — Verificação de Kirchhoff\nEm um circuito, uma fonte de \\(18\\ V\\) alimenta três resistores em série. As quedas de tensão medidas foram:\n\n\\(V_{R1} = 5\\ V\\);\n\\(V_{R2} = 7\\ V\\);\n\\(V_{R3} = 6\\ V\\).\n\nVerifique se os valores respeitam a Lei das Malhas de Kirchhoff."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#exercício-10-desafio-orientado",
     "href": "disciplinas/ei/aula_08.html#exercício-10-desafio-orientado",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Exercício 10 — Desafio orientado",
     "text": "Exercício 10 — Desafio orientado\nNo circuito abaixo, determine a corrente total e verifique a divisão de corrente nos ramos paralelos."
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#gabarito-resumido",
     "href": "disciplinas/ei/aula_08.html#gabarito-resumido",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Gabarito resumido",
     "text": "Gabarito resumido\n\nExercício 1: \\(I_4 = 3\\ A\\)\nExercício 2: \\(I = 2\\ A\\); \\(V_{R1}=6\\ V\\); \\(V_{R2}=12\\ V\\)\nExercício 3: \\(R_T=8\\Omega\\); \\(I_T=2{,}5\\ A\\); \\(I_2\\approx0{,}83\\ A\\); \\(I_3\\approx1{,}67\\ A\\)\nExercício 6: \\(I_x=3\\ A\\)\nExercício 7: \\(R_T=24\\Omega\\); \\(I=1\\ A\\); quedas: \\(4\\ V\\), \\(8\\ V\\), \\(12\\ V\\)\nExercício 8: \\(R_{23}=6\\Omega\\); \\(R_T=11\\Omega\\); \\(I_T\\approx2{,}73\\ A\\); \\(V_{paralelo}\\approx16{,}36\\ V\\); \\(I_2\\approx1{,}64\\ A\\); \\(I_3\\approx1{,}09\\ A\\)\nExercício 9: Sim, pois \\(5 + 7 + 6 = 18\\ V\\)\nExercício 10: \\(R_p=2\\Omega\\); \\(R_T=5\\Omega\\); \\(I_T=7{,}2\\ A\\); \\(V_p=14{,}4\\ V\\); \\(I_2=1{,}2\\ A\\); \\(I_3=2{,}4\\ A\\); \\(I_4=3{,}6\\ A\\)"
   },
   {
     "objectID": "disciplinas/ei/aula_08.html#fechamento",
     "href": "disciplinas/ei/aula_08.html#fechamento",
-    "title": "Leis de Kirchhoff",
+    "title": "Leis de Kirchhoff: dos nós e das malhas",
     "section": "Fechamento",
     "text": "Fechamento\nAs leis de Kirchhoff são fundamentais porque permitem analisar circuitos além das associações simples.\n\nLei dos Nós: conserva a carga elétrica.\nLei das Malhas: conserva a energia elétrica.\n\nPara resolver circuitos:\n\nidentifique nós e malhas;\nescolha sentidos de corrente;\naplique Lei de Ohm;\nescreva as equações;\nverifique se os resultados fazem sentido físico."
   },

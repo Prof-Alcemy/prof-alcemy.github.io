@@ -47,7 +47,7 @@ description: "Material de apoio, slides e listas de exercícios."
 |    | iv. Lei de Ohm |    |
 |    | c. *Circuitos Elétricos* |  |
 |    | i. Ramos, nós, malhas | [Slides](aula_04.qmd) |
-|    | ii. Lei dos nós e lei das malhas |    |
+|    | ii. Lei dos nós e lei das malhas | [Slides](aula_08.qmd) |
 
 <!--
 ## Listas de Exercícios

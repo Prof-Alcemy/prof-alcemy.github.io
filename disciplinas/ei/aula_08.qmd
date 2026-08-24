@@ -1,6 +1,6 @@
 ---
 # --- INFORMAÇÕES DA AULA ---
-title: "Leis de Kirchhoff"
+title: "Leis de Kirchhoff: dos nós e das malhas"
 subtitle: "Conceitos iniciais"
 author: "Prof. Alcemy Severino"
 license: "CC BY-NC"
