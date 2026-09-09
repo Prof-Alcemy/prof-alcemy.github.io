@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<link href="../../img/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="Prof.&nbsp;Alcemy Severino">
+  <title>Prof. Alcemy – Processadores para servidores, desktops, notebooks e dispositivos móveis</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-7bbbdf7eac8c16c886aac640cc9fff13.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Processadores para servidores, desktops, notebooks e dispositivos móveis</h1>
+  <p class="subtitle">Unidade Central de Processamento</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Alcemy Severino 
+</div>
+        <p class="quarto-title-affiliation">
+            IFRN
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="unidade-central-de-processamento" class="slide level2">
+<h2>Unidade Central de Processamento</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<div class="box">
+<p><strong>Pergunta norteadora:</strong> por que um servidor, um desktop, um notebook e um smartphone não usam o mesmo tipo de processador?</p>
+</div>
+</div><div class="column fragment" style="width:42%;">
+<blockquote>
+<p>A função básica é processar dados e instruções. O que muda é o <strong>contexto de uso</strong>: desempenho, consumo, temperatura, espaço físico, bateria, confiabilidade e possibilidade de expansão.</p>
+</blockquote>
+</div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a05_processadores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="img/a05_processadores.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="objetivos-da-aula">Objetivos da aula</h3>
+<p>Ao final desta aula, você deverá ser capaz de:</p>
+<ul>
+<li>diferenciar processadores usados em <strong>servidores, desktops, notebooks e dispositivos móveis</strong>;</li>
+<li>relacionar processador com <strong>uso, consumo, temperatura, memória e expansão</strong>;</li>
+<li>compreender por que processadores de servidor priorizam disponibilidade e confiabilidade;</li>
+<li>compreender por que notebooks e dispositivos móveis precisam equilibrar desempenho e autonomia;</li>
+<li>interpretar especificações básicas para escolher processadores de acordo com cenários reais.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="retomando-o-que-o-processador-faz">Retomando: o que o processador faz?</h3>
+<p>O processador é o componente que executa instruções de programas, realiza cálculos, toma decisões lógicas e coordena a comunicação com outros componentes.</p>
+<div class="formula">
+<p>Entrada → Processamento → Memória/Armazenamento → Saída</p>
+</div>
+<div class="box">
+<p>A lógica geral é parecida em vários equipamentos, mas o projeto do processador muda conforme o ambiente em que ele será usado.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="o-que-muda-entre-os-equipamentos">O que muda entre os equipamentos?</h3>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fator</th>
+<th>Servidor</th>
+<th>Desktop</th>
+<th>Notebook</th>
+<th>Dispositivo móvel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prioridade</td>
+<td>continuidade e carga pesada</td>
+<td>desempenho e custo-benefício</td>
+<td>equilíbrio e bateria</td>
+<td>baixo consumo e integração</td>
+</tr>
+<tr class="even">
+<td>Refrigeração</td>
+<td>robusta e contínua</td>
+<td>ampla, com upgrade</td>
+<td>limitada pelo chassi</td>
+<td>passiva ou muito restrita</td>
+</tr>
+<tr class="odd">
+<td>Energia</td>
+<td>fonte dedicada e estável</td>
+<td>fonte ATX</td>
+<td>bateria + carregador</td>
+<td>bateria pequena</td>
+</tr>
+<tr class="even">
+<td>Expansão</td>
+<td>alta</td>
+<td>média/alta</td>
+<td>baixa</td>
+<td>quase nenhuma</td>
+</tr>
+<tr class="odd">
+<td>Manutenção</td>
+<td>planejada</td>
+<td>relativamente simples</td>
+<td>mais limitada</td>
+<td>geralmente especializada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="processadores-para-servidores" class="slide level2">
+<h2>Processadores para servidores</h2>
+<p>Servidores são computadores projetados para fornecer serviços a outros computadores, usuários ou sistemas.</p>
+<p>Exemplos de serviços:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>sites e sistemas web;</li>
+<li>banco de dados;</li>
+<li>arquivos em rede;</li>
+<li>autenticação de usuários;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>virtualização;</li>
+<li>aplicações corporativas;</li>
+<li>processamento científico ou de IA.</li>
+</ul>
+</div></div>
+<div class="box small">
+<p>Em servidores, o processador costuma trabalhar por longos períodos e com muitos usuários ou processos ao mesmo tempo.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-cpus-de-servidor">Características comuns em CPUs de servidor</h3>
+<ul>
+<li>muitos núcleos e muitas threads;</li>
+<li>maior quantidade de cache;</li>
+<li>suporte a grande volume de RAM;</li>
+<li>suporte a memória com correção de erros, como ECC;</li>
+<li>mais linhas PCIe para placas de rede, controladoras, SSDs NVMe e GPUs;</li>
+<li>foco em estabilidade e operação contínua;</li>
+<li>possibilidade de uso em placas com mais de um soquete, dependendo da plataforma.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-cpus-de-servidor-1">Características comuns em CPUs de servidor</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a05_processador_servidor.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="img/a05_processador_servidor.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="servidor-desempenho-sustentado">Servidor: desempenho sustentado</h3>
+<p>Em um servidor, não basta ser rápido por alguns segundos.</p>
+<div class="box">
+<p>O processador precisa manter desempenho estável durante muitas horas ou dias, com controle de temperatura, energia e falhas.</p>
+</div>
+<p>Situações típicas:</p>
+<ul>
+<li>muitos usuários acessando um sistema ao mesmo tempo;</li>
+<li>várias máquinas virtuais rodando no mesmo servidor;</li>
+<li>banco de dados recebendo consultas continuamente;</li>
+<li>serviços que não podem parar.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="confiabilidade-por-que-importa">Confiabilidade: por que importa?</h3>
+<p>Em um computador pessoal, uma falha pode atrapalhar um usuário. Em um servidor, uma falha pode afetar uma turma, uma empresa, um hospital, um banco ou um sistema público.</p>
+<div class="warning">
+<p>Plataformas de servidor costumam priorizar estabilidade, redundância, monitoramento e compatibilidade com componentes próprios para operação contínua.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a05_servidor_247.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="img/a05_servidor_247.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exemplo-quando-usar-cpu-de-servidor">Exemplo: quando usar CPU de servidor?</h3>
+<p>Uma CPU de servidor faz sentido quando precisamos:</p>
+<ul>
+<li>atender muitos usuários simultaneamente;</li>
+<li>executar várias máquinas virtuais;</li>
+<li>armazenar e processar grandes bases de dados;</li>
+<li>manter serviços ativos continuamente;</li>
+<li>conectar muitos dispositivos de alta velocidade.</li>
+</ul>
+<div class="box">
+<p>A escolha não depende apenas de “ser mais potente”, mas do tipo de carga e da necessidade de confiabilidade.</p>
+</div>
+</section>
+<section id="processadores-para-desktops" class="slide level2">
+<h2>Processadores para desktops</h2>
+<p>Desktops são computadores de mesa usados em residências, laboratórios, escritórios e estações de trabalho. Eles costumam oferecer bom equilíbrio entre:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>desempenho;</li>
+<li>custo;</li>
+<li>possibilidade de upgrade;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>refrigeração;</li>
+<li>manutenção;</li>
+<li>variedade de placas-mãe e componentes.</li>
+</ul>
+</div></div>
+<div class="box Small">
+<p>O desktop é geralmente o ambiente mais flexível para montagem, substituição e expansão de componentes.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-cpus-de-desktop">Características comuns em CPUs de desktop</h3>
+<ul>
+<li>bom desempenho por núcleo;</li>
+<li>vários núcleos para multitarefa;</li>
+<li>modelos com ou sem gráficos integrados;</li>
+<li>soquete em placa-mãe, facilitando substituição em algumas plataformas;</li>
+<li>TDP maior que o de notebooks, em muitos casos;</li>
+<li>maior liberdade para usar coolers maiores;</li>
+<li>possibilidade de combinar CPU com GPU dedicada.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-cpus-de-desktop-1">Características comuns em CPUs de desktop</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a05_processador_desktop.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="img/a05_processador_desktop.png" class="quarto-figure quarto-figure-center" style="width:75.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="desktop-desempenho-e-expansão">Desktop: desempenho e expansão</h3>
+<p>O desktop permite escolher componentes de acordo com o perfil do usuário.</p>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Perfil</th>
+<th>Processador indicado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Escritório e estudo</td>
+<td>CPU básica ou intermediária, preferencialmente com vídeo integrado</td>
+</tr>
+<tr class="even">
+<td>Programação</td>
+<td>CPU intermediária, boa RAM e SSD rápido</td>
+</tr>
+<tr class="odd">
+<td>Jogos</td>
+<td>CPU equilibrada + GPU dedicada</td>
+</tr>
+<tr class="even">
+<td>Edição de vídeo</td>
+<td>mais núcleos, bom clock e GPU adequada</td>
+</tr>
+<tr class="odd">
+<td>CAD/3D</td>
+<td>CPU forte + GPU dedicada + boa refrigeração</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="cuidado-cpu-forte-nem-sempre-resolve-tudo">Cuidado: CPU forte nem sempre resolve tudo</h3>
+<p>Um desktop lento pode ter vários gargalos:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>pouca RAM;</li>
+<li>HD lento;</li>
+<li>GPU fraca para jogos ou 3D;</li>
+<li>fonte inadequada;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>refrigeração ruim;</li>
+<li>placa-mãe limitada;</li>
+<li>sistema operacional mal configurado.</li>
+</ul>
+</div></div>
+<div class="warning">
+<p>Escolher processador exige analisar o conjunto completo do computador.</p>
+</div>
+</section>
+<section id="processadores-para-notebooks" class="slide level2">
+<h2>Processadores para notebooks</h2>
+<p>Notebooks precisam entregar desempenho dentro de um espaço físico pequeno. Por isso, o processador precisa equilibrar:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>desempenho;</li>
+<li>consumo de energia;</li>
+<li>aquecimento;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>autonomia de bateria;</li>
+<li>espessura do equipamento;</li>
+<li>custo.</li>
+</ul>
+</div></div>
+<div class="box Small">
+<p>Em notebooks, o mesmo nome comercial de uma família de processadores pode aparecer em versões com limites térmicos e energéticos diferentes.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-cpus-de-notebook">Características comuns em CPUs de notebook</h3>
+<ul>
+<li>menor consumo que muitos processadores de desktop;</li>
+<li>GPU integrada em grande parte dos modelos;</li>
+<li>foco em eficiência energética;</li>
+<li>funcionamento com limites de temperatura mais restritos;</li>
+<li>variação de desempenho conforme refrigeração e bateria;</li>
+<li>menor possibilidade de troca do processador;</li>
+<li>dependência forte do projeto térmico do fabricante.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="características-comuns-em-cpus-de-notebook-1">Características comuns em CPUs de notebook</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a05_processador_notebook.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="img/a05_processador_notebook.png" class="quarto-figure quarto-figure-center" style="width:95.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="desempenho-de-pico-e-sustentado">Desempenho de pico e sustentado</h3>
+<p>Um notebook pode atingir alto desempenho por alguns instantes, mas reduzir a velocidade se aquecer muito.</p>
+<div class="formula">
+<p>Mais calor → menor margem térmica → possível redução de desempenho</p>
+</div>
+<p>Esse comportamento pode ocorrer em:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>jogos;</li>
+<li>edição de vídeo;</li>
+<li>compilação longa;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>muitas abas e aplicações abertas;</li>
+<li>uso em superfície que bloqueia a ventilação.</li>
+</ul>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="categorias-práticas-de-notebooks">Categorias práticas de notebooks</h3>
+<div class="small">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de notebook</th>
+<th>Tendência do processador</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Básico</td>
+<td>baixo consumo, tarefas leves, maior foco em custo</td>
+</tr>
+<tr class="even">
+<td>Fino e leve</td>
+<td>eficiência, bateria e portabilidade</td>
+</tr>
+<tr class="odd">
+<td>Intermediário</td>
+<td>equilíbrio para estudo, programação e trabalho</td>
+</tr>
+<tr class="even">
+<td>Gamer</td>
+<td>CPU de maior potência + GPU dedicada</td>
+</tr>
+<tr class="odd">
+<td>Workstation móvel</td>
+<td>foco em cargas profissionais e maior refrigeração</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="processadores-para-dispositivos-móveis" class="slide level2">
+<h2>Processadores para dispositivos móveis</h2>
+<p>Smartphones e tablets geralmente usam um SoC que integra vários blocos em um único chip, como:</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li>CPU;</li>
+<li>GPU;</li>
+<li>NPU;</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<ul>
+<li>DSP;</li>
+<li>ISP;</li>
+<li>modem;</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>controladores de memória;</li>
+<li>controladores de entrada e saída.</li>
+</ul>
+</div></div>
+<div class="box">
+<p>A grande prioridade é entregar muitas funções com baixo consumo de energia e pouco aquecimento.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="por-que-usar-soc-em-celulares-e-tablets">Por que usar SoC em celulares e tablets?</h3>
+<p>Dispositivos móveis têm limitações severas:</p>
+<ul>
+<li>bateria pequena;</li>
+<li>pouco espaço interno;</li>
+<li>refrigeração limitada;</li>
+<li>necessidade de conexão sem fio;</li>
+<li>câmera, áudio, sensores e tela integrados;</li>
+<li>funcionamento silencioso;</li>
+<li>alta integração entre hardware e sistema operacional.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="por-que-usar-soc-em-celulares-e-tablets-1">Por que usar SoC em celulares e tablets?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/a05_soc.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="img/a05_soc.png" class="quarto-figure quarto-figure-center" style="width:95.0%"></a></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="blocos-especializados-em-um-soc">Blocos especializados em um SoC</h3>
+<div class="small">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Bloco</th>
+<th>Função prática</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CPU</td>
+<td>executa sistema e aplicativos gerais</td>
+</tr>
+<tr class="even">
+<td>GPU</td>
+<td>gráficos, interface, jogos e algumas tarefas paralelas</td>
+</tr>
+<tr class="odd">
+<td>NPU</td>
+<td>recursos de inteligência artificial local</td>
+</tr>
+<tr class="even">
+<td>DSP</td>
+<td>áudio, voz, sensores e sinais digitais</td>
+</tr>
+<tr class="odd">
+<td>ISP</td>
+<td>processamento de imagem da câmera</td>
+</tr>
+<tr class="even">
+<td>Modem</td>
+<td>comunicação 4G, 5G, Wi-Fi ou outras conexões</td>
+</tr>
+<tr class="odd">
+<td>I/O</td>
+<td>comunicação com tela, USB, sensores e periféricos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="eficiência-antes-de-força-bruta">Eficiência antes de força bruta</h3>
+<p>Em celulares, o melhor processador não é apenas o que atinge maior velocidade.</p>
+<div class="box Small">
+<p>O melhor projeto é aquele que entrega desempenho suficiente com baixo consumo, baixa temperatura e boa integração com câmera, tela, rede e bateria.</p>
+</div>
+<p>Exemplos de tarefas:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>abrir aplicativos rapidamente;</li>
+<li>gravar vídeo;</li>
+<li>reconhecer rosto ou voz;</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>jogar com baixo aquecimento;</li>
+<li>manter conexão de rede estável.</li>
+</ul>
+</div></div>
+</section>
+<section id="comparação-geral" class="slide level2">
+<h2>Comparação geral</h2>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Servidor</th>
+<th>Desktop</th>
+<th>Notebook</th>
+<th>Móvel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Projeto</td>
+<td>robustez e escala</td>
+<td>flexibilidade</td>
+<td>equilíbrio</td>
+<td>integração</td>
+</tr>
+<tr class="even">
+<td>CPU</td>
+<td>muitos núcleos e recursos</td>
+<td>variada</td>
+<td>eficiente</td>
+<td>integrada ao SoC</td>
+</tr>
+<tr class="odd">
+<td>GPU</td>
+<td>opcional/especializada</td>
+<td>integrada ou dedicada</td>
+<td>integrada ou dedicada</td>
+<td>integrada ao SoC</td>
+</tr>
+<tr class="even">
+<td>Memória</td>
+<td>muita RAM, ECC em muitos casos</td>
+<td>RAM expansível</td>
+<td>expansão limitada</td>
+<td>integrada/soldada</td>
+</tr>
+<tr class="odd">
+<td>Energia</td>
+<td>contínua</td>
+<td>fonte ATX</td>
+<td>bateria + fonte externa</td>
+<td>bateria</td>
+</tr>
+<tr class="even">
+<td>Upgrade</td>
+<td>planejado</td>
+<td>comum</td>
+<td>restrito</td>
+<td>praticamente inexistente</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="a-mesma-tarefa-muda-conforme-o-equipamento">A mesma tarefa muda conforme o equipamento</h3>
+<div class="Tiny">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tarefa</th>
+<th>Servidor</th>
+<th>Desktop</th>
+<th>Notebook</th>
+<th>Smartphone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Navegação web</td>
+<td>hospeda sites</td>
+<td>acessa sites</td>
+<td>acessa sites</td>
+<td>acessa sites com baixo consumo</td>
+</tr>
+<tr class="even">
+<td>Vídeo</td>
+<td>distribui conteúdo</td>
+<td>edita/reproduz</td>
+<td>reproduz/edita com limite térmico</td>
+<td>grava/reproduz com ISP/GPU</td>
+</tr>
+<tr class="odd">
+<td>IA</td>
+<td>pode treinar modelos</td>
+<td>pode executar com GPU</td>
+<td>executa IA moderada</td>
+<td>usa NPU para IA local</td>
+</tr>
+<tr class="even">
+<td>Armazenamento</td>
+<td>grande volume e redundância</td>
+<td>SSD/HD local</td>
+<td>SSD compacto</td>
+<td>armazenamento integrado</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="como-escolher-o-processador-adequado">Como escolher o processador adequado?</h3>
+<p>Para escolher um processador, pergunte:</p>
+<ol type="1">
+<li>Qual será o uso principal?</li>
+<li>Quantas tarefas ocorrerão ao mesmo tempo?</li>
+<li>Há necessidade de GPU dedicada?</li>
+<li>O equipamento precisa ficar ligado 24/7?</li>
+<li>A bateria é importante?</li>
+<li>Há possibilidade de upgrade?</li>
+<li>A refrigeração suporta o processador?</li>
+<li>A placa-mãe é compatível?</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<h3 id="estudo-de-caso-1-laboratório-escolar">Estudo de caso 1: laboratório escolar</h3>
+<p>O campus deseja comprar computadores para programação básica, internet, suíte de escritório e aulas de manutenção.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> faz sentido escolher desktops com CPU intermediária e vídeo integrado? Justifique.</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: sim. Para esse cenário, vídeo integrado reduz custo e complexidade; o mais importante é equilibrar CPU, RAM, SSD e possibilidade de manutenção.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="estudo-de-caso-2-servidor-de-sistemas-internos">Estudo de caso 2: servidor de sistemas internos</h3>
+<p>Uma instituição precisa hospedar sistema acadêmico, banco de dados e arquivos de vários setores.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> por que um desktop comum pode não ser a melhor escolha para funcionar como servidor principal?</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: porque servidores exigem operação contínua, maior confiabilidade, suporte a mais memória, melhor gerenciamento, maior capacidade de expansão e componentes próprios para carga constante.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="estudo-de-caso-3-notebook-para-aluno-de-informática">Estudo de caso 3: notebook para aluno de informática</h3>
+<p>Um estudante quer um notebook para estudar, programar, usar máquinas virtuais leves e levar para a escola.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> quais características do processador e do equipamento devem ser observadas?</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: processador intermediário eficiente, boa quantidade de RAM, SSD, autonomia de bateria, boa refrigeração, peso adequado e portas suficientes.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="estudo-de-caso-4-smartphone-moderno">Estudo de caso 4: smartphone moderno</h3>
+<p>Um smartphone promete fotos melhores, reconhecimento facial, tradução por voz e economia de bateria.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Dica</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Pergunta:</strong> por que não devemos analisar apenas a CPU?</p>
+</div>
+</div>
+</div>
+<div class="fragment answer">
+<p>Resposta esperada: porque o SoC inclui GPU, NPU, DSP, ISP, modem e outros blocos que influenciam câmera, IA, áudio, rede, consumo e desempenho geral.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="atividade-rápida-associe-o-contexto">Atividade rápida: associe o contexto</h3>
+<p>Associe cada característica ao equipamento mais provável.</p>
+<div class="Tiny">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Característica</th>
+<th style="text-align: center;">Servidor</th>
+<th style="text-align: center;">Desktop</th>
+<th style="text-align: center;">Notebook</th>
+<th style="text-align: center;">Móvel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Operação contínua 24/7</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Maior facilidade de upgrade</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Forte dependência da bateria</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>SoC com modem, ISP e NPU</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Muitos usuários simultâneos</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Refrigeração limitada pelo chassi</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>Tempo sugerido: 5 minutos.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h3 id="síntese-da-aula">Síntese da aula</h3>
+<ul>
+<li>Servidores priorizam continuidade, muitos usuários, expansão e confiabilidade.</li>
+<li>Desktops priorizam flexibilidade, manutenção, custo-benefício e desempenho.</li>
+<li>Notebooks equilibram desempenho, bateria, temperatura, peso e ruído.</li>
+<li>Dispositivos móveis usam SoC para integrar CPU, GPU, NPU, DSP, ISP, modem e I/O.</li>
+<li>A escolha do processador depende do uso real, do projeto térmico e do conjunto completo do equipamento.</li>
+</ul>
+</section>
+<section id="section" class="slide level2" data-background-image="img/fry_1.png">
+<h2></h2>
+</section>
+<section class="slide level2">
+
+<p><small>Este material foi produzido pelo <strong>Prof.&nbsp;Alcemy Gabriel</strong> para uso educacional.</small></p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-brands fa-creative-commons"></i> Licença de Uso (CC BY-NC 4.0)</strong></p>
+</div>
+<div class="callout-content">
+<div>
+Você tem o direito de:
+<ul>
+<li>
+<i class="fa-solid fa-share-nodes"></i> <strong>Compartilhar:</strong> copiar e redistribuir o material.
+</li>
+<li>
+<i class="fa-solid fa-pen-to-square"></i> <strong>Adaptar:</strong> remixar, transformar e criar a partir do material.
+</li>
+</ul>
+</div>
+<div>
+Sob as seguintes condições:
+<ol>
+<li>
+<strong>Atribuição:</strong> Você deve dar o crédito apropriado ao autor.
+</li>
+<li>
+<strong>Não Comercial:</strong> Você <strong>não</strong> pode usar o material para fins comerciais.
+</li>
+</ol>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+<p><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR" target="_blank"> <img src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" alt="Licença Creative Commons"> </a></p>
+</div>
+<p><small>Para uso comercial ou outras finalidades não listadas, entre em contato para solicitar autorização.</small></p>
+</div>
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="img/ifrn-logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>OMC</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/prof-alcemy\.github\.io");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
+    
+
+</body></html>

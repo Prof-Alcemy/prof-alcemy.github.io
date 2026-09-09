@@ -139,5 +139,14 @@
   },
   "disciplinas/ip/aula_01-python.qmd": {
     "aula_01-python.html": "4c7f91f7"
+  },
+  "disciplinas/omc/aula_04.qmd": {
+    "aula_04.html": "052fef04"
+  },
+  "disciplinas/omc/aula_05.qmd": {
+    "aula_05.html": "88951e60"
+  },
+  "disciplinas/ei/aula_09.qmd": {
+    "aula_09.html": "39924b78"
   }
 }
